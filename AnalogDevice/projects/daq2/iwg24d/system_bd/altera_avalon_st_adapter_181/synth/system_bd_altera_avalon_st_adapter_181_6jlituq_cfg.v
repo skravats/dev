@@ -1,0 +1,5 @@
+config system_bd_altera_avalon_st_adapter_181_6jlituq_cfg;
+		design system_bd_altera_avalon_st_adapter_181_6jlituq;
+		instance system_bd_altera_avalon_st_adapter_181_6jlituq.timing_adapter_0 use system_bd_timing_adapter_181.system_bd_timing_adapter_181_4ceyadi;
+endconfig
+

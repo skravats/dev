@@ -1,0 +1,134 @@
+<sld_project_info>
+  <project>
+    <hash md5_digest_80b="4ac2218e3914b4be9148"/>
+  </project>
+  <file_info>
+    <file device="10as066n3f40e2sg" path="daq2_a10soc.sof" usercode="0xFFFFFFFF"/>
+  </file_info>
+  <sld_infos>
+    <sld_info hpath="system_bd:i_system_bd|system_bd_adi_jesd204_10_z5wjnwa:ad9144_jesd204|system_bd_jesd204_phy_10_acll4ya:phy|system_bd_altera_xcvr_native_a10_181_a4siy7a:native_phy|altera_transceiver_reset_endpoint:g_xcvr_native_insts[0].g_analog_resets_default.g_tre_tx_endpoint.reset_endpoint_tx|altera_a10_xcvr_reset_endpoint:xcvr_reset_ep_inst|altera_fabric_endpoint:ep" library="work" name="ep">
+      <assignment_values/>
+      <parameters>
+        <assignment name="SLD_NODE_INFO" type="dec" value="0"/>
+        <assignment name="sld_endpoint_type" type="dec" value="0"/>
+        <assignment name="send_width" type="dec" value="2"/>
+        <assignment name="receive_width" type="dec" value="1"/>
+        <assignment name="num_clocks" type="dec" value="0"/>
+        <assignment name="settings" type="string" value="{fabric a10_xcvr dir agent use_clock 0 needs_clock 0 psig 6b6bab39}"/>
+        <assignment name=" constraint(settings)" type="string" value="1 to 67"/>
+        <assignment name=" constraint(send)" type="string" value="1 downto 0"/>
+        <assignment name=" constraint(receive)" type="string" value="0 downto 0"/>
+      </parameters>
+    </sld_info>
+    <sld_info hpath="system_bd:i_system_bd|system_bd_adi_jesd204_10_z5wjnwa:ad9144_jesd204|system_bd_jesd204_phy_10_acll4ya:phy|system_bd_altera_xcvr_native_a10_181_a4siy7a:native_phy|altera_transceiver_reset_endpoint:g_xcvr_native_insts[1].g_analog_resets_default.g_tre_tx_endpoint.reset_endpoint_tx|altera_a10_xcvr_reset_endpoint:xcvr_reset_ep_inst|altera_fabric_endpoint:ep" library="work" name="ep">
+      <assignment_values/>
+      <parameters>
+        <assignment name="SLD_NODE_INFO" type="dec" value="0"/>
+        <assignment name="sld_endpoint_type" type="dec" value="0"/>
+        <assignment name="send_width" type="dec" value="2"/>
+        <assignment name="receive_width" type="dec" value="1"/>
+        <assignment name="num_clocks" type="dec" value="0"/>
+        <assignment name="settings" type="string" value="{fabric a10_xcvr dir agent use_clock 0 needs_clock 0 psig 6b6bab39}"/>
+        <assignment name=" constraint(settings)" type="string" value="1 to 67"/>
+        <assignment name=" constraint(send)" type="string" value="1 downto 0"/>
+        <assignment name=" constraint(receive)" type="string" value="0 downto 0"/>
+      </parameters>
+    </sld_info>
+    <sld_info hpath="system_bd:i_system_bd|system_bd_adi_jesd204_10_z5wjnwa:ad9144_jesd204|system_bd_jesd204_phy_10_acll4ya:phy|system_bd_altera_xcvr_native_a10_181_a4siy7a:native_phy|altera_transceiver_reset_endpoint:g_xcvr_native_insts[2].g_analog_resets_default.g_tre_tx_endpoint.reset_endpoint_tx|altera_a10_xcvr_reset_endpoint:xcvr_reset_ep_inst|altera_fabric_endpoint:ep" library="work" name="ep">
+      <assignment_values/>
+      <parameters>
+        <assignment name="SLD_NODE_INFO" type="dec" value="0"/>
+        <assignment name="sld_endpoint_type" type="dec" value="0"/>
+        <assignment name="send_width" type="dec" value="2"/>
+        <assignment name="receive_width" type="dec" value="1"/>
+        <assignment name="num_clocks" type="dec" value="0"/>
+        <assignment name="settings" type="string" value="{fabric a10_xcvr dir agent use_clock 0 needs_clock 0 psig 6b6bab39}"/>
+        <assignment name=" constraint(settings)" type="string" value="1 to 67"/>
+        <assignment name=" constraint(send)" type="string" value="1 downto 0"/>
+        <assignment name=" constraint(receive)" type="string" value="0 downto 0"/>
+      </parameters>
+    </sld_info>
+    <sld_info hpath="system_bd:i_system_bd|system_bd_adi_jesd204_10_z5wjnwa:ad9144_jesd204|system_bd_jesd204_phy_10_acll4ya:phy|system_bd_altera_xcvr_native_a10_181_a4siy7a:native_phy|altera_transceiver_reset_endpoint:g_xcvr_native_insts[3].g_analog_resets_default.g_tre_tx_endpoint.reset_endpoint_tx|altera_a10_xcvr_reset_endpoint:xcvr_reset_ep_inst|altera_fabric_endpoint:ep" library="work" name="ep">
+      <assignment_values/>
+      <parameters>
+        <assignment name="SLD_NODE_INFO" type="dec" value="0"/>
+        <assignment name="sld_endpoint_type" type="dec" value="0"/>
+        <assignment name="send_width" type="dec" value="2"/>
+        <assignment name="receive_width" type="dec" value="1"/>
+        <assignment name="num_clocks" type="dec" value="0"/>
+        <assignment name="settings" type="string" value="{fabric a10_xcvr dir agent use_clock 0 needs_clock 0 psig 6b6bab39}"/>
+        <assignment name=" constraint(settings)" type="string" value="1 to 67"/>
+        <assignment name=" constraint(send)" type="string" value="1 downto 0"/>
+        <assignment name=" constraint(receive)" type="string" value="0 downto 0"/>
+      </parameters>
+    </sld_info>
+    <sld_info hpath="system_bd:i_system_bd|system_bd_adi_jesd204_10_ihqiogy:ad9680_jesd204|system_bd_jesd204_phy_10_2atbkja:phy|system_bd_altera_xcvr_native_a10_181_v6p7utq:native_phy|altera_transceiver_reset_endpoint:g_xcvr_native_insts[0].g_analog_resets_default.g_tre_rx_endpoint.reset_endpoint_rx|altera_a10_xcvr_reset_endpoint:xcvr_reset_ep_inst|altera_fabric_endpoint:ep" library="work" name="ep">
+      <assignment_values/>
+      <parameters>
+        <assignment name="SLD_NODE_INFO" type="dec" value="0"/>
+        <assignment name="sld_endpoint_type" type="dec" value="0"/>
+        <assignment name="send_width" type="dec" value="2"/>
+        <assignment name="receive_width" type="dec" value="1"/>
+        <assignment name="num_clocks" type="dec" value="0"/>
+        <assignment name="settings" type="string" value="{fabric a10_xcvr dir agent use_clock 0 needs_clock 0 psig 6b6bab39}"/>
+        <assignment name=" constraint(settings)" type="string" value="1 to 67"/>
+        <assignment name=" constraint(send)" type="string" value="1 downto 0"/>
+        <assignment name=" constraint(receive)" type="string" value="0 downto 0"/>
+      </parameters>
+    </sld_info>
+    <sld_info hpath="system_bd:i_system_bd|system_bd_adi_jesd204_10_ihqiogy:ad9680_jesd204|system_bd_jesd204_phy_10_2atbkja:phy|system_bd_altera_xcvr_native_a10_181_v6p7utq:native_phy|altera_transceiver_reset_endpoint:g_xcvr_native_insts[1].g_analog_resets_default.g_tre_rx_endpoint.reset_endpoint_rx|altera_a10_xcvr_reset_endpoint:xcvr_reset_ep_inst|altera_fabric_endpoint:ep" library="work" name="ep">
+      <assignment_values/>
+      <parameters>
+        <assignment name="SLD_NODE_INFO" type="dec" value="0"/>
+        <assignment name="sld_endpoint_type" type="dec" value="0"/>
+        <assignment name="send_width" type="dec" value="2"/>
+        <assignment name="receive_width" type="dec" value="1"/>
+        <assignment name="num_clocks" type="dec" value="0"/>
+        <assignment name="settings" type="string" value="{fabric a10_xcvr dir agent use_clock 0 needs_clock 0 psig 6b6bab39}"/>
+        <assignment name=" constraint(settings)" type="string" value="1 to 67"/>
+        <assignment name=" constraint(send)" type="string" value="1 downto 0"/>
+        <assignment name=" constraint(receive)" type="string" value="0 downto 0"/>
+      </parameters>
+    </sld_info>
+    <sld_info hpath="system_bd:i_system_bd|system_bd_adi_jesd204_10_ihqiogy:ad9680_jesd204|system_bd_jesd204_phy_10_2atbkja:phy|system_bd_altera_xcvr_native_a10_181_v6p7utq:native_phy|altera_transceiver_reset_endpoint:g_xcvr_native_insts[2].g_analog_resets_default.g_tre_rx_endpoint.reset_endpoint_rx|altera_a10_xcvr_reset_endpoint:xcvr_reset_ep_inst|altera_fabric_endpoint:ep" library="work" name="ep">
+      <assignment_values/>
+      <parameters>
+        <assignment name="SLD_NODE_INFO" type="dec" value="0"/>
+        <assignment name="sld_endpoint_type" type="dec" value="0"/>
+        <assignment name="send_width" type="dec" value="2"/>
+        <assignment name="receive_width" type="dec" value="1"/>
+        <assignment name="num_clocks" type="dec" value="0"/>
+        <assignment name="settings" type="string" value="{fabric a10_xcvr dir agent use_clock 0 needs_clock 0 psig 6b6bab39}"/>
+        <assignment name=" constraint(settings)" type="string" value="1 to 67"/>
+        <assignment name=" constraint(send)" type="string" value="1 downto 0"/>
+        <assignment name=" constraint(receive)" type="string" value="0 downto 0"/>
+      </parameters>
+    </sld_info>
+    <sld_info hpath="system_bd:i_system_bd|system_bd_adi_jesd204_10_ihqiogy:ad9680_jesd204|system_bd_jesd204_phy_10_2atbkja:phy|system_bd_altera_xcvr_native_a10_181_v6p7utq:native_phy|altera_transceiver_reset_endpoint:g_xcvr_native_insts[3].g_analog_resets_default.g_tre_rx_endpoint.reset_endpoint_rx|altera_a10_xcvr_reset_endpoint:xcvr_reset_ep_inst|altera_fabric_endpoint:ep" library="work" name="ep">
+      <assignment_values/>
+      <parameters>
+        <assignment name="SLD_NODE_INFO" type="dec" value="0"/>
+        <assignment name="sld_endpoint_type" type="dec" value="0"/>
+        <assignment name="send_width" type="dec" value="2"/>
+        <assignment name="receive_width" type="dec" value="1"/>
+        <assignment name="num_clocks" type="dec" value="0"/>
+        <assignment name="settings" type="string" value="{fabric a10_xcvr dir agent use_clock 0 needs_clock 0 psig 6b6bab39}"/>
+        <assignment name=" constraint(settings)" type="string" value="1 to 67"/>
+        <assignment name=" constraint(send)" type="string" value="1 downto 0"/>
+        <assignment name=" constraint(receive)" type="string" value="0 downto 0"/>
+      </parameters>
+    </sld_info>
+    <sld_info hpath="system_bd:i_system_bd" name="i_system_bd">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME system_bd HAS_SOPCINFO 1 GENERATION_ID 1563190496"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:instrumentation_fabric" library="alt_sld_fab" name="instrumentation_fabric">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME alt_sld_fab HAS_SOPCINFO 1"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+  </sld_infos>
+</sld_project_info>

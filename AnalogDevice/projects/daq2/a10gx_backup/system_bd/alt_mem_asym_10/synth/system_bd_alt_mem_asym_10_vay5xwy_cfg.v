@@ -1,0 +1,5 @@
+config system_bd_alt_mem_asym_10_vay5xwy_cfg;
+		design system_bd_alt_mem_asym_10_vay5xwy;
+		instance system_bd_alt_mem_asym_10_vay5xwy.alt_mem use system_bd_ram_2port_181.system_bd_ram_2port_181_tvjdyoy;
+endconfig
+

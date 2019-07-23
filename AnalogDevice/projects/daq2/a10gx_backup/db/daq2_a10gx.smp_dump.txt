@@ -1,0 +1,309 @@
+
+State Machine - |system_top|system_bd:i_system_bd|system_bd_altera_mm_interconnect_181_o6tjsqa:mm_interconnect_0|altera_merlin_burst_adapter:sys_ddr3_cntrl_ctrl_amm_0_burst_adapter|altera_merlin_burst_adapter_new:altera_merlin_burst_adapter_new.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 
+state.ST_COMP_TRANS 1 0 1 
+state.ST_UNCOMP_TRANS 1 1 0 
+
+State Machine - |system_top|system_bd:i_system_bd|system_bd_adi_jesd204_10_zy2um7q:ad9680_jesd204|altera_xcvr_fpll_a10:link_pll|dps_reset_gen:dps_reset_gen_1|state
+Name state.GEN_DONE_2 state.GEN_DONE_1 state.GEN_DONE_DELAY_1 state.GEN_DONE_DELAY state.GEN_RESET_DELAY_4 state.GEN_RESET_DELAY_3 state.GEN_RESET_DELAY_2 state.GEN_RESET_DELAY_1 state.GEN_RESET_2 state.GEN_RESET_1 state.GEN_RESET_DELAY state.WAIT_CORE_DONE state.WAIT_PE_PULSE 
+state.WAIT_PE_PULSE 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.WAIT_CORE_DONE 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.GEN_RESET_DELAY 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.GEN_RESET_1 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.GEN_RESET_2 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.GEN_RESET_DELAY_1 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.GEN_RESET_DELAY_2 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.GEN_RESET_DELAY_3 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.GEN_RESET_DELAY_4 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.GEN_DONE_DELAY 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.GEN_DONE_DELAY_1 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.GEN_DONE_1 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.GEN_DONE_2 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |system_top|system_bd:i_system_bd|system_bd_adi_jesd204_10_zy2um7q:ad9680_jesd204|altera_xcvr_fpll_a10:link_pll|dps_pulse_ctrl:phase_en_pulse|state
+Name state.IDLE state.WAIT state.PULSE 
+state.IDLE 0 0 0 
+state.PULSE 1 0 1 
+state.WAIT 1 1 0 
+
+State Machine - |system_top|system_bd:i_system_bd|system_bd_adi_jesd204_10_ghf5ywa:ad9144_jesd204|altera_xcvr_fpll_a10:link_pll|dps_reset_gen:dps_reset_gen_1|state
+Name state.GEN_DONE_2 state.GEN_DONE_1 state.GEN_DONE_DELAY_1 state.GEN_DONE_DELAY state.GEN_RESET_DELAY_4 state.GEN_RESET_DELAY_3 state.GEN_RESET_DELAY_2 state.GEN_RESET_DELAY_1 state.GEN_RESET_2 state.GEN_RESET_1 state.GEN_RESET_DELAY state.WAIT_CORE_DONE state.WAIT_PE_PULSE 
+state.WAIT_PE_PULSE 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.WAIT_CORE_DONE 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.GEN_RESET_DELAY 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.GEN_RESET_1 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.GEN_RESET_2 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.GEN_RESET_DELAY_1 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.GEN_RESET_DELAY_2 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.GEN_RESET_DELAY_3 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.GEN_RESET_DELAY_4 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.GEN_DONE_DELAY 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.GEN_DONE_DELAY_1 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.GEN_DONE_1 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.GEN_DONE_2 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |system_top|system_bd:i_system_bd|system_bd_adi_jesd204_10_ghf5ywa:ad9144_jesd204|altera_xcvr_fpll_a10:link_pll|dps_pulse_ctrl:phase_en_pulse|state
+Name state.IDLE state.WAIT state.PULSE 
+state.IDLE 0 0 0 
+state.PULSE 1 0 1 
+state.WAIT 1 1 0 
+
+State Machine - |system_top|system_bd:i_system_bd|axi_dmac:axi_ad9144_dma|axi_dmac_transfer:i_transfer|dmac_request_arb:i_request_arb|axi_dmac_response_manager:i_response_manager|state
+Name state.STATE_ZERO_COMPL state.STATE_WRITE_RESPR state.STATE_ACC state.STATE_IDLE state.STATE_WRITE_ZRCMPL 
+state.STATE_IDLE 0 0 0 0 0 
+state.STATE_ACC 0 0 1 1 0 
+state.STATE_WRITE_RESPR 0 1 0 1 0 
+state.STATE_ZERO_COMPL 1 0 0 1 0 
+state.STATE_WRITE_ZRCMPL 0 0 0 1 1 
+
+State Machine - |system_top|system_bd:i_system_bd|axi_dmac:axi_ad9144_dma|axi_dmac_transfer:i_transfer|dmac_request_arb:i_request_arb|dmac_request_generator:i_req_gen|state
+Name state.STATE_CONSUME state.STATE_REWIND_ID state.STATE_GEN_ID state.STATE_IDLE state.STATE_WAIT_LAST 
+state.STATE_IDLE 0 0 0 0 0 
+state.STATE_GEN_ID 0 0 1 1 0 
+state.STATE_REWIND_ID 0 1 0 1 0 
+state.STATE_CONSUME 1 0 0 1 0 
+state.STATE_WAIT_LAST 0 0 0 1 1 
+
+State Machine - |system_top|system_bd:i_system_bd|system_bd_altera_eth_tse_181_3w7teoy:sys_ethernet|altera_eth_tse_mac:i_tse_mac|altera_tse_top_w_fifo_10_100_1000:U_MAC_TOP|altera_tse_top_w_fifo:U_MAC|altera_tse_rx_min_ff:U_RXFF|state
+Name state.LOC_STATE_FF_DATA_FLUSH_WAIT state.LOC_STATE_RST_DONE state.LOC_STATE_SHIFT_WAIT state.LOC_STATE_FF_FLUSH_WAIT state.LOC_STATE_FF_DATA_FLUSH state.LOC_STATE_END_FRM state.LOC_STATE_SHIFT state.LOC_STATE_WAIT state.LOC_STATE_DATA state.LOC_STATE_IDLE 
+state.LOC_STATE_IDLE 0 0 0 0 0 0 0 0 0 0 
+state.LOC_STATE_DATA 0 0 0 0 0 0 0 0 1 1 
+state.LOC_STATE_WAIT 0 0 0 0 0 0 0 1 0 1 
+state.LOC_STATE_SHIFT 0 0 0 0 0 0 1 0 0 1 
+state.LOC_STATE_END_FRM 0 0 0 0 0 1 0 0 0 1 
+state.LOC_STATE_FF_DATA_FLUSH 0 0 0 0 1 0 0 0 0 1 
+state.LOC_STATE_FF_FLUSH_WAIT 0 0 0 1 0 0 0 0 0 1 
+state.LOC_STATE_SHIFT_WAIT 0 0 1 0 0 0 0 0 0 1 
+state.LOC_STATE_RST_DONE 0 1 0 0 0 0 0 0 0 1 
+state.LOC_STATE_FF_DATA_FLUSH_WAIT 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |system_top|system_bd:i_system_bd|system_bd_altera_eth_tse_181_3w7teoy:sys_ethernet|altera_eth_tse_pcs_pma_nf_lvds:i_tse_pcs_0|altera_tse_top_1000_base_x:altera_tse_top_1000_base_x_inst|altera_tse_top_sgmii:U_SGMII|altera_tse_top_tx_converter:U_TXCV|altera_tse_tx_converter:U_TXCV|state
+Name state.STM_TYP_FF_READ state.STM_TYP_WAIT_RD state.STM_TYP_GIGA_MODE state.STM_TYP_IDLE 
+state.STM_TYP_IDLE 0 0 0 0 
+state.STM_TYP_GIGA_MODE 0 0 1 1 
+state.STM_TYP_WAIT_RD 0 1 0 1 
+state.STM_TYP_FF_READ 1 0 0 1 
+
+State Machine - |system_top|system_bd:i_system_bd|system_bd_altera_eth_tse_181_3w7teoy:sys_ethernet|altera_eth_tse_mac:i_tse_mac|altera_tse_top_mdio:U_MDIO|altera_tse_mdio_cntl:U_CNTL|state
+Name state.STM_TYP_HOST_RD_END state.STM_TYP_HOST_RD_REG_WAIT state.STM_TYP_HOST_RD_REG state.STM_TYP_HOST_RD_WAIT2 state.STM_TYP_HOST_RD_WAIT1 state.STM_TYP_HOST_RD_WAIT state.STM_TYP_HOST_RD_WR_ADDR state.STM_TYP_HOST_WR_END state.STM_TYP_HOST_WR_WAIT state.STM_TYP_HOST_WR_WAIT2 state.STM_TYP_HOST_WR_WAIT1 state.STM_TYP_HOST_WR_WR_DATA state.STM_TYP_HOST_WR_WR_ADDR state.STM_TYP_IDLE 
+state.STM_TYP_IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.STM_TYP_HOST_WR_WR_ADDR 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.STM_TYP_HOST_WR_WR_DATA 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.STM_TYP_HOST_WR_WAIT1 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.STM_TYP_HOST_WR_WAIT2 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.STM_TYP_HOST_WR_WAIT 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.STM_TYP_HOST_WR_END 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.STM_TYP_HOST_RD_WR_ADDR 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.STM_TYP_HOST_RD_WAIT 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.STM_TYP_HOST_RD_WAIT1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.STM_TYP_HOST_RD_WAIT2 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.STM_TYP_HOST_RD_REG 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.STM_TYP_HOST_RD_REG_WAIT 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.STM_TYP_HOST_RD_END 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |system_top|system_bd:i_system_bd|system_bd_altera_eth_tse_181_3w7teoy:sys_ethernet|altera_eth_tse_nf_lvds_terminator:i_lvdsio_terminator_0|altera_tse_nf_lvds_common_reset_sequencer:the_altera_tse_lvds_common_reset_sequencer|state
+Name state.stm_dpa_reset state.stm_pll_locked state.stm_pll_areset_1 state.stm_pll_areset_0 state.stm_reset_done 
+state.stm_pll_areset_0 0 0 0 0 0 
+state.stm_pll_areset_1 0 0 1 1 0 
+state.stm_pll_locked 0 1 0 1 0 
+state.stm_dpa_reset 1 0 0 1 0 
+state.stm_reset_done 0 0 0 1 1 
+
+State Machine - |system_top|system_bd:i_system_bd|system_bd_altera_eth_tse_181_3w7teoy:sys_ethernet|altera_eth_tse_pcs_pma_nf_lvds:i_tse_pcs_0|altera_tse_top_1000_base_x:altera_tse_top_1000_base_x_inst|altera_tse_top_sgmii:U_SGMII|altera_tse_top_rx_converter:U_RXCV|tse_1588_ppm_counter:ppm_cntr_1588|state
+Name state.BIT_20 state.BIT_17 state.BIT_14 state.00 
+state.00 0 0 0 0 
+state.BIT_14 0 0 1 1 
+state.BIT_17 0 1 0 1 
+state.BIT_20 1 0 0 1 
+
+State Machine - |system_top|system_bd:i_system_bd|system_bd_altera_eth_tse_181_3w7teoy:sys_ethernet|altera_eth_tse_mac:i_tse_mac|altera_tse_mac_control:U_MAC_CONTROL|altera_tse_register_map:U_REG|altera_tse_rx_counter_cntl:U_RXCNT|state
+Name state.STM_TYPE_DELAY state.STM_TYPE_RST_DONE state.STM_TYPE_IDLE state.STM_TYPE_WR_CNT state.STM_TYPE_INC_CNT state.STM_TYPE_RD_CNT state.STM_TYPE_RST_CNT 
+state.STM_TYPE_RST_CNT 0 0 0 0 0 0 0 
+state.STM_TYPE_RD_CNT 0 0 0 0 0 1 1 
+state.STM_TYPE_INC_CNT 0 0 0 0 1 0 1 
+state.STM_TYPE_WR_CNT 0 0 0 1 0 0 1 
+state.STM_TYPE_IDLE 0 0 1 0 0 0 1 
+state.STM_TYPE_RST_DONE 0 1 0 0 0 0 1 
+state.STM_TYPE_DELAY 1 0 0 0 0 0 1 
+
+State Machine - |system_top|system_bd:i_system_bd|axi_dmac:axi_ad9680_dma|axi_dmac_transfer:i_transfer|dmac_request_arb:i_request_arb|axi_dmac_response_manager:i_response_manager|state
+Name state.STATE_ZERO_COMPL state.STATE_WRITE_RESPR state.STATE_ACC state.STATE_IDLE state.STATE_WRITE_ZRCMPL 
+state.STATE_IDLE 0 0 0 0 0 
+state.STATE_ACC 0 0 1 1 0 
+state.STATE_WRITE_RESPR 0 1 0 1 0 
+state.STATE_ZERO_COMPL 1 0 0 1 0 
+state.STATE_WRITE_ZRCMPL 0 0 0 1 1 
+
+State Machine - |system_top|system_bd:i_system_bd|axi_dmac:axi_ad9680_dma|axi_dmac_transfer:i_transfer|dmac_request_arb:i_request_arb|dmac_request_generator:i_req_gen|state
+Name state.STATE_CONSUME state.STATE_REWIND_ID state.STATE_GEN_ID state.STATE_IDLE state.STATE_WAIT_LAST 
+state.STATE_IDLE 0 0 0 0 0 
+state.STATE_GEN_ID 0 0 1 1 0 
+state.STATE_REWIND_ID 0 1 0 1 0 
+state.STATE_CONSUME 1 0 0 1 0 
+state.STATE_WAIT_LAST 0 0 0 1 1 
+
+State Machine - |system_top|system_bd:i_system_bd|system_bd_altera_nios2_gen2_181_emjtsyi:sys_cpu|system_bd_altera_nios2_gen2_unit_181_ajz7wea:cpu|system_bd_altera_nios2_gen2_unit_181_ajz7wea_nios2_oci:the_system_bd_altera_nios2_gen2_unit_181_ajz7wea_nios2_oci|system_bd_altera_nios2_gen2_unit_181_ajz7wea_debug_slave_wrapper:the_system_bd_altera_nios2_gen2_unit_181_ajz7wea_debug_slave_wrapper|system_bd_altera_nios2_gen2_unit_181_ajz7wea_debug_slave_tck:the_system_bd_altera_nios2_gen2_unit_181_ajz7wea_debug_slave_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
+
+State Machine - |system_top|system_bd:i_system_bd|system_bd_adi_jesd204_10_zy2um7q:ad9680_jesd204|jesd204_rx:jesd204_rx|jesd204_rx_lane:gen_lane[3].i_lane|jesd204_rx_cgs:i_cgs|state
+Name state.CGS_STATE_INIT state.CGS_STATE_DATA state.CGS_STATE_CHECK 
+state.CGS_STATE_INIT 0 0 0 
+state.CGS_STATE_CHECK 1 0 1 
+state.CGS_STATE_DATA 1 1 0 
+
+State Machine - |system_top|system_bd:i_system_bd|system_bd_adi_jesd204_10_zy2um7q:ad9680_jesd204|jesd204_rx:jesd204_rx|jesd204_rx_lane:gen_lane[2].i_lane|jesd204_rx_cgs:i_cgs|state
+Name state.CGS_STATE_INIT state.CGS_STATE_DATA state.CGS_STATE_CHECK 
+state.CGS_STATE_INIT 0 0 0 
+state.CGS_STATE_CHECK 1 0 1 
+state.CGS_STATE_DATA 1 1 0 
+
+State Machine - |system_top|system_bd:i_system_bd|system_bd_adi_jesd204_10_zy2um7q:ad9680_jesd204|jesd204_rx:jesd204_rx|jesd204_rx_lane:gen_lane[1].i_lane|jesd204_rx_cgs:i_cgs|state
+Name state.CGS_STATE_INIT state.CGS_STATE_DATA state.CGS_STATE_CHECK 
+state.CGS_STATE_INIT 0 0 0 
+state.CGS_STATE_CHECK 1 0 1 
+state.CGS_STATE_DATA 1 1 0 
+
+State Machine - |system_top|system_bd:i_system_bd|system_bd_adi_jesd204_10_zy2um7q:ad9680_jesd204|jesd204_rx:jesd204_rx|jesd204_rx_lane:gen_lane[0].i_lane|jesd204_rx_cgs:i_cgs|state
+Name state.CGS_STATE_INIT state.CGS_STATE_DATA state.CGS_STATE_CHECK 
+state.CGS_STATE_INIT 0 0 0 
+state.CGS_STATE_CHECK 1 0 1 
+state.CGS_STATE_DATA 1 1 0 
+
+State Machine - |system_top|system_bd:i_system_bd|system_bd_adi_jesd204_10_zy2um7q:ad9680_jesd204|jesd204_rx:jesd204_rx|jesd204_rx_ctrl:i_rx_ctrl|state
+Name state.STATE_DEGLITCH state.STATE_CGS state.STATE_WAIT_FOR_PHY state.STATE_RESET state.STATE_SYNCHRONIZED 
+state.STATE_RESET 0 0 0 0 0 
+state.STATE_WAIT_FOR_PHY 0 0 1 1 0 
+state.STATE_CGS 0 1 0 1 0 
+state.STATE_DEGLITCH 1 0 0 1 0 
+state.STATE_SYNCHRONIZED 0 0 0 1 1 
+
+State Machine - |system_top|system_bd:i_system_bd|system_bd_altera_eth_tse_181_3w7teoy:sys_ethernet|altera_eth_tse_pcs_pma_nf_lvds:i_tse_pcs_0|altera_tse_top_1000_base_x:altera_tse_top_1000_base_x_inst|altera_tse_pcs_control:U_REG|altera_tse_pcs_host_control:U_CTRL|state
+Name state.STM_TYPE_WAIT_CYCLE state.STM_TYPE_END_READ state.STM_TYPE_NEXT_CYCLE state.STM_TYPE_IDLE 
+state.STM_TYPE_IDLE 0 0 0 0 
+state.STM_TYPE_NEXT_CYCLE 0 0 1 1 
+state.STM_TYPE_END_READ 0 1 0 1 
+state.STM_TYPE_WAIT_CYCLE 1 0 0 1 
+
+State Machine - |system_top|system_bd:i_system_bd|system_bd_altera_eth_tse_181_3w7teoy:sys_ethernet|altera_eth_tse_pcs_pma_nf_lvds:i_tse_pcs_0|altera_tse_top_1000_base_x:altera_tse_top_1000_base_x_inst|altera_tse_top_sgmii:U_SGMII|altera_tse_top_rx_converter:U_RXCV|altera_tse_rx_converter:U_RXC|state
+Name state.STM_TYP_FF_WRITE state.STM_TYP_WAIT_RD state.STM_TYP_GIGA_MODE state.STM_TYP_IDLE 
+state.STM_TYP_IDLE 0 0 0 0 
+state.STM_TYP_GIGA_MODE 0 0 1 1 
+state.STM_TYP_WAIT_RD 0 1 0 1 
+state.STM_TYP_FF_WRITE 1 0 0 1 
+
+State Machine - |system_top|system_bd:i_system_bd|system_bd_altera_eth_tse_181_3w7teoy:sys_ethernet|altera_eth_tse_pcs_pma_nf_lvds:i_tse_pcs_0|altera_tse_top_1000_base_x:altera_tse_top_1000_base_x_inst|altera_tse_top_sgmii:U_SGMII|altera_tse_top_pcs:U_PCS|altera_tse_top_rx:U_RX|altera_tse_rx_sync:U_SYNC|state
+Name state.STM_TYP_SYNC_ACQU_4A state.STM_TYP_SYNC_ACQU_3A state.STM_TYP_SYNC_ACQU_2A state.STM_TYP_SYNC_ACQU_4 state.STM_TYP_SYNC_ACQU_3 state.STM_TYP_SYNC_ACQU_2 state.STM_TYP_SYNC_ACQU_1 state.STM_TYP_ACQU_SYNC_2 state.STM_TYP_ACQU_SYNC_1 state.STM_TYP_COMMA_3 state.STM_TYP_COMMA_2 state.STM_TYP_COMMA_1 state.STM_TYP_LOSS_OF_SYNC 
+state.STM_TYP_LOSS_OF_SYNC 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.STM_TYP_COMMA_1 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.STM_TYP_COMMA_2 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.STM_TYP_COMMA_3 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.STM_TYP_ACQU_SYNC_1 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.STM_TYP_ACQU_SYNC_2 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.STM_TYP_SYNC_ACQU_1 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.STM_TYP_SYNC_ACQU_2 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.STM_TYP_SYNC_ACQU_3 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.STM_TYP_SYNC_ACQU_4 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.STM_TYP_SYNC_ACQU_2A 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.STM_TYP_SYNC_ACQU_3A 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.STM_TYP_SYNC_ACQU_4A 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |system_top|system_bd:i_system_bd|system_bd_altera_eth_tse_181_3w7teoy:sys_ethernet|altera_eth_tse_pcs_pma_nf_lvds:i_tse_pcs_0|altera_tse_top_1000_base_x:altera_tse_top_1000_base_x_inst|altera_tse_top_sgmii:U_SGMII|altera_tse_top_pcs:U_PCS|altera_tse_top_rx:U_RX|altera_tse_rx_encapsulation:U_FRM|state
+Name state.STM_TYP_EARLY_END_EXTEND3 state.STM_TYP_EARLY_END_EXTEND2 state.STM_TYP_EARLY_END_EXTEND1 state.STM_TYP_FRM_END_EXTEND2 state.STM_TYP_FRM_END_EXTEND1 state.STM_TYP_RX_FAULT state.STM_TYP_RX_INVAL state.STM_TYP_AN_CD state.STM_TYP_AN_CC state.STM_TYP_AN_CB state.STM_TYP_EARLY_END state.STM_TYP_FALSE_CAR state.STM_TYP_FRM_END2 state.STM_TYP_FRM_END1 state.STM_TYP_FRM state.STM_TYP_FRM_START state.STM_TYP_RX_K state.STM_TYP_IDLE_D state.STM_TYP_K_WAIT 
+state.STM_TYP_K_WAIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.STM_TYP_IDLE_D 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.STM_TYP_RX_K 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.STM_TYP_FRM_START 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.STM_TYP_FRM 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.STM_TYP_FRM_END1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.STM_TYP_FRM_END2 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.STM_TYP_FALSE_CAR 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.STM_TYP_EARLY_END 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.STM_TYP_AN_CB 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.STM_TYP_AN_CC 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.STM_TYP_AN_CD 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.STM_TYP_RX_INVAL 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.STM_TYP_RX_FAULT 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.STM_TYP_FRM_END_EXTEND1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.STM_TYP_FRM_END_EXTEND2 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.STM_TYP_EARLY_END_EXTEND1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.STM_TYP_EARLY_END_EXTEND2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.STM_TYP_EARLY_END_EXTEND3 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |system_top|system_bd:i_system_bd|system_bd_altera_eth_tse_181_3w7teoy:sys_ethernet|altera_eth_tse_pcs_pma_nf_lvds:i_tse_pcs_0|altera_tse_top_1000_base_x:altera_tse_top_1000_base_x_inst|altera_tse_top_sgmii:U_SGMII|altera_tse_top_pcs:U_PCS|altera_tse_top_autoneg:U_AUTONEG|state
+Name state.STM_TYP_NO_AN_LINK state.STM_TYP_LINK_OK state.STM_TYP_IDLE_DETECT state.STM_TYP_COMPLETE_ACK state.STM_TYP_ACK_DETECT state.STM_TYP_ABILITY_DETECT state.STM_TYP_AUTONEG_RESTART state.STM_TYP_AUTONEG_ENA 
+state.STM_TYP_AUTONEG_ENA 0 0 0 0 0 0 0 0 
+state.STM_TYP_AUTONEG_RESTART 0 0 0 0 0 0 1 1 
+state.STM_TYP_ABILITY_DETECT 0 0 0 0 0 1 0 1 
+state.STM_TYP_ACK_DETECT 0 0 0 0 1 0 0 1 
+state.STM_TYP_COMPLETE_ACK 0 0 0 1 0 0 0 1 
+state.STM_TYP_IDLE_DETECT 0 0 1 0 0 0 0 1 
+state.STM_TYP_LINK_OK 0 1 0 0 0 0 0 1 
+state.STM_TYP_NO_AN_LINK 1 0 0 0 0 0 0 1 
+
+State Machine - |system_top|system_bd:i_system_bd|system_bd_altera_eth_tse_181_3w7teoy:sys_ethernet|altera_eth_tse_mac:i_tse_mac|altera_tse_top_w_fifo_10_100_1000:U_MAC_TOP|altera_tse_top_w_fifo:U_MAC|altera_tse_magic_detection:U_MAGIC|state
+Name state.STM_TYP_WAKE_DONE state.STM_TYP_WAKE state.STM_TYP_PAT5 state.STM_TYP_PAT4 state.STM_TYP_PAT3 state.STM_TYP_PAT2 state.STM_TYP_PAT1 state.STM_TYP_PAT0 state.STM_TYP_PBL state.STM_TYP_WAIT_PBL state.STM_TYP_IDLE 
+state.STM_TYP_IDLE 0 0 0 0 0 0 0 0 0 0 0 
+state.STM_TYP_WAIT_PBL 0 0 0 0 0 0 0 0 0 1 1 
+state.STM_TYP_PBL 0 0 0 0 0 0 0 0 1 0 1 
+state.STM_TYP_PAT0 0 0 0 0 0 0 0 1 0 0 1 
+state.STM_TYP_PAT1 0 0 0 0 0 0 1 0 0 0 1 
+state.STM_TYP_PAT2 0 0 0 0 0 1 0 0 0 0 1 
+state.STM_TYP_PAT3 0 0 0 0 1 0 0 0 0 0 1 
+state.STM_TYP_PAT4 0 0 0 1 0 0 0 0 0 0 1 
+state.STM_TYP_PAT5 0 0 1 0 0 0 0 0 0 0 1 
+state.STM_TYP_WAKE 0 1 0 0 0 0 0 0 0 0 1 
+state.STM_TYP_WAKE_DONE 1 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |system_top|system_bd:i_system_bd|system_bd_altera_eth_tse_181_3w7teoy:sys_ethernet|altera_eth_tse_mac:i_tse_mac|altera_tse_top_w_fifo_10_100_1000:U_MAC_TOP|altera_tse_top_w_fifo:U_MAC|altera_tse_top_1geth:U_GETH|altera_tse_rx_stat_extract:U_RXSTAT|state
+Name state.stm_typ_end_frm state.stm_typ_frm state.stm_typ_sfd state.stm_typ_idle 
+state.stm_typ_idle 0 0 0 0 
+state.stm_typ_sfd 0 0 1 1 
+state.stm_typ_frm 0 1 0 1 
+state.stm_typ_end_frm 1 0 0 1 
+
+State Machine - |system_top|system_bd:i_system_bd|system_bd_altera_eth_tse_181_3w7teoy:sys_ethernet|altera_eth_tse_mac:i_tse_mac|altera_tse_mac_control:U_MAC_CONTROL|altera_tse_host_control:U_CTRL|state
+Name state.STM_TYPE_STAT_READ state.STM_TYPE_WAIT_BUSY state.STM_TYPE_WAIT_CYCLE state.STM_TYPE_END_READ state.STM_TYPE_NEXT_CYCLE state.STM_TYPE_MDIO_WRITE state.STM_TYPE_MDIO_READ state.STM_TYPE_IDLE 
+state.STM_TYPE_IDLE 0 0 0 0 0 0 0 0 
+state.STM_TYPE_MDIO_READ 0 0 0 0 0 0 1 1 
+state.STM_TYPE_MDIO_WRITE 0 0 0 0 0 1 0 1 
+state.STM_TYPE_NEXT_CYCLE 0 0 0 0 1 0 0 1 
+state.STM_TYPE_END_READ 0 0 0 1 0 0 0 1 
+state.STM_TYPE_WAIT_CYCLE 0 0 1 0 0 0 0 1 
+state.STM_TYPE_WAIT_BUSY 0 1 0 0 0 0 0 1 
+state.STM_TYPE_STAT_READ 1 0 0 0 0 0 0 1 
+
+State Machine - |system_top|system_bd:i_system_bd|system_bd_altera_eth_tse_181_3w7teoy:sys_ethernet|altera_eth_tse_mac:i_tse_mac|altera_tse_mac_control:U_MAC_CONTROL|altera_tse_register_map:U_REG|altera_tse_tx_counter_cntl:U_TXCNT|state
+Name state.STM_TYPE_WR_CNT_DONE state.STM_TYPE_RST_DONE state.STM_TYPE_IDLE state.STM_TYPE_WR_CNT state.STM_TYPE_INC_CNT state.STM_TYPE_RD_CNT state.STM_TYPE_RST_CNT 
+state.STM_TYPE_RST_CNT 0 0 0 0 0 0 0 
+state.STM_TYPE_RD_CNT 0 0 0 0 0 1 1 
+state.STM_TYPE_INC_CNT 0 0 0 0 1 0 1 
+state.STM_TYPE_WR_CNT 0 0 0 1 0 0 1 
+state.STM_TYPE_IDLE 0 0 1 0 0 0 1 
+state.STM_TYPE_RST_DONE 0 1 0 0 0 0 1 
+state.STM_TYPE_WR_CNT_DONE 1 0 0 0 0 0 1 
+
+State Machine - |system_top|system_bd:i_system_bd|system_bd_altera_eth_tse_181_3w7teoy:sys_ethernet|altera_eth_tse_pcs_pma_nf_lvds:i_tse_pcs_0|altera_tse_top_1000_base_x:altera_tse_top_1000_base_x_inst|altera_tse_top_sgmii:U_SGMII|altera_tse_top_pcs:U_PCS|altera_tse_top_tx:U_TX|altera_tse_tx_encapsulation:U_FRM|state
+Name state.STM_TYP_CF_C2D state.STM_TYP_CF_C2C state.STM_TYP_CF_C2B state.STM_TYP_CF_C2A state.STM_TYP_CF_C1D state.STM_TYP_CF_C1C state.STM_TYP_CF_C1B state.STM_TYP_CF_C1A state.STM_TYP_FRM_END3 state.STM_TYP_FRM_DATA_ERR state.STM_TYP_FRM_START_ERR state.STM_TYP_FRM_END2 state.STM_TYP_FRM_END state.STM_TYP_FRM state.STM_TYP_FRM_START state.STM_TYP_IDLE 
+state.STM_TYP_IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.STM_TYP_FRM_START 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.STM_TYP_FRM 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.STM_TYP_FRM_END 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.STM_TYP_FRM_END2 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.STM_TYP_FRM_START_ERR 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.STM_TYP_FRM_DATA_ERR 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.STM_TYP_FRM_END3 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.STM_TYP_CF_C1A 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.STM_TYP_CF_C1B 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.STM_TYP_CF_C1C 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.STM_TYP_CF_C1D 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.STM_TYP_CF_C2A 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.STM_TYP_CF_C2B 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.STM_TYP_CF_C2C 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.STM_TYP_CF_C2D 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 

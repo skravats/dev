@@ -1,0 +1,5 @@
+config system_bd_altera_nios2_gen2_181_emjtsyi_cfg;
+		design system_bd_altera_nios2_gen2_181_emjtsyi;
+		instance system_bd_altera_nios2_gen2_181_emjtsyi.cpu use system_bd_altera_nios2_gen2_unit_181.system_bd_altera_nios2_gen2_unit_181_ajz7wea;
+endconfig
+

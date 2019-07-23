@@ -1,0 +1,30 @@
+Core: system_bd_altera_emif_arch_nf_181_yepuh6a - Instance: i_system_bd|sys_ddr4_cntrl
+Path, Setup Margin, Hold Margin
+"Address/Command (Slow 900mV 100C Model)",0.185,0.185
+"Core (Slow 900mV 100C Model)",0.204,0.077
+"Core Recovery/Removal (Slow 900mV 100C Model)",6.406,0.546
+"DQS Gating (Slow 900mV 100C Model)",0.615,0.615
+"Read Capture (Slow 900mV 100C Model)",0.02,0.02
+"Write (Slow 900mV 100C Model)",0.022,0.022
+"Write Levelling (Slow 900mV 100C Model)",0.146,0.146
+"Address/Command (Slow 900mV 0C Model)",0.185,0.185
+"Core (Slow 900mV 0C Model)",0.23,0.069
+"Core Recovery/Removal (Slow 900mV 0C Model)",6.412,0.517
+"DQS Gating (Slow 900mV 0C Model)",0.615,0.615
+"Read Capture (Slow 900mV 0C Model)",0.02,0.02
+"Write (Slow 900mV 0C Model)",0.022,0.022
+"Write Levelling (Slow 900mV 0C Model)",0.146,0.146
+"Address/Command (Fast 900mV 100C Model)",0.185,0.185
+"Core (Fast 900mV 100C Model)",1.291,0.025
+"Core Recovery/Removal (Fast 900mV 100C Model)",6.891,0.29
+"DQS Gating (Fast 900mV 100C Model)",0.615,0.615
+"Read Capture (Fast 900mV 100C Model)",0.02,0.02
+"Write (Fast 900mV 100C Model)",0.022,0.022
+"Write Levelling (Fast 900mV 100C Model)",0.146,0.146
+"Address/Command (Fast 900mV 0C Model)",0.185,0.185
+"Core (Fast 900mV 0C Model)",1.563,0.024
+"Core Recovery/Removal (Fast 900mV 0C Model)",6.957,0.248
+"DQS Gating (Fast 900mV 0C Model)",0.615,0.615
+"Read Capture (Fast 900mV 0C Model)",0.02,0.02
+"Write (Fast 900mV 0C Model)",0.022,0.022
+"Write Levelling (Fast 900mV 0C Model)",0.146,0.146

@@ -1,0 +1,5 @@
+config system_bd_altera_avalon_st_adapter_181_hmqkkwi_cfg;
+		design system_bd_altera_avalon_st_adapter_181_hmqkkwi;
+		instance system_bd_altera_avalon_st_adapter_181_hmqkkwi.error_adapter_0 use system_bd_error_adapter_181.system_bd_error_adapter_181_zbwitoq;
+endconfig
+

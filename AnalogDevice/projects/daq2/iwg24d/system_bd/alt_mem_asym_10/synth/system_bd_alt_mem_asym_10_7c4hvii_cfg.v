@@ -1,0 +1,5 @@
+config system_bd_alt_mem_asym_10_7c4hvii_cfg;
+		design system_bd_alt_mem_asym_10_7c4hvii;
+		instance system_bd_alt_mem_asym_10_7c4hvii.alt_mem use system_bd_ram_2port_181.system_bd_ram_2port_181_yqcukcq;
+endconfig
+

@@ -1,0 +1,109 @@
+	component system_bd is
+		port (
+			rx_ref_clk_clk                       : in    std_logic                     := 'X';             -- clk
+			rx_serial_data_rx_serial_data        : in    std_logic_vector(3 downto 0)  := (others => 'X'); -- rx_serial_data
+			rx_sync_export                       : out   std_logic_vector(0 downto 0);                     -- export
+			rx_sysref_export                     : in    std_logic                     := 'X';             -- export
+			sys_clk_clk                          : in    std_logic                     := 'X';             -- clk
+			sys_ddr_mem_mem_ck                   : out   std_logic_vector(0 downto 0);                     -- mem_ck
+			sys_ddr_mem_mem_ck_n                 : out   std_logic_vector(0 downto 0);                     -- mem_ck_n
+			sys_ddr_mem_mem_a                    : out   std_logic_vector(16 downto 0);                    -- mem_a
+			sys_ddr_mem_mem_act_n                : out   std_logic_vector(0 downto 0);                     -- mem_act_n
+			sys_ddr_mem_mem_ba                   : out   std_logic_vector(1 downto 0);                     -- mem_ba
+			sys_ddr_mem_mem_bg                   : out   std_logic_vector(0 downto 0);                     -- mem_bg
+			sys_ddr_mem_mem_cke                  : out   std_logic_vector(0 downto 0);                     -- mem_cke
+			sys_ddr_mem_mem_cs_n                 : out   std_logic_vector(0 downto 0);                     -- mem_cs_n
+			sys_ddr_mem_mem_odt                  : out   std_logic_vector(0 downto 0);                     -- mem_odt
+			sys_ddr_mem_mem_reset_n              : out   std_logic_vector(0 downto 0);                     -- mem_reset_n
+			sys_ddr_mem_mem_par                  : out   std_logic_vector(0 downto 0);                     -- mem_par
+			sys_ddr_mem_mem_alert_n              : in    std_logic_vector(0 downto 0)  := (others => 'X'); -- mem_alert_n
+			sys_ddr_mem_mem_dqs                  : inout std_logic_vector(7 downto 0)  := (others => 'X'); -- mem_dqs
+			sys_ddr_mem_mem_dqs_n                : inout std_logic_vector(7 downto 0)  := (others => 'X'); -- mem_dqs_n
+			sys_ddr_mem_mem_dq                   : inout std_logic_vector(63 downto 0) := (others => 'X'); -- mem_dq
+			sys_ddr_mem_mem_dbi_n                : inout std_logic_vector(7 downto 0)  := (others => 'X'); -- mem_dbi_n
+			sys_ddr_oct_oct_rzqin                : in    std_logic                     := 'X';             -- oct_rzqin
+			sys_ddr_ref_clk_clk                  : in    std_logic                     := 'X';             -- clk
+			sys_ddr_status_local_cal_success     : out   std_logic;                                        -- local_cal_success
+			sys_ddr_status_local_cal_fail        : out   std_logic;                                        -- local_cal_fail
+			sys_gpio_bd_in_port                  : in    std_logic_vector(31 downto 0) := (others => 'X'); -- in_port
+			sys_gpio_bd_out_port                 : out   std_logic_vector(31 downto 0);                    -- out_port
+			sys_gpio_in_export                   : in    std_logic_vector(31 downto 0) := (others => 'X'); -- export
+			sys_gpio_out_export                  : out   std_logic_vector(31 downto 0);                    -- export
+			sys_hps_ddr_mem_ck                   : out   std_logic_vector(0 downto 0);                     -- mem_ck
+			sys_hps_ddr_mem_ck_n                 : out   std_logic_vector(0 downto 0);                     -- mem_ck_n
+			sys_hps_ddr_mem_a                    : out   std_logic_vector(16 downto 0);                    -- mem_a
+			sys_hps_ddr_mem_act_n                : out   std_logic_vector(0 downto 0);                     -- mem_act_n
+			sys_hps_ddr_mem_ba                   : out   std_logic_vector(1 downto 0);                     -- mem_ba
+			sys_hps_ddr_mem_bg                   : out   std_logic_vector(0 downto 0);                     -- mem_bg
+			sys_hps_ddr_mem_cke                  : out   std_logic_vector(0 downto 0);                     -- mem_cke
+			sys_hps_ddr_mem_cs_n                 : out   std_logic_vector(0 downto 0);                     -- mem_cs_n
+			sys_hps_ddr_mem_odt                  : out   std_logic_vector(0 downto 0);                     -- mem_odt
+			sys_hps_ddr_mem_reset_n              : out   std_logic_vector(0 downto 0);                     -- mem_reset_n
+			sys_hps_ddr_mem_par                  : out   std_logic_vector(0 downto 0);                     -- mem_par
+			sys_hps_ddr_mem_alert_n              : in    std_logic_vector(0 downto 0)  := (others => 'X'); -- mem_alert_n
+			sys_hps_ddr_mem_dqs                  : inout std_logic_vector(3 downto 0)  := (others => 'X'); -- mem_dqs
+			sys_hps_ddr_mem_dqs_n                : inout std_logic_vector(3 downto 0)  := (others => 'X'); -- mem_dqs_n
+			sys_hps_ddr_mem_dq                   : inout std_logic_vector(31 downto 0) := (others => 'X'); -- mem_dq
+			sys_hps_ddr_mem_dbi_n                : inout std_logic_vector(3 downto 0)  := (others => 'X'); -- mem_dbi_n
+			sys_hps_ddr_oct_oct_rzqin            : in    std_logic                     := 'X';             -- oct_rzqin
+			sys_hps_ddr_ref_clk_clk              : in    std_logic                     := 'X';             -- clk
+			sys_hps_ddr_rstn_reset_n             : in    std_logic                     := 'X';             -- reset_n
+			sys_hps_io_hps_io_phery_emac0_TX_CLK : out   std_logic;                                        -- hps_io_phery_emac0_TX_CLK
+			sys_hps_io_hps_io_phery_emac0_TXD0   : out   std_logic;                                        -- hps_io_phery_emac0_TXD0
+			sys_hps_io_hps_io_phery_emac0_TXD1   : out   std_logic;                                        -- hps_io_phery_emac0_TXD1
+			sys_hps_io_hps_io_phery_emac0_TXD2   : out   std_logic;                                        -- hps_io_phery_emac0_TXD2
+			sys_hps_io_hps_io_phery_emac0_TXD3   : out   std_logic;                                        -- hps_io_phery_emac0_TXD3
+			sys_hps_io_hps_io_phery_emac0_RX_CTL : in    std_logic                     := 'X';             -- hps_io_phery_emac0_RX_CTL
+			sys_hps_io_hps_io_phery_emac0_TX_CTL : out   std_logic;                                        -- hps_io_phery_emac0_TX_CTL
+			sys_hps_io_hps_io_phery_emac0_RX_CLK : in    std_logic                     := 'X';             -- hps_io_phery_emac0_RX_CLK
+			sys_hps_io_hps_io_phery_emac0_RXD0   : in    std_logic                     := 'X';             -- hps_io_phery_emac0_RXD0
+			sys_hps_io_hps_io_phery_emac0_RXD1   : in    std_logic                     := 'X';             -- hps_io_phery_emac0_RXD1
+			sys_hps_io_hps_io_phery_emac0_RXD2   : in    std_logic                     := 'X';             -- hps_io_phery_emac0_RXD2
+			sys_hps_io_hps_io_phery_emac0_RXD3   : in    std_logic                     := 'X';             -- hps_io_phery_emac0_RXD3
+			sys_hps_io_hps_io_phery_emac0_MDIO   : inout std_logic                     := 'X';             -- hps_io_phery_emac0_MDIO
+			sys_hps_io_hps_io_phery_emac0_MDC    : out   std_logic;                                        -- hps_io_phery_emac0_MDC
+			sys_hps_io_hps_io_phery_sdmmc_CMD    : inout std_logic                     := 'X';             -- hps_io_phery_sdmmc_CMD
+			sys_hps_io_hps_io_phery_sdmmc_D0     : inout std_logic                     := 'X';             -- hps_io_phery_sdmmc_D0
+			sys_hps_io_hps_io_phery_sdmmc_D1     : inout std_logic                     := 'X';             -- hps_io_phery_sdmmc_D1
+			sys_hps_io_hps_io_phery_sdmmc_D2     : inout std_logic                     := 'X';             -- hps_io_phery_sdmmc_D2
+			sys_hps_io_hps_io_phery_sdmmc_D3     : inout std_logic                     := 'X';             -- hps_io_phery_sdmmc_D3
+			sys_hps_io_hps_io_phery_sdmmc_D4     : inout std_logic                     := 'X';             -- hps_io_phery_sdmmc_D4
+			sys_hps_io_hps_io_phery_sdmmc_D5     : inout std_logic                     := 'X';             -- hps_io_phery_sdmmc_D5
+			sys_hps_io_hps_io_phery_sdmmc_D6     : inout std_logic                     := 'X';             -- hps_io_phery_sdmmc_D6
+			sys_hps_io_hps_io_phery_sdmmc_D7     : inout std_logic                     := 'X';             -- hps_io_phery_sdmmc_D7
+			sys_hps_io_hps_io_phery_sdmmc_CCLK   : out   std_logic;                                        -- hps_io_phery_sdmmc_CCLK
+			sys_hps_io_hps_io_phery_usb0_DATA0   : inout std_logic                     := 'X';             -- hps_io_phery_usb0_DATA0
+			sys_hps_io_hps_io_phery_usb0_DATA1   : inout std_logic                     := 'X';             -- hps_io_phery_usb0_DATA1
+			sys_hps_io_hps_io_phery_usb0_DATA2   : inout std_logic                     := 'X';             -- hps_io_phery_usb0_DATA2
+			sys_hps_io_hps_io_phery_usb0_DATA3   : inout std_logic                     := 'X';             -- hps_io_phery_usb0_DATA3
+			sys_hps_io_hps_io_phery_usb0_DATA4   : inout std_logic                     := 'X';             -- hps_io_phery_usb0_DATA4
+			sys_hps_io_hps_io_phery_usb0_DATA5   : inout std_logic                     := 'X';             -- hps_io_phery_usb0_DATA5
+			sys_hps_io_hps_io_phery_usb0_DATA6   : inout std_logic                     := 'X';             -- hps_io_phery_usb0_DATA6
+			sys_hps_io_hps_io_phery_usb0_DATA7   : inout std_logic                     := 'X';             -- hps_io_phery_usb0_DATA7
+			sys_hps_io_hps_io_phery_usb0_CLK     : in    std_logic                     := 'X';             -- hps_io_phery_usb0_CLK
+			sys_hps_io_hps_io_phery_usb0_STP     : out   std_logic;                                        -- hps_io_phery_usb0_STP
+			sys_hps_io_hps_io_phery_usb0_DIR     : in    std_logic                     := 'X';             -- hps_io_phery_usb0_DIR
+			sys_hps_io_hps_io_phery_usb0_NXT     : in    std_logic                     := 'X';             -- hps_io_phery_usb0_NXT
+			sys_hps_io_hps_io_phery_uart1_RX     : in    std_logic                     := 'X';             -- hps_io_phery_uart1_RX
+			sys_hps_io_hps_io_phery_uart1_TX     : out   std_logic;                                        -- hps_io_phery_uart1_TX
+			sys_hps_io_hps_io_phery_i2c1_SDA     : inout std_logic                     := 'X';             -- hps_io_phery_i2c1_SDA
+			sys_hps_io_hps_io_phery_i2c1_SCL     : inout std_logic                     := 'X';             -- hps_io_phery_i2c1_SCL
+			sys_hps_io_hps_io_gpio_gpio1_io5     : inout std_logic                     := 'X';             -- hps_io_gpio_gpio1_io5
+			sys_hps_io_hps_io_gpio_gpio1_io14    : inout std_logic                     := 'X';             -- hps_io_gpio_gpio1_io14
+			sys_hps_io_hps_io_gpio_gpio1_io16    : inout std_logic                     := 'X';             -- hps_io_gpio_gpio1_io16
+			sys_hps_io_hps_io_gpio_gpio1_io17    : inout std_logic                     := 'X';             -- hps_io_gpio_gpio1_io17
+			sys_hps_out_rstn_reset_n             : out   std_logic;                                        -- reset_n
+			sys_hps_rstn_reset_n                 : in    std_logic                     := 'X';             -- reset_n
+			sys_rstn_reset_n                     : in    std_logic                     := 'X';             -- reset_n
+			sys_spi_MISO                         : in    std_logic                     := 'X';             -- MISO
+			sys_spi_MOSI                         : out   std_logic;                                        -- MOSI
+			sys_spi_SCLK                         : out   std_logic;                                        -- SCLK
+			sys_spi_SS_n                         : out   std_logic_vector(7 downto 0);                     -- SS_n
+			tx_fifo_bypass_bypass                : in    std_logic                     := 'X';             -- bypass
+			tx_ref_clk_clk                       : in    std_logic                     := 'X';             -- clk
+			tx_serial_data_tx_serial_data        : out   std_logic_vector(3 downto 0);                     -- tx_serial_data
+			tx_sync_export                       : in    std_logic                     := 'X';             -- export
+			tx_sysref_export                     : in    std_logic                     := 'X'              -- export
+		);
+	end component system_bd;
+

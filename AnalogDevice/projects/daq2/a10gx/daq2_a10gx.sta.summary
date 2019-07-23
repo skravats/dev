@@ -1,0 +1,2976 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 900mV 100C Model Setup 'i_system_bd|sys_ddr3_cntrl_core_usr_clk'
+Slack : 0.167
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Setup 'sys_clk_100mhz'
+Slack : 0.298
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Setup 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_1'
+Slack : 0.343
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Setup 'i_system_bd|ad9680_jesd204|link_pll|outclk0'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Setup 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_2'
+Slack : 0.444
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Setup 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_0'
+Slack : 0.525
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Setup 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 0.677
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Setup 'i_system_bd|ad9144_jesd204|link_pll|outclk0'
+Slack : 0.821
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Setup 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 0.846
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Setup 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|tx_coreclkin'
+Slack : 0.875
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Setup 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|tx_coreclkin'
+Slack : 0.948
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Setup 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_core_ck_name_0'
+Slack : 3.385
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Setup 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|altera_lvds_core20_iopll|lvds_clk[0]'
+Slack : 4.188
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Setup '~ALTERA_CLKUSR~'
+Slack : 4.222
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Setup 'i_system_bd|sys_ddr3_cntrl_core_cal_slave_clk'
+Slack : 4.367
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Setup 'eth_ref_clk'
+Slack : 4.490
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Setup 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|avmmclk'
+Slack : 5.927
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Setup 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|avmmclk'
+Slack : 5.998
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Setup 'i_system_bd|sys_ddr3_cntrl_ref_clock'
+Slack : 6.035
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Setup 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|avmmclk'
+Slack : 6.667
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Setup 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|avmmclk'
+Slack : 7.079
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Setup 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|outclock[2]'
+Slack : 7.236
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Setup 'altera_reserved_tck'
+Slack : 13.547
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Setup 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_dprio_clk'
+Slack : 29.861
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Hold 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_core_ck_name_0'
+Slack : 0.032
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Hold 'sys_clk_100mhz'
+Slack : 0.038
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Hold 'i_system_bd|ad9144_jesd204|link_pll|outclk0'
+Slack : 0.039
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Hold 'i_system_bd|sys_ddr3_cntrl_core_usr_clk'
+Slack : 0.039
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Hold 'eth_ref_clk'
+Slack : 0.043
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Hold 'altera_reserved_tck'
+Slack : 0.046
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Hold 'i_system_bd|ad9680_jesd204|link_pll|outclk0'
+Slack : 0.046
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Hold 'i_system_bd|sys_ddr3_cntrl_core_cal_slave_clk'
+Slack : 0.049
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Hold 'i_system_bd|sys_ddr3_cntrl_ref_clock'
+Slack : 0.053
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Hold '~ALTERA_CLKUSR~'
+Slack : 0.055
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Hold 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|outclock[2]'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Hold 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_2'
+Slack : 0.401
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Hold 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_1'
+Slack : 0.404
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Hold 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|avmmclk'
+Slack : 0.553
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Hold 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_dprio_clk'
+Slack : 0.575
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Hold 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_0'
+Slack : 0.688
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Hold 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|avmmclk'
+Slack : 0.769
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Hold 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|altera_lvds_core20_iopll|lvds_clk[0]'
+Slack : 0.887
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Hold 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|tx_coreclkin'
+Slack : 1.045
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Hold 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|avmmclk'
+Slack : 1.064
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Hold 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|tx_coreclkin'
+Slack : 1.120
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Hold 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 1.130
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Hold 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 1.153
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Hold 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|avmmclk'
+Slack : 1.156
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'i_system_bd|ad9680_jesd204|link_pll|outclk0'
+Slack : 1.054
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'i_system_bd|ad9144_jesd204|link_pll|outclk0'
+Slack : 2.150
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'i_system_bd|sys_ddr3_cntrl_core_cal_slave_clk'
+Slack : 3.167
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'eth_ref_clk'
+Slack : 4.656
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|outclock[2]'
+Slack : 4.771
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'sys_clk_100mhz'
+Slack : 4.899
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_dprio_clk'
+Slack : 5.099
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_core_ck_name_0'
+Slack : 5.106
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery '~ALTERA_CLKUSR~'
+Slack : 5.947
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'i_system_bd|sys_ddr3_cntrl_ref_clock'
+Slack : 6.751
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|tx_pma_clk'
+Slack : 15.045
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'altera_reserved_tck'
+Slack : 15.118
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[1]|rx_pma_clk'
+Slack : 15.147
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|tx_pma_clk'
+Slack : 15.417
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|tx_pma_clk'
+Slack : 15.578
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|tx_pma_clk'
+Slack : 15.642
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[3]|rx_pma_clk'
+Slack : 15.830
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'i_system_bd|sys_ddr3_cntrl_core_usr_clk'
+Slack : 16.031
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[2]|rx_pma_clk'
+Slack : 16.124
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[0]|rx_pma_clk'
+Slack : 16.169
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|tx_coreclkin'
+Slack : 47.320
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 47.692
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 47.713
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|tx_coreclkin'
+Slack : 47.865
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'eth_ref_clk'
+Slack : 0.269
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'i_system_bd|ad9680_jesd204|link_pll|outclk0'
+Slack : 0.281
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'sys_clk_100mhz'
+Slack : 0.285
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_core_ck_name_0'
+Slack : 0.293
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'i_system_bd|sys_ddr3_cntrl_ref_clock'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal '~ALTERA_CLKUSR~'
+Slack : 0.353
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'i_system_bd|ad9144_jesd204|link_pll|outclk0'
+Slack : 0.476
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'altera_reserved_tck'
+Slack : 0.631
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_dprio_clk'
+Slack : 0.872
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'i_system_bd|sys_ddr3_cntrl_core_cal_slave_clk'
+Slack : 2.202
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|outclock[2]'
+Slack : 2.324
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'i_system_bd|sys_ddr3_cntrl_core_usr_clk'
+Slack : 4.264
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[0]|rx_pma_clk'
+Slack : 11.020
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[2]|rx_pma_clk'
+Slack : 11.028
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[3]|rx_pma_clk'
+Slack : 11.274
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[1]|rx_pma_clk'
+Slack : 11.701
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|tx_pma_clk'
+Slack : 12.023
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|tx_pma_clk'
+Slack : 12.087
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|tx_pma_clk'
+Slack : 12.217
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|tx_pma_clk'
+Slack : 12.504
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|tx_coreclkin'
+Slack : 49.344
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 49.605
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|tx_coreclkin'
+Slack : 49.748
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 49.805
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'ddr3_dqs_p[0]_IN'
+Slack : 0.205
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'ddr3_dqs_p[2]_IN'
+Slack : 0.205
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'ddr3_dqs_p[4]_IN'
+Slack : 0.205
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'ddr3_dqs_p[6]_IN'
+Slack : 0.205
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'ddr3_dqs_p[1]_IN'
+Slack : 0.206
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'ddr3_dqs_p[3]_IN'
+Slack : 0.206
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'ddr3_dqs_p[5]_IN'
+Slack : 0.206
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'ddr3_dqs_p[7]_IN'
+Slack : 0.206
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|altera_lvds_core20_iopll|lvds_clk[0]'
+Slack : 0.296
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_vco_clk'
+Slack : 0.438
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_8'
+Slack : 0.451
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_10'
+Slack : 0.452
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_9'
+Slack : 0.452
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_0'
+Slack : 0.454
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_1'
+Slack : 0.454
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_2'
+Slack : 0.454
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_3'
+Slack : 0.454
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_4'
+Slack : 0.454
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_5'
+Slack : 0.454
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_6'
+Slack : 0.454
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_7'
+Slack : 0.454
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_vco_clk_1'
+Slack : 0.464
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_vco_clk_2'
+Slack : 0.464
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|altera_lvds_core20_iopll|loaden[0]'
+Slack : 0.726
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_phy_clk_0'
+Slack : 0.824
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_phy_clk_1'
+Slack : 0.825
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_phy_clk_2'
+Slack : 0.825
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'rx_ref_clk'
+Slack : 1.243
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'tx_ref_clk'
+Slack : 1.456
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_core_usr_clk'
+Slack : 1.521
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|link_pll|outclk0'
+Slack : 1.648
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|link_pll|outclk0'
+Slack : 1.661
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|tx_pma_clk'
+Slack : 1.701
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|tx_pma_clk'
+Slack : 1.701
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|tx_pma_clk'
+Slack : 1.701
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|tx_pma_clk'
+Slack : 1.701
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_0'
+Slack : 1.763
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_1'
+Slack : 1.764
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_2'
+Slack : 1.764
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[0]|rx_pma_clk'
+Slack : 1.866
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[1]|rx_pma_clk'
+Slack : 1.866
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[2]|rx_pma_clk'
+Slack : 1.866
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[3]|rx_pma_clk'
+Slack : 1.866
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 1.867
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 1.867
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|tx_coreclkin'
+Slack : 1.867
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|tx_coreclkin'
+Slack : 1.867
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[0]|rx_coreclkin'
+Slack : 1.899
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[1]|rx_coreclkin'
+Slack : 1.899
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[2]|rx_coreclkin'
+Slack : 1.899
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[3]|rx_coreclkin'
+Slack : 1.899
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_core_cal_slave_clk'
+Slack : 2.912
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'eth_ref_clk'
+Slack : 3.626
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_core_ck_name_0'
+Slack : 3.644
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_ref_clock'
+Slack : 3.704
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width '~ALTERA_CLKUSR~'
+Slack : 3.760
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|outclock[2]'
+Slack : 3.929
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'sys_clk_100mhz'
+Slack : 4.634
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|avmmclk'
+Slack : 4.904
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|avmmclk'
+Slack : 4.904
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|avmmclk'
+Slack : 4.904
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|avmmclk'
+Slack : 4.904
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_dprio_clk'
+Slack : 15.878
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 16.569
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 5.991
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.200
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.228
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.257
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.401
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.408
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.433
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.496
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.565
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.638
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.644
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.662
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.665
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.710
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.714
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.718
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.787
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 0.846
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 1.230
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 1.880
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 1.905
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 2.897
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 3.051
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 4.330
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.148
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.254
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.279
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.397
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.407
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.466
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.474
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.495
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.589
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.599
+
+Type  : Slow 900mV -40C Model Setup 'i_system_bd|sys_ddr3_cntrl_core_usr_clk'
+Slack : 0.229
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Setup 'sys_clk_100mhz'
+Slack : 0.297
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Setup 'i_system_bd|ad9680_jesd204|link_pll|outclk0'
+Slack : 0.409
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Setup 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_1'
+Slack : 0.461
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Setup 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_2'
+Slack : 0.633
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Setup 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_0'
+Slack : 0.773
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Setup 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 0.981
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Setup 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|tx_coreclkin'
+Slack : 1.049
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Setup 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 1.137
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Setup 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|tx_coreclkin'
+Slack : 1.155
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Setup 'i_system_bd|ad9144_jesd204|link_pll|outclk0'
+Slack : 1.189
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Setup 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_core_ck_name_0'
+Slack : 3.382
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Setup 'i_system_bd|sys_ddr3_cntrl_core_cal_slave_clk'
+Slack : 4.336
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Setup 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|altera_lvds_core20_iopll|lvds_clk[0]'
+Slack : 4.511
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Setup 'eth_ref_clk'
+Slack : 4.627
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Setup '~ALTERA_CLKUSR~'
+Slack : 4.637
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Setup 'i_system_bd|sys_ddr3_cntrl_ref_clock'
+Slack : 6.063
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Setup 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|avmmclk'
+Slack : 6.327
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Setup 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|avmmclk'
+Slack : 6.371
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Setup 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|avmmclk'
+Slack : 6.932
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Setup 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|outclock[2]'
+Slack : 7.239
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Setup 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|avmmclk'
+Slack : 7.317
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Setup 'altera_reserved_tck'
+Slack : 13.606
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Setup 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_dprio_clk'
+Slack : 29.961
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Hold 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_core_ck_name_0'
+Slack : 0.021
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Hold 'i_system_bd|ad9144_jesd204|link_pll|outclk0'
+Slack : 0.032
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Hold 'sys_clk_100mhz'
+Slack : 0.032
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Hold 'i_system_bd|sys_ddr3_cntrl_core_usr_clk'
+Slack : 0.034
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Hold 'altera_reserved_tck'
+Slack : 0.035
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Hold 'eth_ref_clk'
+Slack : 0.036
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Hold 'i_system_bd|ad9680_jesd204|link_pll|outclk0'
+Slack : 0.036
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Hold 'i_system_bd|sys_ddr3_cntrl_core_cal_slave_clk'
+Slack : 0.047
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Hold '~ALTERA_CLKUSR~'
+Slack : 0.049
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Hold 'i_system_bd|sys_ddr3_cntrl_ref_clock'
+Slack : 0.053
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Hold 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|outclock[2]'
+Slack : 0.104
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Hold 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_2'
+Slack : 0.292
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Hold 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_1'
+Slack : 0.339
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Hold 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_dprio_clk'
+Slack : 0.504
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Hold 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|avmmclk'
+Slack : 0.515
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Hold 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|altera_lvds_core20_iopll|lvds_clk[0]'
+Slack : 0.594
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Hold 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_0'
+Slack : 0.623
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Hold 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|avmmclk'
+Slack : 0.659
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Hold 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|avmmclk'
+Slack : 0.824
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Hold 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|tx_coreclkin'
+Slack : 0.891
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Hold 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 0.959
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Hold 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 0.988
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Hold 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|tx_coreclkin'
+Slack : 0.990
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Hold 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|avmmclk'
+Slack : 1.023
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'i_system_bd|ad9680_jesd204|link_pll|outclk0'
+Slack : 1.253
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'i_system_bd|ad9144_jesd204|link_pll|outclk0'
+Slack : 2.297
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'i_system_bd|sys_ddr3_cntrl_core_cal_slave_clk'
+Slack : 3.290
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'eth_ref_clk'
+Slack : 4.894
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'sys_clk_100mhz'
+Slack : 4.910
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|outclock[2]'
+Slack : 4.995
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_core_ck_name_0'
+Slack : 5.299
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_dprio_clk'
+Slack : 5.349
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery '~ALTERA_CLKUSR~'
+Slack : 6.128
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'i_system_bd|sys_ddr3_cntrl_ref_clock'
+Slack : 6.753
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|tx_pma_clk'
+Slack : 14.941
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[1]|rx_pma_clk'
+Slack : 15.112
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'altera_reserved_tck'
+Slack : 15.180
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|tx_pma_clk'
+Slack : 15.228
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|tx_pma_clk'
+Slack : 15.368
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|tx_pma_clk'
+Slack : 15.440
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[3]|rx_pma_clk'
+Slack : 15.729
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[2]|rx_pma_clk'
+Slack : 15.976
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[0]|rx_pma_clk'
+Slack : 15.992
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'i_system_bd|sys_ddr3_cntrl_core_usr_clk'
+Slack : 16.377
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|tx_coreclkin'
+Slack : 47.569
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 47.957
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 48.019
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|tx_coreclkin'
+Slack : 48.145
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'eth_ref_clk'
+Slack : 0.270
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_core_ck_name_0'
+Slack : 0.286
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'sys_clk_100mhz'
+Slack : 0.287
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'i_system_bd|ad9680_jesd204|link_pll|outclk0'
+Slack : 0.290
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'i_system_bd|sys_ddr3_cntrl_ref_clock'
+Slack : 0.308
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal '~ALTERA_CLKUSR~'
+Slack : 0.357
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'i_system_bd|ad9144_jesd204|link_pll|outclk0'
+Slack : 0.440
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'altera_reserved_tck'
+Slack : 0.559
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_dprio_clk'
+Slack : 0.745
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'i_system_bd|sys_ddr3_cntrl_core_cal_slave_clk'
+Slack : 2.087
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|outclock[2]'
+Slack : 2.123
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'i_system_bd|sys_ddr3_cntrl_core_usr_clk'
+Slack : 3.917
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[2]|rx_pma_clk'
+Slack : 11.029
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[0]|rx_pma_clk'
+Slack : 11.033
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[3]|rx_pma_clk'
+Slack : 11.245
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[1]|rx_pma_clk'
+Slack : 11.594
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|tx_pma_clk'
+Slack : 12.129
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|tx_pma_clk'
+Slack : 12.211
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|tx_pma_clk'
+Slack : 12.307
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|tx_pma_clk'
+Slack : 12.551
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|tx_coreclkin'
+Slack : 49.149
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 49.400
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|tx_coreclkin'
+Slack : 49.543
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 49.562
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'ddr3_dqs_p[0]_IN'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'ddr3_dqs_p[1]_IN'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'ddr3_dqs_p[2]_IN'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'ddr3_dqs_p[3]_IN'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'ddr3_dqs_p[4]_IN'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'ddr3_dqs_p[5]_IN'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'ddr3_dqs_p[6]_IN'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'ddr3_dqs_p[7]_IN'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|altera_lvds_core20_iopll|lvds_clk[0]'
+Slack : 0.278
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_vco_clk'
+Slack : 0.442
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_10'
+Slack : 0.448
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_9'
+Slack : 0.449
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_8'
+Slack : 0.450
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_0'
+Slack : 0.461
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_2'
+Slack : 0.461
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_3'
+Slack : 0.461
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_6'
+Slack : 0.461
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_7'
+Slack : 0.461
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_1'
+Slack : 0.462
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_4'
+Slack : 0.462
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_5'
+Slack : 0.462
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_vco_clk_1'
+Slack : 0.465
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_vco_clk_2'
+Slack : 0.465
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|altera_lvds_core20_iopll|loaden[0]'
+Slack : 0.704
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_phy_clk_0'
+Slack : 0.809
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_phy_clk_1'
+Slack : 0.809
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_phy_clk_2'
+Slack : 0.809
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'rx_ref_clk'
+Slack : 1.222
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'tx_ref_clk'
+Slack : 1.436
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_core_usr_clk'
+Slack : 1.487
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|link_pll|outclk0'
+Slack : 1.612
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|link_pll|outclk0'
+Slack : 1.614
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|tx_pma_clk'
+Slack : 1.679
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|tx_pma_clk'
+Slack : 1.679
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|tx_pma_clk'
+Slack : 1.679
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|tx_pma_clk'
+Slack : 1.679
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_0'
+Slack : 1.748
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_1'
+Slack : 1.748
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_2'
+Slack : 1.748
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 1.837
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 1.837
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|tx_coreclkin'
+Slack : 1.837
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|tx_coreclkin'
+Slack : 1.837
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[0]|rx_pma_clk'
+Slack : 1.837
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[1]|rx_pma_clk'
+Slack : 1.837
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[2]|rx_pma_clk'
+Slack : 1.837
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[3]|rx_pma_clk'
+Slack : 1.837
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[0]|rx_coreclkin'
+Slack : 1.879
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[1]|rx_coreclkin'
+Slack : 1.879
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[2]|rx_coreclkin'
+Slack : 1.879
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[3]|rx_coreclkin'
+Slack : 1.879
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_core_cal_slave_clk'
+Slack : 2.894
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'eth_ref_clk'
+Slack : 3.581
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_core_ck_name_0'
+Slack : 3.630
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_ref_clock'
+Slack : 3.650
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width '~ALTERA_CLKUSR~'
+Slack : 3.734
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|outclock[2]'
+Slack : 3.873
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'sys_clk_100mhz'
+Slack : 4.605
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|avmmclk'
+Slack : 4.879
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|avmmclk'
+Slack : 4.879
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|avmmclk'
+Slack : 4.879
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|avmmclk'
+Slack : 4.879
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_dprio_clk'
+Slack : 15.859
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 16.478
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.052
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.239
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.263
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.303
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.393
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.407
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.465
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.487
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.552
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.635
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.650
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.652
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.673
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.682
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.686
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.718
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.755
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 0.933
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 1.359
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 2.000
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 2.049
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 3.164
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 3.290
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 4.476
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.245
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.346
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.384
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.470
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.505
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.509
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.553
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.556
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.643
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.659
+
+Type  : Fast 900mV 100C Model Setup 'i_system_bd|sys_ddr3_cntrl_core_usr_clk'
+Slack : 0.929
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Setup 'i_system_bd|ad9680_jesd204|link_pll|outclk0'
+Slack : 1.004
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Setup 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_1'
+Slack : 1.146
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Setup 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_0'
+Slack : 1.158
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Setup 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_2'
+Slack : 1.234
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Setup 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 1.300
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Setup 'i_system_bd|ad9144_jesd204|link_pll|outclk0'
+Slack : 1.338
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Setup 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 1.461
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Setup 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|tx_coreclkin'
+Slack : 1.501
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Setup 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|tx_coreclkin'
+Slack : 1.559
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Setup 'sys_clk_100mhz'
+Slack : 2.887
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Setup 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_core_ck_name_0'
+Slack : 3.533
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Setup 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|altera_lvds_core20_iopll|lvds_clk[0]'
+Slack : 4.437
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Setup '~ALTERA_CLKUSR~'
+Slack : 4.874
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Setup 'i_system_bd|sys_ddr3_cntrl_core_cal_slave_clk'
+Slack : 5.081
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Setup 'eth_ref_clk'
+Slack : 5.218
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Setup 'i_system_bd|sys_ddr3_cntrl_ref_clock'
+Slack : 6.555
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Setup 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|avmmclk'
+Slack : 6.658
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Setup 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|avmmclk'
+Slack : 6.735
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Setup 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|avmmclk'
+Slack : 7.323
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Setup 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|outclock[2]'
+Slack : 7.435
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Setup 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|avmmclk'
+Slack : 7.701
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Setup 'altera_reserved_tck'
+Slack : 14.293
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Setup 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_dprio_clk'
+Slack : 30.300
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Hold 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_core_ck_name_0'
+Slack : 0.013
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Hold 'sys_clk_100mhz'
+Slack : 0.014
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Hold 'i_system_bd|ad9144_jesd204|link_pll|outclk0'
+Slack : 0.016
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Hold 'i_system_bd|sys_ddr3_cntrl_core_usr_clk'
+Slack : 0.016
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Hold 'altera_reserved_tck'
+Slack : 0.017
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Hold 'eth_ref_clk'
+Slack : 0.017
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Hold 'i_system_bd|ad9680_jesd204|link_pll|outclk0'
+Slack : 0.017
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Hold 'i_system_bd|sys_ddr3_cntrl_core_cal_slave_clk'
+Slack : 0.019
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Hold '~ALTERA_CLKUSR~'
+Slack : 0.022
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Hold 'i_system_bd|sys_ddr3_cntrl_ref_clock'
+Slack : 0.024
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Hold 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|outclock[2]'
+Slack : 0.123
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Hold 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_1'
+Slack : 0.305
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Hold 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_2'
+Slack : 0.305
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Hold 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_dprio_clk'
+Slack : 0.437
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Hold 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|avmmclk'
+Slack : 0.458
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Hold 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_0'
+Slack : 0.492
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Hold 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|avmmclk'
+Slack : 0.619
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Hold 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|tx_coreclkin'
+Slack : 0.869
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Hold 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 0.909
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Hold 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|avmmclk'
+Slack : 0.925
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Hold 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|tx_coreclkin'
+Slack : 0.927
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Hold 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|avmmclk'
+Slack : 0.939
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Hold 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 0.943
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Hold 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|altera_lvds_core20_iopll|lvds_clk[0]'
+Slack : 1.104
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'i_system_bd|ad9680_jesd204|link_pll|outclk0'
+Slack : 1.644
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'i_system_bd|ad9144_jesd204|link_pll|outclk0'
+Slack : 2.558
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'i_system_bd|sys_ddr3_cntrl_core_cal_slave_clk'
+Slack : 3.861
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'eth_ref_clk'
+Slack : 5.273
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|outclock[2]'
+Slack : 5.463
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_core_ck_name_0'
+Slack : 5.629
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_dprio_clk'
+Slack : 5.694
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'sys_clk_100mhz'
+Slack : 5.977
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery '~ALTERA_CLKUSR~'
+Slack : 6.331
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'i_system_bd|sys_ddr3_cntrl_ref_clock'
+Slack : 6.990
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[1]|rx_pma_clk'
+Slack : 15.418
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'altera_reserved_tck'
+Slack : 15.538
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[3]|rx_pma_clk'
+Slack : 16.050
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[2]|rx_pma_clk'
+Slack : 16.281
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[0]|rx_pma_clk'
+Slack : 16.344
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|tx_pma_clk'
+Slack : 16.581
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|tx_pma_clk'
+Slack : 16.918
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|tx_pma_clk'
+Slack : 17.056
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|tx_pma_clk'
+Slack : 17.113
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'i_system_bd|sys_ddr3_cntrl_core_usr_clk'
+Slack : 17.427
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|tx_coreclkin'
+Slack : 48.075
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 48.298
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 48.337
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|tx_coreclkin'
+Slack : 48.454
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'eth_ref_clk'
+Slack : 0.161
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'sys_clk_100mhz'
+Slack : 0.169
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'i_system_bd|ad9680_jesd204|link_pll|outclk0'
+Slack : 0.180
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_core_ck_name_0'
+Slack : 0.184
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'i_system_bd|sys_ddr3_cntrl_ref_clock'
+Slack : 0.198
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal '~ALTERA_CLKUSR~'
+Slack : 0.218
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'i_system_bd|ad9144_jesd204|link_pll|outclk0'
+Slack : 0.352
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'altera_reserved_tck'
+Slack : 0.516
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_dprio_clk'
+Slack : 0.678
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'i_system_bd|sys_ddr3_cntrl_core_cal_slave_clk'
+Slack : 1.807
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|outclock[2]'
+Slack : 1.815
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'i_system_bd|sys_ddr3_cntrl_core_usr_clk'
+Slack : 3.360
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|tx_pma_clk'
+Slack : 11.378
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|tx_pma_clk'
+Slack : 11.422
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|tx_pma_clk'
+Slack : 11.525
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|tx_pma_clk'
+Slack : 11.783
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[0]|rx_pma_clk'
+Slack : 11.887
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[2]|rx_pma_clk'
+Slack : 11.919
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[3]|rx_pma_clk'
+Slack : 12.087
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[1]|rx_pma_clk'
+Slack : 12.498
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|tx_coreclkin'
+Slack : 49.482
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 49.672
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|tx_coreclkin'
+Slack : 49.832
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 49.884
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'ddr3_dqs_p[0]_IN'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'ddr3_dqs_p[1]_IN'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'ddr3_dqs_p[2]_IN'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'ddr3_dqs_p[3]_IN'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'ddr3_dqs_p[4]_IN'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'ddr3_dqs_p[5]_IN'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'ddr3_dqs_p[6]_IN'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'ddr3_dqs_p[7]_IN'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|altera_lvds_core20_iopll|lvds_clk[0]'
+Slack : 0.352
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_0'
+Slack : 0.453
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_1'
+Slack : 0.453
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_2'
+Slack : 0.453
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_3'
+Slack : 0.453
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_4'
+Slack : 0.453
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_5'
+Slack : 0.453
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_6'
+Slack : 0.453
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_7'
+Slack : 0.453
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_8'
+Slack : 0.454
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_10'
+Slack : 0.457
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_9'
+Slack : 0.457
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_vco_clk'
+Slack : 0.461
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_vco_clk_1'
+Slack : 0.466
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_vco_clk_2'
+Slack : 0.466
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|altera_lvds_core20_iopll|loaden[0]'
+Slack : 0.770
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_phy_clk_0'
+Slack : 0.885
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_phy_clk_1'
+Slack : 0.885
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_phy_clk_2'
+Slack : 0.885
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'rx_ref_clk'
+Slack : 1.396
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'tx_ref_clk'
+Slack : 1.482
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_core_usr_clk'
+Slack : 1.544
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|link_pll|outclk0'
+Slack : 1.648
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|link_pll|outclk0'
+Slack : 1.653
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_0'
+Slack : 1.824
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_1'
+Slack : 1.824
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_2'
+Slack : 1.824
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|tx_pma_clk'
+Slack : 1.830
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|tx_pma_clk'
+Slack : 1.830
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|tx_pma_clk'
+Slack : 1.830
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|tx_pma_clk'
+Slack : 1.830
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[0]|rx_pma_clk'
+Slack : 1.937
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[1]|rx_pma_clk'
+Slack : 1.937
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[2]|rx_pma_clk'
+Slack : 1.937
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[3]|rx_pma_clk'
+Slack : 1.937
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 1.939
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 1.939
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|tx_coreclkin'
+Slack : 1.939
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|tx_coreclkin'
+Slack : 1.939
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[0]|rx_coreclkin'
+Slack : 1.948
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[1]|rx_coreclkin'
+Slack : 1.948
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[2]|rx_coreclkin'
+Slack : 1.948
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[3]|rx_coreclkin'
+Slack : 1.948
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_core_cal_slave_clk'
+Slack : 2.922
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'eth_ref_clk'
+Slack : 3.648
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_core_ck_name_0'
+Slack : 3.663
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_ref_clock'
+Slack : 3.707
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width '~ALTERA_CLKUSR~'
+Slack : 3.895
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|outclock[2]'
+Slack : 3.935
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'sys_clk_100mhz'
+Slack : 4.646
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|avmmclk'
+Slack : 4.955
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|avmmclk'
+Slack : 4.955
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|avmmclk'
+Slack : 4.955
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|avmmclk'
+Slack : 4.955
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_dprio_clk'
+Slack : 15.950
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 16.494
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.292
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.431
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.456
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.494
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.658
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.665
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.673
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.729
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.758
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.855
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.859
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.868
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.879
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.881
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.927
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.946
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.951
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 1.298
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 1.586
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 2.069
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 2.072
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 3.203
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 3.361
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 4.659
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.299
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.405
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.425
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.517
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.532
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.604
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.615
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.628
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.675
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.696
+
+Type  : Fast 900mV -40C Model Setup 'i_system_bd|sys_ddr3_cntrl_core_usr_clk'
+Slack : 1.441
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Setup 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_1'
+Slack : 1.529
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Setup 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_0'
+Slack : 1.610
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Setup 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_2'
+Slack : 1.636
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Setup 'i_system_bd|ad9680_jesd204|link_pll|outclk0'
+Slack : 1.653
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Setup 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 1.830
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Setup 'i_system_bd|ad9144_jesd204|link_pll|outclk0'
+Slack : 1.915
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Setup 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|tx_coreclkin'
+Slack : 1.957
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Setup 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 1.968
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Setup 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|tx_coreclkin'
+Slack : 2.001
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Setup 'sys_clk_100mhz'
+Slack : 3.536
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Setup 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_core_ck_name_0'
+Slack : 3.571
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Setup 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|altera_lvds_core20_iopll|lvds_clk[0]'
+Slack : 4.853
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Setup 'i_system_bd|sys_ddr3_cntrl_core_cal_slave_clk'
+Slack : 5.289
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Setup '~ALTERA_CLKUSR~'
+Slack : 5.547
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Setup 'eth_ref_clk'
+Slack : 5.678
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Setup 'i_system_bd|sys_ddr3_cntrl_ref_clock'
+Slack : 6.704
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Setup 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|avmmclk'
+Slack : 7.340
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Setup 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|avmmclk'
+Slack : 7.408
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Setup 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|outclock[2]'
+Slack : 7.492
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Setup 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|avmmclk'
+Slack : 7.831
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Setup 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|avmmclk'
+Slack : 8.137
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Setup 'altera_reserved_tck'
+Slack : 14.736
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Setup 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_dprio_clk'
+Slack : 30.554
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Hold 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_core_ck_name_0'
+Slack : 0.010
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Hold 'i_system_bd|ad9144_jesd204|link_pll|outclk0'
+Slack : 0.011
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Hold 'sys_clk_100mhz'
+Slack : 0.011
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Hold 'i_system_bd|sys_ddr3_cntrl_core_usr_clk'
+Slack : 0.012
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Hold 'eth_ref_clk'
+Slack : 0.015
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Hold '~ALTERA_CLKUSR~'
+Slack : 0.016
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Hold 'altera_reserved_tck'
+Slack : 0.017
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Hold 'i_system_bd|ad9680_jesd204|link_pll|outclk0'
+Slack : 0.017
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Hold 'i_system_bd|sys_ddr3_cntrl_core_cal_slave_clk'
+Slack : 0.020
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Hold 'i_system_bd|sys_ddr3_cntrl_ref_clock'
+Slack : 0.026
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Hold 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|outclock[2]'
+Slack : 0.083
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Hold 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_1'
+Slack : 0.167
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Hold 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_2'
+Slack : 0.167
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Hold 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_dprio_clk'
+Slack : 0.328
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Hold 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_0'
+Slack : 0.350
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Hold 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|avmmclk'
+Slack : 0.369
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Hold 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|avmmclk'
+Slack : 0.420
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Hold 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|avmmclk'
+Slack : 0.608
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Hold 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|tx_coreclkin'
+Slack : 0.611
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Hold 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 0.673
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Hold 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|tx_coreclkin'
+Slack : 0.678
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Hold 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|avmmclk'
+Slack : 0.695
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Hold 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 0.697
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Hold 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|altera_lvds_core20_iopll|lvds_clk[0]'
+Slack : 0.828
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'i_system_bd|ad9680_jesd204|link_pll|outclk0'
+Slack : 2.085
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'i_system_bd|ad9144_jesd204|link_pll|outclk0'
+Slack : 2.850
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'i_system_bd|sys_ddr3_cntrl_core_cal_slave_clk'
+Slack : 4.449
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'eth_ref_clk'
+Slack : 5.841
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|outclock[2]'
+Slack : 5.927
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_core_ck_name_0'
+Slack : 6.149
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_dprio_clk'
+Slack : 6.165
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'sys_clk_100mhz'
+Slack : 6.693
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery '~ALTERA_CLKUSR~'
+Slack : 6.723
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'i_system_bd|sys_ddr3_cntrl_ref_clock'
+Slack : 7.069
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'altera_reserved_tck'
+Slack : 15.779
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|tx_pma_clk'
+Slack : 17.155
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[1]|rx_pma_clk'
+Slack : 17.162
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|tx_pma_clk'
+Slack : 17.407
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|tx_pma_clk'
+Slack : 17.513
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|tx_pma_clk'
+Slack : 17.561
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[3]|rx_pma_clk'
+Slack : 17.658
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[2]|rx_pma_clk'
+Slack : 17.846
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[0]|rx_pma_clk'
+Slack : 17.875
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'i_system_bd|sys_ddr3_cntrl_core_usr_clk'
+Slack : 18.386
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|tx_coreclkin'
+Slack : 48.599
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 48.811
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 48.811
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|tx_coreclkin'
+Slack : 48.921
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'eth_ref_clk'
+Slack : 0.128
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'sys_clk_100mhz'
+Slack : 0.141
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_core_ck_name_0'
+Slack : 0.144
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'i_system_bd|ad9680_jesd204|link_pll|outclk0'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'i_system_bd|sys_ddr3_cntrl_ref_clock'
+Slack : 0.159
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal '~ALTERA_CLKUSR~'
+Slack : 0.183
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'i_system_bd|ad9144_jesd204|link_pll|outclk0'
+Slack : 0.274
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'altera_reserved_tck'
+Slack : 0.409
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_dprio_clk'
+Slack : 0.468
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'i_system_bd|sys_ddr3_cntrl_core_cal_slave_clk'
+Slack : 1.363
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|outclock[2]'
+Slack : 1.435
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'i_system_bd|sys_ddr3_cntrl_core_usr_clk'
+Slack : 2.582
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[0]|rx_pma_clk'
+Slack : 10.535
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[2]|rx_pma_clk'
+Slack : 10.540
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[3]|rx_pma_clk'
+Slack : 10.664
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[1]|rx_pma_clk'
+Slack : 10.955
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|tx_pma_clk'
+Slack : 11.012
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|tx_pma_clk'
+Slack : 11.051
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|tx_pma_clk'
+Slack : 11.123
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|tx_pma_clk'
+Slack : 11.293
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|tx_coreclkin'
+Slack : 49.325
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 49.488
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|tx_coreclkin'
+Slack : 49.604
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 49.628
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'ddr3_dqs_p[2]_IN'
+Slack : 0.206
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'ddr3_dqs_p[3]_IN'
+Slack : 0.206
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'ddr3_dqs_p[6]_IN'
+Slack : 0.206
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'ddr3_dqs_p[7]_IN'
+Slack : 0.206
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'ddr3_dqs_p[0]_IN'
+Slack : 0.207
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'ddr3_dqs_p[1]_IN'
+Slack : 0.207
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'ddr3_dqs_p[4]_IN'
+Slack : 0.207
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'ddr3_dqs_p[5]_IN'
+Slack : 0.207
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|altera_lvds_core20_iopll|lvds_clk[0]'
+Slack : 0.357
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_vco_clk'
+Slack : 0.456
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_10'
+Slack : 0.456
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_8'
+Slack : 0.456
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_9'
+Slack : 0.456
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_0'
+Slack : 0.459
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_1'
+Slack : 0.459
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_2'
+Slack : 0.459
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_3'
+Slack : 0.459
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_4'
+Slack : 0.459
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_5'
+Slack : 0.459
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_6'
+Slack : 0.459
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_wf_clk_7'
+Slack : 0.459
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_vco_clk_1'
+Slack : 0.466
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_vco_clk_2'
+Slack : 0.466
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|altera_lvds_core20_iopll|loaden[0]'
+Slack : 0.767
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_phy_clk_0'
+Slack : 0.890
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_phy_clk_1'
+Slack : 0.891
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_phy_clk_2'
+Slack : 0.891
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'rx_ref_clk'
+Slack : 1.403
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'tx_ref_clk'
+Slack : 1.474
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_core_usr_clk'
+Slack : 1.546
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|link_pll|outclk0'
+Slack : 1.673
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|link_pll|outclk0'
+Slack : 1.677
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_0'
+Slack : 1.829
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_1'
+Slack : 1.830
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_phy_clk_l_2'
+Slack : 1.830
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|tx_pma_clk'
+Slack : 1.847
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|tx_pma_clk'
+Slack : 1.847
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|tx_pma_clk'
+Slack : 1.847
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|tx_pma_clk'
+Slack : 1.847
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[0]|rx_pma_clk'
+Slack : 1.937
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[1]|rx_pma_clk'
+Slack : 1.937
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[2]|rx_pma_clk'
+Slack : 1.937
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[3]|rx_pma_clk'
+Slack : 1.937
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 1.938
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 1.938
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|tx_coreclkin'
+Slack : 1.938
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|tx_coreclkin'
+Slack : 1.938
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[0]|rx_coreclkin'
+Slack : 1.949
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[1]|rx_coreclkin'
+Slack : 1.949
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[2]|rx_coreclkin'
+Slack : 1.949
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9680_jesd204|g_xcvr_native_insts[3]|rx_coreclkin'
+Slack : 1.949
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_core_cal_slave_clk'
+Slack : 2.981
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_core_ck_name_0'
+Slack : 3.658
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'eth_ref_clk'
+Slack : 3.689
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ddr3_cntrl_ref_clock'
+Slack : 3.738
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width '~ALTERA_CLKUSR~'
+Slack : 3.884
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core|arch_inst|internal_pll.pll_inst|outclock[2]'
+Slack : 3.982
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'sys_clk_100mhz'
+Slack : 4.676
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[0]|avmmclk'
+Slack : 4.956
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[1]|avmmclk'
+Slack : 4.956
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[2]|avmmclk'
+Slack : 4.956
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|ad9144_jesd204|g_xcvr_native_insts[3]|avmmclk'
+Slack : 4.956
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'i_system_bd|sys_ethernet|i_lvdsio_rx_0|core_dprio_clk'
+Slack : 15.951
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 16.513
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.484
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.592
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.596
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.657
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.765
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.765
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.776
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.794
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.816
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.874
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.900
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.922
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.938
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.960
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.983
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 7.026
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 7.029
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 1.622
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 1.844
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 2.282
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 2.286
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 3.421
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 3.952
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 4.987
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.453
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.561
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.566
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.623
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.660
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.705
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.718
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.733
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.750
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.787
+
+------------------------------------------------------------
+Info: see the "DDR report" for DDR timing results
+------------------------------------------------------------
+------------------------------------------------------------

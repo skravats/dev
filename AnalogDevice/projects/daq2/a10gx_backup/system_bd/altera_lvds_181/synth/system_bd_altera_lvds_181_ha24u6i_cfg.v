@@ -1,0 +1,5 @@
+config system_bd_altera_lvds_181_ha24u6i_cfg;
+		design system_bd_altera_lvds_181_ha24u6i;
+		instance system_bd_altera_lvds_181_ha24u6i.core use system_bd_altera_lvds_core20_181.system_bd_altera_lvds_core20_181_tfp6o7q;
+endconfig
+

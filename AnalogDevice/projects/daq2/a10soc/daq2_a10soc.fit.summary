@@ -1,0 +1,17 @@
+Fitter Status : Successful - Mon Jul 15 14:07:44 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : daq2_a10soc
+Top-level Entity Name : system_top
+Family : Arria 10
+Device : 10AS066N3F40E2SG
+Timing Models : Final
+Logic utilization (in ALMs) : 22,168 / 251,680 ( 9 % )
+Total registers : 47417
+Total pins : 300 / 812 ( 37 % )
+Total virtual pins : 0
+Total block memory bits : 9,742,288 / 43,642,880 ( 22 % )
+Total RAM Blocks : 603 / 2,131 ( 28 % )
+Total DSP Blocks : 16 / 1,687 ( < 1 % )
+Total HSSI RX channels : 4 / 48 ( 8 % )
+Total HSSI TX channels : 4 / 48 ( 8 % )
+Total PLLs : 12 / 96 ( 13 % )

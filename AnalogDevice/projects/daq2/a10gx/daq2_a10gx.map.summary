@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Jul 15 12:37:30 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : daq2_a10gx
+Top-level Entity Name : system_top
+Family : Arria 10
+Logic utilization (in ALMs) : N/A
+Total registers : 79236
+Total pins : 250
+Total virtual pins : 0
+Total block memory bits : 12,917,832
+Total DSP Blocks : 19
+Total HSSI RX channels : 4
+Total HSSI TX channels : 4
+Total PLLs : 10

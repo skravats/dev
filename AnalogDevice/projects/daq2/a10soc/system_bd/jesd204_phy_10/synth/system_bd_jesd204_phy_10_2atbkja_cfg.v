@@ -1,0 +1,11 @@
+config system_bd_jesd204_phy_10_2atbkja_cfg;
+		design system_bd_jesd204_phy_10_2atbkja;
+		instance system_bd_jesd204_phy_10_2atbkja.native_phy use system_bd_altera_xcvr_native_a10_181.system_bd_altera_xcvr_native_a10_181_v6p7utq;
+		instance system_bd_jesd204_phy_10_2atbkja.phy_glue use system_bd_jesd204_phy_glue_10.jesd204_glue;
+		instance system_bd_jesd204_phy_10_2atbkja.soft_pcs_0 use system_bd_jesd204_soft_pcs_rx_10.jesd204_soft_pcs_rx;
+		instance system_bd_jesd204_phy_10_2atbkja.soft_pcs_1 use system_bd_jesd204_soft_pcs_rx_10.jesd204_soft_pcs_rx;
+		instance system_bd_jesd204_phy_10_2atbkja.soft_pcs_2 use system_bd_jesd204_soft_pcs_rx_10.jesd204_soft_pcs_rx;
+		instance system_bd_jesd204_phy_10_2atbkja.soft_pcs_3 use system_bd_jesd204_soft_pcs_rx_10.jesd204_soft_pcs_rx;
+		instance system_bd_jesd204_phy_10_2atbkja.rst_controller use system_bd_altera_reset_controller_181.altera_reset_controller;
+endconfig
+

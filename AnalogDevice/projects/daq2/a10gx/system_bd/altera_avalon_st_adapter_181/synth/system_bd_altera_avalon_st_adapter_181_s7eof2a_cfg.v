@@ -1,0 +1,5 @@
+config system_bd_altera_avalon_st_adapter_181_s7eof2a_cfg;
+		design system_bd_altera_avalon_st_adapter_181_s7eof2a;
+		instance system_bd_altera_avalon_st_adapter_181_s7eof2a.data_format_adapter_0 use system_bd_data_format_adapter_181.system_bd_data_format_adapter_181_w5aogcy;
+endconfig
+

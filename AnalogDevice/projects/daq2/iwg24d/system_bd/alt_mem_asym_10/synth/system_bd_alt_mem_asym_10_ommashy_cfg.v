@@ -1,0 +1,5 @@
+config system_bd_alt_mem_asym_10_ommashy_cfg;
+		design system_bd_alt_mem_asym_10_ommashy;
+		instance system_bd_alt_mem_asym_10_ommashy.alt_mem use system_bd_ram_2port_181.system_bd_ram_2port_181_3tckbay;
+endconfig
+
