@@ -1,0 +1,19 @@
+	component mcu_subsystem_util_dacfifo_0 is
+		port (
+			dma_clk       : in  std_logic                      := 'X';             -- clk
+			dma_rst       : in  std_logic                      := 'X';             -- reset
+			dma_valid     : in  std_logic                      := 'X';             -- valid
+			dma_data      : in  std_logic_vector(127 downto 0) := (others => 'X'); -- data
+			dma_ready     : out std_logic;                                         -- ready
+			dma_xfer_req  : in  std_logic                      := 'X';             -- xfer_req
+			dma_xfer_last : in  std_logic                      := 'X';             -- last
+			dac_clk       : in  std_logic                      := 'X';             -- clk
+			dac_rst       : in  std_logic                      := 'X';             -- reset
+			dac_valid     : in  std_logic                      := 'X';             -- valid
+			dac_data      : out std_logic_vector(127 downto 0);                    -- data
+			dac_xfer_out  : out std_logic;                                         -- xfer_req
+			dac_dunf      : out std_logic;                                         -- unf
+			bypass        : in  std_logic                      := 'X'              -- bypass
+		);
+	end component mcu_subsystem_util_dacfifo_0;
+

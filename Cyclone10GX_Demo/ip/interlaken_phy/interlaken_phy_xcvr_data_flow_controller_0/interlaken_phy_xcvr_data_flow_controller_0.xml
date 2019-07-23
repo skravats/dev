@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2019.07.23.00:10:55"
+ outputDirectory="C:/Developer/fpga/ArrowESC/Cyclone10GX_Demo/ip/interlaken_phy/interlaken_phy_xcvr_data_flow_controller_0/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Cyclone 10 GX"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="10CX220YF780I5G"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="5"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_AVM_M0_ADDRESS_MAP"
+     type="AddressMap"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_AVM_M0_ADDRESS_WIDTH"
+     type="AddressWidthType"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_TX_CORECLKIN_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_TX_CORECLKIN_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_TX_CORECLKIN_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_RX_CORECLKIN_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_RX_CORECLKIN_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_RX_CORECLKIN_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="csr_s0" kind="avalon" start="0">
+   <property name="addressAlignment" value="DYNAMIC" />
+   <property name="addressGroup" value="0" />
+   <property name="addressSpan" value="1024" />
+   <property name="addressUnits" value="WORDS" />
+   <property name="alwaysBurstMaxBurst" value="false" />
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="rst" />
+   <property name="bitsPerSymbol" value="8" />
+   <property name="bridgedAddressOffset" value="0" />
+   <property name="bridgesToMaster" value="" />
+   <property name="burstOnBurstBoundariesOnly" value="false" />
+   <property name="burstcountUnits" value="WORDS" />
+   <property name="constantBurstBehavior" value="false" />
+   <property name="explicitAddressSpan" value="0" />
+   <property name="holdTime" value="0" />
+   <property name="interleaveBursts" value="false" />
+   <property name="isBigEndian" value="false" />
+   <property name="isFlash" value="false" />
+   <property name="isMemoryDevice" value="false" />
+   <property name="isNonVolatileStorage" value="false" />
+   <property name="linewrapBursts" value="false" />
+   <property name="maximumPendingReadTransactions" value="1" />
+   <property name="maximumPendingWriteTransactions" value="0" />
+   <property name="minimumReadLatency" value="1" />
+   <property name="minimumResponseLatency" value="1" />
+   <property name="minimumUninterruptedRunLength" value="1" />
+   <property name="prSafe" value="false" />
+   <property name="printableDevice" value="false" />
+   <property name="readLatency" value="0" />
+   <property name="readWaitStates" value="1" />
+   <property name="readWaitTime" value="1" />
+   <property name="registerIncomingSignals" value="false" />
+   <property name="registerOutgoingSignals" value="false" />
+   <property name="setupTime" value="0" />
+   <property name="timingUnits" value="Cycles" />
+   <property name="transparentBridge" value="false" />
+   <property name="waitrequestAllowance" value="0" />
+   <property name="wellBehavedWaitrequest" value="false" />
+   <property name="writeLatency" value="0" />
+   <property name="writeWaitStates" value="0" />
+   <property name="writeWaitTime" value="0" />
+   <port name="csr_s0_address" direction="input" role="address" width="8" />
+   <port name="csr_s0_read" direction="input" role="read" width="1" />
+   <port name="csr_s0_readdata" direction="output" role="readdata" width="32" />
+   <port
+       name="csr_s0_readdatavalid"
+       direction="output"
+       role="readdatavalid"
+       width="1" />
+   <port name="csr_s0_write" direction="input" role="write" width="1" />
+   <port name="csr_s0_writedata" direction="input" role="writedata" width="32" />
+   <port
+       name="csr_s0_waitrequest"
+       direction="output"
+       role="waitrequest"
+       width="1" />
+  </interface>
+  <interface name="rx_parallel_data" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="rx_parallel_data"
+       direction="input"
+       role="rx_parallel_data"
+       width="64" />
+  </interface>
+  <interface name="tx_parallel_data" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="tx_parallel_data"
+       direction="output"
+       role="tx_parallel_data"
+       width="64" />
+  </interface>
+  <interface name="rx_enh_fifo_full" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="rx_enh_fifo_full"
+       direction="input"
+       role="rx_enh_fifo_full"
+       width="1" />
+  </interface>
+  <interface name="rx_enh_fifo_pfull" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="rx_enh_fifo_pfull"
+       direction="input"
+       role="rx_enh_fifo_pfull"
+       width="1" />
+  </interface>
+  <interface name="rx_enh_fifo_empty" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="rx_enh_fifo_empty"
+       direction="input"
+       role="rx_enh_fifo_empty"
+       width="1" />
+  </interface>
+  <interface name="rx_enh_fifo_pempty" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="rx_enh_fifo_pempty"
+       direction="input"
+       role="rx_enh_fifo_pempty"
+       width="1" />
+  </interface>
+  <interface name="tx_enh_fifo_pempty" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="tx_enh_fifo_pempty"
+       direction="input"
+       role="tx_enh_fifo_pempty"
+       width="1" />
+  </interface>
+  <interface name="tx_enh_fifo_empty" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="tx_enh_fifo_empty"
+       direction="input"
+       role="tx_enh_fifo_empty"
+       width="1" />
+  </interface>
+  <interface name="tx_enh_fifo_pfull" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="tx_enh_fifo_pfull"
+       direction="input"
+       role="tx_enh_fifo_pfull"
+       width="1" />
+  </interface>
+  <interface name="tx_enh_fifo_full" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="tx_enh_fifo_full"
+       direction="input"
+       role="tx_enh_fifo_full"
+       width="1" />
+  </interface>
+  <interface name="avm_m0" kind="avalon" start="1">
+   <property name="adaptsTo" value="" />
+   <property name="addressGroup" value="0" />
+   <property name="addressUnits" value="SYMBOLS" />
+   <property name="alwaysBurstMaxBurst" value="false" />
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="rst" />
+   <property name="bitsPerSymbol" value="8" />
+   <property name="burstOnBurstBoundariesOnly" value="false" />
+   <property name="burstcountUnits" value="WORDS" />
+   <property name="constantBurstBehavior" value="false" />
+   <property name="dBSBigEndian" value="false" />
+   <property name="doStreamReads" value="false" />
+   <property name="doStreamWrites" value="false" />
+   <property name="holdTime" value="0" />
+   <property name="interleaveBursts" value="false" />
+   <property name="isAsynchronous" value="false" />
+   <property name="isBigEndian" value="false" />
+   <property name="isReadable" value="false" />
+   <property name="isWriteable" value="false" />
+   <property name="linewrapBursts" value="false" />
+   <property name="maxAddressWidth" value="32" />
+   <property name="maximumPendingReadTransactions" value="0" />
+   <property name="maximumPendingWriteTransactions" value="0" />
+   <property name="minimumReadLatency" value="1" />
+   <property name="minimumResponseLatency" value="1" />
+   <property name="prSafe" value="false" />
+   <property name="readLatency" value="0" />
+   <property name="readWaitTime" value="1" />
+   <property name="registerIncomingSignals" value="false" />
+   <property name="registerOutgoingSignals" value="false" />
+   <property name="setupTime" value="0" />
+   <property name="timingUnits" value="Cycles" />
+   <property name="waitrequestAllowance" value="0" />
+   <property name="writeWaitTime" value="0" />
+   <port name="avm_m0_address" direction="output" role="address" width="32" />
+   <port name="avm_m0_read" direction="output" role="read" width="1" />
+   <port
+       name="avm_m0_waitrequest"
+       direction="input"
+       role="waitrequest"
+       width="1" />
+   <port name="avm_m0_readdata" direction="input" role="readdata" width="32" />
+   <port
+       name="avm_m0_readdatavalid"
+       direction="input"
+       role="readdatavalid"
+       width="1" />
+   <port name="avm_m0_write" direction="output" role="write" width="1" />
+   <port
+       name="avm_m0_writedata"
+       direction="output"
+       role="writedata"
+       width="32" />
+  </interface>
+  <interface name="tx_control" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="tx_control" direction="output" role="tx_control" width="3" />
+  </interface>
+  <interface name="rx_control" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="rx_control" direction="input" role="rx_control" width="10" />
+  </interface>
+  <interface name="rst" kind="reset" start="0">
+   <property name="associatedClock" value="" />
+   <property name="synchronousEdges" value="NONE" />
+   <port name="reset" direction="input" role="reset" width="1" />
+  </interface>
+  <interface name="clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clock" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="tx_ready" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="tx_ready" direction="input" role="tx_ready" width="1" />
+  </interface>
+  <interface name="rx_ready" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="rx_ready" direction="input" role="rx_ready" width="1" />
+  </interface>
+  <interface name="irq_rx" kind="interrupt" start="0">
+   <property name="associatedAddressablePoint" value="" />
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="rst" />
+   <property name="bridgedReceiverOffset" value="0" />
+   <property name="bridgesToReceiver" value="" />
+   <property name="irqScheme" value="NONE" />
+   <port name="rx_irq" direction="output" role="irq" width="1" />
+  </interface>
+  <interface name="tx_enh_data_valid" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="tx_enh_data_valid"
+       direction="output"
+       role="tx_enh_data_valid"
+       width="1" />
+  </interface>
+  <interface name="irq_tx" kind="interrupt" start="0">
+   <property name="associatedAddressablePoint" value="" />
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="rst" />
+   <property name="bridgedReceiverOffset" value="0" />
+   <property name="bridgesToReceiver" value="" />
+   <property name="irqScheme" value="NONE" />
+   <port name="tx_irq" direction="output" role="irq" width="1" />
+  </interface>
+  <interface name="tx_coreclkin" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="tx_coreclkin" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="rx_coreclkin" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="rx_coreclkin" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="rx_enh_fifo_rd_en" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="rx_enh_fifo_rd_en"
+       direction="output"
+       role="rx_enh_fifo_rd_en"
+       width="1" />
+  </interface>
+  <interface name="tx_err_ins" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="tx_err_ins" direction="output" role="tx_err_ins" width="1" />
+  </interface>
+  <interface name="reset_phy" kind="reset" start="1">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedDirectReset" value="" />
+   <property name="associatedResetSinks" value="none" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="reset_phy" direction="output" role="reset" width="1" />
+  </interface>
+  <interface name="pll_locked_out" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="pll_locked_out" direction="output" role="pll_locked" width="1" />
+  </interface>
+  <interface name="pll_powerdown_input" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="pll_powerdown_input"
+       direction="input"
+       role="pll_powerdown"
+       width="1" />
+  </interface>
+  <interface name="atx_pll_powerdown" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="atx_pll_powerdown"
+       direction="output"
+       role="pll_powerdown"
+       width="1" />
+  </interface>
+  <interface name="atx_pll_locked" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="atx_pll_locked" direction="input" role="pll_locked" width="1" />
+  </interface>
+  <interface name="rx_set_locktodata" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="rx_set_locktodata"
+       direction="output"
+       role="rx_set_locktodata"
+       width="1" />
+  </interface>
+  <interface name="rx_set_locktoref" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="rx_set_locktoref"
+       direction="output"
+       role="rx_set_locktoref"
+       width="1" />
+  </interface>
+  <interface name="tx_enh_frame_burst_en" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="tx_enh_frame_burst_en"
+       direction="output"
+       role="tx_enh_frame_burst_en"
+       width="1" />
+  </interface>
+  <interface name="tx_enh_frame_diag_status" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="tx_enh_frame_diag_status"
+       direction="output"
+       role="tx_enh_frame_diag_status"
+       width="2" />
+  </interface>
+  <interface name="unused_tx_control" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="unused_tx_control"
+       direction="output"
+       role="unused_tx_control"
+       width="14" />
+  </interface>
+  <interface name="unused_tx_parallel_data" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="unused_tx_parallel_data"
+       direction="output"
+       role="unused_tx_parallel_data"
+       width="64" />
+  </interface>
+  <interface name="rx_seriallpbken" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="rx_seriallpbken"
+       direction="output"
+       role="rx_seriallpbken"
+       width="1" />
+  </interface>
+  <interface name="pll_select" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="pll_select" direction="output" role="pll_select" width="1" />
+  </interface>
+  <interface name="rx_enh_frame_diag_status" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="rx_enh_frame_diag_status"
+       direction="input"
+       role="rx_enh_frame_diag_status"
+       width="2" />
+  </interface>
+ </perimeter>
+ <entity
+   kind="interlaken_phy_xcvr_data_flow_controller_0"
+   version="1.0"
+   name="interlaken_phy_xcvr_data_flow_controller_0">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone 10 GX" />
+  <parameter name="AUTO_AVM_M0_ADDRESS_MAP" value="" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="5" />
+  <parameter name="AUTO_RX_CORECLKIN_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_TX_CORECLKIN_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_TX_CORECLKIN_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_DEVICE" value="10CX220YF780I5G" />
+  <parameter name="AUTO_RX_CORECLKIN_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_RX_CORECLKIN_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_TX_CORECLKIN_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_AVM_M0_ADDRESS_WIDTH" value="-1" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
+  <generatedFiles>
+   <file
+       path="C:\Developer\fpga\ArrowESC\Cyclone10GX_Demo\ip\interlaken_phy\interlaken_phy_xcvr_data_flow_controller_0\synth\interlaken_phy_xcvr_data_flow_controller_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Developer\fpga\ArrowESC\Cyclone10GX_Demo\ip\interlaken_phy\interlaken_phy_xcvr_data_flow_controller_0\synth\interlaken_phy_xcvr_data_flow_controller_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/Developer/fpga/ArrowESC/Cyclone10GX_Demo/ip/interlaken_phy/interlaken_phy_xcvr_data_flow_controller_0.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="C:/Developer/fpga/ArrowESC/Cyclone10GX_Demo/xcvr_data_flow_controller_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="interlaken_phy_xcvr_data_flow_controller_0">"Generating: interlaken_phy_xcvr_data_flow_controller_0"</message>
+   <message level="Info" culprit="interlaken_phy_xcvr_data_flow_controller_0">"Generating: xcvr_data_flow_controller"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="xcvr_data_flow_controller"
+   version="1.0"
+   name="xcvr_data_flow_controller">
+  <generatedFiles>
+   <file
+       path="C:\Developer\fpga\ArrowESC\Cyclone10GX_Demo\ip\interlaken_phy\interlaken_phy_xcvr_data_flow_controller_0\xcvr_data_flow_controller_10\synth\xcvr_data_flow_controller.v"
+       attributes="TOP_LEVEL_FILE" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Developer\fpga\ArrowESC\Cyclone10GX_Demo\ip\interlaken_phy\interlaken_phy_xcvr_data_flow_controller_0\xcvr_data_flow_controller_10\synth\xcvr_data_flow_controller.v"
+       attributes="TOP_LEVEL_FILE" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/Developer/fpga/ArrowESC/Cyclone10GX_Demo/xcvr_data_flow_controller_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="interlaken_phy_xcvr_data_flow_controller_0"
+     as="xcvr_data_flow_controller_0" />
+  <messages>
+   <message level="Info" culprit="interlaken_phy_xcvr_data_flow_controller_0">"Generating: xcvr_data_flow_controller"</message>
+  </messages>
+ </entity>
+</deploy>

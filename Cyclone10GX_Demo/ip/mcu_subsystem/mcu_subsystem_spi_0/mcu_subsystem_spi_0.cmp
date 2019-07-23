@@ -1,0 +1,18 @@
+	component mcu_subsystem_spi_0 is
+		port (
+			clk           : in  std_logic                     := 'X';             -- clk
+			reset_n       : in  std_logic                     := 'X';             -- reset_n
+			data_from_cpu : in  std_logic_vector(15 downto 0) := (others => 'X'); -- writedata
+			data_to_cpu   : out std_logic_vector(15 downto 0);                    -- readdata
+			mem_addr      : in  std_logic_vector(2 downto 0)  := (others => 'X'); -- address
+			read_n        : in  std_logic                     := 'X';             -- read_n
+			spi_select    : in  std_logic                     := 'X';             -- chipselect
+			write_n       : in  std_logic                     := 'X';             -- write_n
+			irq           : out std_logic;                                        -- irq
+			MISO          : in  std_logic                     := 'X';             -- MISO
+			MOSI          : out std_logic;                                        -- MOSI
+			SCLK          : out std_logic;                                        -- SCLK
+			SS_n          : out std_logic_vector(7 downto 0)                      -- SS_n
+		);
+	end component mcu_subsystem_spi_0;
+

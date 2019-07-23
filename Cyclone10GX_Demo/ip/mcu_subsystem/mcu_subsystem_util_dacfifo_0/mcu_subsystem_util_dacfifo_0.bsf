@@ -1,0 +1,192 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 288 624)
+	(text "mcu_subsystem_util_dacfifo_0" (rect 52 -1 179 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 608 20 620)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "dma_clk" (rect 0 0 34 12)(font "Arial" (font_size 8)))
+		(text "dma_clk" (rect 4 61 46 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 112 72)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "dma_rst" (rect 0 0 34 12)(font "Arial" (font_size 8)))
+		(text "dma_rst" (rect 4 101 46 112)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 112 112)(line_width 1))
+	)
+	(port
+		(pt 0 152)
+		(input)
+		(text "dma_valid" (rect 0 0 41 12)(font "Arial" (font_size 8)))
+		(text "dma_valid" (rect 4 141 58 152)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 112 152)(line_width 1))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "dma_data[127..0]" (rect 0 0 68 12)(font "Arial" (font_size 8)))
+		(text "dma_data[127..0]" (rect 4 181 100 192)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 112 192)(line_width 3))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "dma_xfer_req" (rect 0 0 59 12)(font "Arial" (font_size 8)))
+		(text "dma_xfer_req" (rect 4 261 76 272)(font "Arial" (font_size 8)))
+		(line (pt 0 272)(pt 112 272)(line_width 1))
+	)
+	(port
+		(pt 0 312)
+		(input)
+		(text "dma_xfer_last" (rect 0 0 59 12)(font "Arial" (font_size 8)))
+		(text "dma_xfer_last" (rect 4 301 82 312)(font "Arial" (font_size 8)))
+		(line (pt 0 312)(pt 112 312)(line_width 1))
+	)
+	(port
+		(pt 0 352)
+		(input)
+		(text "dac_clk" (rect 0 0 30 12)(font "Arial" (font_size 8)))
+		(text "dac_clk" (rect 4 341 46 352)(font "Arial" (font_size 8)))
+		(line (pt 0 352)(pt 112 352)(line_width 1))
+	)
+	(port
+		(pt 0 392)
+		(input)
+		(text "dac_rst" (rect 0 0 30 12)(font "Arial" (font_size 8)))
+		(text "dac_rst" (rect 4 381 46 392)(font "Arial" (font_size 8)))
+		(line (pt 0 392)(pt 112 392)(line_width 1))
+	)
+	(port
+		(pt 0 432)
+		(input)
+		(text "dac_valid" (rect 0 0 37 12)(font "Arial" (font_size 8)))
+		(text "dac_valid" (rect 4 421 58 432)(font "Arial" (font_size 8)))
+		(line (pt 0 432)(pt 112 432)(line_width 1))
+	)
+	(port
+		(pt 0 592)
+		(input)
+		(text "bypass" (rect 0 0 29 12)(font "Arial" (font_size 8)))
+		(text "bypass" (rect 4 581 40 592)(font "Arial" (font_size 8)))
+		(line (pt 0 592)(pt 112 592)(line_width 1))
+	)
+	(port
+		(pt 0 232)
+		(output)
+		(text "dma_ready" (rect 0 0 47 12)(font "Arial" (font_size 8)))
+		(text "dma_ready" (rect 4 221 58 232)(font "Arial" (font_size 8)))
+		(line (pt 0 232)(pt 112 232)(line_width 1))
+	)
+	(port
+		(pt 0 472)
+		(output)
+		(text "dac_data[127..0]" (rect 0 0 64 12)(font "Arial" (font_size 8)))
+		(text "dac_data[127..0]" (rect 4 461 100 472)(font "Arial" (font_size 8)))
+		(line (pt 0 472)(pt 112 472)(line_width 3))
+	)
+	(port
+		(pt 0 512)
+		(output)
+		(text "dac_xfer_out" (rect 0 0 54 12)(font "Arial" (font_size 8)))
+		(text "dac_xfer_out" (rect 4 501 76 512)(font "Arial" (font_size 8)))
+		(line (pt 0 512)(pt 112 512)(line_width 1))
+	)
+	(port
+		(pt 0 552)
+		(output)
+		(text "dac_dunf" (rect 0 0 37 12)(font "Arial" (font_size 8)))
+		(text "dac_dunf" (rect 4 541 52 552)(font "Arial" (font_size 8)))
+		(line (pt 0 552)(pt 112 552)(line_width 1))
+	)
+	(drawing
+		(text "if_dma_clk" (rect 48 43 156 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 117 67 252 144)(font "Arial" (color 0 0 0)))
+		(text "if_dma_rst" (rect 48 83 156 179)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset" (rect 117 107 264 224)(font "Arial" (color 0 0 0)))
+		(text "if_dma_valid" (rect 38 123 148 259)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "valid" (rect 117 147 264 304)(font "Arial" (color 0 0 0)))
+		(text "if_dma_data" (rect 39 163 144 339)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "data" (rect 117 187 258 384)(font "Arial" (color 0 0 0)))
+		(text "if_dma_ready" (rect 32 203 136 419)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "ready" (rect 117 227 264 464)(font "Arial" (color 0 0 0)))
+		(text "if_dma_xfer_req" (rect 14 243 118 499)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "xfer_req" (rect 117 267 282 544)(font "Arial" (color 0 0 0)))
+		(text "if_dma_xfer_last" (rect 12 283 120 579)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "last" (rect 117 307 258 624)(font "Arial" (color 0 0 0)))
+		(text "if_dac_clk" (rect 53 323 166 659)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 117 347 252 704)(font "Arial" (color 0 0 0)))
+		(text "if_dac_rst" (rect 53 363 166 739)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset" (rect 117 387 264 784)(font "Arial" (color 0 0 0)))
+		(text "if_dac_valid" (rect 43 403 158 819)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "valid" (rect 117 427 264 864)(font "Arial" (color 0 0 0)))
+		(text "if_dac_data" (rect 44 443 154 899)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "data" (rect 117 467 258 944)(font "Arial" (color 0 0 0)))
+		(text "if_dac_xfer_out" (rect 20 483 130 979)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "xfer_req" (rect 117 507 282 1024)(font "Arial" (color 0 0 0)))
+		(text "if_dac_dunf" (rect 43 523 152 1059)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "unf" (rect 117 547 252 1104)(font "Arial" (color 0 0 0)))
+		(text "if_bypass" (rect 56 563 166 1139)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "bypass" (rect 117 587 270 1184)(font "Arial" (color 0 0 0)))
+		(text " mcu_subsystem_util_dacfifo_0 " (rect 149 608 478 1226)(font "Arial" ))
+		(line (pt 112 32)(pt 176 32)(line_width 1))
+		(line (pt 176 32)(pt 176 608)(line_width 1))
+		(line (pt 112 608)(pt 176 608)(line_width 1))
+		(line (pt 112 32)(pt 112 608)(line_width 1))
+		(line (pt 113 52)(pt 113 76)(line_width 1))
+		(line (pt 114 52)(pt 114 76)(line_width 1))
+		(line (pt 113 92)(pt 113 116)(line_width 1))
+		(line (pt 114 92)(pt 114 116)(line_width 1))
+		(line (pt 113 132)(pt 113 156)(line_width 1))
+		(line (pt 114 132)(pt 114 156)(line_width 1))
+		(line (pt 113 172)(pt 113 196)(line_width 1))
+		(line (pt 114 172)(pt 114 196)(line_width 1))
+		(line (pt 113 212)(pt 113 236)(line_width 1))
+		(line (pt 114 212)(pt 114 236)(line_width 1))
+		(line (pt 113 252)(pt 113 276)(line_width 1))
+		(line (pt 114 252)(pt 114 276)(line_width 1))
+		(line (pt 113 292)(pt 113 316)(line_width 1))
+		(line (pt 114 292)(pt 114 316)(line_width 1))
+		(line (pt 113 332)(pt 113 356)(line_width 1))
+		(line (pt 114 332)(pt 114 356)(line_width 1))
+		(line (pt 113 372)(pt 113 396)(line_width 1))
+		(line (pt 114 372)(pt 114 396)(line_width 1))
+		(line (pt 113 412)(pt 113 436)(line_width 1))
+		(line (pt 114 412)(pt 114 436)(line_width 1))
+		(line (pt 113 452)(pt 113 476)(line_width 1))
+		(line (pt 114 452)(pt 114 476)(line_width 1))
+		(line (pt 113 492)(pt 113 516)(line_width 1))
+		(line (pt 114 492)(pt 114 516)(line_width 1))
+		(line (pt 113 532)(pt 113 556)(line_width 1))
+		(line (pt 114 532)(pt 114 556)(line_width 1))
+		(line (pt 113 572)(pt 113 596)(line_width 1))
+		(line (pt 114 572)(pt 114 596)(line_width 1))
+		(line (pt 0 0)(pt 288 0)(line_width 1))
+		(line (pt 288 0)(pt 288 624)(line_width 1))
+		(line (pt 0 624)(pt 288 624)(line_width 1))
+		(line (pt 0 0)(pt 0 624)(line_width 1))
+	)
+)

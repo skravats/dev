@@ -1,0 +1,159 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 336 504)
+	(text "mcu_subsystem_util_adcfifo_0" (rect 76 -1 203 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 488 20 500)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "adc_clk" (rect 0 0 30 12)(font "Arial" (font_size 8)))
+		(text "adc_clk" (rect 4 61 46 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 128 72)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "adc_rst" (rect 0 0 30 12)(font "Arial" (font_size 8)))
+		(text "adc_rst" (rect 4 101 46 112)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 128 112)(line_width 1))
+	)
+	(port
+		(pt 0 152)
+		(input)
+		(text "adc_wr" (rect 0 0 29 12)(font "Arial" (font_size 8)))
+		(text "adc_wr" (rect 4 141 40 152)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 128 152)(line_width 1))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "adc_wdata[127..0]" (rect 0 0 70 12)(font "Arial" (font_size 8)))
+		(text "adc_wdata[127..0]" (rect 4 181 106 192)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 128 192)(line_width 3))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "dma_clk" (rect 0 0 34 12)(font "Arial" (font_size 8)))
+		(text "dma_clk" (rect 4 261 46 272)(font "Arial" (font_size 8)))
+		(line (pt 0 272)(pt 128 272)(line_width 1))
+	)
+	(port
+		(pt 0 392)
+		(input)
+		(text "dma_wready" (rect 0 0 53 12)(font "Arial" (font_size 8)))
+		(text "dma_wready" (rect 4 381 64 392)(font "Arial" (font_size 8)))
+		(line (pt 0 392)(pt 128 392)(line_width 1))
+	)
+	(port
+		(pt 0 432)
+		(input)
+		(text "dma_xfer_req" (rect 0 0 59 12)(font "Arial" (font_size 8)))
+		(text "dma_xfer_req" (rect 4 421 76 432)(font "Arial" (font_size 8)))
+		(line (pt 0 432)(pt 128 432)(line_width 1))
+	)
+	(port
+		(pt 0 232)
+		(output)
+		(text "adc_wovf" (rect 0 0 40 12)(font "Arial" (font_size 8)))
+		(text "adc_wovf" (rect 4 221 52 232)(font "Arial" (font_size 8)))
+		(line (pt 0 232)(pt 128 232)(line_width 1))
+	)
+	(port
+		(pt 0 312)
+		(output)
+		(text "dma_wr" (rect 0 0 33 12)(font "Arial" (font_size 8)))
+		(text "dma_wr" (rect 4 301 40 312)(font "Arial" (font_size 8)))
+		(line (pt 0 312)(pt 128 312)(line_width 1))
+	)
+	(port
+		(pt 0 352)
+		(output)
+		(text "dma_wdata[127..0]" (rect 0 0 74 12)(font "Arial" (font_size 8)))
+		(text "dma_wdata[127..0]" (rect 4 341 106 352)(font "Arial" (font_size 8)))
+		(line (pt 0 352)(pt 128 352)(line_width 3))
+	)
+	(port
+		(pt 0 472)
+		(output)
+		(text "dma_xfer_status[3..0]" (rect 0 0 89 12)(font "Arial" (font_size 8)))
+		(text "dma_xfer_status[3..0]" (rect 4 461 130 472)(font "Arial" (font_size 8)))
+		(line (pt 0 472)(pt 128 472)(line_width 3))
+	)
+	(drawing
+		(text "if_adc_clk" (rect 69 43 198 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 133 67 284 144)(font "Arial" (color 0 0 0)))
+		(text "if_adc_rst" (rect 69 83 198 179)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset" (rect 133 107 296 224)(font "Arial" (color 0 0 0)))
+		(text "if_adc_wr" (rect 70 123 194 259)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "valid" (rect 133 147 296 304)(font "Arial" (color 0 0 0)))
+		(text "if_adc_wdata" (rect 50 163 172 339)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "data" (rect 133 187 290 384)(font "Arial" (color 0 0 0)))
+		(text "if_adc_wovf" (rect 57 203 180 419)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "ovf" (rect 133 227 284 464)(font "Arial" (color 0 0 0)))
+		(text "if_dma_clk" (rect 64 243 188 499)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 133 267 284 544)(font "Arial" (color 0 0 0)))
+		(text "if_dma_wr" (rect 65 283 184 579)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "valid" (rect 133 307 296 624)(font "Arial" (color 0 0 0)))
+		(text "if_dma_wdata" (rect 45 323 162 659)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "data" (rect 133 347 290 704)(font "Arial" (color 0 0 0)))
+		(text "if_dma_wready" (rect 38 363 154 739)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "ready" (rect 133 387 296 784)(font "Arial" (color 0 0 0)))
+		(text "if_dma_xfer_req" (rect 30 403 150 819)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "xfer_req" (rect 133 427 314 864)(font "Arial" (color 0 0 0)))
+		(text "if_dma_xfer_status" (rect 13 443 134 899)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "xfer_status" (rect 133 467 332 944)(font "Arial" (color 0 0 0)))
+		(text " mcu_subsystem_util_adcfifo_0 " (rect 197 488 574 986)(font "Arial" ))
+		(line (pt 128 32)(pt 208 32)(line_width 1))
+		(line (pt 208 32)(pt 208 488)(line_width 1))
+		(line (pt 128 488)(pt 208 488)(line_width 1))
+		(line (pt 128 32)(pt 128 488)(line_width 1))
+		(line (pt 129 52)(pt 129 76)(line_width 1))
+		(line (pt 130 52)(pt 130 76)(line_width 1))
+		(line (pt 129 92)(pt 129 116)(line_width 1))
+		(line (pt 130 92)(pt 130 116)(line_width 1))
+		(line (pt 129 132)(pt 129 156)(line_width 1))
+		(line (pt 130 132)(pt 130 156)(line_width 1))
+		(line (pt 129 172)(pt 129 196)(line_width 1))
+		(line (pt 130 172)(pt 130 196)(line_width 1))
+		(line (pt 129 212)(pt 129 236)(line_width 1))
+		(line (pt 130 212)(pt 130 236)(line_width 1))
+		(line (pt 129 252)(pt 129 276)(line_width 1))
+		(line (pt 130 252)(pt 130 276)(line_width 1))
+		(line (pt 129 292)(pt 129 316)(line_width 1))
+		(line (pt 130 292)(pt 130 316)(line_width 1))
+		(line (pt 129 332)(pt 129 356)(line_width 1))
+		(line (pt 130 332)(pt 130 356)(line_width 1))
+		(line (pt 129 372)(pt 129 396)(line_width 1))
+		(line (pt 130 372)(pt 130 396)(line_width 1))
+		(line (pt 129 412)(pt 129 436)(line_width 1))
+		(line (pt 130 412)(pt 130 436)(line_width 1))
+		(line (pt 129 452)(pt 129 476)(line_width 1))
+		(line (pt 130 452)(pt 130 476)(line_width 1))
+		(line (pt 0 0)(pt 336 0)(line_width 1))
+		(line (pt 336 0)(pt 336 504)(line_width 1))
+		(line (pt 0 504)(pt 336 504)(line_width 1))
+		(line (pt 0 0)(pt 0 504)(line_width 1))
+	)
+)

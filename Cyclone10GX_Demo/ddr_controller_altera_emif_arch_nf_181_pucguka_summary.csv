@@ -1,0 +1,30 @@
+Core: ddr_controller_altera_emif_arch_nf_181_pucguka - Instance: mcu_0|sdram|emif_c10_0
+Path, Setup Margin, Hold Margin
+"Address/Command (Slow 900mV 100C Model)",0.518,0.518
+"Core (Slow 900mV 100C Model)",1.803,0.075
+"Core Recovery/Removal (Slow 900mV 100C Model)",6.168,0.518
+"DQS Gating (Slow 900mV 100C Model)",0.4,0.4
+"Read Capture (Slow 900mV 100C Model)",0.18,0.18
+"Write (Slow 900mV 100C Model)",0.244,0.244
+"Write Levelling (Slow 900mV 100C Model)",0.428,0.428
+"Address/Command (Slow 900mV -40C Model)",0.518,0.518
+"Core (Slow 900mV -40C Model)",2.107,0.056
+"Core Recovery/Removal (Slow 900mV -40C Model)",6.192,0.496
+"DQS Gating (Slow 900mV -40C Model)",0.4,0.4
+"Read Capture (Slow 900mV -40C Model)",0.18,0.18
+"Write (Slow 900mV -40C Model)",0.244,0.244
+"Write Levelling (Slow 900mV -40C Model)",0.428,0.428
+"Address/Command (Fast 900mV 100C Model)",0.518,0.518
+"Core (Fast 900mV 100C Model)",3.506,0.026
+"Core Recovery/Removal (Fast 900mV 100C Model)",6.682,0.273
+"DQS Gating (Fast 900mV 100C Model)",0.4,0.4
+"Read Capture (Fast 900mV 100C Model)",0.18,0.18
+"Write (Fast 900mV 100C Model)",0.244,0.244
+"Write Levelling (Fast 900mV 100C Model)",0.428,0.428
+"Address/Command (Fast 900mV -40C Model)",0.518,0.518
+"Core (Fast 900mV -40C Model)",4.322,0.023
+"Core Recovery/Removal (Fast 900mV -40C Model)",6.835,0.213
+"DQS Gating (Fast 900mV -40C Model)",0.4,0.4
+"Read Capture (Fast 900mV -40C Model)",0.18,0.18
+"Write (Fast 900mV -40C Model)",0.244,0.244
+"Write Levelling (Fast 900mV -40C Model)",0.428,0.428
