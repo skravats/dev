@@ -46,7 +46,7 @@ module ddr_controller (
 		output wire         mmr_slave_readdatavalid_0       //                 .readdatavalid,      Indicates whether MMR read data is valid
 	);
 
-	ddr_controller_altera_emif_c10_181_zlzq64i emif_c10_0 (
+	ddr_controller_altera_emif_c10_181_dw5di3a emif_c10_0 (
 		.global_reset_n                 (global_reset_n),                 //   input,    width = 1,   global_reset_n.reset_n
 		.pll_ref_clk                    (pll_ref_clk),                    //   input,    width = 1,      pll_ref_clk.clk
 		.oct_rzqin                      (oct_rzqin),                      //   input,    width = 1,              oct.oct_rzqin

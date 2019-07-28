@@ -1,0 +1,21 @@
+	component i2c is
+		generic (
+			FIFO_DEPTH      : integer := 4;
+			FIFO_DEPTH_LOG2 : integer := 2
+		);
+		port (
+			clk       : in  std_logic                     := 'X';             -- clk
+			rst_n     : in  std_logic                     := 'X';             -- reset_n
+			intr      : out std_logic;                                        -- irq
+			addr      : in  std_logic_vector(3 downto 0)  := (others => 'X'); -- address
+			read      : in  std_logic                     := 'X';             -- read
+			write     : in  std_logic                     := 'X';             -- write
+			writedata : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
+			readdata  : out std_logic_vector(31 downto 0);                    -- readdata
+			sda_in    : in  std_logic                     := 'X';             -- sda_in
+			scl_in    : in  std_logic                     := 'X';             -- scl_in
+			sda_oe    : out std_logic;                                        -- sda_oe
+			scl_oe    : out std_logic                                         -- scl_oe
+		);
+	end component i2c;
+

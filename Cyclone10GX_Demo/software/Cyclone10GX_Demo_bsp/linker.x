@@ -2,9 +2,9 @@
  * linker.x - Linker script
  *
  * Machine generated for CPU 'mcu_subsystem_cpu_0' in SOPC Builder design 'mcu_subsystem'
- * SOPC Builder design path: ../../mcu_subsystem/mcu_subsystem.sopcinfo
+ * SOPC Builder design path: C:/Developer/fpga/ArrowESC/Cyclone10GX_Demo/mcu_subsystem/mcu_subsystem.sopcinfo
  *
- * Generated: Tue Jul 23 00:51:06 CEST 2019
+ * Generated: Sun Jul 28 18:08:07 CEST 2019
  */
 
 /*
@@ -50,16 +50,16 @@
 
 MEMORY
 {
-    mcu_subsystem_ram_0 : ORIGIN = 0x0, LENGTH = 131072
-    qspi_controller2_0_avl_mem : ORIGIN = 0x8000000, LENGTH = 134217728
-    reset : ORIGIN = 0x80000000, LENGTH = 32
-    sdram_ctrl_amm_0 : ORIGIN = 0x80000020, LENGTH = 2147483616
+    reset : ORIGIN = 0x0, LENGTH = 32
+    ddr3_ctrl_amm_0 : ORIGIN = 0x20, LENGTH = 2147483616
+    qspi_controller2_0_avl_mem : ORIGIN = 0x80000000, LENGTH = 134217728
+    mcu_subsystem_ram_0 : ORIGIN = 0x88020000, LENGTH = 131072
 }
 
 /* Define symbols for each memory base-address */
-__alt_mem_mcu_subsystem_ram_0 = 0x0;
-__alt_mem_qspi_controller2_0_avl_mem = 0x8000000;
-__alt_mem_sdram_ctrl_amm_0 = 0x80000000;
+__alt_mem_ddr3_ctrl_amm_0 = 0x0;
+__alt_mem_qspi_controller2_0_avl_mem = 0x80000000;
+__alt_mem_mcu_subsystem_ram_0 = 0x88020000;
 
 OUTPUT_FORMAT( "elf32-littlenios2",
                "elf32-littlenios2",
@@ -115,7 +115,7 @@ SECTIONS
         KEEP (*(.exceptions.exit));
         KEEP (*(.exceptions));
         PROVIDE (__ram_exceptions_end = ABSOLUTE(.));
-    } > sdram_ctrl_amm_0
+    } > ddr3_ctrl_amm_0
 
     PROVIDE (__flash_exceptions_start = LOADADDR(.exceptions));
 
@@ -211,7 +211,7 @@ SECTIONS
         PROVIDE (__DTOR_END__ = ABSOLUTE(.));
         KEEP (*(.jcr))
         . = ALIGN(4);
-    } > sdram_ctrl_amm_0 = 0x3a880100 /* NOP instruction (always in big-endian byte ordering) */
+    } > ddr3_ctrl_amm_0 = 0x3a880100 /* NOP instruction (always in big-endian byte ordering) */
 
     .rodata :
     {
@@ -221,7 +221,7 @@ SECTIONS
         *(.rodata1)
         . = ALIGN(4);
         PROVIDE (__ram_rodata_end = ABSOLUTE(.));
-    } > sdram_ctrl_amm_0
+    } > ddr3_ctrl_amm_0
 
     PROVIDE (__flash_rodata_start = LOADADDR(.rodata));
 
@@ -255,7 +255,7 @@ SECTIONS
         _edata = ABSOLUTE(.);
         PROVIDE (edata = ABSOLUTE(.));
         PROVIDE (__ram_rwdata_end = ABSOLUTE(.));
-    } > sdram_ctrl_amm_0
+    } > ddr3_ctrl_amm_0
 
     PROVIDE (__flash_rwdata_start = LOADADDR(.rwdata));
 
@@ -286,7 +286,7 @@ SECTIONS
 
         . = ALIGN(4);
         __bss_end = ABSOLUTE(.);
-    } > sdram_ctrl_amm_0
+    } > ddr3_ctrl_amm_0
 
     /*
      *
@@ -311,15 +311,18 @@ SECTIONS
      *
      */
 
-    .mcu_subsystem_ram_0 : AT ( LOADADDR (.bss) + SIZEOF (.bss) )
+    .ddr3_ctrl_amm_0 LOADADDR (.bss) + SIZEOF (.bss) : AT ( LOADADDR (.bss) + SIZEOF (.bss) )
     {
-        PROVIDE (_alt_partition_mcu_subsystem_ram_0_start = ABSOLUTE(.));
-        *(.mcu_subsystem_ram_0 .mcu_subsystem_ram_0. mcu_subsystem_ram_0.*)
+        PROVIDE (_alt_partition_ddr3_ctrl_amm_0_start = ABSOLUTE(.));
+        *(.ddr3_ctrl_amm_0 .ddr3_ctrl_amm_0. ddr3_ctrl_amm_0.*)
         . = ALIGN(4);
-        PROVIDE (_alt_partition_mcu_subsystem_ram_0_end = ABSOLUTE(.));
-    } > mcu_subsystem_ram_0
+        PROVIDE (_alt_partition_ddr3_ctrl_amm_0_end = ABSOLUTE(.));
+        _end = ABSOLUTE(.);
+        end = ABSOLUTE(.);
+        __alt_stack_base = ABSOLUTE(.);
+    } > ddr3_ctrl_amm_0
 
-    PROVIDE (_alt_partition_mcu_subsystem_ram_0_load_addr = LOADADDR(.mcu_subsystem_ram_0));
+    PROVIDE (_alt_partition_ddr3_ctrl_amm_0_load_addr = LOADADDR(.ddr3_ctrl_amm_0));
 
     /*
      *
@@ -328,7 +331,7 @@ SECTIONS
      *
      */
 
-    .qspi_controller2_0_avl_mem : AT ( LOADADDR (.mcu_subsystem_ram_0) + SIZEOF (.mcu_subsystem_ram_0) )
+    .qspi_controller2_0_avl_mem : AT ( LOADADDR (.ddr3_ctrl_amm_0) + SIZEOF (.ddr3_ctrl_amm_0) )
     {
         PROVIDE (_alt_partition_qspi_controller2_0_avl_mem_start = ABSOLUTE(.));
         *(.qspi_controller2_0_avl_mem .qspi_controller2_0_avl_mem. qspi_controller2_0_avl_mem.*)
@@ -345,18 +348,15 @@ SECTIONS
      *
      */
 
-    .sdram_ctrl_amm_0 LOADADDR (.qspi_controller2_0_avl_mem) + SIZEOF (.qspi_controller2_0_avl_mem) : AT ( LOADADDR (.qspi_controller2_0_avl_mem) + SIZEOF (.qspi_controller2_0_avl_mem) )
+    .mcu_subsystem_ram_0 : AT ( LOADADDR (.qspi_controller2_0_avl_mem) + SIZEOF (.qspi_controller2_0_avl_mem) )
     {
-        PROVIDE (_alt_partition_sdram_ctrl_amm_0_start = ABSOLUTE(.));
-        *(.sdram_ctrl_amm_0 .sdram_ctrl_amm_0. sdram_ctrl_amm_0.*)
+        PROVIDE (_alt_partition_mcu_subsystem_ram_0_start = ABSOLUTE(.));
+        *(.mcu_subsystem_ram_0 .mcu_subsystem_ram_0. mcu_subsystem_ram_0.*)
         . = ALIGN(4);
-        PROVIDE (_alt_partition_sdram_ctrl_amm_0_end = ABSOLUTE(.));
-        _end = ABSOLUTE(.);
-        end = ABSOLUTE(.);
-        __alt_stack_base = ABSOLUTE(.);
-    } > sdram_ctrl_amm_0
+        PROVIDE (_alt_partition_mcu_subsystem_ram_0_end = ABSOLUTE(.));
+    } > mcu_subsystem_ram_0
 
-    PROVIDE (_alt_partition_sdram_ctrl_amm_0_load_addr = LOADADDR(.sdram_ctrl_amm_0));
+    PROVIDE (_alt_partition_mcu_subsystem_ram_0_load_addr = LOADADDR(.mcu_subsystem_ram_0));
 
     /*
      * Stabs debugging sections.
@@ -405,7 +405,7 @@ SECTIONS
 /*
  * Don't override this, override the __alt_stack_* symbols instead.
  */
-__alt_data_end = 0x0;
+__alt_data_end = 0x80000000;
 
 /*
  * The next two symbols define the location of the default stack.  You can
@@ -421,4 +421,4 @@ PROVIDE( __alt_stack_limit   = __alt_stack_base );
  * Override this symbol to put the heap in a different memory.
  */
 PROVIDE( __alt_heap_start    = end );
-PROVIDE( __alt_heap_limit    = 0x0 );
+PROVIDE( __alt_heap_limit    = 0x80000000 );

@@ -31,10 +31,37 @@ module mcu_subsystem_cpu_0 (
 		output wire        debug_mem_slave_waitrequest,         //                          .waitrequest
 		input  wire        debug_mem_slave_write,               //                          .write
 		input  wire [31:0] debug_mem_slave_writedata,           //                          .writedata
-		output wire        dummy_ci_port                        // custom_instruction_master.readra
+		input  wire        A_ci_multi_done,                     // custom_instruction_master.done
+		input  wire [31:0] A_ci_multi_result,                   //                          .multi_result
+		output wire [4:0]  A_ci_multi_a,                        //                          .multi_a
+		output wire [4:0]  A_ci_multi_b,                        //                          .multi_b
+		output wire [4:0]  A_ci_multi_c,                        //                          .multi_c
+		output wire        A_ci_multi_clk_en,                   //                          .clk_en
+		output wire        A_ci_multi_clock,                    //                          .clk
+		output wire        A_ci_multi_reset,                    //                          .reset
+		output wire        A_ci_multi_reset_req,                //                          .reset_req
+		output wire [31:0] A_ci_multi_dataa,                    //                          .multi_dataa
+		output wire [31:0] A_ci_multi_datab,                    //                          .multi_datab
+		output wire [7:0]  A_ci_multi_n,                        //                          .multi_n
+		output wire        A_ci_multi_readra,                   //                          .multi_readra
+		output wire        A_ci_multi_readrb,                   //                          .multi_readrb
+		output wire        A_ci_multi_start,                    //                          .start
+		output wire        A_ci_multi_writerc,                  //                          .multi_writerc
+		input  wire [31:0] E_ci_combo_result,                   //                          .result
+		output wire [4:0]  E_ci_combo_a,                        //                          .a
+		output wire [4:0]  E_ci_combo_b,                        //                          .b
+		output wire [4:0]  E_ci_combo_c,                        //                          .c
+		output wire [31:0] E_ci_combo_dataa,                    //                          .dataa
+		output wire [31:0] E_ci_combo_datab,                    //                          .datab
+		output wire        E_ci_combo_estatus,                  //                          .estatus
+		output wire [31:0] E_ci_combo_ipending,                 //                          .ipending
+		output wire [7:0]  E_ci_combo_n,                        //                          .n
+		output wire        E_ci_combo_readra,                   //                          .readra
+		output wire        E_ci_combo_readrb,                   //                          .readrb
+		output wire        E_ci_combo_writerc                   //                          .writerc
 	);
 
-	mcu_subsystem_cpu_0_altera_nios2_gen2_181_7fscvgi mcu_subsystem_cpu_0 (
+	mcu_subsystem_cpu_0_altera_nios2_gen2_181_bybaqra mcu_subsystem_cpu_0 (
 		.clk                                 (clk),                                 //   input,   width = 1,                       clk.clk
 		.reset_n                             (reset_n),                             //   input,   width = 1,                     reset.reset_n
 		.reset_req                           (reset_req),                           //   input,   width = 1,                          .reset_req
@@ -62,7 +89,34 @@ module mcu_subsystem_cpu_0 (
 		.debug_mem_slave_waitrequest         (debug_mem_slave_waitrequest),         //  output,   width = 1,                          .waitrequest
 		.debug_mem_slave_write               (debug_mem_slave_write),               //   input,   width = 1,                          .write
 		.debug_mem_slave_writedata           (debug_mem_slave_writedata),           //   input,  width = 32,                          .writedata
-		.dummy_ci_port                       (dummy_ci_port)                        //  output,   width = 1, custom_instruction_master.readra
+		.A_ci_multi_done                     (A_ci_multi_done),                     //   input,   width = 1, custom_instruction_master.done
+		.A_ci_multi_result                   (A_ci_multi_result),                   //   input,  width = 32,                          .multi_result
+		.A_ci_multi_a                        (A_ci_multi_a),                        //  output,   width = 5,                          .multi_a
+		.A_ci_multi_b                        (A_ci_multi_b),                        //  output,   width = 5,                          .multi_b
+		.A_ci_multi_c                        (A_ci_multi_c),                        //  output,   width = 5,                          .multi_c
+		.A_ci_multi_clk_en                   (A_ci_multi_clk_en),                   //  output,   width = 1,                          .clk_en
+		.A_ci_multi_clock                    (A_ci_multi_clock),                    //  output,   width = 1,                          .clk
+		.A_ci_multi_reset                    (A_ci_multi_reset),                    //  output,   width = 1,                          .reset
+		.A_ci_multi_reset_req                (A_ci_multi_reset_req),                //  output,   width = 1,                          .reset_req
+		.A_ci_multi_dataa                    (A_ci_multi_dataa),                    //  output,  width = 32,                          .multi_dataa
+		.A_ci_multi_datab                    (A_ci_multi_datab),                    //  output,  width = 32,                          .multi_datab
+		.A_ci_multi_n                        (A_ci_multi_n),                        //  output,   width = 8,                          .multi_n
+		.A_ci_multi_readra                   (A_ci_multi_readra),                   //  output,   width = 1,                          .multi_readra
+		.A_ci_multi_readrb                   (A_ci_multi_readrb),                   //  output,   width = 1,                          .multi_readrb
+		.A_ci_multi_start                    (A_ci_multi_start),                    //  output,   width = 1,                          .start
+		.A_ci_multi_writerc                  (A_ci_multi_writerc),                  //  output,   width = 1,                          .multi_writerc
+		.E_ci_combo_result                   (E_ci_combo_result),                   //   input,  width = 32,                          .result
+		.E_ci_combo_a                        (E_ci_combo_a),                        //  output,   width = 5,                          .a
+		.E_ci_combo_b                        (E_ci_combo_b),                        //  output,   width = 5,                          .b
+		.E_ci_combo_c                        (E_ci_combo_c),                        //  output,   width = 5,                          .c
+		.E_ci_combo_dataa                    (E_ci_combo_dataa),                    //  output,  width = 32,                          .dataa
+		.E_ci_combo_datab                    (E_ci_combo_datab),                    //  output,  width = 32,                          .datab
+		.E_ci_combo_estatus                  (E_ci_combo_estatus),                  //  output,   width = 1,                          .estatus
+		.E_ci_combo_ipending                 (E_ci_combo_ipending),                 //  output,  width = 32,                          .ipending
+		.E_ci_combo_n                        (E_ci_combo_n),                        //  output,   width = 8,                          .n
+		.E_ci_combo_readra                   (E_ci_combo_readra),                   //  output,   width = 1,                          .readra
+		.E_ci_combo_readrb                   (E_ci_combo_readrb),                   //  output,   width = 1,                          .readrb
+		.E_ci_combo_writerc                  (E_ci_combo_writerc)                   //  output,   width = 1,                          .writerc
 	);
 
 endmodule

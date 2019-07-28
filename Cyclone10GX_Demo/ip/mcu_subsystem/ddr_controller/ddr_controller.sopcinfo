@@ -5,7 +5,7 @@
  version="1.0"
  fabric="QSYS">
  <!-- Format version 18.1.2 277 (Future versions may contain additional information.) -->
- <!-- 2019.07.23.00:11:50 -->
+ <!-- 2019.07.24.20:36:54 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
@@ -293,7 +293,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PHY_MEM_CLK_FREQ_MHZ">
    <type>double</type>
-   <value>534.0</value>
+   <value>533.333</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -301,7 +301,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PHY_REF_CLK_FREQ_MHZ">
    <type>double</type>
-   <value>133.5</value>
+   <value>133.333</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -389,7 +389,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PHY_AC_IO_STD_ENUM">
    <type>java.lang.String</type>
-   <value>IO_STD_SSTL_135_C1</value>
+   <value>IO_STD_SSTL_15_C1</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -397,7 +397,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PHY_CK_IO_STD_ENUM">
    <type>java.lang.String</type>
-   <value>IO_STD_SSTL_135_C1</value>
+   <value>IO_STD_SSTL_15_C1</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -405,7 +405,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PHY_DATA_IO_STD_ENUM">
    <type>java.lang.String</type>
-   <value>IO_STD_SSTL_135</value>
+   <value>IO_STD_SSTL_15</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -1101,7 +1101,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PLL_VCO_CLK_FREQ_MHZ">
    <type>double</type>
-   <value>534.0</value>
+   <value>533.333</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -1197,7 +1197,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PLL_EXTRA_CLK_ACTUAL_FREQ_MHZ_5">
    <type>double</type>
-   <value>534.0</value>
+   <value>533.333</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -1213,7 +1213,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PLL_EXTRA_CLK_ACTUAL_FREQ_MHZ_6">
    <type>double</type>
-   <value>534.0</value>
+   <value>533.333</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -1229,7 +1229,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PLL_EXTRA_CLK_ACTUAL_FREQ_MHZ_7">
    <type>double</type>
-   <value>534.0</value>
+   <value>533.333</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -1245,7 +1245,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PLL_EXTRA_CLK_ACTUAL_FREQ_MHZ_8">
    <type>double</type>
-   <value>534.0</value>
+   <value>533.333</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -1277,7 +1277,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PHY_DDR3_MEM_CLK_FREQ_MHZ">
    <type>double</type>
-   <value>534.0</value>
+   <value>533.333</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -1293,7 +1293,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PHY_DDR3_USER_REF_CLK_FREQ_MHZ">
    <type>double</type>
-   <value>-1.0</value>
+   <value>133.25</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -1333,7 +1333,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PHY_DDR3_IO_VOLTAGE">
    <type>double</type>
-   <value>1.35</value>
+   <value>1.5</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -1365,7 +1365,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PHY_DDR3_REF_CLK_FREQ_MHZ">
    <type>double</type>
-   <value>133.5</value>
+   <value>133.333</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -1485,7 +1485,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PHY_DDR3_AC_IO_STD_ENUM">
    <type>java.lang.String</type>
-   <value>IO_STD_SSTL_135_C1</value>
+   <value>IO_STD_SSTL_15_C1</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -1501,7 +1501,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PHY_DDR3_AC_SLEW_RATE_ENUM">
    <type>java.lang.String</type>
-   <value>SLEW_RATE_SLOW</value>
+   <value>SLEW_RATE_FAST</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -1509,7 +1509,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PHY_DDR3_CK_IO_STD_ENUM">
    <type>java.lang.String</type>
-   <value>IO_STD_SSTL_135_C1</value>
+   <value>IO_STD_SSTL_15_C1</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -1525,7 +1525,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PHY_DDR3_CK_SLEW_RATE_ENUM">
    <type>java.lang.String</type>
-   <value>SLEW_RATE_SLOW</value>
+   <value>SLEW_RATE_FAST</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -1533,7 +1533,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PHY_DDR3_DATA_IO_STD_ENUM">
    <type>java.lang.String</type>
-   <value>IO_STD_SSTL_135</value>
+   <value>IO_STD_SSTL_15</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -1581,7 +1581,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PHY_DDR3_RZQ_IO_STD_ENUM">
    <type>java.lang.String</type>
-   <value>IO_STD_SSTL_135</value>
+   <value>IO_STD_CMOS_15</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -3605,7 +3605,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_READ_LATENCY">
    <type>double</type>
-   <value>27.0</value>
+   <value>6.0</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -3613,7 +3613,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_WRITE_LATENCY">
    <type>int</type>
-   <value>23</value>
+   <value>6</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -3805,7 +3805,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_HIDE_ADV_MR_SETTINGS">
    <type>boolean</type>
-   <value>true</value>
+   <value>false</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -4037,7 +4037,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_MR0">
    <type>int</type>
-   <value>2596</value>
+   <value>2080</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -4045,7 +4045,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_MR1">
    <type>int</type>
-   <value>65546</value>
+   <value>65536</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -4053,7 +4053,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_MR2">
    <type>int</type>
-   <value>131112</value>
+   <value>132168</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -4080,7 +4080,7 @@ the requested settings for a module instance. -->
    <value>DDR3_BL_BL8</value>
    <derived>false</derived>
    <enabled>true</enabled>
-   <visible>false</visible>
+   <visible>true</visible>
    <valid>true</valid>
   </parameter>
   <parameter name="MEM_DDR3_BT_ENUM">
@@ -4088,15 +4088,15 @@ the requested settings for a module instance. -->
    <value>DDR3_BT_SEQUENTIAL</value>
    <derived>false</derived>
    <enabled>true</enabled>
-   <visible>false</visible>
+   <visible>true</visible>
    <valid>true</valid>
   </parameter>
   <parameter name="MEM_DDR3_ASR_ENUM">
    <type>java.lang.String</type>
-   <value>DDR3_ASR_MANUAL</value>
+   <value>DDR3_ASR_AUTOMATIC</value>
    <derived>false</derived>
    <enabled>true</enabled>
-   <visible>false</visible>
+   <visible>true</visible>
    <valid>true</valid>
   </parameter>
   <parameter name="MEM_DDR3_SRT_ENUM">
@@ -4104,7 +4104,7 @@ the requested settings for a module instance. -->
    <value>DDR3_SRT_NORMAL</value>
    <derived>false</derived>
    <enabled>true</enabled>
-   <visible>false</visible>
+   <visible>true</visible>
    <valid>true</valid>
   </parameter>
   <parameter name="MEM_DDR3_PD_ENUM">
@@ -4112,12 +4112,12 @@ the requested settings for a module instance. -->
    <value>DDR3_PD_OFF</value>
    <derived>false</derived>
    <enabled>true</enabled>
-   <visible>false</visible>
+   <visible>true</visible>
    <valid>true</valid>
   </parameter>
   <parameter name="MEM_DDR3_DRV_STR_ENUM">
    <type>java.lang.String</type>
-   <value>DDR3_DRV_STR_RZQ_7</value>
+   <value>DDR3_DRV_STR_RZQ_6</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -4141,7 +4141,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_RTT_WR_ENUM">
    <type>java.lang.String</type>
-   <value>DDR3_RTT_WR_ODT_DISABLED</value>
+   <value>DDR3_RTT_WR_RZQ_2</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -4149,7 +4149,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_WTCL">
    <type>int</type>
-   <value>10</value>
+   <value>6</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -4157,7 +4157,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_ATCL_ENUM">
    <type>java.lang.String</type>
-   <value>DDR3_ATCL_CL1</value>
+   <value>DDR3_ATCL_DISABLED</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -4165,7 +4165,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TCL">
    <type>int</type>
-   <value>14</value>
+   <value>6</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -4397,7 +4397,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_R_DERIVED_ODT0">
    <type>[Ljava.lang.String;</type>
-   <value>(Drive) RZQ/7,-,-,-</value>
+   <value>(Drive) RZQ/6,-,-,-</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -4437,7 +4437,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_W_DERIVED_ODT0">
    <type>[Ljava.lang.String;</type>
-   <value>ODT Disabled,-,-,-</value>
+   <value>(Dynamic) RZQ/2,-,-,-</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -4525,7 +4525,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TIS_PS">
    <type>int</type>
-   <value>60</value>
+   <value>125</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -4533,7 +4533,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TIS_AC_MV">
    <type>int</type>
-   <value>135</value>
+   <value>175</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -4541,7 +4541,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TIH_PS">
    <type>int</type>
-   <value>95</value>
+   <value>200</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -4549,7 +4549,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TIH_DC_MV">
    <type>int</type>
-   <value>90</value>
+   <value>100</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -4557,7 +4557,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TDS_PS">
    <type>int</type>
-   <value>53</value>
+   <value>25</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -4565,7 +4565,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TDS_AC_MV">
    <type>int</type>
-   <value>135</value>
+   <value>175</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -4573,7 +4573,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TDH_PS">
    <type>int</type>
-   <value>55</value>
+   <value>100</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -4581,7 +4581,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TDH_DC_MV">
    <type>int</type>
-   <value>90</value>
+   <value>100</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -4589,7 +4589,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TDQSQ_PS">
    <type>int</type>
-   <value>75</value>
+   <value>150</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -4605,7 +4605,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TDQSCK_PS">
    <type>int</type>
-   <value>180</value>
+   <value>300</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -4613,7 +4613,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TDQSS_CYC">
    <type>double</type>
-   <value>0.27</value>
+   <value>0.25</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -4621,7 +4621,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TQSH_CYC">
    <type>double</type>
-   <value>0.4</value>
+   <value>0.38</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -4629,7 +4629,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TDSH_CYC">
    <type>double</type>
-   <value>0.18</value>
+   <value>0.2</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -4637,7 +4637,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TWLS_PS">
    <type>double</type>
-   <value>125.0</value>
+   <value>245.0</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -4645,7 +4645,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TWLH_PS">
    <type>double</type>
-   <value>125.0</value>
+   <value>245.0</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -4653,7 +4653,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TDSS_CYC">
    <type>double</type>
-   <value>0.18</value>
+   <value>0.2</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -4677,7 +4677,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TRAS_NS">
    <type>double</type>
-   <value>33.0</value>
+   <value>37.5</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -4685,7 +4685,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TRCD_NS">
    <type>double</type>
-   <value>13.09</value>
+   <value>11.25</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -4693,7 +4693,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TRP_NS">
    <type>double</type>
-   <value>13.09</value>
+   <value>11.25</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -4709,7 +4709,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TRFC_NS">
    <type>double</type>
-   <value>160.0</value>
+   <value>260.0</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -4725,7 +4725,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TWTR_CYC">
    <type>int</type>
-   <value>8</value>
+   <value>4</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -4733,7 +4733,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TFAW_NS">
    <type>double</type>
-   <value>25.0</value>
+   <value>50.0</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -4749,7 +4749,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TRTP_CYC">
    <type>int</type>
-   <value>8</value>
+   <value>4</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -4757,7 +4757,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TINIT_CK">
    <type>int</type>
-   <value>267000</value>
+   <value>266667</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -4797,7 +4797,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TRAS_CYC">
    <type>int</type>
-   <value>18</value>
+   <value>20</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -4805,7 +4805,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TRCD_CYC">
    <type>int</type>
-   <value>7</value>
+   <value>6</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -4813,7 +4813,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TRP_CYC">
    <type>int</type>
-   <value>7</value>
+   <value>6</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -4821,7 +4821,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TRFC_CYC">
    <type>int</type>
-   <value>86</value>
+   <value>139</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -4829,7 +4829,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TWR_CYC">
    <type>int</type>
-   <value>9</value>
+   <value>8</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -4837,7 +4837,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TFAW_CYC">
    <type>int</type>
-   <value>14</value>
+   <value>27</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -4845,7 +4845,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TREFI_CYC">
    <type>int</type>
-   <value>4166</value>
+   <value>4160</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -13761,7 +13761,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="clockRate">
     <type>long</type>
-    <value>133500000</value>
+    <value>133333250</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>false</visible>
@@ -14844,7 +14844,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PHY_MEM_CLK_FREQ_MHZ">
    <type>double</type>
-   <value>534.0</value>
+   <value>533.333</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -14852,7 +14852,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PHY_REF_CLK_FREQ_MHZ">
    <type>double</type>
-   <value>133.5</value>
+   <value>133.333</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -14940,7 +14940,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PHY_AC_IO_STD_ENUM">
    <type>java.lang.String</type>
-   <value>IO_STD_SSTL_135_C1</value>
+   <value>IO_STD_SSTL_15_C1</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -14948,7 +14948,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PHY_CK_IO_STD_ENUM">
    <type>java.lang.String</type>
-   <value>IO_STD_SSTL_135_C1</value>
+   <value>IO_STD_SSTL_15_C1</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -14956,7 +14956,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PHY_DATA_IO_STD_ENUM">
    <type>java.lang.String</type>
-   <value>IO_STD_SSTL_135</value>
+   <value>IO_STD_SSTL_15</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -15652,7 +15652,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PLL_VCO_CLK_FREQ_MHZ">
    <type>double</type>
-   <value>534.0</value>
+   <value>533.333</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -15748,7 +15748,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PLL_EXTRA_CLK_ACTUAL_FREQ_MHZ_5">
    <type>double</type>
-   <value>534.0</value>
+   <value>533.333</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -15764,7 +15764,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PLL_EXTRA_CLK_ACTUAL_FREQ_MHZ_6">
    <type>double</type>
-   <value>534.0</value>
+   <value>533.333</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -15780,7 +15780,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PLL_EXTRA_CLK_ACTUAL_FREQ_MHZ_7">
    <type>double</type>
-   <value>534.0</value>
+   <value>533.333</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -15796,7 +15796,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PLL_EXTRA_CLK_ACTUAL_FREQ_MHZ_8">
    <type>double</type>
-   <value>534.0</value>
+   <value>533.333</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -15828,7 +15828,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PHY_DDR3_MEM_CLK_FREQ_MHZ">
    <type>double</type>
-   <value>534.0</value>
+   <value>533.333</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -15844,7 +15844,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PHY_DDR3_USER_REF_CLK_FREQ_MHZ">
    <type>double</type>
-   <value>-1.0</value>
+   <value>133.25</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -15884,7 +15884,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PHY_DDR3_IO_VOLTAGE">
    <type>double</type>
-   <value>1.35</value>
+   <value>1.5</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -15916,7 +15916,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PHY_DDR3_REF_CLK_FREQ_MHZ">
    <type>double</type>
-   <value>133.5</value>
+   <value>133.333</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -16036,7 +16036,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PHY_DDR3_AC_IO_STD_ENUM">
    <type>java.lang.String</type>
-   <value>IO_STD_SSTL_135_C1</value>
+   <value>IO_STD_SSTL_15_C1</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -16052,7 +16052,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PHY_DDR3_AC_SLEW_RATE_ENUM">
    <type>java.lang.String</type>
-   <value>SLEW_RATE_SLOW</value>
+   <value>SLEW_RATE_FAST</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -16060,7 +16060,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PHY_DDR3_CK_IO_STD_ENUM">
    <type>java.lang.String</type>
-   <value>IO_STD_SSTL_135_C1</value>
+   <value>IO_STD_SSTL_15_C1</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -16076,7 +16076,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PHY_DDR3_CK_SLEW_RATE_ENUM">
    <type>java.lang.String</type>
-   <value>SLEW_RATE_SLOW</value>
+   <value>SLEW_RATE_FAST</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -16084,7 +16084,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PHY_DDR3_DATA_IO_STD_ENUM">
    <type>java.lang.String</type>
-   <value>IO_STD_SSTL_135</value>
+   <value>IO_STD_SSTL_15</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -16132,7 +16132,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PHY_DDR3_RZQ_IO_STD_ENUM">
    <type>java.lang.String</type>
-   <value>IO_STD_SSTL_135</value>
+   <value>IO_STD_CMOS_15</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -18156,7 +18156,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_READ_LATENCY">
    <type>double</type>
-   <value>27.0</value>
+   <value>6.0</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -18164,7 +18164,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_WRITE_LATENCY">
    <type>int</type>
-   <value>23</value>
+   <value>6</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -18356,7 +18356,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_HIDE_ADV_MR_SETTINGS">
    <type>boolean</type>
-   <value>true</value>
+   <value>false</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -18588,7 +18588,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_MR0">
    <type>int</type>
-   <value>2596</value>
+   <value>2080</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -18596,7 +18596,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_MR1">
    <type>int</type>
-   <value>65546</value>
+   <value>65536</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -18604,7 +18604,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_MR2">
    <type>int</type>
-   <value>131112</value>
+   <value>132168</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -18644,7 +18644,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_ASR_ENUM">
    <type>java.lang.String</type>
-   <value>DDR3_ASR_MANUAL</value>
+   <value>DDR3_ASR_AUTOMATIC</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -18668,7 +18668,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_DRV_STR_ENUM">
    <type>java.lang.String</type>
-   <value>DDR3_DRV_STR_RZQ_7</value>
+   <value>DDR3_DRV_STR_RZQ_6</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -18692,7 +18692,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_RTT_WR_ENUM">
    <type>java.lang.String</type>
-   <value>DDR3_RTT_WR_ODT_DISABLED</value>
+   <value>DDR3_RTT_WR_RZQ_2</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -18700,7 +18700,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_WTCL">
    <type>int</type>
-   <value>10</value>
+   <value>6</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -18708,7 +18708,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_ATCL_ENUM">
    <type>java.lang.String</type>
-   <value>DDR3_ATCL_CL1</value>
+   <value>DDR3_ATCL_DISABLED</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -18716,7 +18716,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TCL">
    <type>int</type>
-   <value>14</value>
+   <value>6</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -18948,7 +18948,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_R_DERIVED_ODT0">
    <type>[Ljava.lang.String;</type>
-   <value>(Drive) RZQ/7,-,-,-</value>
+   <value>(Drive) RZQ/6,-,-,-</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -18988,7 +18988,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_W_DERIVED_ODT0">
    <type>[Ljava.lang.String;</type>
-   <value>ODT Disabled,-,-,-</value>
+   <value>(Dynamic) RZQ/2,-,-,-</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -19076,7 +19076,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TIS_PS">
    <type>int</type>
-   <value>60</value>
+   <value>125</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -19084,7 +19084,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TIS_AC_MV">
    <type>int</type>
-   <value>135</value>
+   <value>175</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -19092,7 +19092,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TIH_PS">
    <type>int</type>
-   <value>95</value>
+   <value>200</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -19100,7 +19100,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TIH_DC_MV">
    <type>int</type>
-   <value>90</value>
+   <value>100</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -19108,7 +19108,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TDS_PS">
    <type>int</type>
-   <value>53</value>
+   <value>25</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -19116,7 +19116,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TDS_AC_MV">
    <type>int</type>
-   <value>135</value>
+   <value>175</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -19124,7 +19124,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TDH_PS">
    <type>int</type>
-   <value>55</value>
+   <value>100</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -19132,7 +19132,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TDH_DC_MV">
    <type>int</type>
-   <value>90</value>
+   <value>100</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -19140,7 +19140,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TDQSQ_PS">
    <type>int</type>
-   <value>75</value>
+   <value>150</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -19156,7 +19156,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TDQSCK_PS">
    <type>int</type>
-   <value>180</value>
+   <value>300</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -19164,7 +19164,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TDQSS_CYC">
    <type>double</type>
-   <value>0.27</value>
+   <value>0.25</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -19172,7 +19172,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TQSH_CYC">
    <type>double</type>
-   <value>0.4</value>
+   <value>0.38</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -19180,7 +19180,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TDSH_CYC">
    <type>double</type>
-   <value>0.18</value>
+   <value>0.2</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -19188,7 +19188,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TWLS_PS">
    <type>double</type>
-   <value>125.0</value>
+   <value>245.0</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -19196,7 +19196,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TWLH_PS">
    <type>double</type>
-   <value>125.0</value>
+   <value>245.0</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -19204,7 +19204,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TDSS_CYC">
    <type>double</type>
-   <value>0.18</value>
+   <value>0.2</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -19228,7 +19228,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TRAS_NS">
    <type>double</type>
-   <value>33.0</value>
+   <value>37.5</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -19236,7 +19236,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TRCD_NS">
    <type>double</type>
-   <value>13.09</value>
+   <value>11.25</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -19244,7 +19244,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TRP_NS">
    <type>double</type>
-   <value>13.09</value>
+   <value>11.25</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -19260,7 +19260,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TRFC_NS">
    <type>double</type>
-   <value>160.0</value>
+   <value>260.0</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -19276,7 +19276,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TWTR_CYC">
    <type>int</type>
-   <value>8</value>
+   <value>4</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -19284,7 +19284,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TFAW_NS">
    <type>double</type>
-   <value>25.0</value>
+   <value>50.0</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -19300,7 +19300,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TRTP_CYC">
    <type>int</type>
-   <value>8</value>
+   <value>4</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -19308,7 +19308,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TINIT_CK">
    <type>int</type>
-   <value>267000</value>
+   <value>266667</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -19348,7 +19348,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TRAS_CYC">
    <type>int</type>
-   <value>18</value>
+   <value>20</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -19356,7 +19356,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TRCD_CYC">
    <type>int</type>
-   <value>7</value>
+   <value>6</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -19364,7 +19364,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TRP_CYC">
    <type>int</type>
-   <value>7</value>
+   <value>6</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -19372,7 +19372,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TRFC_CYC">
    <type>int</type>
-   <value>86</value>
+   <value>139</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -19380,7 +19380,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TWR_CYC">
    <type>int</type>
-   <value>9</value>
+   <value>8</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -19388,7 +19388,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TFAW_CYC">
    <type>int</type>
-   <value>14</value>
+   <value>27</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -19396,7 +19396,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="MEM_DDR3_TREFI_CYC">
    <type>int</type>
-   <value>4166</value>
+   <value>4160</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -27932,7 +27932,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="DIAG_ABSTRACT_PHY_WLAT">
    <type>int</type>
-   <value>11</value>
+   <value>3</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -27940,7 +27940,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="DIAG_ABSTRACT_PHY_RLAT">
    <type>int</type>
-   <value>22</value>
+   <value>12</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -28052,7 +28052,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="SEQ_SIM_OSC_FREQ_MHZ">
    <type>int</type>
-   <value>1058</value>
+   <value>1057</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -31612,7 +31612,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PRI_HMC_CFG_TCL">
    <type>int</type>
-   <value>14</value>
+   <value>6</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -31660,7 +31660,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PRI_HMC_CFG_RD_ODT_ON">
    <type>int</type>
-   <value>4</value>
+   <value>0</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -31764,7 +31764,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PRI_HMC_CFG_DQSTRK_TO_VALID_LAST">
    <type>int</type>
-   <value>21</value>
+   <value>16</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -31900,7 +31900,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PRI_HMC_CFG_ACT_TO_RDWR">
    <type>int</type>
-   <value>0</value>
+   <value>3</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -31908,7 +31908,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PRI_HMC_CFG_ACT_TO_PCH">
    <type>int</type>
-   <value>9</value>
+   <value>10</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -31964,7 +31964,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PRI_HMC_CFG_RD_TO_WR">
    <type>int</type>
-   <value>7</value>
+   <value>5</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -31972,7 +31972,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PRI_HMC_CFG_RD_TO_WR_DIFF_CHIP">
    <type>int</type>
-   <value>7</value>
+   <value>5</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -31988,7 +31988,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PRI_HMC_CFG_RD_TO_PCH">
    <type>int</type>
-   <value>11</value>
+   <value>3</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -31996,7 +31996,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PRI_HMC_CFG_RD_AP_TO_VALID">
    <type>int</type>
-   <value>15</value>
+   <value>6</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -32028,7 +32028,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PRI_HMC_CFG_WR_TO_RD">
    <type>int</type>
-   <value>13</value>
+   <value>9</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -32036,7 +32036,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PRI_HMC_CFG_WR_TO_RD_DIFF_CHIP">
    <type>int</type>
-   <value>4</value>
+   <value>5</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -32052,7 +32052,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PRI_HMC_CFG_WR_TO_PCH">
    <type>int</type>
-   <value>19</value>
+   <value>10</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -32060,7 +32060,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PRI_HMC_CFG_WR_AP_TO_VALID">
    <type>int</type>
-   <value>22</value>
+   <value>13</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -32068,7 +32068,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PRI_HMC_CFG_PCH_TO_VALID">
    <type>int</type>
-   <value>4</value>
+   <value>3</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -32076,7 +32076,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PRI_HMC_CFG_PCH_ALL_TO_VALID">
    <type>int</type>
-   <value>4</value>
+   <value>3</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -32084,7 +32084,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PRI_HMC_CFG_ARF_TO_VALID">
    <type>int</type>
-   <value>44</value>
+   <value>70</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -32116,7 +32116,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PRI_HMC_CFG_ARF_PERIOD">
    <type>int</type>
-   <value>2084</value>
+   <value>2081</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -32212,7 +32212,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PRI_HMC_CFG_4_ACT_TO_ACT">
    <type>int</type>
-   <value>6</value>
+   <value>13</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -32380,7 +32380,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="SEC_HMC_CFG_TCL">
    <type>int</type>
-   <value>14</value>
+   <value>6</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -32428,7 +32428,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="SEC_HMC_CFG_RD_ODT_ON">
    <type>int</type>
-   <value>4</value>
+   <value>0</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -32532,7 +32532,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="SEC_HMC_CFG_DQSTRK_TO_VALID_LAST">
    <type>int</type>
-   <value>21</value>
+   <value>16</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -32668,7 +32668,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="SEC_HMC_CFG_ACT_TO_RDWR">
    <type>int</type>
-   <value>0</value>
+   <value>3</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -32676,7 +32676,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="SEC_HMC_CFG_ACT_TO_PCH">
    <type>int</type>
-   <value>9</value>
+   <value>10</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -32732,7 +32732,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="SEC_HMC_CFG_RD_TO_WR">
    <type>int</type>
-   <value>7</value>
+   <value>5</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -32740,7 +32740,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="SEC_HMC_CFG_RD_TO_WR_DIFF_CHIP">
    <type>int</type>
-   <value>7</value>
+   <value>5</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -32756,7 +32756,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="SEC_HMC_CFG_RD_TO_PCH">
    <type>int</type>
-   <value>11</value>
+   <value>3</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -32764,7 +32764,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="SEC_HMC_CFG_RD_AP_TO_VALID">
    <type>int</type>
-   <value>15</value>
+   <value>6</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -32796,7 +32796,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="SEC_HMC_CFG_WR_TO_RD">
    <type>int</type>
-   <value>13</value>
+   <value>9</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -32804,7 +32804,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="SEC_HMC_CFG_WR_TO_RD_DIFF_CHIP">
    <type>int</type>
-   <value>4</value>
+   <value>5</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -32820,7 +32820,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="SEC_HMC_CFG_WR_TO_PCH">
    <type>int</type>
-   <value>19</value>
+   <value>10</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -32828,7 +32828,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="SEC_HMC_CFG_WR_AP_TO_VALID">
    <type>int</type>
-   <value>22</value>
+   <value>13</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -32836,7 +32836,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="SEC_HMC_CFG_PCH_TO_VALID">
    <type>int</type>
-   <value>4</value>
+   <value>3</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -32844,7 +32844,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="SEC_HMC_CFG_PCH_ALL_TO_VALID">
    <type>int</type>
-   <value>4</value>
+   <value>3</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -32852,7 +32852,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="SEC_HMC_CFG_ARF_TO_VALID">
    <type>int</type>
-   <value>44</value>
+   <value>70</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -32884,7 +32884,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="SEC_HMC_CFG_ARF_PERIOD">
    <type>int</type>
-   <value>2084</value>
+   <value>2081</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -32980,7 +32980,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="SEC_HMC_CFG_4_ACT_TO_ACT">
    <type>int</type>
-   <value>6</value>
+   <value>13</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -38772,7 +38772,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PLL_VCO_FREQ_MHZ_INT">
    <type>int</type>
-   <value>534</value>
+   <value>533</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -38796,7 +38796,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PLL_VCO_FREQ_PS_STR">
    <type>java.lang.String</type>
-   <value>1872 ps</value>
+   <value>1876 ps</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -38804,7 +38804,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PLL_REF_CLK_FREQ_PS_STR">
    <type>java.lang.String</type>
-   <value>7488 ps</value>
+   <value>7504 ps</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -38812,7 +38812,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PLL_REF_CLK_FREQ_PS">
    <type>int</type>
-   <value>7488</value>
+   <value>7504</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -38820,7 +38820,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PLL_SIM_VCO_FREQ_PS">
    <type>int</type>
-   <value>1872</value>
+   <value>1880</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -38828,7 +38828,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PLL_SIM_PHYCLK_0_FREQ_PS">
    <type>int</type>
-   <value>3744</value>
+   <value>3760</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -38836,7 +38836,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PLL_SIM_PHYCLK_1_FREQ_PS">
    <type>int</type>
-   <value>7488</value>
+   <value>7520</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -38844,7 +38844,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PLL_SIM_PHYCLK_FB_FREQ_PS">
    <type>int</type>
-   <value>7488</value>
+   <value>7520</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -38852,7 +38852,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PLL_SIM_PHY_CLK_VCO_PHASE_PS">
    <type>int</type>
-   <value>468</value>
+   <value>470</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -38860,7 +38860,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PLL_SIM_CAL_SLAVE_CLK_FREQ_PS">
    <type>int</type>
-   <value>7488</value>
+   <value>7520</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -38868,7 +38868,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PLL_SIM_CAL_MASTER_CLK_FREQ_PS">
    <type>int</type>
-   <value>7488</value>
+   <value>7520</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -39036,7 +39036,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PLL_C_CNT_FREQ_PS_STR_0">
    <type>java.lang.String</type>
-   <value>7488 ps</value>
+   <value>7504 ps</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -39044,7 +39044,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PLL_C_CNT_PHASE_PS_STR_0">
    <type>java.lang.String</type>
-   <value>468 ps</value>
+   <value>469 ps</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -39116,7 +39116,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PLL_C_CNT_FREQ_PS_STR_1">
    <type>java.lang.String</type>
-   <value>3744 ps</value>
+   <value>3752 ps</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -39124,7 +39124,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PLL_C_CNT_PHASE_PS_STR_1">
    <type>java.lang.String</type>
-   <value>468 ps</value>
+   <value>469 ps</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -39196,7 +39196,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PLL_C_CNT_FREQ_PS_STR_2">
    <type>java.lang.String</type>
-   <value>7488 ps</value>
+   <value>7504 ps</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -39204,7 +39204,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PLL_C_CNT_PHASE_PS_STR_2">
    <type>java.lang.String</type>
-   <value>468 ps</value>
+   <value>469 ps</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -39276,7 +39276,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PLL_C_CNT_FREQ_PS_STR_3">
    <type>java.lang.String</type>
-   <value>7488 ps</value>
+   <value>7504 ps</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -39356,7 +39356,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PLL_C_CNT_FREQ_PS_STR_4">
    <type>java.lang.String</type>
-   <value>7488 ps</value>
+   <value>7504 ps</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -40136,7 +40136,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="clockRate">
     <type>long</type>
-    <value>133500000</value>
+    <value>133333250</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>false</visible>

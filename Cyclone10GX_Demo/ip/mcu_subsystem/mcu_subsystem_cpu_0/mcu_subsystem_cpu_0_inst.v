@@ -26,6 +26,33 @@
 		.debug_mem_slave_waitrequest         (_connected_to_debug_mem_slave_waitrequest_),         //  output,   width = 1,                          .waitrequest
 		.debug_mem_slave_write               (_connected_to_debug_mem_slave_write_),               //   input,   width = 1,                          .write
 		.debug_mem_slave_writedata           (_connected_to_debug_mem_slave_writedata_),           //   input,  width = 32,                          .writedata
-		.dummy_ci_port                       (_connected_to_dummy_ci_port_)                        //  output,   width = 1, custom_instruction_master.readra
+		.A_ci_multi_done                     (_connected_to_A_ci_multi_done_),                     //   input,   width = 1, custom_instruction_master.done
+		.A_ci_multi_result                   (_connected_to_A_ci_multi_result_),                   //   input,  width = 32,                          .multi_result
+		.A_ci_multi_a                        (_connected_to_A_ci_multi_a_),                        //  output,   width = 5,                          .multi_a
+		.A_ci_multi_b                        (_connected_to_A_ci_multi_b_),                        //  output,   width = 5,                          .multi_b
+		.A_ci_multi_c                        (_connected_to_A_ci_multi_c_),                        //  output,   width = 5,                          .multi_c
+		.A_ci_multi_clk_en                   (_connected_to_A_ci_multi_clk_en_),                   //  output,   width = 1,                          .clk_en
+		.A_ci_multi_clock                    (_connected_to_A_ci_multi_clock_),                    //  output,   width = 1,                          .clk
+		.A_ci_multi_reset                    (_connected_to_A_ci_multi_reset_),                    //  output,   width = 1,                          .reset
+		.A_ci_multi_reset_req                (_connected_to_A_ci_multi_reset_req_),                //  output,   width = 1,                          .reset_req
+		.A_ci_multi_dataa                    (_connected_to_A_ci_multi_dataa_),                    //  output,  width = 32,                          .multi_dataa
+		.A_ci_multi_datab                    (_connected_to_A_ci_multi_datab_),                    //  output,  width = 32,                          .multi_datab
+		.A_ci_multi_n                        (_connected_to_A_ci_multi_n_),                        //  output,   width = 8,                          .multi_n
+		.A_ci_multi_readra                   (_connected_to_A_ci_multi_readra_),                   //  output,   width = 1,                          .multi_readra
+		.A_ci_multi_readrb                   (_connected_to_A_ci_multi_readrb_),                   //  output,   width = 1,                          .multi_readrb
+		.A_ci_multi_start                    (_connected_to_A_ci_multi_start_),                    //  output,   width = 1,                          .start
+		.A_ci_multi_writerc                  (_connected_to_A_ci_multi_writerc_),                  //  output,   width = 1,                          .multi_writerc
+		.E_ci_combo_result                   (_connected_to_E_ci_combo_result_),                   //   input,  width = 32,                          .result
+		.E_ci_combo_a                        (_connected_to_E_ci_combo_a_),                        //  output,   width = 5,                          .a
+		.E_ci_combo_b                        (_connected_to_E_ci_combo_b_),                        //  output,   width = 5,                          .b
+		.E_ci_combo_c                        (_connected_to_E_ci_combo_c_),                        //  output,   width = 5,                          .c
+		.E_ci_combo_dataa                    (_connected_to_E_ci_combo_dataa_),                    //  output,  width = 32,                          .dataa
+		.E_ci_combo_datab                    (_connected_to_E_ci_combo_datab_),                    //  output,  width = 32,                          .datab
+		.E_ci_combo_estatus                  (_connected_to_E_ci_combo_estatus_),                  //  output,   width = 1,                          .estatus
+		.E_ci_combo_ipending                 (_connected_to_E_ci_combo_ipending_),                 //  output,  width = 32,                          .ipending
+		.E_ci_combo_n                        (_connected_to_E_ci_combo_n_),                        //  output,   width = 8,                          .n
+		.E_ci_combo_readra                   (_connected_to_E_ci_combo_readra_),                   //  output,   width = 1,                          .readra
+		.E_ci_combo_readrb                   (_connected_to_E_ci_combo_readrb_),                   //  output,   width = 1,                          .readrb
+		.E_ci_combo_writerc                  (_connected_to_E_ci_combo_writerc_)                   //  output,   width = 1,                          .writerc
 	);
 

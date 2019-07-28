@@ -707,22 +707,6 @@
 										<placeholders>
 											<version>0</version>
 											<format>dock.PlaceholderList</format>
-											<entry>
-												<key shared="false">
-													<placeholder>dock.single.System\ View\ \-\ Beta</placeholder>
-												</key>
-												<item key="item" type="b">true</item>
-												<item key="item-keys" type="a">
-													<item type="s">x</item>
-													<item type="s">width</item>
-													<item type="s">y</item>
-													<item type="s">height</item>
-												</item>
-												<item key="item.x" type="i">1241</item>
-												<item key="item.width" type="i">1055</item>
-												<item key="item.y" type="i">86</item>
-												<item key="item.height" type="i">669</item>
-											</entry>
 										</placeholders>
 									</content>
 								</delegate>
@@ -918,7 +902,6 @@
 																	<placeholder>dock.single.HDL\ Example</placeholder>
 																	<placeholder>dock.single.Interface\ Requirements</placeholder>
 																	<placeholder>dock.single.Details</placeholder>
-																	<placeholder>dock.single.System\ View\ \-\ Beta</placeholder>
 																	<placeholder>dock.single.Interconnect\ Requirements</placeholder>
 																	<placeholder>dock.single.Instrumentation</placeholder>
 																	<placeholder>dock.single.Wire\-Level\ Expression\ Editor</placeholder>
@@ -1052,10 +1035,24 @@
 							<children ignore="false">
 								<child>
 									<layout factory="delegate_StackDockStationFactory">
-										<selected>3</selected>
+										<selected>0</selected>
 										<placeholders>
 											<version>0</version>
 											<format>dock.PlaceholderList</format>
+											<entry>
+												<key shared="false">
+													<placeholder>dock.single.System\ View\ \-\ Beta</placeholder>
+												</key>
+												<item key="convert" type="b">true</item>
+												<item key="convert-keys" type="a">
+													<item type="s">index</item>
+													<item type="s">id</item>
+													<item type="s">placeholder</item>
+												</item>
+												<item key="dock.index" type="i">0</item>
+												<item key="dock.id" type="i">0</item>
+												<item key="dock.placeholder" type="s">dock.single.System\ View\ \-\ Beta</item>
+											</entry>
 											<entry>
 												<key shared="false">
 													<placeholder>dock.single.System\ Contents</placeholder>
@@ -1071,8 +1068,8 @@
 													<item type="s">id</item>
 													<item type="s">placeholder</item>
 												</item>
-												<item key="dock.index" type="i">0</item>
-												<item key="dock.id" type="i">0</item>
+												<item key="dock.index" type="i">1</item>
+												<item key="dock.id" type="i">1</item>
 												<item key="dock.placeholder" type="s">dock.single.Address\ Map</item>
 											</entry>
 											<entry>
@@ -1090,8 +1087,8 @@
 													<item type="s">id</item>
 													<item type="s">placeholder</item>
 												</item>
-												<item key="dock.index" type="i">1</item>
-												<item key="dock.id" type="i">1</item>
+												<item key="dock.index" type="i">2</item>
+												<item key="dock.id" type="i">2</item>
 												<item key="dock.placeholder" type="s">dock.single.Details</item>
 											</entry>
 											<entry>
@@ -1124,8 +1121,8 @@
 													<item type="s">id</item>
 													<item type="s">placeholder</item>
 												</item>
-												<item key="dock.index" type="i">2</item>
-												<item key="dock.id" type="i">2</item>
+												<item key="dock.index" type="i">3</item>
+												<item key="dock.id" type="i">3</item>
 												<item key="dock.placeholder" type="s">dock.single.Interconnect\ Requirements</item>
 											</entry>
 											<entry>
@@ -1133,23 +1130,19 @@
 													<placeholder>dock.single.Interface\ Diff\ Tool</placeholder>
 												</key>
 											</entry>
-											<entry>
-												<key shared="false">
-													<placeholder>dock.single.System\ View\ \-\ Beta</placeholder>
-												</key>
-												<item key="convert" type="b">true</item>
-												<item key="convert-keys" type="a">
-													<item type="s">index</item>
-													<item type="s">id</item>
-													<item type="s">placeholder</item>
-												</item>
-												<item key="dock.index" type="i">3</item>
-												<item key="dock.id" type="i">3</item>
-												<item key="dock.placeholder" type="s">dock.single.System\ View\ \-\ Beta</item>
-											</entry>
 										</placeholders>
 									</layout>
 									<children ignore="false">
+										<child>
+											<layout factory="predefined" placeholder="dock.single.System\ View\ \-\ Beta">
+												<replacement id="dockablesingle System View - Beta"/>
+												<delegate id="delegate_ccontrol backup factory id">
+													<id>System View - Beta</id>
+													<area/>
+												</delegate>
+											</layout>
+											<children ignore="false"/>
+										</child>
 										<child>
 											<layout factory="predefined" placeholder="dock.single.Address\ Map">
 												<replacement id="dockablesingle Address Map"/>
@@ -1175,16 +1168,6 @@
 												<replacement id="dockablesingle Interconnect Requirements"/>
 												<delegate id="delegate_ccontrol backup factory id">
 													<id>Interconnect Requirements</id>
-													<area/>
-												</delegate>
-											</layout>
-											<children ignore="false"/>
-										</child>
-										<child>
-											<layout factory="predefined" placeholder="dock.single.System\ View\ \-\ Beta">
-												<replacement id="dockablesingle System View - Beta"/>
-												<delegate id="delegate_ccontrol backup factory id">
-													<id>System View - Beta</id>
 													<area/>
 												</delegate>
 											</layout>
@@ -1253,7 +1236,7 @@
 								</child>
 								<child>
 									<layout factory="delegate_StackDockStationFactory">
-										<selected>1</selected>
+										<selected>0</selected>
 										<placeholders>
 											<version>0</version>
 											<format>dock.PlaceholderList</format>
@@ -2314,7 +2297,6 @@
 						<entry id="single System View - Beta" current="dock.mode.normal">
 							<history>
 								<mode>dock.mode.minimized</mode>
-								<mode>dock.mode.externalized</mode>
 								<mode>dock.mode.normal</mode>
 							</history>
 							<properties>
@@ -2331,21 +2313,6 @@
 										</property>
 									</location>
 								</property>
-								<property id="dock.mode.externalized">
-									<mode>dock.mode.externalized</mode>
-									<root>external</root>
-									<applicationDefined>false</applicationDefined>
-									<location>
-										<property factory="screen dock">
-											<x>1241</x>
-											<y>86</y>
-											<width>1055</width>
-											<height>669</height>
-											<fullscreen>false</fullscreen>
-											<placeholder>dock.single.System\ View\ \-\ Beta</placeholder>
-										</property>
-									</location>
-								</property>
 								<property id="dock.mode.normal">
 									<mode>dock.mode.normal</mode>
 									<root>ccontrol center</root>
@@ -2354,6 +2321,7 @@
 										<property factory="SplitDockPlaceholderProperty">
 											<placeholder>dock.single.System\ View\ \-\ Beta</placeholder>
 											<backup-path>
+												<node location="BOTTOM" size="0.5" id="1521757281950"/>
 												<node location="BOTTOM" size="0.5" id="1511909107828"/>
 												<node location="RIGHT" size="0.7883628066172276" id="1372710005721"/>
 												<node location="LEFT" size="0.6203657910985099" id="1372710005727"/>
@@ -2363,7 +2331,7 @@
 											</backup-path>
 										</property>
 										<property factory="StackDockPropertyFactory">
-											<index>3</index>
+											<index>0</index>
 											<placeholder>dock.single.System\ View\ \-\ Beta</placeholder>
 										</property>
 									</location>

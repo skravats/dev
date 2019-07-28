@@ -1,0 +1,20 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst mcu_system.cpu.reset_bridge -pg 1
+preplace inst mcu_system.cpu -pg 1 -lvl 2 -y 70
+preplace inst mcu_system.cpu.cpu -pg 1
+preplace inst mcu_system.ram -pg 1 -lvl 3 -y 30
+preplace inst mcu_system.i2c -pg 1 -lvl 3 -y 210
+preplace inst mcu_system.clk_0 -pg 1 -lvl 1 -y 90
+preplace inst mcu_system -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst mcu_system.jtag -pg 1 -lvl 3 -y 110
+preplace inst mcu_system.cpu.clock_bridge -pg 1
+preplace netloc EXPORT<net_container>mcu_system</net_container>(SLAVE)mcu_system.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>mcu_system</net_container>(SLAVE)i2c.i2c_serial,(SLAVE)mcu_system.serial) 1 0 3 NJ 280 NJ 280 NJ
+preplace netloc EXPORT<net_container>mcu_system</net_container>(SLAVE)mcu_system.clk,(SLAVE)clk_0.clk_in) 1 0 1 NJ
+preplace netloc INTERCONNECT<net_container>mcu_system</net_container>(SLAVE)jtag.avalon_jtag_slave,(SLAVE)ram.s1,(MASTER)cpu.instruction_master,(MASTER)cpu.data_master,(SLAVE)i2c.csr,(SLAVE)cpu.debug_mem_slave) 1 1 2 300 230 700
+preplace netloc FAN_OUT<net_container>mcu_system</net_container>(SLAVE)jtag.irq,(SLAVE)i2c.interrupt_sender,(MASTER)cpu.irq) 1 2 1 660
+preplace netloc FAN_OUT<net_container>mcu_system</net_container>(SLAVE)cpu.clk,(SLAVE)i2c.clock,(SLAVE)jtag.clk,(SLAVE)ram.clk1,(MASTER)clk_0.clk) 1 1 2 280 210 720
+preplace netloc INTERCONNECT<net_container>mcu_system</net_container>(SLAVE)cpu.reset,(SLAVE)jtag.reset,(MASTER)cpu.debug_reset_request,(SLAVE)ram.reset1,(MASTER)clk_0.clk_reset,(SLAVE)i2c.reset_sink) 1 1 2 260 300 680
+levelinfo -pg 1 0 50 900
+levelinfo -hier mcu_system 60 90 420 750 890

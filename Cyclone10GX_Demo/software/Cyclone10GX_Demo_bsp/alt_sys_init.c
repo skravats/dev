@@ -2,9 +2,9 @@
  * alt_sys_init.c - HAL initialization source
  *
  * Machine generated for CPU 'mcu_subsystem_cpu_0' in SOPC Builder design 'mcu_subsystem'
- * SOPC Builder design path: ../../mcu_subsystem/mcu_subsystem.sopcinfo
+ * SOPC Builder design path: C:/Developer/fpga/ArrowESC/Cyclone10GX_Demo/mcu_subsystem/mcu_subsystem.sopcinfo
  *
- * Generated: Tue Jul 23 00:51:06 CEST 2019
+ * Generated: Sun Jul 28 18:08:07 CEST 2019
  */
 
 /*
@@ -70,9 +70,9 @@
  */
 
 ALTERA_NIOS2_GEN2_IRQ_INSTANCE ( MCU_SUBSYSTEM_CPU_0, mcu_subsystem_cpu_0);
-ALTERA_AVALON_I2C_INSTANCE ( FMC_I2C, fmc_i2c);
+ALTERA_AVALON_I2C_INSTANCE ( I2C, i2c);
 ALTERA_AVALON_JTAG_UART_INSTANCE ( JTAG_UART_0, jtag_uart_0);
-ALTERA_AVALON_SPI_INSTANCE ( FMC_SPI, fmc_spi);
+ALTERA_AVALON_SPI_INSTANCE ( SPI, spi);
 ALTERA_AVALON_TIMER_INSTANCE ( TIMER_0, timer_0);
 ALTERA_AVALON_TIMER_INSTANCE ( TIMER_1, timer_1);
 ALTERA_GENERIC_QUAD_SPI_CONTROLLER2_AVL_MEM_AVL_CSR_INSTANCE ( QSPI_CONTROLLER2_0, QSPI_CONTROLLER2_0_AVL_MEM, QSPI_CONTROLLER2_0_AVL_CSR, qspi_controller2_0);
@@ -100,8 +100,8 @@ void alt_sys_init( void )
 {
     ALTERA_AVALON_TIMER_INIT ( TIMER_0, timer_0);
     ALTERA_AVALON_TIMER_INIT ( TIMER_1, timer_1);
-    ALTERA_AVALON_I2C_INIT ( FMC_I2C, fmc_i2c);
+    ALTERA_AVALON_I2C_INIT ( I2C, i2c);
     ALTERA_AVALON_JTAG_UART_INIT ( JTAG_UART_0, jtag_uart_0);
-    ALTERA_AVALON_SPI_INIT ( FMC_SPI, fmc_spi);
+    ALTERA_AVALON_SPI_INIT ( SPI, spi);
     ALTERA_GENERIC_QUAD_SPI_CONTROLLER2_INIT ( QSPI_CONTROLLER2_0, qspi_controller2_0);
 }

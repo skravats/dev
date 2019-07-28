@@ -31,7 +31,7 @@
           </parameter>
           <parameter>
             <name>breakAbsoluteAddr</name>
-            <value>131104</value>
+            <value>-2012764128</value>
           </parameter>
           <parameter>
             <name>breakOffset</name>
@@ -67,7 +67,7 @@
           </parameter>
           <parameter>
             <name>customInstSlavesSystemInfo</name>
-            <value></value>
+            <value>&lt;info&gt;&lt;slave name="fpu" baseAddress="224" addressSpan="16" clockCycleType="COMBINATORIAL" /&gt;&lt;slave name="fpu_1" baseAddress="248" addressSpan="8" clockCycleType="VARIABLE" /&gt;&lt;/info&gt;</value>
           </parameter>
           <parameter>
             <name>customInstSlavesSystemInfo_nios_a</name>
@@ -95,7 +95,7 @@
           </parameter>
           <parameter>
             <name>dataSlaveMapParam</name>
-            <value>&lt;address-map&gt;&lt;slave name='mcu_subsystem_ram_0.s1' start='0x0' end='0x20000' datawidth='32' /&gt;&lt;slave name='mcu_subsystem_cpu_0.debug_mem_slave' start='0x20000' end='0x20800' datawidth='32' /&gt;&lt;slave name='phy_interlaken_1.phy_data_ctrl.csr_s0' start='0x20800' end='0x20C00' datawidth='32' /&gt;&lt;slave name='phy_interlaken_1.phy_data_ctrl.csr_s0' start='0x20C00' end='0x21000' datawidth='32' /&gt;&lt;slave name='jtag_uart_0.avalon_jtag_slave' start='0x21000' end='0x21008' datawidth='32' /&gt;&lt;slave name='fmc_spi.spi_control_port' start='0x21020' end='0x21040' datawidth='16' /&gt;&lt;slave name='qspi_controller2_0.avl_csr' start='0x21040' end='0x21080' datawidth='32' /&gt;&lt;slave name='fmc_i2c.csr' start='0x21080' end='0x210C0' datawidth='32' /&gt;&lt;slave name='fmc_gpio.s1' start='0x210C0' end='0x210E0' datawidth='32' /&gt;&lt;slave name='timer_0.s1' start='0x210E0' end='0x21100' datawidth='16' /&gt;&lt;slave name='timer_1.s1' start='0x21100' end='0x21120' datawidth='16' /&gt;&lt;slave name='sdram.ctrl_mmr_slave_0' start='0x22000' end='0x23000' datawidth='32' /&gt;&lt;slave name='phy_interlaken_1.serial_clock.reconfig_avmm0' start='0x23000' end='0x24000' datawidth='32' /&gt;&lt;slave name='ad9680_jesd204.link_reconfig' start='0x24000' end='0x28000' datawidth='32' /&gt;&lt;slave name='ad9144_jesd204.link_reconfig' start='0x28000' end='0x2C000' datawidth='32' /&gt;&lt;slave name='phy_interlaken_1.serial_clock.reconfig_avmm0' start='0x2C000' end='0x2D000' datawidth='32' /&gt;&lt;slave name='ad9680_dma.s_axi' start='0x2D000' end='0x2E000' datawidth='32' /&gt;&lt;slave name='ad9144_dma.s_axi' start='0x2E000' end='0x2F000' datawidth='32' /&gt;&lt;slave name='avl_adxcfg_3.rcfg_s1' start='0x2F000' end='0x30000' datawidth='32' /&gt;&lt;slave name='ad9680_core.s_axi' start='0x30000' end='0x40000' datawidth='32' /&gt;&lt;slave name='ad9144_core.s_axi' start='0x40000' end='0x50000' datawidth='32' /&gt;&lt;slave name='avl_adxcfg_2.rcfg_s1' start='0x50000' end='0x51000' datawidth='32' /&gt;&lt;slave name='avl_adxcfg_1.rcfg_s1' start='0x51000' end='0x52000' datawidth='32' /&gt;&lt;slave name='avl_adxcfg_0.rcfg_s1' start='0x52000' end='0x53000' datawidth='32' /&gt;&lt;slave name='avl_adxcfg_3.rcfg_s0' start='0x53000' end='0x54000' datawidth='32' /&gt;&lt;slave name='avl_adxcfg_2.rcfg_s0' start='0x54000' end='0x55000' datawidth='32' /&gt;&lt;slave name='avl_adxcfg_1.rcfg_s0' start='0x55000' end='0x56000' datawidth='32' /&gt;&lt;slave name='avl_adxcfg_0.rcfg_s0' start='0x56000' end='0x57000' datawidth='32' /&gt;&lt;slave name='ad9680_jesd204.link_pll_reconfig' start='0x57000' end='0x58000' datawidth='32' /&gt;&lt;slave name='ad9144_jesd204.link_pll_reconfig' start='0x58000' end='0x59000' datawidth='32' /&gt;&lt;slave name='ad9680_jesd204.link_management' start='0x59000' end='0x5A000' datawidth='32' /&gt;&lt;slave name='ad9144_jesd204.link_management' start='0x5A000' end='0x5B000' datawidth='32' /&gt;&lt;slave name='ad9144_jesd204.lane_pll_reconfig' start='0x5B000' end='0x5C000' datawidth='32' /&gt;&lt;slave name='qspi_controller2_0.avl_mem' start='0x8000000' end='0x10000000' datawidth='32' /&gt;&lt;slave name='sdram.ctrl_amm_0' start='0x80000000' end='0x100000000' datawidth='256' /&gt;&lt;/address-map&gt;</value>
+            <value>&lt;address-map&gt;&lt;slave name='ddr3.ctrl_amm_0' start='0x0' end='0x80000000' datawidth='256' /&gt;&lt;slave name='qspi_controller2_0.avl_mem' start='0x80000000' end='0x88000000' datawidth='32' /&gt;&lt;slave name='mcu_subsystem_ram_0.s1' start='0x88020000' end='0x88040000' datawidth='32' /&gt;&lt;slave name='ad9680_core.s_axi' start='0x88040000' end='0x88050000' datawidth='32' /&gt;&lt;slave name='ad9144_core.s_axi' start='0x88050000' end='0x88060000' datawidth='32' /&gt;&lt;slave name='ad9680_jesd204.link_reconfig' start='0x88060000' end='0x88064000' datawidth='32' /&gt;&lt;slave name='ad9144_jesd204.link_reconfig' start='0x88064000' end='0x88068000' datawidth='32' /&gt;&lt;slave name='phy_interlaken_1.serial_clock.reconfig_avmm0' start='0x88068000' end='0x88069000' datawidth='32' /&gt;&lt;slave name='phy_interlaken_1.serial_clock.reconfig_avmm0' start='0x88069000' end='0x8806A000' datawidth='32' /&gt;&lt;slave name='ad9680_dma.s_axi' start='0x8806A000' end='0x8806B000' datawidth='32' /&gt;&lt;slave name='ad9144_dma.s_axi' start='0x8806B000' end='0x8806C000' datawidth='32' /&gt;&lt;slave name='ddr3.ctrl_mmr_slave_0' start='0x8806C000' end='0x8806D000' datawidth='32' /&gt;&lt;slave name='avl_adxcfg_0.rcfg_s1' start='0x8806D000' end='0x8806E000' datawidth='32' /&gt;&lt;slave name='avl_adxcfg_1.rcfg_s1' start='0x8806E000' end='0x8806F000' datawidth='32' /&gt;&lt;slave name='avl_adxcfg_2.rcfg_s1' start='0x8806F000' end='0x88070000' datawidth='32' /&gt;&lt;slave name='avl_adxcfg_3.rcfg_s1' start='0x88070000' end='0x88071000' datawidth='32' /&gt;&lt;slave name='avl_adxcfg_0.rcfg_s0' start='0x88071000' end='0x88072000' datawidth='32' /&gt;&lt;slave name='avl_adxcfg_1.rcfg_s0' start='0x88072000' end='0x88073000' datawidth='32' /&gt;&lt;slave name='avl_adxcfg_2.rcfg_s0' start='0x88073000' end='0x88074000' datawidth='32' /&gt;&lt;slave name='avl_adxcfg_3.rcfg_s0' start='0x88074000' end='0x88075000' datawidth='32' /&gt;&lt;slave name='ad9680_jesd204.link_pll_reconfig' start='0x88075000' end='0x88076000' datawidth='32' /&gt;&lt;slave name='ad9144_jesd204.link_pll_reconfig' start='0x88076000' end='0x88077000' datawidth='32' /&gt;&lt;slave name='ad9680_jesd204.link_management' start='0x88077000' end='0x88078000' datawidth='32' /&gt;&lt;slave name='ad9144_jesd204.link_management' start='0x88078000' end='0x88079000' datawidth='32' /&gt;&lt;slave name='ad9144_jesd204.lane_pll_reconfig' start='0x88079000' end='0x8807A000' datawidth='32' /&gt;&lt;slave name='mcu_subsystem_cpu_0.debug_mem_slave' start='0x8807A800' end='0x8807B000' datawidth='32' /&gt;&lt;slave name='phy_interlaken_1.phy_data_ctrl.csr_s0' start='0x8807B000' end='0x8807B400' datawidth='32' /&gt;&lt;slave name='phy_interlaken_1.phy_data_ctrl.csr_s0' start='0x8807B400' end='0x8807B800' datawidth='32' /&gt;&lt;slave name='qspi_controller2_0.avl_csr' start='0x8807B800' end='0x8807B840' datawidth='32' /&gt;&lt;slave name='i2c.csr' start='0x8807B840' end='0x8807B880' datawidth='32' /&gt;&lt;slave name='spi.spi_control_port' start='0x8807B880' end='0x8807B8A0' datawidth='16' /&gt;&lt;slave name='gpio.s1' start='0x8807B8A0' end='0x8807B8C0' datawidth='32' /&gt;&lt;slave name='timer_0.s1' start='0x8807B8C0' end='0x8807B8E0' datawidth='16' /&gt;&lt;slave name='timer_1.s1' start='0x8807B8E0' end='0x8807B900' datawidth='16' /&gt;&lt;slave name='jtag_uart_0.avalon_jtag_slave' start='0x8807B900' end='0x8807B908' datawidth='32' /&gt;&lt;/address-map&gt;</value>
           </parameter>
           <parameter>
             <name>data_master_high_performance_paddr_base</name>
@@ -219,7 +219,7 @@
           </parameter>
           <parameter>
             <name>exceptionAbsoluteAddr</name>
-            <value>-2147483616</value>
+            <value>32</value>
           </parameter>
           <parameter>
             <name>exceptionOffset</name>
@@ -227,7 +227,7 @@
           </parameter>
           <parameter>
             <name>exceptionSlave</name>
-            <value>sdram.ctrl_amm_0</value>
+            <value>ddr3.ctrl_amm_0</value>
           </parameter>
           <parameter>
             <name>faAddrWidth</name>
@@ -267,7 +267,7 @@
           </parameter>
           <parameter>
             <name>icache_size</name>
-            <value>2048</value>
+            <value>4096</value>
           </parameter>
           <parameter>
             <name>icache_tagramBlockType</name>
@@ -283,7 +283,7 @@
           </parameter>
           <parameter>
             <name>instSlaveMapParam</name>
-            <value>&lt;address-map&gt;&lt;slave name='mcu_subsystem_ram_0.s1' start='0x0' end='0x20000' datawidth='32' /&gt;&lt;slave name='mcu_subsystem_cpu_0.debug_mem_slave' start='0x20000' end='0x20800' datawidth='32' /&gt;&lt;slave name='qspi_controller2_0.avl_csr' start='0x21040' end='0x21080' datawidth='32' /&gt;&lt;slave name='sdram.ctrl_mmr_slave_0' start='0x22000' end='0x23000' datawidth='32' /&gt;&lt;slave name='qspi_controller2_0.avl_mem' start='0x8000000' end='0x10000000' datawidth='32' /&gt;&lt;slave name='sdram.ctrl_amm_0' start='0x80000000' end='0x100000000' datawidth='256' /&gt;&lt;/address-map&gt;</value>
+            <value>&lt;address-map&gt;&lt;slave name='ddr3.ctrl_amm_0' start='0x0' end='0x80000000' datawidth='256' /&gt;&lt;slave name='qspi_controller2_0.avl_mem' start='0x80000000' end='0x88000000' datawidth='32' /&gt;&lt;slave name='mcu_subsystem_ram_0.s1' start='0x88020000' end='0x88040000' datawidth='32' /&gt;&lt;slave name='ddr3.ctrl_mmr_slave_0' start='0x8806C000' end='0x8806D000' datawidth='32' /&gt;&lt;slave name='mcu_subsystem_cpu_0.debug_mem_slave' start='0x8807A800' end='0x8807B000' datawidth='32' /&gt;&lt;/address-map&gt;</value>
           </parameter>
           <parameter>
             <name>instructionMasterHighPerformanceAddrWidth</name>
@@ -431,7 +431,7 @@
           </parameter>
           <parameter>
             <name>resetAbsoluteAddr</name>
-            <value>-2147483648</value>
+            <value>0</value>
           </parameter>
           <parameter>
             <name>resetOffset</name>
@@ -439,7 +439,7 @@
           </parameter>
           <parameter>
             <name>resetSlave</name>
-            <value>sdram.ctrl_amm_0</value>
+            <value>ddr3.ctrl_amm_0</value>
           </parameter>
           <parameter>
             <name>resetrequest_enabled</name>
@@ -803,7 +803,7 @@
         <className>altera_nios2_gen2</className>
         <version>18.1</version>
         <name>mcu_subsystem_cpu_0</name>
-        <uniqueName>mcu_subsystem_cpu_0_altera_nios2_gen2_181_7fscvgi</uniqueName>
+        <uniqueName>mcu_subsystem_cpu_0_altera_nios2_gen2_181_bybaqra</uniqueName>
         <nonce>0</nonce>
         <incidentConnections></incidentConnections>
         <path>mcu_subsystem_cpu_0.mcu_subsystem_cpu_0</path>
@@ -900,7 +900,7 @@
               </parameter>
               <parameter>
                 <name>breakAbsoluteAddr</name>
-                <value>131104</value>
+                <value>-2012764128</value>
               </parameter>
               <parameter>
                 <name>breakOffset</name>
@@ -940,7 +940,7 @@
               </parameter>
               <parameter>
                 <name>customInstSlavesSystemInfo</name>
-                <value></value>
+                <value>&lt;info&gt;&lt;slave name="fpu" baseAddress="224" addressSpan="16" clockCycleType="COMBINATORIAL" /&gt;&lt;slave name="fpu_1" baseAddress="248" addressSpan="8" clockCycleType="VARIABLE" /&gt;&lt;/info&gt;</value>
               </parameter>
               <parameter>
                 <name>dataAddrWidth</name>
@@ -956,7 +956,7 @@
               </parameter>
               <parameter>
                 <name>dataSlaveMapParam</name>
-                <value>&lt;address-map&gt;&lt;slave name='mcu_subsystem_ram_0.s1' start='0x0' end='0x20000' datawidth='32' /&gt;&lt;slave name='mcu_subsystem_cpu_0.debug_mem_slave' start='0x20000' end='0x20800' datawidth='32' /&gt;&lt;slave name='phy_interlaken_1.phy_data_ctrl.csr_s0' start='0x20800' end='0x20C00' datawidth='32' /&gt;&lt;slave name='phy_interlaken_1.phy_data_ctrl.csr_s0' start='0x20C00' end='0x21000' datawidth='32' /&gt;&lt;slave name='jtag_uart_0.avalon_jtag_slave' start='0x21000' end='0x21008' datawidth='32' /&gt;&lt;slave name='fmc_spi.spi_control_port' start='0x21020' end='0x21040' datawidth='16' /&gt;&lt;slave name='qspi_controller2_0.avl_csr' start='0x21040' end='0x21080' datawidth='32' /&gt;&lt;slave name='fmc_i2c.csr' start='0x21080' end='0x210C0' datawidth='32' /&gt;&lt;slave name='fmc_gpio.s1' start='0x210C0' end='0x210E0' datawidth='32' /&gt;&lt;slave name='timer_0.s1' start='0x210E0' end='0x21100' datawidth='16' /&gt;&lt;slave name='timer_1.s1' start='0x21100' end='0x21120' datawidth='16' /&gt;&lt;slave name='sdram.ctrl_mmr_slave_0' start='0x22000' end='0x23000' datawidth='32' /&gt;&lt;slave name='phy_interlaken_1.serial_clock.reconfig_avmm0' start='0x23000' end='0x24000' datawidth='32' /&gt;&lt;slave name='ad9680_jesd204.link_reconfig' start='0x24000' end='0x28000' datawidth='32' /&gt;&lt;slave name='ad9144_jesd204.link_reconfig' start='0x28000' end='0x2C000' datawidth='32' /&gt;&lt;slave name='phy_interlaken_1.serial_clock.reconfig_avmm0' start='0x2C000' end='0x2D000' datawidth='32' /&gt;&lt;slave name='ad9680_dma.s_axi' start='0x2D000' end='0x2E000' datawidth='32' /&gt;&lt;slave name='ad9144_dma.s_axi' start='0x2E000' end='0x2F000' datawidth='32' /&gt;&lt;slave name='avl_adxcfg_3.rcfg_s1' start='0x2F000' end='0x30000' datawidth='32' /&gt;&lt;slave name='ad9680_core.s_axi' start='0x30000' end='0x40000' datawidth='32' /&gt;&lt;slave name='ad9144_core.s_axi' start='0x40000' end='0x50000' datawidth='32' /&gt;&lt;slave name='avl_adxcfg_2.rcfg_s1' start='0x50000' end='0x51000' datawidth='32' /&gt;&lt;slave name='avl_adxcfg_1.rcfg_s1' start='0x51000' end='0x52000' datawidth='32' /&gt;&lt;slave name='avl_adxcfg_0.rcfg_s1' start='0x52000' end='0x53000' datawidth='32' /&gt;&lt;slave name='avl_adxcfg_3.rcfg_s0' start='0x53000' end='0x54000' datawidth='32' /&gt;&lt;slave name='avl_adxcfg_2.rcfg_s0' start='0x54000' end='0x55000' datawidth='32' /&gt;&lt;slave name='avl_adxcfg_1.rcfg_s0' start='0x55000' end='0x56000' datawidth='32' /&gt;&lt;slave name='avl_adxcfg_0.rcfg_s0' start='0x56000' end='0x57000' datawidth='32' /&gt;&lt;slave name='ad9680_jesd204.link_pll_reconfig' start='0x57000' end='0x58000' datawidth='32' /&gt;&lt;slave name='ad9144_jesd204.link_pll_reconfig' start='0x58000' end='0x59000' datawidth='32' /&gt;&lt;slave name='ad9680_jesd204.link_management' start='0x59000' end='0x5A000' datawidth='32' /&gt;&lt;slave name='ad9144_jesd204.link_management' start='0x5A000' end='0x5B000' datawidth='32' /&gt;&lt;slave name='ad9144_jesd204.lane_pll_reconfig' start='0x5B000' end='0x5C000' datawidth='32' /&gt;&lt;slave name='qspi_controller2_0.avl_mem' start='0x8000000' end='0x10000000' datawidth='32' /&gt;&lt;slave name='sdram.ctrl_amm_0' start='0x80000000' end='0x100000000' datawidth='256' /&gt;&lt;/address-map&gt;</value>
+                <value>&lt;address-map&gt;&lt;slave name='ddr3.ctrl_amm_0' start='0x0' end='0x80000000' datawidth='256' /&gt;&lt;slave name='qspi_controller2_0.avl_mem' start='0x80000000' end='0x88000000' datawidth='32' /&gt;&lt;slave name='mcu_subsystem_ram_0.s1' start='0x88020000' end='0x88040000' datawidth='32' /&gt;&lt;slave name='ad9680_core.s_axi' start='0x88040000' end='0x88050000' datawidth='32' /&gt;&lt;slave name='ad9144_core.s_axi' start='0x88050000' end='0x88060000' datawidth='32' /&gt;&lt;slave name='ad9680_jesd204.link_reconfig' start='0x88060000' end='0x88064000' datawidth='32' /&gt;&lt;slave name='ad9144_jesd204.link_reconfig' start='0x88064000' end='0x88068000' datawidth='32' /&gt;&lt;slave name='phy_interlaken_1.serial_clock.reconfig_avmm0' start='0x88068000' end='0x88069000' datawidth='32' /&gt;&lt;slave name='phy_interlaken_1.serial_clock.reconfig_avmm0' start='0x88069000' end='0x8806A000' datawidth='32' /&gt;&lt;slave name='ad9680_dma.s_axi' start='0x8806A000' end='0x8806B000' datawidth='32' /&gt;&lt;slave name='ad9144_dma.s_axi' start='0x8806B000' end='0x8806C000' datawidth='32' /&gt;&lt;slave name='ddr3.ctrl_mmr_slave_0' start='0x8806C000' end='0x8806D000' datawidth='32' /&gt;&lt;slave name='avl_adxcfg_0.rcfg_s1' start='0x8806D000' end='0x8806E000' datawidth='32' /&gt;&lt;slave name='avl_adxcfg_1.rcfg_s1' start='0x8806E000' end='0x8806F000' datawidth='32' /&gt;&lt;slave name='avl_adxcfg_2.rcfg_s1' start='0x8806F000' end='0x88070000' datawidth='32' /&gt;&lt;slave name='avl_adxcfg_3.rcfg_s1' start='0x88070000' end='0x88071000' datawidth='32' /&gt;&lt;slave name='avl_adxcfg_0.rcfg_s0' start='0x88071000' end='0x88072000' datawidth='32' /&gt;&lt;slave name='avl_adxcfg_1.rcfg_s0' start='0x88072000' end='0x88073000' datawidth='32' /&gt;&lt;slave name='avl_adxcfg_2.rcfg_s0' start='0x88073000' end='0x88074000' datawidth='32' /&gt;&lt;slave name='avl_adxcfg_3.rcfg_s0' start='0x88074000' end='0x88075000' datawidth='32' /&gt;&lt;slave name='ad9680_jesd204.link_pll_reconfig' start='0x88075000' end='0x88076000' datawidth='32' /&gt;&lt;slave name='ad9144_jesd204.link_pll_reconfig' start='0x88076000' end='0x88077000' datawidth='32' /&gt;&lt;slave name='ad9680_jesd204.link_management' start='0x88077000' end='0x88078000' datawidth='32' /&gt;&lt;slave name='ad9144_jesd204.link_management' start='0x88078000' end='0x88079000' datawidth='32' /&gt;&lt;slave name='ad9144_jesd204.lane_pll_reconfig' start='0x88079000' end='0x8807A000' datawidth='32' /&gt;&lt;slave name='mcu_subsystem_cpu_0.debug_mem_slave' start='0x8807A800' end='0x8807B000' datawidth='32' /&gt;&lt;slave name='phy_interlaken_1.phy_data_ctrl.csr_s0' start='0x8807B000' end='0x8807B400' datawidth='32' /&gt;&lt;slave name='phy_interlaken_1.phy_data_ctrl.csr_s0' start='0x8807B400' end='0x8807B800' datawidth='32' /&gt;&lt;slave name='qspi_controller2_0.avl_csr' start='0x8807B800' end='0x8807B840' datawidth='32' /&gt;&lt;slave name='i2c.csr' start='0x8807B840' end='0x8807B880' datawidth='32' /&gt;&lt;slave name='spi.spi_control_port' start='0x8807B880' end='0x8807B8A0' datawidth='16' /&gt;&lt;slave name='gpio.s1' start='0x8807B8A0' end='0x8807B8C0' datawidth='32' /&gt;&lt;slave name='timer_0.s1' start='0x8807B8C0' end='0x8807B8E0' datawidth='16' /&gt;&lt;slave name='timer_1.s1' start='0x8807B8E0' end='0x8807B900' datawidth='16' /&gt;&lt;slave name='jtag_uart_0.avalon_jtag_slave' start='0x8807B900' end='0x8807B908' datawidth='32' /&gt;&lt;/address-map&gt;</value>
               </parameter>
               <parameter>
                 <name>data_master_high_performance_paddr_base</name>
@@ -1080,7 +1080,7 @@
               </parameter>
               <parameter>
                 <name>exceptionAbsoluteAddr</name>
-                <value>-2147483616</value>
+                <value>32</value>
               </parameter>
               <parameter>
                 <name>exceptionOffset</name>
@@ -1088,7 +1088,7 @@
               </parameter>
               <parameter>
                 <name>exceptionSlave</name>
-                <value>sdram.ctrl_amm_0</value>
+                <value>ddr3.ctrl_amm_0</value>
               </parameter>
               <parameter>
                 <name>faAddrWidth</name>
@@ -1128,7 +1128,7 @@
               </parameter>
               <parameter>
                 <name>icache_size</name>
-                <value>2048</value>
+                <value>4096</value>
               </parameter>
               <parameter>
                 <name>icache_tagramBlockType</name>
@@ -1144,7 +1144,7 @@
               </parameter>
               <parameter>
                 <name>instSlaveMapParam</name>
-                <value>&lt;address-map&gt;&lt;slave name='mcu_subsystem_ram_0.s1' start='0x0' end='0x20000' datawidth='32' /&gt;&lt;slave name='mcu_subsystem_cpu_0.debug_mem_slave' start='0x20000' end='0x20800' datawidth='32' /&gt;&lt;slave name='qspi_controller2_0.avl_csr' start='0x21040' end='0x21080' datawidth='32' /&gt;&lt;slave name='sdram.ctrl_mmr_slave_0' start='0x22000' end='0x23000' datawidth='32' /&gt;&lt;slave name='qspi_controller2_0.avl_mem' start='0x8000000' end='0x10000000' datawidth='32' /&gt;&lt;slave name='sdram.ctrl_amm_0' start='0x80000000' end='0x100000000' datawidth='256' /&gt;&lt;/address-map&gt;</value>
+                <value>&lt;address-map&gt;&lt;slave name='ddr3.ctrl_amm_0' start='0x0' end='0x80000000' datawidth='256' /&gt;&lt;slave name='qspi_controller2_0.avl_mem' start='0x80000000' end='0x88000000' datawidth='32' /&gt;&lt;slave name='mcu_subsystem_ram_0.s1' start='0x88020000' end='0x88040000' datawidth='32' /&gt;&lt;slave name='ddr3.ctrl_mmr_slave_0' start='0x8806C000' end='0x8806D000' datawidth='32' /&gt;&lt;slave name='mcu_subsystem_cpu_0.debug_mem_slave' start='0x8807A800' end='0x8807B000' datawidth='32' /&gt;&lt;/address-map&gt;</value>
               </parameter>
               <parameter>
                 <name>instructionMasterHighPerformanceAddrWidth</name>
@@ -1280,7 +1280,7 @@
               </parameter>
               <parameter>
                 <name>resetAbsoluteAddr</name>
-                <value>-2147483648</value>
+                <value>0</value>
               </parameter>
               <parameter>
                 <name>resetOffset</name>
@@ -1288,7 +1288,7 @@
               </parameter>
               <parameter>
                 <name>resetSlave</name>
-                <value>sdram.ctrl_amm_0</value>
+                <value>ddr3.ctrl_amm_0</value>
               </parameter>
               <parameter>
                 <name>resetrequest_enabled</name>
@@ -1627,7 +1627,7 @@
             <className>altera_nios2_gen2_unit</className>
             <version>18.1</version>
             <name>cpu</name>
-            <uniqueName>mcu_subsystem_cpu_0_altera_nios2_gen2_unit_181_5atbqqa</uniqueName>
+            <uniqueName>mcu_subsystem_cpu_0_altera_nios2_gen2_unit_181_gunwuqy</uniqueName>
             <nonce>0</nonce>
             <incidentConnections>
               <incidentConnection>

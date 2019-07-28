@@ -12,7 +12,7 @@ Info: iopll_0: "Transforming system: iopll_0"
 Info: iopll_0: "Naming system components in system: iopll_0"
 Info: iopll_0: "Processing generation queue"
 Info: iopll_0: "Generating: iopll_0"
-Info: iopll_0: "Generating: iopll_0_altera_iopll_181_da5exdq"
+Info: iopll_0: "Generating: iopll_0_altera_iopll_181_z3743by"
 Info: iopll_0: Done "iopll_0" with 2 modules, 2 files
 Info: qsys-generate succeeded.
 Info: Finished: Create HDL design files for synthesis

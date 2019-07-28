@@ -12,7 +12,7 @@ module iopll_0 (
 		output wire  outclk_2  // outclk2.clk
 	);
 
-	iopll_0_altera_iopll_181_da5exdq iopll_0 (
+	iopll_0_altera_iopll_181_z3743by iopll_0 (
 		.rst      (rst),      //   input,  width = 1,   reset.reset
 		.refclk   (refclk),   //   input,  width = 1,  refclk.clk
 		.locked   (locked),   //  output,  width = 1,  locked.export

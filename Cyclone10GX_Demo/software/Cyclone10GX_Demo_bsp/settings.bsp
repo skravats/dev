@@ -2,11 +2,11 @@
 <ns2:Settings xmlns:ns2="http://www.altera.com/embeddedsw/bsp/schema">
     <BspType>hal</BspType>
     <BspVersion>default</BspVersion>
-    <BspGeneratedTimeStamp>Jul 23, 2019 12:51:04 AM</BspGeneratedTimeStamp>
-    <BspGeneratedUnixTimeStamp>1563835864023</BspGeneratedUnixTimeStamp>
+    <BspGeneratedTimeStamp>Jul 28, 2019 6:08:05 PM</BspGeneratedTimeStamp>
+    <BspGeneratedUnixTimeStamp>1564330085378</BspGeneratedUnixTimeStamp>
     <BspGeneratedLocation>C:\Developer\fpga\ArrowESC\Cyclone10GX_Demo\software\Cyclone10GX_Demo_bsp</BspGeneratedLocation>
     <BspSettingsFile>.\settings.bsp</BspSettingsFile>
-    <SopcDesignFile>..\..\mcu_subsystem\mcu_subsystem.sopcinfo</SopcDesignFile>
+    <SopcDesignFile>C:\Developer\fpga\ArrowESC\Cyclone10GX_Demo\mcu_subsystem\mcu_subsystem.sopcinfo</SopcDesignFile>
     <JdiFile>default</JdiFile>
     <Cpu>mcu_subsystem_cpu_0</Cpu>
     <Setting>
@@ -138,7 +138,7 @@
         <SettingName>hal.linker.exception_stack_memory_region_name</SettingName>
         <Identifier>none</Identifier>
         <Type>UnquotedString</Type>
-        <Value>sdram_ctrl_amm_0</Value>
+        <Value>ddr3_ctrl_amm_0</Value>
         <DefaultValue>none</DefaultValue>
         <DestinationFile>none</DestinationFile>
         <Description>Name of the existing memory region that will be divided up to create the 'exception_stack' memory region. The selected region name will be adjusted automatically when the BSP is generated to create the 'exception_stack' memory region.</Description>
@@ -174,7 +174,7 @@
         <SettingName>hal.linker.interrupt_stack_memory_region_name</SettingName>
         <Identifier>none</Identifier>
         <Type>UnquotedString</Type>
-        <Value>sdram_ctrl_amm_0</Value>
+        <Value>ddr3_ctrl_amm_0</Value>
         <DefaultValue>none</DefaultValue>
         <DestinationFile>none</DestinationFile>
         <Description>Name of the existing memory region that will be divided up to create the 'interrupt_stack' memory region. The selected region name will be adjusted automatically when the BSP is generated to create the 'interrupt_stack' memory region.</Description>
@@ -877,237 +877,237 @@
         <Enabled>false</Enabled>
     </Setting>
     <MemoryMap>
+        <slaveDescriptor>ddr3_ctrl_amm_0</slaveDescriptor>
+        <addressRange>0x00000000 - 0x7FFFFFFF</addressRange>
+        <addressSpan>2147483648</addressSpan>
+        <attributes>memory</attributes>
+    </MemoryMap>
+    <MemoryMap>
+        <slaveDescriptor>qspi_controller2_0_avl_mem</slaveDescriptor>
+        <addressRange>0x80000000 - 0x87FFFFFF</addressRange>
+        <addressSpan>134217728</addressSpan>
+        <attributes>flash, memory, non-volatile</attributes>
+    </MemoryMap>
+    <MemoryMap>
         <slaveDescriptor>mcu_subsystem_ram_0</slaveDescriptor>
-        <addressRange>0x00000000 - 0x0001FFFF</addressRange>
+        <addressRange>0x88020000 - 0x8803FFFF</addressRange>
         <addressSpan>131072</addressSpan>
         <attributes>memory</attributes>
     </MemoryMap>
     <MemoryMap>
-        <slaveDescriptor>phy_interlaken_1_phy_data_ctrl</slaveDescriptor>
-        <addressRange>0x00020800 - 0x00020BFF</addressRange>
-        <addressSpan>1024</addressSpan>
-        <attributes></attributes>
-    </MemoryMap>
-    <MemoryMap>
-        <slaveDescriptor>phy_interlaken_0_phy_data_ctrl</slaveDescriptor>
-        <addressRange>0x00020C00 - 0x00020FFF</addressRange>
-        <addressSpan>1024</addressSpan>
-        <attributes></attributes>
-    </MemoryMap>
-    <MemoryMap>
-        <slaveDescriptor>jtag_uart_0</slaveDescriptor>
-        <addressRange>0x00021000 - 0x00021007</addressRange>
-        <addressSpan>8</addressSpan>
-        <attributes>printable</attributes>
-    </MemoryMap>
-    <MemoryMap>
-        <slaveDescriptor>fmc_spi</slaveDescriptor>
-        <addressRange>0x00021020 - 0x0002103F</addressRange>
-        <addressSpan>32</addressSpan>
-        <attributes></attributes>
-    </MemoryMap>
-    <MemoryMap>
-        <slaveDescriptor>qspi_controller2_0_avl_csr</slaveDescriptor>
-        <addressRange>0x00021040 - 0x0002107F</addressRange>
-        <addressSpan>64</addressSpan>
-        <attributes></attributes>
-    </MemoryMap>
-    <MemoryMap>
-        <slaveDescriptor>fmc_i2c</slaveDescriptor>
-        <addressRange>0x00021080 - 0x000210BF</addressRange>
-        <addressSpan>64</addressSpan>
-        <attributes></attributes>
-    </MemoryMap>
-    <MemoryMap>
-        <slaveDescriptor>fmc_gpio</slaveDescriptor>
-        <addressRange>0x000210C0 - 0x000210DF</addressRange>
-        <addressSpan>32</addressSpan>
-        <attributes></attributes>
-    </MemoryMap>
-    <MemoryMap>
-        <slaveDescriptor>timer_0</slaveDescriptor>
-        <addressRange>0x000210E0 - 0x000210FF</addressRange>
-        <addressSpan>32</addressSpan>
-        <attributes>timer</attributes>
-    </MemoryMap>
-    <MemoryMap>
-        <slaveDescriptor>timer_1</slaveDescriptor>
-        <addressRange>0x00021100 - 0x0002111F</addressRange>
-        <addressSpan>32</addressSpan>
-        <attributes>timer</attributes>
-    </MemoryMap>
-    <MemoryMap>
-        <slaveDescriptor>sdram_ctrl_mmr_slave_0</slaveDescriptor>
-        <addressRange>0x00022000 - 0x00022FFF</addressRange>
-        <addressSpan>4096</addressSpan>
-        <attributes></attributes>
-    </MemoryMap>
-    <MemoryMap>
-        <slaveDescriptor>phy_interlaken_1_serial_clock</slaveDescriptor>
-        <addressRange>0x00023000 - 0x00023FFF</addressRange>
-        <addressSpan>4096</addressSpan>
-        <attributes></attributes>
-    </MemoryMap>
-    <MemoryMap>
-        <slaveDescriptor>ad9680_jesd204_link_reconfig</slaveDescriptor>
-        <addressRange>0x00024000 - 0x00027FFF</addressRange>
-        <addressSpan>16384</addressSpan>
-        <attributes></attributes>
-    </MemoryMap>
-    <MemoryMap>
-        <slaveDescriptor>ad9144_jesd204_link_reconfig</slaveDescriptor>
-        <addressRange>0x00028000 - 0x0002BFFF</addressRange>
-        <addressSpan>16384</addressSpan>
-        <attributes></attributes>
-    </MemoryMap>
-    <MemoryMap>
-        <slaveDescriptor>phy_interlaken_0_serial_clock</slaveDescriptor>
-        <addressRange>0x0002C000 - 0x0002CFFF</addressRange>
-        <addressSpan>4096</addressSpan>
-        <attributes></attributes>
-    </MemoryMap>
-    <MemoryMap>
-        <slaveDescriptor>ad9680_dma</slaveDescriptor>
-        <addressRange>0x0002D000 - 0x0002DFFF</addressRange>
-        <addressSpan>4096</addressSpan>
-        <attributes></attributes>
-    </MemoryMap>
-    <MemoryMap>
-        <slaveDescriptor>ad9144_dma</slaveDescriptor>
-        <addressRange>0x0002E000 - 0x0002EFFF</addressRange>
-        <addressSpan>4096</addressSpan>
-        <attributes></attributes>
-    </MemoryMap>
-    <MemoryMap>
-        <slaveDescriptor>avl_adxcfg_3_rcfg_s1</slaveDescriptor>
-        <addressRange>0x0002F000 - 0x0002FFFF</addressRange>
-        <addressSpan>4096</addressSpan>
-        <attributes></attributes>
-    </MemoryMap>
-    <MemoryMap>
         <slaveDescriptor>ad9680_core</slaveDescriptor>
-        <addressRange>0x00030000 - 0x0003FFFF</addressRange>
+        <addressRange>0x88040000 - 0x8804FFFF</addressRange>
         <addressSpan>65536</addressSpan>
         <attributes></attributes>
     </MemoryMap>
     <MemoryMap>
         <slaveDescriptor>ad9144_core</slaveDescriptor>
-        <addressRange>0x00040000 - 0x0004FFFF</addressRange>
+        <addressRange>0x88050000 - 0x8805FFFF</addressRange>
         <addressSpan>65536</addressSpan>
         <attributes></attributes>
     </MemoryMap>
     <MemoryMap>
-        <slaveDescriptor>avl_adxcfg_2_rcfg_s1</slaveDescriptor>
-        <addressRange>0x00050000 - 0x00050FFF</addressRange>
+        <slaveDescriptor>ad9680_jesd204_link_reconfig</slaveDescriptor>
+        <addressRange>0x88060000 - 0x88063FFF</addressRange>
+        <addressSpan>16384</addressSpan>
+        <attributes></attributes>
+    </MemoryMap>
+    <MemoryMap>
+        <slaveDescriptor>ad9144_jesd204_link_reconfig</slaveDescriptor>
+        <addressRange>0x88064000 - 0x88067FFF</addressRange>
+        <addressSpan>16384</addressSpan>
+        <attributes></attributes>
+    </MemoryMap>
+    <MemoryMap>
+        <slaveDescriptor>phy_interlaken_1_serial_clock</slaveDescriptor>
+        <addressRange>0x88068000 - 0x88068FFF</addressRange>
         <addressSpan>4096</addressSpan>
         <attributes></attributes>
     </MemoryMap>
     <MemoryMap>
-        <slaveDescriptor>avl_adxcfg_1_rcfg_s1</slaveDescriptor>
-        <addressRange>0x00051000 - 0x00051FFF</addressRange>
+        <slaveDescriptor>phy_interlaken_0_serial_clock</slaveDescriptor>
+        <addressRange>0x88069000 - 0x88069FFF</addressRange>
+        <addressSpan>4096</addressSpan>
+        <attributes></attributes>
+    </MemoryMap>
+    <MemoryMap>
+        <slaveDescriptor>ad9680_dma</slaveDescriptor>
+        <addressRange>0x8806A000 - 0x8806AFFF</addressRange>
+        <addressSpan>4096</addressSpan>
+        <attributes></attributes>
+    </MemoryMap>
+    <MemoryMap>
+        <slaveDescriptor>ad9144_dma</slaveDescriptor>
+        <addressRange>0x8806B000 - 0x8806BFFF</addressRange>
+        <addressSpan>4096</addressSpan>
+        <attributes></attributes>
+    </MemoryMap>
+    <MemoryMap>
+        <slaveDescriptor>ddr3_ctrl_mmr_slave_0</slaveDescriptor>
+        <addressRange>0x8806C000 - 0x8806CFFF</addressRange>
         <addressSpan>4096</addressSpan>
         <attributes></attributes>
     </MemoryMap>
     <MemoryMap>
         <slaveDescriptor>avl_adxcfg_0_rcfg_s1</slaveDescriptor>
-        <addressRange>0x00052000 - 0x00052FFF</addressRange>
+        <addressRange>0x8806D000 - 0x8806DFFF</addressRange>
         <addressSpan>4096</addressSpan>
         <attributes></attributes>
     </MemoryMap>
     <MemoryMap>
-        <slaveDescriptor>avl_adxcfg_3_rcfg_s0</slaveDescriptor>
-        <addressRange>0x00053000 - 0x00053FFF</addressRange>
+        <slaveDescriptor>avl_adxcfg_1_rcfg_s1</slaveDescriptor>
+        <addressRange>0x8806E000 - 0x8806EFFF</addressRange>
         <addressSpan>4096</addressSpan>
         <attributes></attributes>
     </MemoryMap>
     <MemoryMap>
-        <slaveDescriptor>avl_adxcfg_2_rcfg_s0</slaveDescriptor>
-        <addressRange>0x00054000 - 0x00054FFF</addressRange>
+        <slaveDescriptor>avl_adxcfg_2_rcfg_s1</slaveDescriptor>
+        <addressRange>0x8806F000 - 0x8806FFFF</addressRange>
         <addressSpan>4096</addressSpan>
         <attributes></attributes>
     </MemoryMap>
     <MemoryMap>
-        <slaveDescriptor>avl_adxcfg_1_rcfg_s0</slaveDescriptor>
-        <addressRange>0x00055000 - 0x00055FFF</addressRange>
+        <slaveDescriptor>avl_adxcfg_3_rcfg_s1</slaveDescriptor>
+        <addressRange>0x88070000 - 0x88070FFF</addressRange>
         <addressSpan>4096</addressSpan>
         <attributes></attributes>
     </MemoryMap>
     <MemoryMap>
         <slaveDescriptor>avl_adxcfg_0_rcfg_s0</slaveDescriptor>
-        <addressRange>0x00056000 - 0x00056FFF</addressRange>
+        <addressRange>0x88071000 - 0x88071FFF</addressRange>
+        <addressSpan>4096</addressSpan>
+        <attributes></attributes>
+    </MemoryMap>
+    <MemoryMap>
+        <slaveDescriptor>avl_adxcfg_1_rcfg_s0</slaveDescriptor>
+        <addressRange>0x88072000 - 0x88072FFF</addressRange>
+        <addressSpan>4096</addressSpan>
+        <attributes></attributes>
+    </MemoryMap>
+    <MemoryMap>
+        <slaveDescriptor>avl_adxcfg_2_rcfg_s0</slaveDescriptor>
+        <addressRange>0x88073000 - 0x88073FFF</addressRange>
+        <addressSpan>4096</addressSpan>
+        <attributes></attributes>
+    </MemoryMap>
+    <MemoryMap>
+        <slaveDescriptor>avl_adxcfg_3_rcfg_s0</slaveDescriptor>
+        <addressRange>0x88074000 - 0x88074FFF</addressRange>
         <addressSpan>4096</addressSpan>
         <attributes></attributes>
     </MemoryMap>
     <MemoryMap>
         <slaveDescriptor>ad9680_jesd204_link_pll_reconfig</slaveDescriptor>
-        <addressRange>0x00057000 - 0x00057FFF</addressRange>
+        <addressRange>0x88075000 - 0x88075FFF</addressRange>
         <addressSpan>4096</addressSpan>
         <attributes></attributes>
     </MemoryMap>
     <MemoryMap>
         <slaveDescriptor>ad9144_jesd204_link_pll_reconfig</slaveDescriptor>
-        <addressRange>0x00058000 - 0x00058FFF</addressRange>
+        <addressRange>0x88076000 - 0x88076FFF</addressRange>
         <addressSpan>4096</addressSpan>
         <attributes></attributes>
     </MemoryMap>
     <MemoryMap>
         <slaveDescriptor>ad9680_jesd204_link_management</slaveDescriptor>
-        <addressRange>0x00059000 - 0x00059FFF</addressRange>
+        <addressRange>0x88077000 - 0x88077FFF</addressRange>
         <addressSpan>4096</addressSpan>
         <attributes></attributes>
     </MemoryMap>
     <MemoryMap>
         <slaveDescriptor>ad9144_jesd204_link_management</slaveDescriptor>
-        <addressRange>0x0005A000 - 0x0005AFFF</addressRange>
+        <addressRange>0x88078000 - 0x88078FFF</addressRange>
         <addressSpan>4096</addressSpan>
         <attributes></attributes>
     </MemoryMap>
     <MemoryMap>
         <slaveDescriptor>ad9144_jesd204_lane_pll_reconfig</slaveDescriptor>
-        <addressRange>0x0005B000 - 0x0005BFFF</addressRange>
+        <addressRange>0x88079000 - 0x88079FFF</addressRange>
         <addressSpan>4096</addressSpan>
         <attributes></attributes>
     </MemoryMap>
     <MemoryMap>
-        <slaveDescriptor>qspi_controller2_0_avl_mem</slaveDescriptor>
-        <addressRange>0x08000000 - 0x0FFFFFFF</addressRange>
-        <addressSpan>134217728</addressSpan>
-        <attributes>flash, memory, non-volatile</attributes>
+        <slaveDescriptor>phy_interlaken_1_phy_data_ctrl</slaveDescriptor>
+        <addressRange>0x8807B000 - 0x8807B3FF</addressRange>
+        <addressSpan>1024</addressSpan>
+        <attributes></attributes>
     </MemoryMap>
     <MemoryMap>
-        <slaveDescriptor>sdram_ctrl_amm_0</slaveDescriptor>
-        <addressRange>0x80000000 - 0xFFFFFFFF</addressRange>
-        <addressSpan>2147483648</addressSpan>
-        <attributes>memory</attributes>
+        <slaveDescriptor>phy_interlaken_0_phy_data_ctrl</slaveDescriptor>
+        <addressRange>0x8807B400 - 0x8807B7FF</addressRange>
+        <addressSpan>1024</addressSpan>
+        <attributes></attributes>
+    </MemoryMap>
+    <MemoryMap>
+        <slaveDescriptor>qspi_controller2_0_avl_csr</slaveDescriptor>
+        <addressRange>0x8807B800 - 0x8807B83F</addressRange>
+        <addressSpan>64</addressSpan>
+        <attributes></attributes>
+    </MemoryMap>
+    <MemoryMap>
+        <slaveDescriptor>i2c</slaveDescriptor>
+        <addressRange>0x8807B840 - 0x8807B87F</addressRange>
+        <addressSpan>64</addressSpan>
+        <attributes></attributes>
+    </MemoryMap>
+    <MemoryMap>
+        <slaveDescriptor>spi</slaveDescriptor>
+        <addressRange>0x8807B880 - 0x8807B89F</addressRange>
+        <addressSpan>32</addressSpan>
+        <attributes></attributes>
+    </MemoryMap>
+    <MemoryMap>
+        <slaveDescriptor>gpio</slaveDescriptor>
+        <addressRange>0x8807B8A0 - 0x8807B8BF</addressRange>
+        <addressSpan>32</addressSpan>
+        <attributes></attributes>
+    </MemoryMap>
+    <MemoryMap>
+        <slaveDescriptor>timer_0</slaveDescriptor>
+        <addressRange>0x8807B8C0 - 0x8807B8DF</addressRange>
+        <addressSpan>32</addressSpan>
+        <attributes>timer</attributes>
+    </MemoryMap>
+    <MemoryMap>
+        <slaveDescriptor>timer_1</slaveDescriptor>
+        <addressRange>0x8807B8E0 - 0x8807B8FF</addressRange>
+        <addressSpan>32</addressSpan>
+        <attributes>timer</attributes>
+    </MemoryMap>
+    <MemoryMap>
+        <slaveDescriptor>jtag_uart_0</slaveDescriptor>
+        <addressRange>0x8807B900 - 0x8807B907</addressRange>
+        <addressSpan>8</addressSpan>
+        <attributes>printable</attributes>
     </MemoryMap>
     <LinkerSection>
         <sectionName>.text</sectionName>
-        <regionName>sdram_ctrl_amm_0</regionName>
+        <regionName>ddr3_ctrl_amm_0</regionName>
         <noLoad>false</noLoad>
     </LinkerSection>
     <LinkerSection>
         <sectionName>.rodata</sectionName>
-        <regionName>sdram_ctrl_amm_0</regionName>
+        <regionName>ddr3_ctrl_amm_0</regionName>
         <noLoad>false</noLoad>
     </LinkerSection>
     <LinkerSection>
         <sectionName>.rwdata</sectionName>
-        <regionName>sdram_ctrl_amm_0</regionName>
+        <regionName>ddr3_ctrl_amm_0</regionName>
         <noLoad>false</noLoad>
     </LinkerSection>
     <LinkerSection>
         <sectionName>.bss</sectionName>
-        <regionName>sdram_ctrl_amm_0</regionName>
+        <regionName>ddr3_ctrl_amm_0</regionName>
         <noLoad>false</noLoad>
     </LinkerSection>
     <LinkerSection>
         <sectionName>.heap</sectionName>
-        <regionName>sdram_ctrl_amm_0</regionName>
+        <regionName>ddr3_ctrl_amm_0</regionName>
         <noLoad>false</noLoad>
     </LinkerSection>
     <LinkerSection>
         <sectionName>.stack</sectionName>
-        <regionName>sdram_ctrl_amm_0</regionName>
+        <regionName>ddr3_ctrl_amm_0</regionName>
         <noLoad>false</noLoad>
     </LinkerSection>
 </ns2:Settings>

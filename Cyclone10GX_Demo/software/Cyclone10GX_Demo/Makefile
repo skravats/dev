@@ -144,8 +144,8 @@ ELF := Cyclone10GX_Demo.elf
 # Paths to C, C++, and assembly source files.
 C_SRCS += main.c
 C_SRCS += fmc/ad9144/ad9144.c
-C_SRCS += fmc/ad9680/ad9680.c
 C_SRCS += fmc/ad9523/ad9523.c
+C_SRCS += fmc/ad9680/ad9680.c
 C_SRCS += fmc/common_drivers/adc_core/adc_core.c
 C_SRCS += fmc/common_drivers/communication/generic/Communication.c
 C_SRCS += fmc/common_drivers/dac_buffer/dac_buffer.c
@@ -153,6 +153,7 @@ C_SRCS += fmc/common_drivers/dac_core/dac_core.c
 C_SRCS += fmc/common_drivers/dmac_core/dmac_core.c
 C_SRCS += fmc/common_drivers/fru_tools/fru_tools.c
 C_SRCS += fmc/common_drivers/jesd_core/jesd_core.c
+C_SRCS += fmc/common_drivers/platform_drivers/platform_drivers.c
 C_SRCS += fmc/common_drivers/xcvr_core/xcvr_core.c
 C_SRCS += fmc/common_drivers/xcvr_core/xcvr_modules/altera_a10_atx_pll.c
 C_SRCS += fmc/common_drivers/xcvr_core/xcvr_modules/altera_a10_fpll.c
@@ -160,7 +161,6 @@ C_SRCS += fmc/common_drivers/xcvr_core/xcvr_modules/altera_a10_xcvr_channel.c
 C_SRCS += fmc/common_drivers/xcvr_core/xcvr_modules/altera_pll_common.c
 C_SRCS += fmc/common_drivers/xcvr_core/xcvr_modules/xilinx_qpll.c
 C_SRCS += fmc/common_drivers/xcvr_core/xcvr_modules/xilinx_xcvr_channel.c
-C_SRCS += fmc/common_drivers/platform_drivers/platform_drivers.c
 CXX_SRCS :=
 ASM_SRCS :=
 

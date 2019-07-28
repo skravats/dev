@@ -5,7 +5,7 @@
  version="1.0"
  fabric="QSYS">
  <!-- Format version 18.1.2 277 (Future versions may contain additional information.) -->
- <!-- 2019.07.23.00:13:03 -->
+ <!-- 2019.07.28.18:03:52 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
@@ -166,7 +166,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.BREAK_ADDR</name>
-   <value>0x00020020</value>
+   <value>0x8807a820</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.CPU_ARCH_NIOS2_R1</name>
@@ -206,7 +206,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.EXCEPTION_ADDR</name>
-   <value>0x80000020</value>
+   <value>0x00000020</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.FLASH_ACCELERATOR_LINES</name>
@@ -266,7 +266,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.ICACHE_SIZE</name>
-   <value>2048</value>
+   <value>4096</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.INITDA_SUPPORTED</name>
@@ -286,7 +286,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.RESET_ADDR</name>
-   <value>0x80000000</value>
+   <value>0x00000000</value>
   </assignment>
   <assignment>
    <name>embeddedsw.configuration.DataCacheVictimBufImpl</name>
@@ -314,7 +314,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.configuration.exceptionSlave</name>
-   <value>sdram.ctrl_amm_0</value>
+   <value>ddr3.ctrl_amm_0</value>
   </assignment>
   <assignment>
    <name>embeddedsw.configuration.resetOffset</name>
@@ -322,7 +322,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.configuration.resetSlave</name>
-   <value>sdram.ctrl_amm_0</value>
+   <value>ddr3.ctrl_amm_0</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.compatible</name>
@@ -338,7 +338,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.dts.params.altr,exception-addr</name>
-   <value>0x80000020</value>
+   <value>0x00000020</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.params.altr,has-div</name>
@@ -362,7 +362,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.dts.params.altr,reset-addr</name>
-   <value>0x80000000</value>
+   <value>0x00000000</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.params.clock-frequency</name>
@@ -382,7 +382,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.dts.params.icache-size</name>
-   <value>2048</value>
+   <value>4096</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.vendor</name>
@@ -798,7 +798,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="resetSlave">
    <type>java.lang.String</type>
-   <value>sdram.ctrl_amm_0</value>
+   <value>ddr3.ctrl_amm_0</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -814,7 +814,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="exceptionSlave">
    <type>java.lang.String</type>
-   <value>sdram.ctrl_amm_0</value>
+   <value>ddr3.ctrl_amm_0</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -990,7 +990,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="icache_size">
    <type>int</type>
-   <value>2048</value>
+   <value>4096</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -1518,7 +1518,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="resetAbsoluteAddr">
    <type>int</type>
-   <value>-2147483648</value>
+   <value>0</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -1526,7 +1526,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="exceptionAbsoluteAddr">
    <type>int</type>
-   <value>-2147483616</value>
+   <value>32</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -1534,7 +1534,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="breakAbsoluteAddr">
    <type>int</type>
-   <value>131104</value>
+   <value>-2012764128</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -1776,7 +1776,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="instSlaveMapParam">
    <type>java.lang.String</type>
-   <value><![CDATA[<address-map><slave name='mcu_subsystem_ram_0.s1' start='0x0' end='0x20000' datawidth='32' /><slave name='mcu_subsystem_cpu_0.debug_mem_slave' start='0x20000' end='0x20800' datawidth='32' /><slave name='qspi_controller2_0.avl_csr' start='0x21040' end='0x21080' datawidth='32' /><slave name='sdram.ctrl_mmr_slave_0' start='0x22000' end='0x23000' datawidth='32' /><slave name='qspi_controller2_0.avl_mem' start='0x8000000' end='0x10000000' datawidth='32' /><slave name='sdram.ctrl_amm_0' start='0x80000000' end='0x100000000' datawidth='256' /></address-map>]]></value>
+   <value><![CDATA[<address-map><slave name='ddr3.ctrl_amm_0' start='0x0' end='0x80000000' datawidth='256' /><slave name='qspi_controller2_0.avl_mem' start='0x80000000' end='0x88000000' datawidth='32' /><slave name='mcu_subsystem_ram_0.s1' start='0x88020000' end='0x88040000' datawidth='32' /><slave name='ddr3.ctrl_mmr_slave_0' start='0x8806C000' end='0x8806D000' datawidth='32' /><slave name='mcu_subsystem_cpu_0.debug_mem_slave' start='0x8807A800' end='0x8807B000' datawidth='32' /></address-map>]]></value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -1796,7 +1796,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="dataSlaveMapParam">
    <type>java.lang.String</type>
-   <value><![CDATA[<address-map><slave name='mcu_subsystem_ram_0.s1' start='0x0' end='0x20000' datawidth='32' /><slave name='mcu_subsystem_cpu_0.debug_mem_slave' start='0x20000' end='0x20800' datawidth='32' /><slave name='phy_interlaken_1.phy_data_ctrl.csr_s0' start='0x20800' end='0x20C00' datawidth='32' /><slave name='phy_interlaken_1.phy_data_ctrl.csr_s0' start='0x20C00' end='0x21000' datawidth='32' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x21000' end='0x21008' datawidth='32' /><slave name='fmc_spi.spi_control_port' start='0x21020' end='0x21040' datawidth='16' /><slave name='qspi_controller2_0.avl_csr' start='0x21040' end='0x21080' datawidth='32' /><slave name='fmc_i2c.csr' start='0x21080' end='0x210C0' datawidth='32' /><slave name='fmc_gpio.s1' start='0x210C0' end='0x210E0' datawidth='32' /><slave name='timer_0.s1' start='0x210E0' end='0x21100' datawidth='16' /><slave name='timer_1.s1' start='0x21100' end='0x21120' datawidth='16' /><slave name='sdram.ctrl_mmr_slave_0' start='0x22000' end='0x23000' datawidth='32' /><slave name='phy_interlaken_1.serial_clock.reconfig_avmm0' start='0x23000' end='0x24000' datawidth='32' /><slave name='ad9680_jesd204.link_reconfig' start='0x24000' end='0x28000' datawidth='32' /><slave name='ad9144_jesd204.link_reconfig' start='0x28000' end='0x2C000' datawidth='32' /><slave name='phy_interlaken_1.serial_clock.reconfig_avmm0' start='0x2C000' end='0x2D000' datawidth='32' /><slave name='ad9680_dma.s_axi' start='0x2D000' end='0x2E000' datawidth='32' /><slave name='ad9144_dma.s_axi' start='0x2E000' end='0x2F000' datawidth='32' /><slave name='avl_adxcfg_3.rcfg_s1' start='0x2F000' end='0x30000' datawidth='32' /><slave name='ad9680_core.s_axi' start='0x30000' end='0x40000' datawidth='32' /><slave name='ad9144_core.s_axi' start='0x40000' end='0x50000' datawidth='32' /><slave name='avl_adxcfg_2.rcfg_s1' start='0x50000' end='0x51000' datawidth='32' /><slave name='avl_adxcfg_1.rcfg_s1' start='0x51000' end='0x52000' datawidth='32' /><slave name='avl_adxcfg_0.rcfg_s1' start='0x52000' end='0x53000' datawidth='32' /><slave name='avl_adxcfg_3.rcfg_s0' start='0x53000' end='0x54000' datawidth='32' /><slave name='avl_adxcfg_2.rcfg_s0' start='0x54000' end='0x55000' datawidth='32' /><slave name='avl_adxcfg_1.rcfg_s0' start='0x55000' end='0x56000' datawidth='32' /><slave name='avl_adxcfg_0.rcfg_s0' start='0x56000' end='0x57000' datawidth='32' /><slave name='ad9680_jesd204.link_pll_reconfig' start='0x57000' end='0x58000' datawidth='32' /><slave name='ad9144_jesd204.link_pll_reconfig' start='0x58000' end='0x59000' datawidth='32' /><slave name='ad9680_jesd204.link_management' start='0x59000' end='0x5A000' datawidth='32' /><slave name='ad9144_jesd204.link_management' start='0x5A000' end='0x5B000' datawidth='32' /><slave name='ad9144_jesd204.lane_pll_reconfig' start='0x5B000' end='0x5C000' datawidth='32' /><slave name='qspi_controller2_0.avl_mem' start='0x8000000' end='0x10000000' datawidth='32' /><slave name='sdram.ctrl_amm_0' start='0x80000000' end='0x100000000' datawidth='256' /></address-map>]]></value>
+   <value><![CDATA[<address-map><slave name='ddr3.ctrl_amm_0' start='0x0' end='0x80000000' datawidth='256' /><slave name='qspi_controller2_0.avl_mem' start='0x80000000' end='0x88000000' datawidth='32' /><slave name='mcu_subsystem_ram_0.s1' start='0x88020000' end='0x88040000' datawidth='32' /><slave name='ad9680_core.s_axi' start='0x88040000' end='0x88050000' datawidth='32' /><slave name='ad9144_core.s_axi' start='0x88050000' end='0x88060000' datawidth='32' /><slave name='ad9680_jesd204.link_reconfig' start='0x88060000' end='0x88064000' datawidth='32' /><slave name='ad9144_jesd204.link_reconfig' start='0x88064000' end='0x88068000' datawidth='32' /><slave name='phy_interlaken_1.serial_clock.reconfig_avmm0' start='0x88068000' end='0x88069000' datawidth='32' /><slave name='phy_interlaken_1.serial_clock.reconfig_avmm0' start='0x88069000' end='0x8806A000' datawidth='32' /><slave name='ad9680_dma.s_axi' start='0x8806A000' end='0x8806B000' datawidth='32' /><slave name='ad9144_dma.s_axi' start='0x8806B000' end='0x8806C000' datawidth='32' /><slave name='ddr3.ctrl_mmr_slave_0' start='0x8806C000' end='0x8806D000' datawidth='32' /><slave name='avl_adxcfg_0.rcfg_s1' start='0x8806D000' end='0x8806E000' datawidth='32' /><slave name='avl_adxcfg_1.rcfg_s1' start='0x8806E000' end='0x8806F000' datawidth='32' /><slave name='avl_adxcfg_2.rcfg_s1' start='0x8806F000' end='0x88070000' datawidth='32' /><slave name='avl_adxcfg_3.rcfg_s1' start='0x88070000' end='0x88071000' datawidth='32' /><slave name='avl_adxcfg_0.rcfg_s0' start='0x88071000' end='0x88072000' datawidth='32' /><slave name='avl_adxcfg_1.rcfg_s0' start='0x88072000' end='0x88073000' datawidth='32' /><slave name='avl_adxcfg_2.rcfg_s0' start='0x88073000' end='0x88074000' datawidth='32' /><slave name='avl_adxcfg_3.rcfg_s0' start='0x88074000' end='0x88075000' datawidth='32' /><slave name='ad9680_jesd204.link_pll_reconfig' start='0x88075000' end='0x88076000' datawidth='32' /><slave name='ad9144_jesd204.link_pll_reconfig' start='0x88076000' end='0x88077000' datawidth='32' /><slave name='ad9680_jesd204.link_management' start='0x88077000' end='0x88078000' datawidth='32' /><slave name='ad9144_jesd204.link_management' start='0x88078000' end='0x88079000' datawidth='32' /><slave name='ad9144_jesd204.lane_pll_reconfig' start='0x88079000' end='0x8807A000' datawidth='32' /><slave name='mcu_subsystem_cpu_0.debug_mem_slave' start='0x8807A800' end='0x8807B000' datawidth='32' /><slave name='phy_interlaken_1.phy_data_ctrl.csr_s0' start='0x8807B000' end='0x8807B400' datawidth='32' /><slave name='phy_interlaken_1.phy_data_ctrl.csr_s0' start='0x8807B400' end='0x8807B800' datawidth='32' /><slave name='qspi_controller2_0.avl_csr' start='0x8807B800' end='0x8807B840' datawidth='32' /><slave name='i2c.csr' start='0x8807B840' end='0x8807B880' datawidth='32' /><slave name='spi.spi_control_port' start='0x8807B880' end='0x8807B8A0' datawidth='16' /><slave name='gpio.s1' start='0x8807B8A0' end='0x8807B8C0' datawidth='32' /><slave name='timer_0.s1' start='0x8807B8C0' end='0x8807B8E0' datawidth='16' /><slave name='timer_1.s1' start='0x8807B8E0' end='0x8807B900' datawidth='16' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x8807B900' end='0x8807B908' datawidth='32' /></address-map>]]></value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -1935,7 +1935,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="customInstSlavesSystemInfo">
    <type>java.lang.String</type>
-   <value></value>
+   <value><![CDATA[<info><slave name="fpu" baseAddress="224" addressSpan="16" clockCycleType="COMBINATORIAL" /><slave name="fpu_1" baseAddress="248" addressSpan="8" clockCycleType="VARIABLE" /></info>]]></value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -3449,10 +3449,172 @@ parameters are a RESULT of the module parameters. -->
    <type>nios_custom_instruction</type>
    <isStart>true</isStart>
    <port>
-    <name>dummy_ci_port</name>
+    <name>A_ci_multi_done</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>done</role>
+   </port>
+   <port>
+    <name>A_ci_multi_result</name>
+    <direction>Input</direction>
+    <width>32</width>
+    <role>multi_result</role>
+   </port>
+   <port>
+    <name>A_ci_multi_a</name>
+    <direction>Output</direction>
+    <width>5</width>
+    <role>multi_a</role>
+   </port>
+   <port>
+    <name>A_ci_multi_b</name>
+    <direction>Output</direction>
+    <width>5</width>
+    <role>multi_b</role>
+   </port>
+   <port>
+    <name>A_ci_multi_c</name>
+    <direction>Output</direction>
+    <width>5</width>
+    <role>multi_c</role>
+   </port>
+   <port>
+    <name>A_ci_multi_clk_en</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>clk_en</role>
+   </port>
+   <port>
+    <name>A_ci_multi_clock</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>clk</role>
+   </port>
+   <port>
+    <name>A_ci_multi_reset</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>reset</role>
+   </port>
+   <port>
+    <name>A_ci_multi_reset_req</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>reset_req</role>
+   </port>
+   <port>
+    <name>A_ci_multi_dataa</name>
+    <direction>Output</direction>
+    <width>32</width>
+    <role>multi_dataa</role>
+   </port>
+   <port>
+    <name>A_ci_multi_datab</name>
+    <direction>Output</direction>
+    <width>32</width>
+    <role>multi_datab</role>
+   </port>
+   <port>
+    <name>A_ci_multi_n</name>
+    <direction>Output</direction>
+    <width>8</width>
+    <role>multi_n</role>
+   </port>
+   <port>
+    <name>A_ci_multi_readra</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>multi_readra</role>
+   </port>
+   <port>
+    <name>A_ci_multi_readrb</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>multi_readrb</role>
+   </port>
+   <port>
+    <name>A_ci_multi_start</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>start</role>
+   </port>
+   <port>
+    <name>A_ci_multi_writerc</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>multi_writerc</role>
+   </port>
+   <port>
+    <name>E_ci_combo_result</name>
+    <direction>Input</direction>
+    <width>32</width>
+    <role>result</role>
+   </port>
+   <port>
+    <name>E_ci_combo_a</name>
+    <direction>Output</direction>
+    <width>5</width>
+    <role>a</role>
+   </port>
+   <port>
+    <name>E_ci_combo_b</name>
+    <direction>Output</direction>
+    <width>5</width>
+    <role>b</role>
+   </port>
+   <port>
+    <name>E_ci_combo_c</name>
+    <direction>Output</direction>
+    <width>5</width>
+    <role>c</role>
+   </port>
+   <port>
+    <name>E_ci_combo_dataa</name>
+    <direction>Output</direction>
+    <width>32</width>
+    <role>dataa</role>
+   </port>
+   <port>
+    <name>E_ci_combo_datab</name>
+    <direction>Output</direction>
+    <width>32</width>
+    <role>datab</role>
+   </port>
+   <port>
+    <name>E_ci_combo_estatus</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>estatus</role>
+   </port>
+   <port>
+    <name>E_ci_combo_ipending</name>
+    <direction>Output</direction>
+    <width>32</width>
+    <role>ipending</role>
+   </port>
+   <port>
+    <name>E_ci_combo_n</name>
+    <direction>Output</direction>
+    <width>8</width>
+    <role>n</role>
+   </port>
+   <port>
+    <name>E_ci_combo_readra</name>
     <direction>Output</direction>
     <width>1</width>
     <role>readra</role>
+   </port>
+   <port>
+    <name>E_ci_combo_readrb</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>readrb</role>
+   </port>
+   <port>
+    <name>E_ci_combo_writerc</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>writerc</role>
    </port>
   </interface>
  </module>

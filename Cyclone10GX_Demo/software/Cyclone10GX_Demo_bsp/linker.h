@@ -2,9 +2,9 @@
  * linker.h - Linker script mapping information
  *
  * Machine generated for CPU 'mcu_subsystem_cpu_0' in SOPC Builder design 'mcu_subsystem'
- * SOPC Builder design path: ../../mcu_subsystem/mcu_subsystem.sopcinfo
+ * SOPC Builder design path: C:/Developer/fpga/ArrowESC/Cyclone10GX_Demo/mcu_subsystem/mcu_subsystem.sopcinfo
  *
- * Generated: Tue Jul 23 00:51:06 CEST 2019
+ * Generated: Sun Jul 28 18:08:07 CEST 2019
  */
 
 /*
@@ -65,14 +65,14 @@
  *
  */
 
-#define MCU_SUBSYSTEM_RAM_0_REGION_BASE 0x0
+#define DDR3_CTRL_AMM_0_REGION_BASE 0x20
+#define DDR3_CTRL_AMM_0_REGION_SPAN 2147483616
+#define MCU_SUBSYSTEM_RAM_0_REGION_BASE 0x88020000
 #define MCU_SUBSYSTEM_RAM_0_REGION_SPAN 131072
-#define QSPI_CONTROLLER2_0_AVL_MEM_REGION_BASE 0x8000000
+#define QSPI_CONTROLLER2_0_AVL_MEM_REGION_BASE 0x80000000
 #define QSPI_CONTROLLER2_0_AVL_MEM_REGION_SPAN 134217728
-#define RESET_REGION_BASE 0x80000000
+#define RESET_REGION_BASE 0x0
 #define RESET_REGION_SPAN 32
-#define SDRAM_CTRL_AMM_0_REGION_BASE 0x80000020
-#define SDRAM_CTRL_AMM_0_REGION_SPAN 2147483616
 
 
 /*
@@ -80,11 +80,11 @@
  *
  */
 
-#define ALT_EXCEPTIONS_DEVICE SDRAM_CTRL_AMM_0
-#define ALT_RESET_DEVICE SDRAM_CTRL_AMM_0
-#define ALT_RODATA_DEVICE SDRAM_CTRL_AMM_0
-#define ALT_RWDATA_DEVICE SDRAM_CTRL_AMM_0
-#define ALT_TEXT_DEVICE SDRAM_CTRL_AMM_0
+#define ALT_EXCEPTIONS_DEVICE DDR3_CTRL_AMM_0
+#define ALT_RESET_DEVICE DDR3_CTRL_AMM_0
+#define ALT_RODATA_DEVICE DDR3_CTRL_AMM_0
+#define ALT_RWDATA_DEVICE DDR3_CTRL_AMM_0
+#define ALT_TEXT_DEVICE DDR3_CTRL_AMM_0
 
 
 /*

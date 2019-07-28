@@ -1,0 +1,154 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2018  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+# Date created = 15:20:04  July 27, 2019
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Cyclone10GX_SoM_MAX10_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX 10"
+set_global_assignment -name DEVICE 10M08SAU169C8G
+set_global_assignment -name TOP_LEVEL_ENTITY top
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:20:04  JULY 27, 2019"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Standard Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name QSYS_FILE mcu_system.qsys
+set_global_assignment -name SYSTEMVERILOG_FILE top.sv
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name FLOW_ENABLE_POWER_ANALYZER ON
+set_global_assignment -name POWER_DEFAULT_INPUT_IO_TOGGLE_RATE "12.5 %"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_C9 -to BASE_BTN1
+set_location_assignment PIN_B3 -to BASE_BTN2
+set_location_assignment PIN_A6 -to BASE_LED1
+set_location_assignment PIN_A3 -to BASE_LED2
+set_location_assignment PIN_N5 -to DATA0
+set_location_assignment PIN_J5 -to DEVCLRn
+set_location_assignment PIN_M5 -to nSTATUS
+set_location_assignment PIN_K12 -to DIS_1
+set_location_assignment PIN_K10 -to DIS_2
+set_location_assignment PIN_J9 -to DIS_3
+set_location_assignment PIN_J12 -to DIS_4
+set_location_assignment PIN_E9 -to EN_0V9
+set_location_assignment PIN_J10 -to EN_0V95
+set_location_assignment PIN_D9 -to EN_1V8
+set_location_assignment PIN_H9 -to EN_1V8MB
+set_location_assignment PIN_L12 -to EN_1V8VIO
+set_location_assignment PIN_D12 -to EN_1V35
+set_location_assignment PIN_A11 -to EN_3V3MB
+set_location_assignment PIN_C11 -to EN_VTT
+set_location_assignment PIN_B13 -to LED1
+set_location_assignment PIN_B11 -to LED2
+set_location_assignment PIN_A12 -to LED3
+set_location_assignment PIN_B12 -to LED4
+set_location_assignment PIN_M7 -to MSEL0
+set_location_assignment PIN_M9 -to MSEL1
+set_location_assignment PIN_E10 -to PG_0V9
+set_location_assignment PIN_H10 -to PG_0V95
+set_location_assignment PIN_F8 -to PG_1V8
+set_location_assignment PIN_L3 -to PLL_RST
+set_location_assignment PIN_N6 -to RXD_IN
+set_location_assignment PIN_A10 -to RXD_OUT
+set_location_assignment PIN_N2 -to TCK_OUT
+set_location_assignment PIN_M2 -to TDI_OUT
+set_location_assignment PIN_M3 -to TDO_IN
+set_location_assignment PIN_K1 -to TMS_OUT
+set_location_assignment PIN_B10 -to TXD_IN
+set_location_assignment PIN_K5 -to TXD_OUT
+set_location_assignment PIN_M8 -to nCONFIG
+set_location_assignment PIN_K2 -to I2C_SCL
+set_location_assignment PIN_L2 -to I2C_SDA
+set_location_assignment PIN_G9 -to M10_CLK
+set_instance_assignment -name IO_STANDARD "1.8 V" -to MSEL0
+set_instance_assignment -name IO_STANDARD "1.8 V" -to MSEL1
+set_instance_assignment -name IO_STANDARD "1.8 V" -to nCONFIG
+set_instance_assignment -name IO_STANDARD "1.8 V" -to nSTATUS
+set_instance_assignment -name IO_STANDARD "1.8 V" -to PLL_RST
+set_instance_assignment -name IO_STANDARD "1.8 V" -to RXD_IN
+set_instance_assignment -name IO_STANDARD "1.8 V" -to TCK_OUT
+set_instance_assignment -name IO_STANDARD "1.8 V" -to TDI_OUT
+set_instance_assignment -name IO_STANDARD "1.8 V" -to TDO_IN
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to BASE_BTN1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to BASE_BTN2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to BASE_LED1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to BASE_LED2
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DATA0
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DEVCLRn
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DIS_1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DIS_3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DIS_2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DIS_4
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EN_VTT
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EN_3V3MB
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EN_1V35
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EN_1V8VIO
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EN_1V8MB
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EN_1V8
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EN_0V95
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EN_0V9
+set_instance_assignment -name IO_STANDARD "1.8 V" -to I2C_SCL
+set_instance_assignment -name IO_STANDARD "1.8 V" -to I2C_SDA
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to M10_CLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED4
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PG_0V9
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PG_1V8
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PG_0V95
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RXD_OUT
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TCK_IN
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TDI_IN
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TDO_OUT
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TMS_IN
+set_instance_assignment -name IO_STANDARD "1.8 V" -to TMS_OUT
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TXD_IN
+set_instance_assignment -name IO_STANDARD "1.8 V" -to TXD_OUT
+set_global_assignment -name ENABLE_OCT_DONE OFF
+set_global_assignment -name ENABLE_JTAG_PIN_SHARING ON
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_global_assignment -name EXTERNAL_FLASH_FALLBACK_ADDRESS 00000000
+set_global_assignment -name INTERNAL_FLASH_UPDATE_MODE "SINGLE IMAGE WITH ERAM"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

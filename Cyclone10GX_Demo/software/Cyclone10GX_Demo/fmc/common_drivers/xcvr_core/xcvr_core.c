@@ -369,7 +369,7 @@ int32_t xcvr_getconfig(xcvr_core *core)
 	core->dev.link_pll.type = fpll_type;
 	core->dev.atx_pll.type = atx_type;
 
-	for (int i=1; i < core->lanes_per_link; i++) {
+	for (int i=1; i < core->num_lanes/*lanes_per_link*/; i++) {
 		core->dev.channel_pll[i].type = core->dev.channel_pll[0].type;
 		core->dev.channel_pll[i].base_address = core->dev.channel_pll[0].base_address + 0x1000 * i;
 		core->dev.channel_pll[i].initial_recalc = core->dev.channel_pll[0].initial_recalc;

@@ -1,0 +1,69 @@
+set_global_assignment -entity "ad9144_core" -library "ad9144_core" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "ad9144_core" -library "ad9144_core" -name IP_TOOL_VERSION "18.1.2"
+set_global_assignment -entity "ad9144_core" -library "ad9144_core" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "ad9144_core" -library "ad9144_core" -name IP_TOOL_VENDOR_NAME "Altera Corporation"
+set_global_assignment -entity "ad9144_core" -library "ad9144_core" -name IP_TOP_LEVEL_COMPONENT_NAME "axi_ad9144"
+set_global_assignment -library "ad9144_core" -name SOPCINFO_FILE [file join $::quartus(qip_path) "ad9144_core.sopcinfo"]
+set_global_assignment -entity "ad9144_core" -library "ad9144_core" -name SLD_INFO "QSYS_NAME ad9144_core HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "ad9144_core" -name MISC_FILE [file join $::quartus(qip_path) "ad9144_core.cmp"]
+set_global_assignment -entity "ad9144_core" -library "ad9144_core" -name IP_TARGETED_DEVICE_FAMILY "Cyclone 10 GX"
+set_global_assignment -entity "ad9144_core" -library "ad9144_core" -name IP_GENERATED_DEVICE_FAMILY "{Cyclone 10 GX}"
+set_global_assignment -entity "ad9144_core" -library "ad9144_core" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "ad9144_core" -name MISC_FILE [file join $::quartus(qip_path) "../ad9144_core.ip"]
+
+set_global_assignment -entity "axi_ad9144" -library "axi_ad9144_10" -name IP_COMPONENT_NAME "YXhpX2FkOTE0NA=="
+set_global_assignment -entity "axi_ad9144" -library "axi_ad9144_10" -name IP_COMPONENT_DISPLAY_NAME "QVhJIEFEOTE0NCBJbnRlcmZhY2U="
+set_global_assignment -entity "axi_ad9144" -library "axi_ad9144_10" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "axi_ad9144" -library "axi_ad9144_10" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "axi_ad9144" -library "axi_ad9144_10" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "axi_ad9144" -library "axi_ad9144_10" -name IP_COMPONENT_DESCRIPTION "QVhJIEFEOTE0NCBJbnRlcmZhY2U="
+set_global_assignment -entity "axi_ad9144" -library "axi_ad9144_10" -name IP_COMPONENT_PARAMETER "SUQ=::MA==::SUQ="
+set_global_assignment -entity "axi_ad9144" -library "axi_ad9144_10" -name IP_COMPONENT_PARAMETER "UVVBRF9PUl9EVUFMX04=::MA==::UVVBRF9PUl9EVUFMX04="
+set_global_assignment -entity "axi_ad9144" -library "axi_ad9144_10" -name IP_COMPONENT_GROUP "QW5hbG9nIERldmljZXM="
+set_global_assignment -entity "ad9144_core" -library "ad9144_core" -name IP_COMPONENT_NAME "YWQ5MTQ0X2NvcmU="
+set_global_assignment -entity "ad9144_core" -library "ad9144_core" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "ad9144_core" -library "ad9144_core" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "ad9144_core" -library "ad9144_core" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "ad9144_core" -library "ad9144_core" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "ad9144_core" -library "ad9144_core" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "ad9144_core" -library "ad9144_core" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MA==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "ad9144_core" -library "ad9144_core" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::Q3ljbG9uZSAxMCBHWA==::QXV0byBERVZJQ0VfRkFNSUxZ"
+set_global_assignment -entity "ad9144_core" -library "ad9144_core" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::MTBDWDIyMFlGNzgwSTVH::QXV0byBERVZJQ0U="
+set_global_assignment -entity "ad9144_core" -library "ad9144_core" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::NQ==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
+set_global_assignment -entity "ad9144_core" -library "ad9144_core" -name IP_COMPONENT_PARAMETER "QVVUT19TX0FYSV9DTE9DS19DTE9DS19SQVRF::LTE=::QXV0byBDTE9DS19SQVRF"
+set_global_assignment -entity "ad9144_core" -library "ad9144_core" -name IP_COMPONENT_PARAMETER "QVVUT19TX0FYSV9DTE9DS19DTE9DS19ET01BSU4=::LTE=::QXV0byBDTE9DS19ET01BSU4="
+set_global_assignment -entity "ad9144_core" -library "ad9144_core" -name IP_COMPONENT_PARAMETER "QVVUT19TX0FYSV9DTE9DS19SRVNFVF9ET01BSU4=::LTE=::QXV0byBSRVNFVF9ET01BSU4="
+set_global_assignment -entity "ad9144_core" -library "ad9144_core" -name IP_COMPONENT_PARAMETER "QVVUT19JRl9UWF9DTEtfQ0xPQ0tfUkFURQ==::LTE=::QXV0byBDTE9DS19SQVRF"
+set_global_assignment -entity "ad9144_core" -library "ad9144_core" -name IP_COMPONENT_PARAMETER "QVVUT19JRl9UWF9DTEtfQ0xPQ0tfRE9NQUlO::LTE=::QXV0byBDTE9DS19ET01BSU4="
+set_global_assignment -entity "ad9144_core" -library "ad9144_core" -name IP_COMPONENT_PARAMETER "QVVUT19JRl9UWF9DTEtfUkVTRVRfRE9NQUlO::LTE=::QXV0byBSRVNFVF9ET01BSU4="
+
+
+set_global_assignment -library "axi_ad9144_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_ad9144_10/synth/ad_mul.v"]
+set_global_assignment -library "axi_ad9144_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_ad9144_10/synth/ad_dds_cordic_pipe.v"]
+set_global_assignment -library "axi_ad9144_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_ad9144_10/synth/ad_dds_sine_cordic.v"]
+set_global_assignment -library "axi_ad9144_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_ad9144_10/synth/ad_dds_sine.v"]
+set_global_assignment -library "axi_ad9144_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_ad9144_10/synth/ad_dds_2.v"]
+set_global_assignment -library "axi_ad9144_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_ad9144_10/synth/ad_dds_1.v"]
+set_global_assignment -library "axi_ad9144_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_ad9144_10/synth/ad_dds.v"]
+set_global_assignment -library "axi_ad9144_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_ad9144_10/synth/ad_perfect_shuffle.v"]
+set_global_assignment -library "axi_ad9144_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_ad9144_10/synth/ad_rst.v"]
+set_global_assignment -library "axi_ad9144_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_ad9144_10/synth/up_axi.v"]
+set_global_assignment -library "axi_ad9144_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_ad9144_10/synth/up_xfer_cntrl.v"]
+set_global_assignment -library "axi_ad9144_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_ad9144_10/synth/up_xfer_status.v"]
+set_global_assignment -library "axi_ad9144_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_ad9144_10/synth/up_clock_mon.v"]
+set_global_assignment -library "axi_ad9144_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_ad9144_10/synth/up_dac_common.v"]
+set_global_assignment -library "axi_ad9144_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_ad9144_10/synth/up_dac_channel.v"]
+set_global_assignment -library "axi_ad9144_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_ad9144_10/synth/ad_ip_jesd204_tpl_dac.v"]
+set_global_assignment -library "axi_ad9144_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_ad9144_10/synth/ad_ip_jesd204_tpl_dac_channel.v"]
+set_global_assignment -library "axi_ad9144_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_ad9144_10/synth/ad_ip_jesd204_tpl_dac_core.v"]
+set_global_assignment -library "axi_ad9144_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_ad9144_10/synth/ad_ip_jesd204_tpl_dac_framer.v"]
+set_global_assignment -library "axi_ad9144_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_ad9144_10/synth/ad_ip_jesd204_tpl_dac_pn.v"]
+set_global_assignment -library "axi_ad9144_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_ad9144_10/synth/ad_ip_jesd204_tpl_dac_regmap.v"]
+set_global_assignment -library "axi_ad9144_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_ad9144_10/synth/axi_ad9144.v"]
+set_global_assignment -library "axi_ad9144_10" -name SDC_FILE [file join $::quartus(qip_path) "axi_ad9144_10/synth/up_xfer_cntrl_constr.sdc"]
+set_global_assignment -library "axi_ad9144_10" -name SDC_FILE [file join $::quartus(qip_path) "axi_ad9144_10/synth/up_xfer_status_constr.sdc"]
+set_global_assignment -library "axi_ad9144_10" -name SDC_FILE [file join $::quartus(qip_path) "axi_ad9144_10/synth/up_clock_mon_constr.sdc"]
+set_global_assignment -library "axi_ad9144_10" -name SDC_FILE [file join $::quartus(qip_path) "axi_ad9144_10/synth/up_rst_constr.sdc"]
+set_global_assignment -library "ad9144_core" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/ad9144_core.v"]
+

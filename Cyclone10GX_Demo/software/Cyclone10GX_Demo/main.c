@@ -18,6 +18,7 @@
 #include "system.h"
 #include "sys/alt_flash_types.h"
 #include "sys/alt_flash.h"
+
 #include "fmc/common_drivers/platform_drivers/platform_drivers.h"
 #include "fmc/ad9144/ad9144.h"
 #include "fmc/ad9523/ad9523.h"
@@ -58,6 +59,9 @@ enum ad9523_channels {
    ADC_FPGA_SYSREF,
 };
 
+static uint32_t rx_xfer_buf[0x1000000];
+static uint32_t tx_xfer_buf[0x1000000];
+
 int fmcdaq2_reconfig(struct ad9144_init_param *p_ad9144_param,
            xcvr_core *p_ad9144_xcvr,
            struct ad9680_init_param *p_ad9680_param,
@@ -78,11 +82,11 @@ int fmcdaq2_reconfig(struct ad9144_init_param *p_ad9144_param,
 
    switch (mode) {
    case '5':
-      /* REF clock = 100 MHz */
+      // REF clock = 100 MHz
       p_ad9523_param->channels[DAC_DEVICE_CLK].channel_divider = 10;
       p_ad9144_param->pll_ref_frequency_khz = 100000;
 
-      /* DAC at 2 GHz using the internal PLL and 2 times interpolation */
+      // DAC at 2 GHz using the internal PLL and 2 times interpolation
       p_ad9144_param->interpolation = 2;
       p_ad9144_param->pll_enable = 1;
       p_ad9144_param->pll_dac_frequency_khz = 2000000;
@@ -250,8 +254,8 @@ int daq2_init()
 
    ad9680_dma.base_address = AD9680_DMA_BASE;
    ad9144_dma.base_address = AD9144_DMA_BASE;
-   rx_xfer.start_address   = 0x800000;
-   tx_xfer.start_address   = 0x900000;
+   rx_xfer.start_address   = (uint32_t)rx_xfer_buf;//0x800000;
+   tx_xfer.start_address   = (uint32_t)tx_xfer_buf;//0x900000;
 
    //******************************************************************************
    // clock distribution device (AD9523) configuration
@@ -536,12 +540,12 @@ int daq2_init()
       printf("daq2: RX capture done.\n");
    };
 
-   /* Memory deallocation for devices and spi */
+   // Memory deallocation for devices and spi
    ad9144_remove(ad9144_device);
    ad9523_remove(ad9523_device);
    ad9680_remove(ad9680_device);
 
-   /* Memory deallocation for gpios */
+   // Memory deallocation for gpios
    gpio_remove(clkd_sync);
    gpio_remove(dac_reset);
    gpio_remove(dac_txen);
@@ -550,20 +554,71 @@ int daq2_init()
    return 0;
 }
 
+
+void mem_writing(unsigned int size)
+{
+   unsigned int i;
+   volatile unsigned int *ptr;
+   ptr = (volatile unsigned int*)DDR3_CTRL_AMM_0_BASE;
+   memset(ptr, 0, sizeof(int)*size);
+   for(i = 0; i < size; i++)
+   {
+      ptr[i] = i;
+   }
+}
+
+unsigned int mem_reading(unsigned int size)
+{
+   unsigned int value, i;
+   unsigned int result = 0;
+   volatile unsigned int *ptr;
+
+   ptr = (volatile unsigned int*)DDR3_CTRL_AMM_0_BASE;
+   for(i = 0; i < size; i++)
+   {
+      value = ptr[i];
+      if(value != i)
+      {
+         result++;
+      }
+   }
+   return result;
+}
+
+unsigned int mem_testing(unsigned int size)
+{
+   unsigned int i, value;
+   unsigned int result  = 0;
+   volatile unsigned int *ptr;
+
+   ptr = (volatile unsigned int*)DDR3_CTRL_AMM_0_BASE;
+
+   mem_writing(size);
+   result = mem_reading(size);
+
+   return result;
+}
+
+
 int main()
 {
    alt_flash_fd* fd;
    int number_of_regions;
    flash_region region;
    char buffer[1024] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 };
+   unsigned int table[64];
 
 
-   int i;
+   volatile unsigned int *ptr, *csr;
+   unsigned int i, counter, size;
    unsigned int reg;
+   unsigned int result = 1;
+   unsigned int value;
 
    daq2_init();
 
    printf("Hello from Nios II!\n");
+
 
 /*
    reg = *((volatile unsigned int*)(PHY_INTERLAKEN_0_PHY_DATA_CTRL_BASE + (0x18 << 2)));

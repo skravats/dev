@@ -108,7 +108,7 @@ typedef struct {
 	uint32_t			        lane_rate_kbps;
 	uint32_t			        ref_rate_khz;
 	uint8_t				     reconfig_bypass;
-	uint8_t                lanes_per_link;
+	//uint8_t                lanes_per_link;
 	uint32_t               ref_clock_khz;
 	uint32_t               link_clk_khz;
 	uint8_t                initial_recalc;

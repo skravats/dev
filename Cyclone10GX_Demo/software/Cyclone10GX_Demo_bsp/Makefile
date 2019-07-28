@@ -101,7 +101,7 @@ ACDS_VERSION := 18.1
 # BUILD_NUMBER: 277
 
 SETTINGS_FILE := settings.bsp
-SOPC_FILE := ../../mcu_subsystem/mcu_subsystem.sopcinfo
+SOPC_FILE := C:/Developer/fpga/ArrowESC/Cyclone10GX_Demo/mcu_subsystem/mcu_subsystem.sopcinfo
 
 #-------------------------------------------------------------------------------
 #                             TOOL & COMMAND DEFINITIONS
@@ -292,6 +292,10 @@ altera_nios2_gen2_hal_driver_ASM_LIB_SRCS := \
 	$(altera_nios2_gen2_hal_driver_SRCS_ROOT)/src/alt_log_macro.S \
 	$(altera_nios2_gen2_hal_driver_SRCS_ROOT)/src/crt0.S
 
+# fpoint2_driver sources root 
+fpoint2_driver_SRCS_ROOT := drivers
+
+# fpoint2_driver sources 
 # hal sources root 
 hal_SRCS_ROOT := HAL
 

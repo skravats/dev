@@ -161,7 +161,7 @@ ACDS_VERSION := 18.1
 SIM_OPTIMIZE ?= 0
 
 # The CPU reset address as needed by elf2flash
-RESET_ADDRESS ?= 0x80000000
+RESET_ADDRESS ?= 0x00000000
 
 # The specific Nios II ELF file format to use.
 NIOS2_ELF_FORMAT ?= elf32-littlenios2
@@ -180,8 +180,8 @@ DAT_FILES += $(HDL_SIM_DIR)/$(MEM_0).dat
 HDL_SIM_INSTALL_FILES += $(HDL_SIM_INSTALL_DIR)/$(MEM_0).dat
 SYM_FILES += $(HDL_SIM_DIR)/$(MEM_0).sym
 HDL_SIM_INSTALL_FILES += $(HDL_SIM_INSTALL_DIR)/$(MEM_0).sym
-$(MEM_0)_START := 0x00000000
-$(MEM_0)_END := 0x0001ffff
+$(MEM_0)_START := 0x88020000
+$(MEM_0)_END := 0x8803ffff
 $(MEM_0)_SPAN := 0x00020000
 $(MEM_0)_HIERARCHICAL_PATH := mcu_subsystem_ram_0
 $(MEM_0)_WIDTH := 32
@@ -197,8 +197,8 @@ MEM_1 := qspi_controller2_0
 $(MEM_1)_NAME := qspi_controller2_0
 HEX_FILES += $(MEM_INIT_DIR)/$(MEM_1).hex
 MEM_INIT_INSTALL_FILES += $(MEM_INIT_INSTALL_DIR)/$(MEM_1).hex
-$(MEM_1)_START := 0x08000000
-$(MEM_1)_END := 0x0fffffff
+$(MEM_1)_START := 0x80000000
+$(MEM_1)_END := 0x87ffffff
 $(MEM_1)_SPAN := 0x08000000
 $(MEM_1)_HIERARCHICAL_PATH := qspi_controller2_0
 $(MEM_1)_WIDTH := 32

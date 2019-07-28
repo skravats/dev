@@ -271,16 +271,16 @@ int32_t spi_write_and_read(spi_desc *desc,
 
 	uint32_t i;
 
-	IOWR_32DIRECT(FMC_SPI_BASE, 0x0c, 0x400);
-	IOWR_32DIRECT(FMC_SPI_BASE, 0x14, ~(desc->chip_select));
+	IOWR_32DIRECT(SPI_BASE, 0x0c, 0x400);
+	IOWR_32DIRECT(SPI_BASE, 0x14, ~(desc->chip_select));
 	for (i = 0; i < bytes_number; i++) {
-		while ((IORD_32DIRECT(FMC_SPI_BASE, 0x08) & 0x40) == 0x00) {}
-		IOWR_32DIRECT(FMC_SPI_BASE, 0x04, *(data + i));
-		while ((IORD_32DIRECT(FMC_SPI_BASE, 0x08) & 0x80) == 0x00) {}
-		*(data + i) = IORD_32DIRECT(FMC_SPI_BASE, 0x00);
+		while ((IORD_32DIRECT(SPI_BASE, 0x08) & 0x40) == 0x00) {}
+		IOWR_32DIRECT(SPI_BASE, 0x04, *(data + i));
+		while ((IORD_32DIRECT(SPI_BASE, 0x08) & 0x80) == 0x00) {}
+		*(data + i) = IORD_32DIRECT(SPI_BASE, 0x00);
 	}
-	IOWR_32DIRECT(FMC_SPI_BASE, 0x14, 0x000);
-	IOWR_32DIRECT(FMC_SPI_BASE, 0x0c, 0x000);
+	IOWR_32DIRECT(SPI_BASE, 0x14, 0x000);
+	IOWR_32DIRECT(SPI_BASE, 0x0c, 0x000);
 
 #endif
 
@@ -461,8 +461,8 @@ int32_t gpio_set_value(gpio_desc *desc,
 #endif
 #ifdef NIOS_II
 	case NIOS_II_GPIO:
-		pdata = IORD_32DIRECT(FMC_GPIO_BASE, 0x0);
-		IOWR_32DIRECT(FMC_GPIO_BASE, 0x0, ((pdata & ~pmask) | (value << ppos)));
+		pdata = IORD_32DIRECT(GPIO_BASE, 0x0);
+		IOWR_32DIRECT(GPIO_BASE, 0x0, ((pdata & ~pmask) | (value << ppos)));
 		pstatus = 0;
 		break;
 #endif
@@ -528,7 +528,7 @@ int32_t gpio_get_value(gpio_desc *desc,
 #endif
 #ifdef NIOS_II
 	case NIOS_II_GPIO:
-	   pdata = IORD_32DIRECT(FMC_GPIO_BASE, 0x0);
+	   pdata = IORD_32DIRECT(GPIO_BASE, 0x0);
 		*value = (pdata >> ppos) & 0x1;
 		pstatus = 0;
 		break;
@@ -594,8 +594,8 @@ int32_t ad_gpio_set_range(uint8_t start_pin, uint8_t num_pins, uint8_t data)
 #endif
 
 #ifdef NIOS_II
-	pdata = IORD_32DIRECT(FMC_GPIO_BASE, 0x0);
-	IOWR_32DIRECT(FMC_GPIO_BASE, 0x0, ((pdata & ~pmask) | (data << ppos)));
+	pdata = IORD_32DIRECT(GPIO_BASE, 0x0);
+	IOWR_32DIRECT(GPIO_BASE, 0x0, ((pdata & ~pmask) | (data << ppos)));
 	pstatus = 0;
 
 #endif
@@ -656,7 +656,7 @@ int32_t ad_gpio_get_range(uint8_t start_pin, uint8_t num_pins, uint32_t *data)
 
 #ifdef NIOS_II
 
-	pdata = IORD_32DIRECT(FMC_GPIO_BASE, 0x0);
+	pdata = IORD_32DIRECT(GPIO_BASE, 0x0);
 	*data = (pdata & pmask) >> ppos;
 	pstatus = 0;
 

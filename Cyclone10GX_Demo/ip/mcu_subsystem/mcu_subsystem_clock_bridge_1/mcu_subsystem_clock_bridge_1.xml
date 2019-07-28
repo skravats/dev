@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2019.07.23.00:11:33"
+ date="2019.07.28.18:04:23"
  outputDirectory="C:/Developer/fpga/ArrowESC/Cyclone10GX_Demo/ip/mcu_subsystem/mcu_subsystem_clock_bridge_1/">
  <perimeter>
   <parameter

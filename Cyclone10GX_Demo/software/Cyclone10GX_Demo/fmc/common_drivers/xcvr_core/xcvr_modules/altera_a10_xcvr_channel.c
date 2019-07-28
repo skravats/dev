@@ -425,7 +425,7 @@ int32_t altera_a10_cdr_pll_set_rate(xcvr_core *core,
 	cp_current_pfd = altera_a10_cdr_lookup_cp_current_pfd(fvco, m, lpfd);
 	lfr_pfd = altera_a10_cdr_lookup_lf_resistor_pfd(fvco, m, lpfd);
 
-	for (i = 0; i < core->lanes_per_link; i++) {
+	for (i = 0; i < core->num_lanes/*lanes_per_link*/; i++) {
 		altera_a10_acquire_arbitration(&(core->dev.channel_pll[i]));
 
 		pll_update(&(core->dev.channel_pll[i]), 0x132, 0x05, ((vco_speed_fix & 0x80) >> 7) | ((vco_speed_fix & 0x40) >> 4));
@@ -476,7 +476,7 @@ int32_t altera_a10_calib_tx_pll(xcvr_core *core)
 	uint16_t lane;
 	uint16_t err = 0;
 
-	for (lane = 0; lane < core->lanes_per_link; lane++) {
+	for (lane = 0; lane < core->num_lanes/*lanes_per_link*/; lane++) {
 		altera_a10_acquire_arbitration(&(core->dev.channel_pll[lane]));
 
 		/* Perform TX termination & Vod calibration through

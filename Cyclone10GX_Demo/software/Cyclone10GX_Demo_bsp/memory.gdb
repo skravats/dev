@@ -1,9 +1,9 @@
 # memory.gdb - GDB memory region definitions
 #
 # Machine generated for CPU 'mcu_subsystem_cpu_0' in SOPC Builder design 'mcu_subsystem'
-# SOPC Builder design path: ../../mcu_subsystem/mcu_subsystem.sopcinfo
+# SOPC Builder design path: C:/Developer/fpga/ArrowESC/Cyclone10GX_Demo/mcu_subsystem/mcu_subsystem.sopcinfo
 #
-# Generated: Tue Jul 23 00:51:06 CEST 2019
+# Generated: Sun Jul 28 18:08:07 CEST 2019
 
 # DO NOT MODIFY THIS FILE
 #
@@ -46,11 +46,11 @@
 # The cache attribute is specified which improves GDB performance
 # by allowing GDB to cache memory contents on the host.
 
-# mcu_subsystem_ram_0
-memory 0x0 0x20000 cache
+# ddr3_ctrl_amm_0
+memory 0x0 0x80000000 cache
 
 # qspi_controller2_0_avl_mem
-memory 0x8000000 0x10000000 cache
+memory 0x80000000 0x88000000 cache
 
-# sdram_ctrl_amm_0
-memory 0x80000000 0x100000000 cache
+# mcu_subsystem_ram_0
+memory 0x88020000 0x88040000 cache

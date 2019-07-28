@@ -2403,11 +2403,11 @@
           </parameter>
           <parameter>
             <name>MEM_DDR3_ASR_ENUM</name>
-            <value>DDR3_ASR_MANUAL</value>
+            <value>DDR3_ASR_AUTOMATIC</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_ATCL_ENUM</name>
-            <value>DDR3_ATCL_CL1</value>
+            <value>DDR3_ATCL_DISABLED</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_BANK_ADDR_WIDTH</name>
@@ -2503,7 +2503,7 @@
           </parameter>
           <parameter>
             <name>MEM_DDR3_DRV_STR_ENUM</name>
-            <value>DDR3_DRV_STR_RZQ_7</value>
+            <value>DDR3_DRV_STR_RZQ_6</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_FORMAT_ENUM</name>
@@ -2511,7 +2511,7 @@
           </parameter>
           <parameter>
             <name>MEM_DDR3_HIDE_ADV_MR_SETTINGS</name>
-            <value>true</value>
+            <value>false</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_LRDIMM_EXTENDED_CONFIG</name>
@@ -2523,15 +2523,15 @@
           </parameter>
           <parameter>
             <name>MEM_DDR3_MR0</name>
-            <value>2596</value>
+            <value>2080</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_MR1</name>
-            <value>65546</value>
+            <value>65536</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_MR2</name>
-            <value>131112</value>
+            <value>132168</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_MR3</name>
@@ -2579,11 +2579,11 @@
           </parameter>
           <parameter>
             <name>MEM_DDR3_RTT_WR_ENUM</name>
-            <value>DDR3_RTT_WR_ODT_DISABLED</value>
+            <value>DDR3_RTT_WR_RZQ_2</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_R_DERIVED_ODT0</name>
-            <value>(Drive) RZQ/7,-,-,-</value>
+            <value>(Drive) RZQ/6,-,-,-</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_R_DERIVED_ODT1</name>
@@ -2671,15 +2671,15 @@
           </parameter>
           <parameter>
             <name>MEM_DDR3_TCL</name>
-            <value>14</value>
+            <value>6</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_TDH_DC_MV</name>
-            <value>90</value>
+            <value>100</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_TDH_PS</name>
-            <value>55</value>
+            <value>100</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_TDQSCKDL</name>
@@ -2699,51 +2699,51 @@
           </parameter>
           <parameter>
             <name>MEM_DDR3_TDQSCK_PS</name>
-            <value>180</value>
+            <value>300</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_TDQSQ_PS</name>
-            <value>75</value>
+            <value>150</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_TDQSS_CYC</name>
-            <value>0.27</value>
+            <value>0.25</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_TDSH_CYC</name>
-            <value>0.18</value>
+            <value>0.2</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_TDSS_CYC</name>
-            <value>0.18</value>
+            <value>0.2</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_TDS_AC_MV</name>
-            <value>135</value>
+            <value>175</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_TDS_PS</name>
-            <value>53</value>
+            <value>25</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_TFAW_CYC</name>
-            <value>14</value>
+            <value>27</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_TFAW_NS</name>
-            <value>25.0</value>
+            <value>50.0</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_TIH_DC_MV</name>
-            <value>90</value>
+            <value>100</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_TIH_PS</name>
-            <value>95</value>
+            <value>200</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_TINIT_CK</name>
-            <value>267000</value>
+            <value>266667</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_TINIT_US</name>
@@ -2751,11 +2751,11 @@
           </parameter>
           <parameter>
             <name>MEM_DDR3_TIS_AC_MV</name>
-            <value>135</value>
+            <value>175</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_TIS_PS</name>
-            <value>60</value>
+            <value>125</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_TMRD_CK_CYC</name>
@@ -2767,27 +2767,27 @@
           </parameter>
           <parameter>
             <name>MEM_DDR3_TQSH_CYC</name>
-            <value>0.4</value>
+            <value>0.38</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_TRAS_CYC</name>
-            <value>18</value>
+            <value>20</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_TRAS_NS</name>
-            <value>33.0</value>
+            <value>37.5</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_TRCD_CYC</name>
-            <value>7</value>
+            <value>6</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_TRCD_NS</name>
-            <value>13.09</value>
+            <value>11.25</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_TREFI_CYC</name>
-            <value>4166</value>
+            <value>4160</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_TREFI_US</name>
@@ -2795,19 +2795,19 @@
           </parameter>
           <parameter>
             <name>MEM_DDR3_TRFC_CYC</name>
-            <value>86</value>
+            <value>139</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_TRFC_NS</name>
-            <value>160.0</value>
+            <value>260.0</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_TRP_CYC</name>
-            <value>7</value>
+            <value>6</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_TRP_NS</name>
-            <value>13.09</value>
+            <value>11.25</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_TRRD_CYC</name>
@@ -2815,7 +2815,7 @@
           </parameter>
           <parameter>
             <name>MEM_DDR3_TRTP_CYC</name>
-            <value>8</value>
+            <value>4</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_TTL_ADDR_WIDTH</name>
@@ -2871,15 +2871,15 @@
           </parameter>
           <parameter>
             <name>MEM_DDR3_TWLH_PS</name>
-            <value>125.0</value>
+            <value>245.0</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_TWLS_PS</name>
-            <value>125.0</value>
+            <value>245.0</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_TWR_CYC</name>
-            <value>9</value>
+            <value>8</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_TWR_NS</name>
@@ -2887,7 +2887,7 @@
           </parameter>
           <parameter>
             <name>MEM_DDR3_TWTR_CYC</name>
-            <value>8</value>
+            <value>4</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_USE_DEFAULT_ODT</name>
@@ -2895,11 +2895,11 @@
           </parameter>
           <parameter>
             <name>MEM_DDR3_WTCL</name>
-            <value>10</value>
+            <value>6</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_W_DERIVED_ODT0</name>
-            <value>ODT Disabled,-,-,-</value>
+            <value>(Dynamic) RZQ/2,-,-,-</value>
           </parameter>
           <parameter>
             <name>MEM_DDR3_W_DERIVED_ODT1</name>
@@ -4583,7 +4583,7 @@
           </parameter>
           <parameter>
             <name>MEM_READ_LATENCY</name>
-            <value>27.0</value>
+            <value>6.0</value>
           </parameter>
           <parameter>
             <name>MEM_RLD2_ADDR_WIDTH</name>
@@ -4903,7 +4903,7 @@
           </parameter>
           <parameter>
             <name>MEM_WRITE_LATENCY</name>
-            <value>23</value>
+            <value>6</value>
           </parameter>
           <parameter>
             <name>PHY_AC_CALIBRATED_OCT</name>
@@ -4911,7 +4911,7 @@
           </parameter>
           <parameter>
             <name>PHY_AC_IO_STD_ENUM</name>
-            <value>IO_STD_SSTL_135_C1</value>
+            <value>IO_STD_SSTL_15_C1</value>
           </parameter>
           <parameter>
             <name>PHY_AC_MODE_ENUM</name>
@@ -4927,7 +4927,7 @@
           </parameter>
           <parameter>
             <name>PHY_CK_IO_STD_ENUM</name>
-            <value>IO_STD_SSTL_135_C1</value>
+            <value>IO_STD_SSTL_15_C1</value>
           </parameter>
           <parameter>
             <name>PHY_CK_MODE_ENUM</name>
@@ -4955,7 +4955,7 @@
           </parameter>
           <parameter>
             <name>PHY_DATA_IO_STD_ENUM</name>
-            <value>IO_STD_SSTL_135</value>
+            <value>IO_STD_SSTL_15</value>
           </parameter>
           <parameter>
             <name>PHY_DATA_OUT_MODE_ENUM</name>
@@ -4963,7 +4963,7 @@
           </parameter>
           <parameter>
             <name>PHY_DDR3_AC_IO_STD_ENUM</name>
-            <value>IO_STD_SSTL_135_C1</value>
+            <value>IO_STD_SSTL_15_C1</value>
           </parameter>
           <parameter>
             <name>PHY_DDR3_AC_MODE_ENUM</name>
@@ -4971,7 +4971,7 @@
           </parameter>
           <parameter>
             <name>PHY_DDR3_AC_SLEW_RATE_ENUM</name>
-            <value>SLEW_RATE_SLOW</value>
+            <value>SLEW_RATE_FAST</value>
           </parameter>
           <parameter>
             <name>PHY_DDR3_AUTO_STARTING_VREFIN_EN</name>
@@ -4991,7 +4991,7 @@
           </parameter>
           <parameter>
             <name>PHY_DDR3_CK_IO_STD_ENUM</name>
-            <value>IO_STD_SSTL_135_C1</value>
+            <value>IO_STD_SSTL_15_C1</value>
           </parameter>
           <parameter>
             <name>PHY_DDR3_CK_MODE_ENUM</name>
@@ -4999,7 +4999,7 @@
           </parameter>
           <parameter>
             <name>PHY_DDR3_CK_SLEW_RATE_ENUM</name>
-            <value>SLEW_RATE_SLOW</value>
+            <value>SLEW_RATE_FAST</value>
           </parameter>
           <parameter>
             <name>PHY_DDR3_CONFIG_ENUM</name>
@@ -5019,7 +5019,7 @@
           </parameter>
           <parameter>
             <name>PHY_DDR3_DATA_IO_STD_ENUM</name>
-            <value>IO_STD_SSTL_135</value>
+            <value>IO_STD_SSTL_15</value>
           </parameter>
           <parameter>
             <name>PHY_DDR3_DATA_OUT_MODE_ENUM</name>
@@ -5039,11 +5039,11 @@
           </parameter>
           <parameter>
             <name>PHY_DDR3_IO_VOLTAGE</name>
-            <value>1.35</value>
+            <value>1.5</value>
           </parameter>
           <parameter>
             <name>PHY_DDR3_MEM_CLK_FREQ_MHZ</name>
-            <value>534.0</value>
+            <value>533.333</value>
           </parameter>
           <parameter>
             <name>PHY_DDR3_PING_PONG_EN</name>
@@ -5059,7 +5059,7 @@
           </parameter>
           <parameter>
             <name>PHY_DDR3_REF_CLK_FREQ_MHZ</name>
-            <value>133.5</value>
+            <value>133.333</value>
           </parameter>
           <parameter>
             <name>PHY_DDR3_REF_CLK_JITTER_PS</name>
@@ -5067,7 +5067,7 @@
           </parameter>
           <parameter>
             <name>PHY_DDR3_RZQ_IO_STD_ENUM</name>
-            <value>IO_STD_SSTL_135</value>
+            <value>IO_STD_CMOS_15</value>
           </parameter>
           <parameter>
             <name>PHY_DDR3_STARTING_VREFIN</name>
@@ -5127,7 +5127,7 @@
           </parameter>
           <parameter>
             <name>PHY_DDR3_USER_REF_CLK_FREQ_MHZ</name>
-            <value>-1.0</value>
+            <value>133.25</value>
           </parameter>
           <parameter>
             <name>PHY_DDR3_USER_RZQ_IO_STD_ENUM</name>
@@ -5483,7 +5483,7 @@
           </parameter>
           <parameter>
             <name>PHY_MEM_CLK_FREQ_MHZ</name>
-            <value>534.0</value>
+            <value>533.333</value>
           </parameter>
           <parameter>
             <name>PHY_PING_PONG_EN</name>
@@ -5823,7 +5823,7 @@
           </parameter>
           <parameter>
             <name>PHY_REF_CLK_FREQ_MHZ</name>
-            <value>133.5</value>
+            <value>133.333</value>
           </parameter>
           <parameter>
             <name>PHY_REF_CLK_JITTER_PS</name>
@@ -6283,19 +6283,19 @@
           </parameter>
           <parameter>
             <name>PLL_EXTRA_CLK_ACTUAL_FREQ_MHZ_5</name>
-            <value>534.0</value>
+            <value>533.333</value>
           </parameter>
           <parameter>
             <name>PLL_EXTRA_CLK_ACTUAL_FREQ_MHZ_6</name>
-            <value>534.0</value>
+            <value>533.333</value>
           </parameter>
           <parameter>
             <name>PLL_EXTRA_CLK_ACTUAL_FREQ_MHZ_7</name>
-            <value>534.0</value>
+            <value>533.333</value>
           </parameter>
           <parameter>
             <name>PLL_EXTRA_CLK_ACTUAL_FREQ_MHZ_8</name>
-            <value>534.0</value>
+            <value>533.333</value>
           </parameter>
           <parameter>
             <name>PLL_EXTRA_CLK_ACTUAL_FREQ_MHZ_GUI_0</name>
@@ -6595,7 +6595,7 @@
           </parameter>
           <parameter>
             <name>PLL_VCO_CLK_FREQ_MHZ</name>
-            <value>534.0</value>
+            <value>533.333</value>
           </parameter>
           <parameter>
             <name>PREV_PROTOCOL_ENUM</name>
@@ -6647,7 +6647,7 @@
         <className>altera_emif_c10</className>
         <version>18.1</version>
         <name>emif_c10_0</name>
-        <uniqueName>ddr_controller_altera_emif_c10_181_zlzq64i</uniqueName>
+        <uniqueName>ddr_controller_altera_emif_c10_181_dw5di3a</uniqueName>
         <nonce>0</nonce>
         <incidentConnections></incidentConnections>
         <path>ddr_controller.emif_c10_0</path>
@@ -7987,11 +7987,11 @@
               </parameter>
               <parameter>
                 <name>DIAG_ABSTRACT_PHY_RLAT</name>
-                <value>22</value>
+                <value>12</value>
               </parameter>
               <parameter>
                 <name>DIAG_ABSTRACT_PHY_WLAT</name>
-                <value>11</value>
+                <value>3</value>
               </parameter>
               <parameter>
                 <name>DIAG_BOARD_DELAY_CONFIG_STR</name>
@@ -9211,11 +9211,11 @@
               </parameter>
               <parameter>
                 <name>MEM_DDR3_ASR_ENUM</name>
-                <value>DDR3_ASR_MANUAL</value>
+                <value>DDR3_ASR_AUTOMATIC</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_ATCL_ENUM</name>
-                <value>DDR3_ATCL_CL1</value>
+                <value>DDR3_ATCL_DISABLED</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_BANK_ADDR_WIDTH</name>
@@ -9311,7 +9311,7 @@
               </parameter>
               <parameter>
                 <name>MEM_DDR3_DRV_STR_ENUM</name>
-                <value>DDR3_DRV_STR_RZQ_7</value>
+                <value>DDR3_DRV_STR_RZQ_6</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_FORMAT_ENUM</name>
@@ -9319,7 +9319,7 @@
               </parameter>
               <parameter>
                 <name>MEM_DDR3_HIDE_ADV_MR_SETTINGS</name>
-                <value>true</value>
+                <value>false</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_LRDIMM_EXTENDED_CONFIG</name>
@@ -9331,15 +9331,15 @@
               </parameter>
               <parameter>
                 <name>MEM_DDR3_MR0</name>
-                <value>2596</value>
+                <value>2080</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_MR1</name>
-                <value>65546</value>
+                <value>65536</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_MR2</name>
-                <value>131112</value>
+                <value>132168</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_MR3</name>
@@ -9387,11 +9387,11 @@
               </parameter>
               <parameter>
                 <name>MEM_DDR3_RTT_WR_ENUM</name>
-                <value>DDR3_RTT_WR_ODT_DISABLED</value>
+                <value>DDR3_RTT_WR_RZQ_2</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_R_DERIVED_ODT0</name>
-                <value>(Drive) RZQ/7,-,-,-</value>
+                <value>(Drive) RZQ/6,-,-,-</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_R_DERIVED_ODT1</name>
@@ -9479,15 +9479,15 @@
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TCL</name>
-                <value>14</value>
+                <value>6</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TDH_DC_MV</name>
-                <value>90</value>
+                <value>100</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TDH_PS</name>
-                <value>55</value>
+                <value>100</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TDQSCKDL</name>
@@ -9507,51 +9507,51 @@
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TDQSCK_PS</name>
-                <value>180</value>
+                <value>300</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TDQSQ_PS</name>
-                <value>75</value>
+                <value>150</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TDQSS_CYC</name>
-                <value>0.27</value>
+                <value>0.25</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TDSH_CYC</name>
-                <value>0.18</value>
+                <value>0.2</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TDSS_CYC</name>
-                <value>0.18</value>
+                <value>0.2</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TDS_AC_MV</name>
-                <value>135</value>
+                <value>175</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TDS_PS</name>
-                <value>53</value>
+                <value>25</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TFAW_CYC</name>
-                <value>14</value>
+                <value>27</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TFAW_NS</name>
-                <value>25.0</value>
+                <value>50.0</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TIH_DC_MV</name>
-                <value>90</value>
+                <value>100</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TIH_PS</name>
-                <value>95</value>
+                <value>200</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TINIT_CK</name>
-                <value>267000</value>
+                <value>266667</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TINIT_US</name>
@@ -9559,11 +9559,11 @@
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TIS_AC_MV</name>
-                <value>135</value>
+                <value>175</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TIS_PS</name>
-                <value>60</value>
+                <value>125</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TMRD_CK_CYC</name>
@@ -9575,27 +9575,27 @@
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TQSH_CYC</name>
-                <value>0.4</value>
+                <value>0.38</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TRAS_CYC</name>
-                <value>18</value>
+                <value>20</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TRAS_NS</name>
-                <value>33.0</value>
+                <value>37.5</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TRCD_CYC</name>
-                <value>7</value>
+                <value>6</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TRCD_NS</name>
-                <value>13.09</value>
+                <value>11.25</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TREFI_CYC</name>
-                <value>4166</value>
+                <value>4160</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TREFI_US</name>
@@ -9603,19 +9603,19 @@
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TRFC_CYC</name>
-                <value>86</value>
+                <value>139</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TRFC_NS</name>
-                <value>160.0</value>
+                <value>260.0</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TRP_CYC</name>
-                <value>7</value>
+                <value>6</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TRP_NS</name>
-                <value>13.09</value>
+                <value>11.25</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TRRD_CYC</name>
@@ -9623,7 +9623,7 @@
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TRTP_CYC</name>
-                <value>8</value>
+                <value>4</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TTL_ADDR_WIDTH</name>
@@ -9679,15 +9679,15 @@
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TWLH_PS</name>
-                <value>125.0</value>
+                <value>245.0</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TWLS_PS</name>
-                <value>125.0</value>
+                <value>245.0</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TWR_CYC</name>
-                <value>9</value>
+                <value>8</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TWR_NS</name>
@@ -9695,7 +9695,7 @@
               </parameter>
               <parameter>
                 <name>MEM_DDR3_TWTR_CYC</name>
-                <value>8</value>
+                <value>4</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_USE_DEFAULT_ODT</name>
@@ -9703,11 +9703,11 @@
               </parameter>
               <parameter>
                 <name>MEM_DDR3_WTCL</name>
-                <value>10</value>
+                <value>6</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_W_DERIVED_ODT0</name>
-                <value>ODT Disabled,-,-,-</value>
+                <value>(Dynamic) RZQ/2,-,-,-</value>
               </parameter>
               <parameter>
                 <name>MEM_DDR3_W_DERIVED_ODT1</name>
@@ -11391,7 +11391,7 @@
               </parameter>
               <parameter>
                 <name>MEM_READ_LATENCY</name>
-                <value>27.0</value>
+                <value>6.0</value>
               </parameter>
               <parameter>
                 <name>MEM_RLD2_ADDR_WIDTH</name>
@@ -11711,7 +11711,7 @@
               </parameter>
               <parameter>
                 <name>MEM_WRITE_LATENCY</name>
-                <value>23</value>
+                <value>6</value>
               </parameter>
               <parameter>
                 <name>NUM_OF_HMC_PORTS</name>
@@ -11735,7 +11735,7 @@
               </parameter>
               <parameter>
                 <name>PHY_AC_IO_STD_ENUM</name>
-                <value>IO_STD_SSTL_135_C1</value>
+                <value>IO_STD_SSTL_15_C1</value>
               </parameter>
               <parameter>
                 <name>PHY_AC_MODE_ENUM</name>
@@ -11751,7 +11751,7 @@
               </parameter>
               <parameter>
                 <name>PHY_CK_IO_STD_ENUM</name>
-                <value>IO_STD_SSTL_135_C1</value>
+                <value>IO_STD_SSTL_15_C1</value>
               </parameter>
               <parameter>
                 <name>PHY_CK_MODE_ENUM</name>
@@ -11779,7 +11779,7 @@
               </parameter>
               <parameter>
                 <name>PHY_DATA_IO_STD_ENUM</name>
-                <value>IO_STD_SSTL_135</value>
+                <value>IO_STD_SSTL_15</value>
               </parameter>
               <parameter>
                 <name>PHY_DATA_OUT_MODE_ENUM</name>
@@ -11787,7 +11787,7 @@
               </parameter>
               <parameter>
                 <name>PHY_DDR3_AC_IO_STD_ENUM</name>
-                <value>IO_STD_SSTL_135_C1</value>
+                <value>IO_STD_SSTL_15_C1</value>
               </parameter>
               <parameter>
                 <name>PHY_DDR3_AC_MODE_ENUM</name>
@@ -11795,7 +11795,7 @@
               </parameter>
               <parameter>
                 <name>PHY_DDR3_AC_SLEW_RATE_ENUM</name>
-                <value>SLEW_RATE_SLOW</value>
+                <value>SLEW_RATE_FAST</value>
               </parameter>
               <parameter>
                 <name>PHY_DDR3_AUTO_STARTING_VREFIN_EN</name>
@@ -11815,7 +11815,7 @@
               </parameter>
               <parameter>
                 <name>PHY_DDR3_CK_IO_STD_ENUM</name>
-                <value>IO_STD_SSTL_135_C1</value>
+                <value>IO_STD_SSTL_15_C1</value>
               </parameter>
               <parameter>
                 <name>PHY_DDR3_CK_MODE_ENUM</name>
@@ -11823,7 +11823,7 @@
               </parameter>
               <parameter>
                 <name>PHY_DDR3_CK_SLEW_RATE_ENUM</name>
-                <value>SLEW_RATE_SLOW</value>
+                <value>SLEW_RATE_FAST</value>
               </parameter>
               <parameter>
                 <name>PHY_DDR3_CONFIG_ENUM</name>
@@ -11843,7 +11843,7 @@
               </parameter>
               <parameter>
                 <name>PHY_DDR3_DATA_IO_STD_ENUM</name>
-                <value>IO_STD_SSTL_135</value>
+                <value>IO_STD_SSTL_15</value>
               </parameter>
               <parameter>
                 <name>PHY_DDR3_DATA_OUT_MODE_ENUM</name>
@@ -11863,11 +11863,11 @@
               </parameter>
               <parameter>
                 <name>PHY_DDR3_IO_VOLTAGE</name>
-                <value>1.35</value>
+                <value>1.5</value>
               </parameter>
               <parameter>
                 <name>PHY_DDR3_MEM_CLK_FREQ_MHZ</name>
-                <value>534.0</value>
+                <value>533.333</value>
               </parameter>
               <parameter>
                 <name>PHY_DDR3_PING_PONG_EN</name>
@@ -11883,7 +11883,7 @@
               </parameter>
               <parameter>
                 <name>PHY_DDR3_REF_CLK_FREQ_MHZ</name>
-                <value>133.5</value>
+                <value>133.333</value>
               </parameter>
               <parameter>
                 <name>PHY_DDR3_REF_CLK_JITTER_PS</name>
@@ -11891,7 +11891,7 @@
               </parameter>
               <parameter>
                 <name>PHY_DDR3_RZQ_IO_STD_ENUM</name>
-                <value>IO_STD_SSTL_135</value>
+                <value>IO_STD_CMOS_15</value>
               </parameter>
               <parameter>
                 <name>PHY_DDR3_STARTING_VREFIN</name>
@@ -11951,7 +11951,7 @@
               </parameter>
               <parameter>
                 <name>PHY_DDR3_USER_REF_CLK_FREQ_MHZ</name>
-                <value>-1.0</value>
+                <value>133.25</value>
               </parameter>
               <parameter>
                 <name>PHY_DDR3_USER_RZQ_IO_STD_ENUM</name>
@@ -12315,7 +12315,7 @@
               </parameter>
               <parameter>
                 <name>PHY_MEM_CLK_FREQ_MHZ</name>
-                <value>534.0</value>
+                <value>533.333</value>
               </parameter>
               <parameter>
                 <name>PHY_PERIODIC_OCT_RECAL</name>
@@ -12659,7 +12659,7 @@
               </parameter>
               <parameter>
                 <name>PHY_REF_CLK_FREQ_MHZ</name>
-                <value>133.5</value>
+                <value>133.333</value>
               </parameter>
               <parameter>
                 <name>PHY_REF_CLK_JITTER_PS</name>
@@ -14091,23 +14091,23 @@
               </parameter>
               <parameter>
                 <name>PLL_C_CNT_FREQ_PS_STR_0</name>
-                <value>7488 ps</value>
+                <value>7504 ps</value>
               </parameter>
               <parameter>
                 <name>PLL_C_CNT_FREQ_PS_STR_1</name>
-                <value>3744 ps</value>
+                <value>3752 ps</value>
               </parameter>
               <parameter>
                 <name>PLL_C_CNT_FREQ_PS_STR_2</name>
-                <value>7488 ps</value>
+                <value>7504 ps</value>
               </parameter>
               <parameter>
                 <name>PLL_C_CNT_FREQ_PS_STR_3</name>
-                <value>7488 ps</value>
+                <value>7504 ps</value>
               </parameter>
               <parameter>
                 <name>PLL_C_CNT_FREQ_PS_STR_4</name>
-                <value>7488 ps</value>
+                <value>7504 ps</value>
               </parameter>
               <parameter>
                 <name>PLL_C_CNT_FREQ_PS_STR_5</name>
@@ -14235,15 +14235,15 @@
               </parameter>
               <parameter>
                 <name>PLL_C_CNT_PHASE_PS_STR_0</name>
-                <value>468 ps</value>
+                <value>469 ps</value>
               </parameter>
               <parameter>
                 <name>PLL_C_CNT_PHASE_PS_STR_1</name>
-                <value>468 ps</value>
+                <value>469 ps</value>
               </parameter>
               <parameter>
                 <name>PLL_C_CNT_PHASE_PS_STR_2</name>
-                <value>468 ps</value>
+                <value>469 ps</value>
               </parameter>
               <parameter>
                 <name>PLL_C_CNT_PHASE_PS_STR_3</name>
@@ -14435,19 +14435,19 @@
               </parameter>
               <parameter>
                 <name>PLL_EXTRA_CLK_ACTUAL_FREQ_MHZ_5</name>
-                <value>534.0</value>
+                <value>533.333</value>
               </parameter>
               <parameter>
                 <name>PLL_EXTRA_CLK_ACTUAL_FREQ_MHZ_6</name>
-                <value>534.0</value>
+                <value>533.333</value>
               </parameter>
               <parameter>
                 <name>PLL_EXTRA_CLK_ACTUAL_FREQ_MHZ_7</name>
-                <value>534.0</value>
+                <value>533.333</value>
               </parameter>
               <parameter>
                 <name>PLL_EXTRA_CLK_ACTUAL_FREQ_MHZ_8</name>
-                <value>534.0</value>
+                <value>533.333</value>
               </parameter>
               <parameter>
                 <name>PLL_EXTRA_CLK_ACTUAL_FREQ_MHZ_GUI_0</name>
@@ -14791,39 +14791,39 @@
               </parameter>
               <parameter>
                 <name>PLL_REF_CLK_FREQ_PS</name>
-                <value>7488</value>
+                <value>7504</value>
               </parameter>
               <parameter>
                 <name>PLL_REF_CLK_FREQ_PS_STR</name>
-                <value>7488 ps</value>
+                <value>7504 ps</value>
               </parameter>
               <parameter>
                 <name>PLL_SIM_CAL_MASTER_CLK_FREQ_PS</name>
-                <value>7488</value>
+                <value>7520</value>
               </parameter>
               <parameter>
                 <name>PLL_SIM_CAL_SLAVE_CLK_FREQ_PS</name>
-                <value>7488</value>
+                <value>7520</value>
               </parameter>
               <parameter>
                 <name>PLL_SIM_PHYCLK_0_FREQ_PS</name>
-                <value>3744</value>
+                <value>3760</value>
               </parameter>
               <parameter>
                 <name>PLL_SIM_PHYCLK_1_FREQ_PS</name>
-                <value>7488</value>
+                <value>7520</value>
               </parameter>
               <parameter>
                 <name>PLL_SIM_PHYCLK_FB_FREQ_PS</name>
-                <value>7488</value>
+                <value>7520</value>
               </parameter>
               <parameter>
                 <name>PLL_SIM_PHY_CLK_VCO_PHASE_PS</name>
-                <value>468</value>
+                <value>470</value>
               </parameter>
               <parameter>
                 <name>PLL_SIM_VCO_FREQ_PS</name>
-                <value>1872</value>
+                <value>1880</value>
               </parameter>
               <parameter>
                 <name>PLL_USER_NUM_OF_EXTRA_CLKS</name>
@@ -14831,15 +14831,15 @@
               </parameter>
               <parameter>
                 <name>PLL_VCO_CLK_FREQ_MHZ</name>
-                <value>534.0</value>
+                <value>533.333</value>
               </parameter>
               <parameter>
                 <name>PLL_VCO_FREQ_MHZ_INT</name>
-                <value>534</value>
+                <value>533</value>
               </parameter>
               <parameter>
                 <name>PLL_VCO_FREQ_PS_STR</name>
-                <value>1872 ps</value>
+                <value>1876 ps</value>
               </parameter>
               <parameter>
                 <name>PLL_VCO_TO_MEM_CLK_FREQ_RATIO</name>
@@ -17739,7 +17739,7 @@
               </parameter>
               <parameter>
                 <name>PRI_HMC_CFG_4_ACT_TO_ACT</name>
-                <value>6</value>
+                <value>13</value>
               </parameter>
               <parameter>
                 <name>PRI_HMC_CFG_ACT_TO_ACT</name>
@@ -17755,11 +17755,11 @@
               </parameter>
               <parameter>
                 <name>PRI_HMC_CFG_ACT_TO_PCH</name>
-                <value>9</value>
+                <value>10</value>
               </parameter>
               <parameter>
                 <name>PRI_HMC_CFG_ACT_TO_RDWR</name>
-                <value>0</value>
+                <value>3</value>
               </parameter>
               <parameter>
                 <name>PRI_HMC_CFG_ADDR_ORDER</name>
@@ -17771,11 +17771,11 @@
               </parameter>
               <parameter>
                 <name>PRI_HMC_CFG_ARF_PERIOD</name>
-                <value>2084</value>
+                <value>2081</value>
               </parameter>
               <parameter>
                 <name>PRI_HMC_CFG_ARF_TO_VALID</name>
-                <value>44</value>
+                <value>70</value>
               </parameter>
               <parameter>
                 <name>PRI_HMC_CFG_COL_CMD_SLOT</name>
@@ -17795,7 +17795,7 @@
               </parameter>
               <parameter>
                 <name>PRI_HMC_CFG_DQSTRK_TO_VALID_LAST</name>
-                <value>21</value>
+                <value>16</value>
               </parameter>
               <parameter>
                 <name>PRI_HMC_CFG_DQS_TRACKING_EN</name>
@@ -17879,11 +17879,11 @@
               </parameter>
               <parameter>
                 <name>PRI_HMC_CFG_PCH_ALL_TO_VALID</name>
-                <value>4</value>
+                <value>3</value>
               </parameter>
               <parameter>
                 <name>PRI_HMC_CFG_PCH_TO_VALID</name>
-                <value>4</value>
+                <value>3</value>
               </parameter>
               <parameter>
                 <name>PRI_HMC_CFG_PDN_PERIOD</name>
@@ -17915,11 +17915,11 @@
               </parameter>
               <parameter>
                 <name>PRI_HMC_CFG_RD_AP_TO_VALID</name>
-                <value>15</value>
+                <value>6</value>
               </parameter>
               <parameter>
                 <name>PRI_HMC_CFG_RD_ODT_ON</name>
-                <value>4</value>
+                <value>0</value>
               </parameter>
               <parameter>
                 <name>PRI_HMC_CFG_RD_ODT_PERIOD</name>
@@ -17927,7 +17927,7 @@
               </parameter>
               <parameter>
                 <name>PRI_HMC_CFG_RD_TO_PCH</name>
-                <value>11</value>
+                <value>3</value>
               </parameter>
               <parameter>
                 <name>PRI_HMC_CFG_RD_TO_RD</name>
@@ -17943,7 +17943,7 @@
               </parameter>
               <parameter>
                 <name>PRI_HMC_CFG_RD_TO_WR</name>
-                <value>7</value>
+                <value>5</value>
               </parameter>
               <parameter>
                 <name>PRI_HMC_CFG_RD_TO_WR_DIFF_BG</name>
@@ -17951,7 +17951,7 @@
               </parameter>
               <parameter>
                 <name>PRI_HMC_CFG_RD_TO_WR_DIFF_CHIP</name>
-                <value>7</value>
+                <value>5</value>
               </parameter>
               <parameter>
                 <name>PRI_HMC_CFG_READ_ODT_CHIP</name>
@@ -18055,7 +18055,7 @@
               </parameter>
               <parameter>
                 <name>PRI_HMC_CFG_TCL</name>
-                <value>14</value>
+                <value>6</value>
               </parameter>
               <parameter>
                 <name>PRI_HMC_CFG_USER_RFSH_EN</name>
@@ -18071,7 +18071,7 @@
               </parameter>
               <parameter>
                 <name>PRI_HMC_CFG_WR_AP_TO_VALID</name>
-                <value>22</value>
+                <value>13</value>
               </parameter>
               <parameter>
                 <name>PRI_HMC_CFG_WR_ODT_ON</name>
@@ -18083,11 +18083,11 @@
               </parameter>
               <parameter>
                 <name>PRI_HMC_CFG_WR_TO_PCH</name>
-                <value>19</value>
+                <value>10</value>
               </parameter>
               <parameter>
                 <name>PRI_HMC_CFG_WR_TO_RD</name>
-                <value>13</value>
+                <value>9</value>
               </parameter>
               <parameter>
                 <name>PRI_HMC_CFG_WR_TO_RD_DIFF_BG</name>
@@ -18095,7 +18095,7 @@
               </parameter>
               <parameter>
                 <name>PRI_HMC_CFG_WR_TO_RD_DIFF_CHIP</name>
-                <value>4</value>
+                <value>5</value>
               </parameter>
               <parameter>
                 <name>PRI_HMC_CFG_WR_TO_WR</name>
@@ -18151,7 +18151,7 @@
               </parameter>
               <parameter>
                 <name>SEC_HMC_CFG_4_ACT_TO_ACT</name>
-                <value>6</value>
+                <value>13</value>
               </parameter>
               <parameter>
                 <name>SEC_HMC_CFG_ACT_TO_ACT</name>
@@ -18167,11 +18167,11 @@
               </parameter>
               <parameter>
                 <name>SEC_HMC_CFG_ACT_TO_PCH</name>
-                <value>9</value>
+                <value>10</value>
               </parameter>
               <parameter>
                 <name>SEC_HMC_CFG_ACT_TO_RDWR</name>
-                <value>0</value>
+                <value>3</value>
               </parameter>
               <parameter>
                 <name>SEC_HMC_CFG_ADDR_ORDER</name>
@@ -18183,11 +18183,11 @@
               </parameter>
               <parameter>
                 <name>SEC_HMC_CFG_ARF_PERIOD</name>
-                <value>2084</value>
+                <value>2081</value>
               </parameter>
               <parameter>
                 <name>SEC_HMC_CFG_ARF_TO_VALID</name>
-                <value>44</value>
+                <value>70</value>
               </parameter>
               <parameter>
                 <name>SEC_HMC_CFG_COL_CMD_SLOT</name>
@@ -18207,7 +18207,7 @@
               </parameter>
               <parameter>
                 <name>SEC_HMC_CFG_DQSTRK_TO_VALID_LAST</name>
-                <value>21</value>
+                <value>16</value>
               </parameter>
               <parameter>
                 <name>SEC_HMC_CFG_DQS_TRACKING_EN</name>
@@ -18291,11 +18291,11 @@
               </parameter>
               <parameter>
                 <name>SEC_HMC_CFG_PCH_ALL_TO_VALID</name>
-                <value>4</value>
+                <value>3</value>
               </parameter>
               <parameter>
                 <name>SEC_HMC_CFG_PCH_TO_VALID</name>
-                <value>4</value>
+                <value>3</value>
               </parameter>
               <parameter>
                 <name>SEC_HMC_CFG_PDN_PERIOD</name>
@@ -18327,11 +18327,11 @@
               </parameter>
               <parameter>
                 <name>SEC_HMC_CFG_RD_AP_TO_VALID</name>
-                <value>15</value>
+                <value>6</value>
               </parameter>
               <parameter>
                 <name>SEC_HMC_CFG_RD_ODT_ON</name>
-                <value>4</value>
+                <value>0</value>
               </parameter>
               <parameter>
                 <name>SEC_HMC_CFG_RD_ODT_PERIOD</name>
@@ -18339,7 +18339,7 @@
               </parameter>
               <parameter>
                 <name>SEC_HMC_CFG_RD_TO_PCH</name>
-                <value>11</value>
+                <value>3</value>
               </parameter>
               <parameter>
                 <name>SEC_HMC_CFG_RD_TO_RD</name>
@@ -18355,7 +18355,7 @@
               </parameter>
               <parameter>
                 <name>SEC_HMC_CFG_RD_TO_WR</name>
-                <value>7</value>
+                <value>5</value>
               </parameter>
               <parameter>
                 <name>SEC_HMC_CFG_RD_TO_WR_DIFF_BG</name>
@@ -18363,7 +18363,7 @@
               </parameter>
               <parameter>
                 <name>SEC_HMC_CFG_RD_TO_WR_DIFF_CHIP</name>
-                <value>7</value>
+                <value>5</value>
               </parameter>
               <parameter>
                 <name>SEC_HMC_CFG_READ_ODT_CHIP</name>
@@ -18467,7 +18467,7 @@
               </parameter>
               <parameter>
                 <name>SEC_HMC_CFG_TCL</name>
-                <value>14</value>
+                <value>6</value>
               </parameter>
               <parameter>
                 <name>SEC_HMC_CFG_USER_RFSH_EN</name>
@@ -18483,7 +18483,7 @@
               </parameter>
               <parameter>
                 <name>SEC_HMC_CFG_WR_AP_TO_VALID</name>
-                <value>22</value>
+                <value>13</value>
               </parameter>
               <parameter>
                 <name>SEC_HMC_CFG_WR_ODT_ON</name>
@@ -18495,11 +18495,11 @@
               </parameter>
               <parameter>
                 <name>SEC_HMC_CFG_WR_TO_PCH</name>
-                <value>19</value>
+                <value>10</value>
               </parameter>
               <parameter>
                 <name>SEC_HMC_CFG_WR_TO_RD</name>
-                <value>13</value>
+                <value>9</value>
               </parameter>
               <parameter>
                 <name>SEC_HMC_CFG_WR_TO_RD_DIFF_BG</name>
@@ -18507,7 +18507,7 @@
               </parameter>
               <parameter>
                 <name>SEC_HMC_CFG_WR_TO_RD_DIFF_CHIP</name>
-                <value>4</value>
+                <value>5</value>
               </parameter>
               <parameter>
                 <name>SEC_HMC_CFG_WR_TO_WR</name>
@@ -18555,7 +18555,7 @@
               </parameter>
               <parameter>
                 <name>SEQ_SIM_OSC_FREQ_MHZ</name>
-                <value>1058</value>
+                <value>1057</value>
               </parameter>
               <parameter>
                 <name>SEQ_SYNTH_CAL_CLK_DIVIDE</name>
@@ -19182,7 +19182,7 @@
             <className>altera_emif_arch_nf</className>
             <version>18.1</version>
             <name>arch</name>
-            <uniqueName>ddr_controller_altera_emif_arch_nf_181_pucguka</uniqueName>
+            <uniqueName>ddr_controller_altera_emif_arch_nf_181_ygvy23y</uniqueName>
             <nonce>0</nonce>
             <incidentConnections>
               <incidentConnection>

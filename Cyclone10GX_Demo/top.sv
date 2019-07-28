@@ -33,9 +33,11 @@ module top #(
 	output wire        qspi_ncs,
 	inout  wire [3:0]  qspi_data,
 	
+	// transceiver 0
 	output wire        tx_0,
 	input  wire        rx_0,
 	
+	// transceiver 1
 	output wire        tx_1,
 	input  wire        rx_1,
 	
@@ -82,7 +84,6 @@ wire        spi_miso_s;
 wire        spi_mosi_s;
 wire        spi_clk;
 wire        dac_fifo_bypass;
-
   
 assign gpio_bus_i[11]	= trig;
 assign gpio_bus_i[4]		= adc_fdb;
@@ -140,9 +141,9 @@ daq2_spi i_daq2_spi (
 mcu_subsystem mcu_0(
 
 	.clk_clk				(clk0),
-	.clk100_clk			(clk_100),
+	//.clk100_clk			(clk_100),
 	.reset_reset_n		(!global_reset),
-	
+
 	// ddr3
 	.refclk_emif_clk				(refclk_emif_clk),          //    refclk_emif_clk
 	.oct_oct_rzqin					(oct_oct_rzqin),
@@ -175,19 +176,20 @@ mcu_subsystem mcu_0(
 	.tx_1_tx_serial_data											(tx_1),
 	.rx_1_rx_serial_data											(rx_1),
 
-	.dbg_reset_reset												(),
+	//.dbg_reset_reset											(),
 	
-	// FMC
 	// SPI
-	.spi_MISO														(spi_miso_s),
-	.spi_MOSI														(spi_mosi_s),
-	.spi_SCLK														(spi_clk),
-	.spi_SS_n														(spi_csn_s),
+	.spi_serial_MISO												(spi_miso_s),
+	.spi_serial_MOSI												(spi_mosi_s),
+	.spi_serial_SCLK												(spi_clk),
+	.spi_serial_SS_n												(spi_csn_s),
+
 	// i2c
-	.i2c_sda_in														(),
-	.i2c_scl_in														(),
-	.i2c_sda_oe														(),
-	.i2c_scl_oe														(),
+	.i2c_serial_sda_in											(),
+	.i2c_serial_scl_in											(),
+	.i2c_serial_sda_oe											(),
+	.i2c_serial_scl_oe											(),
+
 	// tx
 	.tx_fifo_bypass_bypass										(dac_fifo_bypass),
 	.tx_serial_data_tx_serial_data							(tx_serial_data),
@@ -200,9 +202,9 @@ mcu_subsystem mcu_0(
 	.rx_sync_export												(rx_sync),
 	.rx_ref_clk_clk												(rx_ref_clk),
 
-	.fmc_gpio_in_port												(gpio_bus_i),
-	.fmc_gpio_out_port											(gpio_bus_o)
-	
+	.gpio_bus_in_port												(gpio_bus_i),
+	.gpio_bus_out_port											(gpio_bus_o)
+
 );
 
 

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2019.07.28.18:04:23"
+ outputDirectory="C:/Developer/fpga/ArrowESC/Cyclone10GX_Demo/ip/mcu_subsystem/ad9144_fifo/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Cyclone 10 GX"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="10CX220YF780I5G"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="5"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_IF_DMA_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_IF_DMA_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_IF_DMA_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_IF_DAC_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_IF_DAC_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_IF_DAC_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="if_dma_clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="dma_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="if_dma_rst" kind="reset" start="0">
+   <property name="associatedClock" value="if_dma_clk" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="dma_rst" direction="input" role="reset" width="1" />
+  </interface>
+  <interface name="if_dma_valid" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="dma_valid" direction="input" role="valid" width="1" />
+  </interface>
+  <interface name="if_dma_data" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="dma_data" direction="input" role="data" width="128" />
+  </interface>
+  <interface name="if_dma_ready" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="dma_ready" direction="output" role="ready" width="1" />
+  </interface>
+  <interface name="if_dma_xfer_req" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="dma_xfer_req" direction="input" role="xfer_req" width="1" />
+  </interface>
+  <interface name="if_dma_xfer_last" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="dma_xfer_last" direction="input" role="last" width="1" />
+  </interface>
+  <interface name="if_dac_clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="dac_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="if_dac_rst" kind="reset" start="0">
+   <property name="associatedClock" value="if_dac_clk" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="dac_rst" direction="input" role="reset" width="1" />
+  </interface>
+  <interface name="if_dac_valid" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="dac_valid" direction="input" role="valid" width="1" />
+  </interface>
+  <interface name="if_dac_data" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="dac_data" direction="output" role="data" width="128" />
+  </interface>
+  <interface name="if_dac_xfer_out" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="dac_xfer_out" direction="output" role="xfer_req" width="1" />
+  </interface>
+  <interface name="if_dac_dunf" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="dac_dunf" direction="output" role="unf" width="1" />
+  </interface>
+  <interface name="if_bypass" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="bypass" direction="input" role="bypass" width="1" />
+  </interface>
+ </perimeter>
+ <entity kind="ad9144_fifo" version="1.0" name="ad9144_fifo">
+  <parameter name="AUTO_IF_DAC_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="10CX220YF780I5G" />
+  <parameter name="AUTO_IF_DAC_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone 10 GX" />
+  <parameter name="AUTO_IF_DMA_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_IF_DAC_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_IF_DMA_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_IF_DMA_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="5" />
+  <generatedFiles>
+   <file
+       path="C:\Developer\fpga\ArrowESC\Cyclone10GX_Demo\ip\mcu_subsystem\ad9144_fifo\synth\ad9144_fifo.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Developer\fpga\ArrowESC\Cyclone10GX_Demo\ip\mcu_subsystem\ad9144_fifo\synth\ad9144_fifo.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/Developer/fpga/ArrowESC/Cyclone10GX_Demo/ip/mcu_subsystem/ad9144_fifo.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="C:/developer/fpga/analogdevice/library/util_dacfifo/util_dacfifo_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="ad9144_fifo">"Generating: ad9144_fifo"</message>
+   <message level="Info" culprit="ad9144_fifo">"Generating: util_dacfifo"</message>
+  </messages>
+ </entity>
+ <entity kind="util_dacfifo" version="1.0" name="util_dacfifo">
+  <parameter name="ADDRESS_WIDTH" value="10" />
+  <parameter name="DATA_WIDTH" value="128" />
+  <parameter name="DEVICE_FAMILY" value="Cyclone 10 GX" />
+  <generatedFiles>
+   <file
+       path="C:\Developer\fpga\ArrowESC\Cyclone10GX_Demo\ip\mcu_subsystem\ad9144_fifo\util_dacfifo_10\synth\ad_mem.v"
+       attributes="" />
+   <file
+       path="C:\Developer\fpga\ArrowESC\Cyclone10GX_Demo\ip\mcu_subsystem\ad9144_fifo\util_dacfifo_10\synth\ad_mem_asym.v"
+       attributes="" />
+   <file
+       path="C:\Developer\fpga\ArrowESC\Cyclone10GX_Demo\ip\mcu_subsystem\ad9144_fifo\util_dacfifo_10\synth\ad_b2g.v"
+       attributes="" />
+   <file
+       path="C:\Developer\fpga\ArrowESC\Cyclone10GX_Demo\ip\mcu_subsystem\ad9144_fifo\util_dacfifo_10\synth\ad_g2b.v"
+       attributes="" />
+   <file
+       path="C:\Developer\fpga\ArrowESC\Cyclone10GX_Demo\ip\mcu_subsystem\ad9144_fifo\util_dacfifo_10\synth\util_dacfifo.v"
+       attributes="TOP_LEVEL_FILE" />
+   <file
+       path="C:\Developer\fpga\ArrowESC\Cyclone10GX_Demo\ip\mcu_subsystem\ad9144_fifo\util_dacfifo_10\synth\util_dacfifo_bypass.v"
+       attributes="" />
+   <file
+       path="C:\Developer\fpga\ArrowESC\Cyclone10GX_Demo\ip\mcu_subsystem\ad9144_fifo\util_dacfifo_10\synth\util_dacfifo_constr.sdc"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Developer\fpga\ArrowESC\Cyclone10GX_Demo\ip\mcu_subsystem\ad9144_fifo\util_dacfifo_10\synth\ad_mem.v"
+       attributes="" />
+   <file
+       path="C:\Developer\fpga\ArrowESC\Cyclone10GX_Demo\ip\mcu_subsystem\ad9144_fifo\util_dacfifo_10\synth\ad_mem_asym.v"
+       attributes="" />
+   <file
+       path="C:\Developer\fpga\ArrowESC\Cyclone10GX_Demo\ip\mcu_subsystem\ad9144_fifo\util_dacfifo_10\synth\ad_b2g.v"
+       attributes="" />
+   <file
+       path="C:\Developer\fpga\ArrowESC\Cyclone10GX_Demo\ip\mcu_subsystem\ad9144_fifo\util_dacfifo_10\synth\ad_g2b.v"
+       attributes="" />
+   <file
+       path="C:\Developer\fpga\ArrowESC\Cyclone10GX_Demo\ip\mcu_subsystem\ad9144_fifo\util_dacfifo_10\synth\util_dacfifo.v"
+       attributes="TOP_LEVEL_FILE" />
+   <file
+       path="C:\Developer\fpga\ArrowESC\Cyclone10GX_Demo\ip\mcu_subsystem\ad9144_fifo\util_dacfifo_10\synth\util_dacfifo_bypass.v"
+       attributes="" />
+   <file
+       path="C:\Developer\fpga\ArrowESC\Cyclone10GX_Demo\ip\mcu_subsystem\ad9144_fifo\util_dacfifo_10\synth\util_dacfifo_constr.sdc"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/developer/fpga/analogdevice/library/util_dacfifo/util_dacfifo_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="ad9144_fifo" as="ad9144_fifo" />
+  <messages>
+   <message level="Info" culprit="ad9144_fifo">"Generating: util_dacfifo"</message>
+  </messages>
+ </entity>
+</deploy>
