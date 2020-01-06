@@ -1,7 +1,0 @@
-	component interlaken_phy_clock_bridge_0 is
-		port (
-			in_clk  : in  std_logic := 'X'; -- clk
-			out_clk : out std_logic         -- clk
-		);
-	end component interlaken_phy_clock_bridge_0;
-

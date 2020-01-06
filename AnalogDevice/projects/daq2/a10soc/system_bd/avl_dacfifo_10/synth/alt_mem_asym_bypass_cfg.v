@@ -1,5 +1,0 @@
-config alt_mem_asym_bypass_cfg;
-		design alt_mem_asym_bypass;
-		instance alt_mem_asym_bypass.alt_mem_asym_bypass use system_bd_alt_mem_asym_10.system_bd_alt_mem_asym_10_wryanuq;
-endconfig
-

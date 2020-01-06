@@ -1,6 +1,0 @@
-config system_bd_altera_emif_181_xjayrdi_cfg;
-		design system_bd_altera_emif_181_xjayrdi;
-		instance system_bd_altera_emif_181_xjayrdi.arch use system_bd_altera_emif_arch_nf_181.system_bd_altera_emif_arch_nf_181_trc56rq;
-		instance system_bd_altera_emif_181_xjayrdi.cal_slave_component use system_bd_altera_emif_cal_slave_nf_181.system_bd_altera_emif_cal_slave_nf_181_c5oooyy;
-endconfig
-

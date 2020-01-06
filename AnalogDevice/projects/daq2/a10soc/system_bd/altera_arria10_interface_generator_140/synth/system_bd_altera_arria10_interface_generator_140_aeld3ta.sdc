@@ -1,1 +1,0 @@
-create_clock -period 5.7142857142857144 [get_pins -compatibility_mode *|fpga_interfaces|s2f_user0_clk*]

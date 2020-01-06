@@ -1,6 +1,0 @@
-config system_bd_altera_emif_181_gw6i5oi_cfg;
-		design system_bd_altera_emif_181_gw6i5oi;
-		instance system_bd_altera_emif_181_gw6i5oi.arch use system_bd_altera_emif_arch_nf_181.system_bd_altera_emif_arch_nf_181_s254kwy;
-		instance system_bd_altera_emif_181_gw6i5oi.cal_slave_component use system_bd_altera_emif_cal_slave_nf_181.system_bd_altera_emif_cal_slave_nf_181_bp3yf6q;
-endconfig
-

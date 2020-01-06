@@ -1,6 +1,0 @@
-config system_bd_altera_msgdma_181_b637xva_cfg;
-		design system_bd_altera_msgdma_181_b637xva;
-		instance system_bd_altera_msgdma_181_b637xva.dispatcher_internal use system_bd_modular_sgdma_dispatcher_181.dispatcher;
-		instance system_bd_altera_msgdma_181_b637xva.read_mstr_internal use system_bd_dma_read_master_181.read_master;
-endconfig
-
