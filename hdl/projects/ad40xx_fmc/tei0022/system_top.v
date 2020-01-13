@@ -70,10 +70,10 @@ module system_top (
   input   [  3:0]   eth1_rx_d,
   output            eth1_mdc,
   inout             eth1_mdio,
-  inout				link_st,
-  inout				rx_er,
-  inout				phy_int,
-  inout				eth_rst,
+  input				link_st,
+  input				rx_er,
+  input				phy_int,
+  output			eth_rst,
   inout				phy_led1,
   
   // hps-qspi
@@ -158,6 +158,10 @@ module system_top (
   assign ct_hpd = 1'b1;
   assign ls_oe = 1'b1;  
   assign cec_clk = 1'b0;
+  
+  // ethernet signals
+  
+  assign eth_rst = sys_resetn;
 
   // instantiations
   system_bd i_system_bd (
@@ -213,7 +217,7 @@ module system_top (
     .sys_hps_hps_io_hps_io_gpio_inst_GPIO40 (fmc_pg_c2m),
     .sys_hps_hps_io_hps_io_gpio_inst_GPIO41 (fmc_prsnt_m2c),
     .sys_hps_hps_io_hps_io_gpio_inst_GPIO42 (usb_rst),
-    .sys_hps_hps_io_hps_io_gpio_inst_GPIO43 (eth_rst),
+    .sys_hps_hps_io_hps_io_gpio_inst_GPIO43 (),
     .sys_hps_hps_io_hps_io_gpio_inst_GPIO44 (phy_led1),
     .sys_hps_hps_io_hps_io_gpio_inst_GPIO48 (cpu_gpio_0),
     .sys_hps_hps_io_hps_io_gpio_inst_GPIO53 (led_hps_1),
