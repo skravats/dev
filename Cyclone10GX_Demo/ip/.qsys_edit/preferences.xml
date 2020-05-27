@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <preferences>
  <debug showDebugMenu="0" />
- <window width="1920" height="1047" x="0" y="0" />
+ <window width="1920" height="1040" x="0" y="0" />
  <library
-   expandedCategories="Library/Basic Functions/Configuration and Programming,Library/Processors and Peripherals/Peripherals,Library/Interface Protocols/RapidIO,Library,Library/University Program/Audio &amp; Video/Video,Library/Interface Protocols/Serial,Library/Basic Functions/Bridges and Adaptors/Interrupt,Library/Basic Functions/Bridges and Adaptors/Clock,Library/DSP,Project,Library/Basic Functions/Bridges and Adaptors,Library/Intel FPGA Interconnect,Library/Basic Functions/Simulation; Debug and Verification/Debug and Performance,Library/Basic Functions/Bridges and Adaptors/Memory Mapped,Library/DSP/Video and Image Processing,Library/Interface Protocols,Library/Basic Functions,Library/Basic Functions/Arithmetic,Library/Intel FPGA Interconnect/Memory-Mapped,Library/Basic Functions/Simulation; Debug and Verification,Library/Intel FPGA Interconnect/Tri-State Components,Library/University Program/Bridges,Library/University Program/Audio &amp; Video,Library/University Program,Library/Processors and Peripherals,Library/Basic Functions/Bridges and Adaptors/Reset,Library/University Program/Clock" />
- <systemtable filter="All Interfaces">
-  <columns>
-   <connections preferredWidth="127" />
-   <name preferredWidth="209" />
-   <autoexport visible="1" />
-  </columns>
- </systemtable>
- <generation path="" clear_previous="1" />
- <sysinfo autosync="1" />
+   expandedCategories="Library/Analog Devices,Project,Library,Library/Interface Protocols,Existing IP Variants,Library/Interface Protocols/JESD" />
+ <systemtable filter="All Interfaces" />
+ <generation path="" />
 </preferences>
