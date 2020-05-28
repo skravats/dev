@@ -1,0 +1,385 @@
+
+State Machine - mcu_0|ad9144_jesd204|ad9144_jesd204|link_pll|phase_en_pulse|state
+Name state.IDLE state.WAIT state.PULSE 
+state.IDLE 0 0 0 
+state.PULSE 1 0 1 
+state.WAIT 1 1 0 
+
+State Machine - mcu_0|ad9144_jesd204|ad9144_jesd204|link_pll|dps_reset_gen_1|state
+Name state.GEN_DONE_2 state.GEN_DONE_1 state.GEN_DONE_DELAY_1 state.GEN_DONE_DELAY state.GEN_RESET_DELAY_4 state.GEN_RESET_DELAY_3 state.GEN_RESET_DELAY_2 state.GEN_RESET_DELAY_1 state.GEN_RESET_2 state.GEN_RESET_1 state.WAIT_CORE_DONE state.GEN_RESET_DELAY state.WAIT_PE_PULSE 
+state.WAIT_PE_PULSE 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.GEN_RESET_DELAY 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.WAIT_CORE_DONE 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.GEN_RESET_1 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.GEN_RESET_2 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.GEN_RESET_DELAY_1 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.GEN_RESET_DELAY_2 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.GEN_RESET_DELAY_3 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.GEN_RESET_DELAY_4 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.GEN_DONE_DELAY 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.GEN_DONE_DELAY_1 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.GEN_DONE_1 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.GEN_DONE_2 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - mcu_0|ad9680_jesd204|ad9680_jesd204|link_pll|phase_en_pulse|state
+Name state.IDLE state.WAIT state.PULSE 
+state.IDLE 0 0 0 
+state.PULSE 1 0 1 
+state.WAIT 1 1 0 
+
+State Machine - mcu_0|ad9680_jesd204|ad9680_jesd204|link_pll|dps_reset_gen_1|state
+Name state.GEN_DONE_2 state.GEN_DONE_1 state.GEN_DONE_DELAY_1 state.GEN_DONE_DELAY state.GEN_RESET_DELAY_4 state.GEN_RESET_DELAY_3 state.GEN_RESET_DELAY_2 state.GEN_RESET_DELAY_1 state.GEN_RESET_2 state.GEN_RESET_1 state.WAIT_CORE_DONE state.GEN_RESET_DELAY state.WAIT_PE_PULSE 
+state.WAIT_PE_PULSE 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.GEN_RESET_DELAY 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.WAIT_CORE_DONE 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.GEN_RESET_1 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.GEN_RESET_2 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.GEN_RESET_DELAY_1 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.GEN_RESET_DELAY_2 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.GEN_RESET_DELAY_3 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.GEN_RESET_DELAY_4 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.GEN_DONE_DELAY 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.GEN_DONE_DELAY_1 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.GEN_DONE_1 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.GEN_DONE_2 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - mcu_0|ethernet|mac|mac|i_tse_mac|U_MAC_CONTROL|U_CTRL|state
+Name state.STM_TYPE_WAIT_CYCLE state.STM_TYPE_WAIT_BUSY state.STM_TYPE_END_READ state.STM_TYPE_NEXT_CYCLE state.STM_TYPE_MDIO_WRITE state.STM_TYPE_MDIO_READ state.STM_TYPE_STAT_READ state.STM_TYPE_IDLE 
+state.STM_TYPE_IDLE 0 0 0 0 0 0 0 0 
+state.STM_TYPE_STAT_READ 0 0 0 0 0 0 1 1 
+state.STM_TYPE_MDIO_READ 0 0 0 0 0 1 0 1 
+state.STM_TYPE_MDIO_WRITE 0 0 0 0 1 0 0 1 
+state.STM_TYPE_NEXT_CYCLE 0 0 0 1 0 0 0 1 
+state.STM_TYPE_END_READ 0 0 1 0 0 0 0 1 
+state.STM_TYPE_WAIT_BUSY 0 1 0 0 0 0 0 1 
+state.STM_TYPE_WAIT_CYCLE 1 0 0 0 0 0 0 1 
+
+State Machine - mcu_0|ethernet|mm_interconnect_0|mac_control_port_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - mcu_0|ethernet|mm_interconnect_0|dma_rx_csr_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - mcu_0|ethernet|mm_interconnect_0|dma_tx_csr_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - mcu_0|ethernet|mm_interconnect_0|dma_rx_descriptor_slave_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - mcu_0|ethernet|mm_interconnect_0|dma_tx_descriptor_slave_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - mcu_0|ethernet|mm_interconnect_0|dma_rx_response_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - mcu_0|ethernet|mac|mac|i_tse_mac|U_MAC_CONTROL|U_REG|U_TXCNT|state
+Name state.STM_TYPE_RST_DONE state.STM_TYPE_WR_CNT_DONE state.STM_TYPE_WR_CNT state.STM_TYPE_INC_CNT state.STM_TYPE_RD_CNT state.STM_TYPE_IDLE state.STM_TYPE_RST_CNT 
+state.STM_TYPE_RST_CNT 0 0 0 0 0 0 0 
+state.STM_TYPE_IDLE 0 0 0 0 0 1 1 
+state.STM_TYPE_RD_CNT 0 0 0 0 1 0 1 
+state.STM_TYPE_INC_CNT 0 0 0 1 0 0 1 
+state.STM_TYPE_WR_CNT 0 0 1 0 0 0 1 
+state.STM_TYPE_WR_CNT_DONE 0 1 0 0 0 0 1 
+state.STM_TYPE_RST_DONE 1 0 0 0 0 0 1 
+
+State Machine - mcu_0|ethernet|mac|mac|i_tse_mac|U_MDIO|U_CNTL|state
+Name state.STM_TYP_HOST_WR_END state.STM_TYP_HOST_WR_WAIT state.STM_TYP_HOST_WR_WAIT2 state.STM_TYP_HOST_WR_WAIT1 state.STM_TYP_HOST_WR_WR_DATA state.STM_TYP_HOST_RD_END state.STM_TYP_HOST_RD_REG_WAIT state.STM_TYP_HOST_RD_REG state.STM_TYP_HOST_RD_WAIT state.STM_TYP_HOST_RD_WAIT2 state.STM_TYP_HOST_RD_WAIT1 state.STM_TYP_HOST_RD_WR_ADDR state.STM_TYP_HOST_WR_WR_ADDR state.STM_TYP_IDLE 
+state.STM_TYP_IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.STM_TYP_HOST_WR_WR_ADDR 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.STM_TYP_HOST_RD_WR_ADDR 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.STM_TYP_HOST_RD_WAIT1 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.STM_TYP_HOST_RD_WAIT2 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.STM_TYP_HOST_RD_WAIT 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.STM_TYP_HOST_RD_REG 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.STM_TYP_HOST_RD_REG_WAIT 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.STM_TYP_HOST_RD_END 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.STM_TYP_HOST_WR_WR_DATA 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.STM_TYP_HOST_WR_WAIT1 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.STM_TYP_HOST_WR_WAIT2 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.STM_TYP_HOST_WR_WAIT 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.STM_TYP_HOST_WR_END 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - mcu_0|i2c|i2c|u_mstfsm|mst_fsm_state
+Name mst_fsm_state.GEN_STOP mst_fsm_state.BUS_HOLD mst_fsm_state.PRE_IDLE mst_fsm_state.RX_BYTE mst_fsm_state.TX_BYTE mst_fsm_state.GEN_7BIT_ADDR mst_fsm_state.POP_TX_FIFO mst_fsm_state.GEN_START mst_fsm_state.PRE_START mst_fsm_state.GEN_RESTART_7BIT mst_fsm_state.IDLE 
+mst_fsm_state.IDLE 0 0 0 0 0 0 0 0 0 0 0 
+mst_fsm_state.GEN_RESTART_7BIT 0 0 0 0 0 0 0 0 0 1 1 
+mst_fsm_state.PRE_START 0 0 0 0 0 0 0 0 1 0 1 
+mst_fsm_state.GEN_START 0 0 0 0 0 0 0 1 0 0 1 
+mst_fsm_state.POP_TX_FIFO 0 0 0 0 0 0 1 0 0 0 1 
+mst_fsm_state.GEN_7BIT_ADDR 0 0 0 0 0 1 0 0 0 0 1 
+mst_fsm_state.TX_BYTE 0 0 0 0 1 0 0 0 0 0 1 
+mst_fsm_state.RX_BYTE 0 0 0 1 0 0 0 0 0 0 1 
+mst_fsm_state.PRE_IDLE 0 0 1 0 0 0 0 0 0 0 1 
+mst_fsm_state.BUS_HOLD 0 1 0 0 0 0 0 0 0 0 1 
+mst_fsm_state.GEN_STOP 1 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - mcu_0|i2c|i2c|u_rxshifter|rx_shiftfsm_state
+Name rx_shiftfsm_state.RX_CLK_LOW rx_shiftfsm_state.RX_CLK_HIGH rx_shiftfsm_state.RX_DONE rx_shiftfsm_state.RX_CLK_LOAD rx_shiftfsm_state.RX_HOLD rx_shiftfsm_state.IDLE 
+rx_shiftfsm_state.IDLE 0 0 0 0 0 0 
+rx_shiftfsm_state.RX_HOLD 0 0 0 0 1 1 
+rx_shiftfsm_state.RX_CLK_LOAD 0 0 0 1 0 1 
+rx_shiftfsm_state.RX_DONE 0 0 1 0 0 1 
+rx_shiftfsm_state.RX_CLK_HIGH 0 1 0 0 0 1 
+rx_shiftfsm_state.RX_CLK_LOW 1 0 0 0 0 1 
+
+State Machine - mcu_0|i2c|i2c|u_txshifter|tx_shiftfsm_state
+Name tx_shiftfsm_state.TX_CLK_HOLD tx_shiftfsm_state.TX_DONE tx_shiftfsm_state.TX_CLK_LOW tx_shiftfsm_state.TX_CLK_HIGH tx_shiftfsm_state.TX_CLK_LOAD tx_shiftfsm_state.TX_IDLE 
+tx_shiftfsm_state.TX_IDLE 0 0 0 0 0 0 
+tx_shiftfsm_state.TX_CLK_LOAD 0 0 0 0 1 1 
+tx_shiftfsm_state.TX_CLK_HIGH 0 0 0 1 0 1 
+tx_shiftfsm_state.TX_CLK_LOW 0 0 1 0 0 1 
+tx_shiftfsm_state.TX_DONE 0 1 0 0 0 1 
+tx_shiftfsm_state.TX_CLK_HOLD 1 0 0 0 0 1 
+
+State Machine - mcu_0|i2c|i2c|u_condt_det|bus_state
+Name bus_state.BUS_COUNTING bus_state.BUS_LOAD_CNT bus_state.BUS_BUSY bus_state.BUS_IDLE 
+bus_state.BUS_IDLE 0 0 0 0 
+bus_state.BUS_BUSY 0 0 1 1 
+bus_state.BUS_LOAD_CNT 0 1 0 1 
+bus_state.BUS_COUNTING 1 0 0 1 
+
+State Machine - mcu_0|i2c|i2c|u_condt_gen|start_state
+Name start_state.START_DONE start_state.START_HOLD start_state.START_LOAD start_state.START_IDLE 
+start_state.START_IDLE 0 0 0 0 
+start_state.START_LOAD 0 0 1 1 
+start_state.START_HOLD 0 1 0 1 
+start_state.START_DONE 1 0 0 1 
+
+State Machine - mcu_0|i2c|i2c|u_condt_gen|restart_state
+Name restart_state.RESTART_DONE restart_state.RESTART_SCL_LOW restart_state.RESTART_HOLD restart_state.RESTART_SETUP restart_state.RESTART_LOAD restart_state.RESTART_IDLE 
+restart_state.RESTART_IDLE 0 0 0 0 0 0 
+restart_state.RESTART_LOAD 0 0 0 0 1 1 
+restart_state.RESTART_SETUP 0 0 0 1 0 1 
+restart_state.RESTART_HOLD 0 0 1 0 0 1 
+restart_state.RESTART_SCL_LOW 0 1 0 0 0 1 
+restart_state.RESTART_DONE 1 0 0 0 0 1 
+
+State Machine - mcu_0|i2c|i2c|u_condt_gen|stop_state
+Name stop_state.STOP_SCL_LOW stop_state.STOP_SETUP stop_state.STOP_LOAD stop_state.STOP_IDLE stop_state.STOP_DONE 
+stop_state.STOP_IDLE 0 0 0 0 0 
+stop_state.STOP_LOAD 0 0 1 1 0 
+stop_state.STOP_SETUP 0 1 0 1 0 
+stop_state.STOP_SCL_LOW 1 0 0 1 0 
+stop_state.STOP_DONE 0 0 0 1 1 
+
+State Machine - mcu_0|mcu_subsystem_cpu_0|mcu_subsystem_cpu_0|cpu|the_mcu_subsystem_cpu_0_altera_nios2_gen2_unit_181_jyxgs6q_nios2_oci|the_mcu_subsystem_cpu_0_altera_nios2_gen2_unit_181_jyxgs6q_debug_slave_wrapper|the_mcu_subsystem_cpu_0_altera_nios2_gen2_unit_181_jyxgs6q_debug_slave_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
+
+State Machine - mcu_0|ethernet|mac|mac|i_tse_mac|U_MAC_TOP|U_MAC|U_MAGIC|state
+Name state.STM_TYP_WAKE_DONE state.STM_TYP_WAKE state.STM_TYP_PAT5 state.STM_TYP_PAT4 state.STM_TYP_PAT3 state.STM_TYP_PAT2 state.STM_TYP_PAT1 state.STM_TYP_PAT0 state.STM_TYP_PBL state.STM_TYP_WAIT_PBL state.STM_TYP_IDLE 
+state.STM_TYP_IDLE 0 0 0 0 0 0 0 0 0 0 0 
+state.STM_TYP_WAIT_PBL 0 0 0 0 0 0 0 0 0 1 1 
+state.STM_TYP_PBL 0 0 0 0 0 0 0 0 1 0 1 
+state.STM_TYP_PAT0 0 0 0 0 0 0 0 1 0 0 1 
+state.STM_TYP_PAT1 0 0 0 0 0 0 1 0 0 0 1 
+state.STM_TYP_PAT2 0 0 0 0 0 1 0 0 0 0 1 
+state.STM_TYP_PAT3 0 0 0 0 1 0 0 0 0 0 1 
+state.STM_TYP_PAT4 0 0 0 1 0 0 0 0 0 0 1 
+state.STM_TYP_PAT5 0 0 1 0 0 0 0 0 0 0 1 
+state.STM_TYP_WAKE 0 1 0 0 0 0 0 0 0 0 1 
+state.STM_TYP_WAKE_DONE 1 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - mcu_0|ad9144_dma|ad9144_dma|i_transfer|i_request_arb|i_req_gen|state
+Name state.STATE_CONSUME state.STATE_REWIND_ID state.STATE_GEN_ID state.STATE_IDLE state.STATE_WAIT_LAST 
+state.STATE_IDLE 0 0 0 0 0 
+state.STATE_GEN_ID 0 0 1 1 0 
+state.STATE_REWIND_ID 0 1 0 1 0 
+state.STATE_CONSUME 1 0 0 1 0 
+state.STATE_WAIT_LAST 0 0 0 1 1 
+
+State Machine - mcu_0|ad9144_dma|ad9144_dma|i_transfer|i_request_arb|i_response_manager|state
+Name state.STATE_ZERO_COMPL state.STATE_ACC state.STATE_WRITE_RESPR state.STATE_IDLE state.STATE_WRITE_ZRCMPL 
+state.STATE_IDLE 0 0 0 0 0 
+state.STATE_WRITE_RESPR 0 0 1 1 0 
+state.STATE_ACC 0 1 0 1 0 
+state.STATE_ZERO_COMPL 1 0 0 1 0 
+state.STATE_WRITE_ZRCMPL 0 0 0 1 1 
+
+State Machine - mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_req_gen|state
+Name state.STATE_CONSUME state.STATE_REWIND_ID state.STATE_GEN_ID state.STATE_IDLE state.STATE_WAIT_LAST 
+state.STATE_IDLE 0 0 0 0 0 
+state.STATE_GEN_ID 0 0 1 1 0 
+state.STATE_REWIND_ID 0 1 0 1 0 
+state.STATE_CONSUME 1 0 0 1 0 
+state.STATE_WAIT_LAST 0 0 0 1 1 
+
+State Machine - mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_response_manager|state
+Name state.STATE_ZERO_COMPL state.STATE_ACC state.STATE_WRITE_RESPR state.STATE_IDLE state.STATE_WRITE_ZRCMPL 
+state.STATE_IDLE 0 0 0 0 0 
+state.STATE_WRITE_RESPR 0 0 1 1 0 
+state.STATE_ACC 0 1 0 1 0 
+state.STATE_ZERO_COMPL 1 0 0 1 0 
+state.STATE_WRITE_ZRCMPL 0 0 0 1 1 
+
+State Machine - mcu_0|mm_interconnect_0|bridge_0_s0_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - mcu_0|ethernet|mm_interconnect_1|dma_bridge_s0_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - mcu_0|ddr3|ddr3|arch|arch_inst|cal_counter_inst|non_hps.counter_state
+Name non_hps.counter_state.COUNT_CAL non_hps.counter_state.IDLE non_hps.counter_state.STOP non_hps.counter_state.INIT 
+non_hps.counter_state.INIT 0 0 0 0 
+non_hps.counter_state.STOP 0 0 1 1 
+non_hps.counter_state.IDLE 0 1 0 1 
+non_hps.counter_state.COUNT_CAL 1 0 0 1 
+
+State Machine - mcu_0|mm_interconnect_4|ddr3_ctrl_mmr_slave_0_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - mcu_0|ethernet|mac|mac|i_tse_mac|U_MAC_CONTROL|U_REG|U_RXCNT|state
+Name state.STM_TYPE_RST_DONE state.STM_TYPE_DELAY state.STM_TYPE_WR_CNT state.STM_TYPE_INC_CNT state.STM_TYPE_RD_CNT state.STM_TYPE_IDLE state.STM_TYPE_RST_CNT 
+state.STM_TYPE_RST_CNT 0 0 0 0 0 0 0 
+state.STM_TYPE_IDLE 0 0 0 0 0 1 1 
+state.STM_TYPE_RD_CNT 0 0 0 0 1 0 1 
+state.STM_TYPE_INC_CNT 0 0 0 1 0 0 1 
+state.STM_TYPE_WR_CNT 0 0 1 0 0 0 1 
+state.STM_TYPE_DELAY 0 1 0 0 0 0 1 
+state.STM_TYPE_RST_DONE 1 0 0 0 0 0 1 
+
+State Machine - mcu_0|ethernet|mac|mac|i_tse_mac|U_MAC_TOP|U_LBFF|U_LBW|state
+Name state.STM_TYPE_NEXT_FRM state.STM_TYPE_FRM_WRT state.STM_TYPE_LOOP_ENA state.STM_TYPE_IDLE 
+state.STM_TYPE_IDLE 0 0 0 0 
+state.STM_TYPE_LOOP_ENA 0 0 1 1 
+state.STM_TYPE_FRM_WRT 0 1 0 1 
+state.STM_TYPE_NEXT_FRM 1 0 0 1 
+
+State Machine - mcu_0|ethernet|mac|mac|i_tse_mac|U_MAC_TOP|U_LBFF|U_LBR|state
+Name state.STM_TYPE_IDLE state.STM_TYPE_NEXT_FRM state.STM_TYPE_FRM_READ 
+state.STM_TYPE_IDLE 0 0 0 
+state.STM_TYPE_FRM_READ 1 0 1 
+state.STM_TYPE_NEXT_FRM 1 1 0 
+
+State Machine - mcu_0|ethernet|mac|mac|i_tse_mac|U_MAC_TOP|U_MAC|U_GETH|U_RXSTAT|state
+Name state.stm_typ_end_frm state.stm_typ_frm state.stm_typ_sfd state.stm_typ_idle 
+state.stm_typ_idle 0 0 0 0 
+state.stm_typ_sfd 0 0 1 1 
+state.stm_typ_frm 0 1 0 1 
+state.stm_typ_end_frm 1 0 0 1 
+
+State Machine - mcu_0|ethernet|mac|mac|i_tse_mac|U_MAC_TOP|U_MAC|U_RXFF|state
+Name state.LOC_STATE_WAIT state.LOC_STATE_SHIFT_WAIT state.LOC_STATE_SHIFT state.LOC_STATE_END_FRM state.LOC_STATE_FF_DATA_FLUSH_WAIT state.LOC_STATE_FF_FLUSH_WAIT state.LOC_STATE_DATA state.LOC_STATE_RST_DONE state.LOC_STATE_FF_DATA_FLUSH state.LOC_STATE_IDLE 
+state.LOC_STATE_IDLE 0 0 0 0 0 0 0 0 0 0 
+state.LOC_STATE_FF_DATA_FLUSH 0 0 0 0 0 0 0 0 1 1 
+state.LOC_STATE_RST_DONE 0 0 0 0 0 0 0 1 0 1 
+state.LOC_STATE_DATA 0 0 0 0 0 0 1 0 0 1 
+state.LOC_STATE_FF_FLUSH_WAIT 0 0 0 0 0 1 0 0 0 1 
+state.LOC_STATE_FF_DATA_FLUSH_WAIT 0 0 0 0 1 0 0 0 0 1 
+state.LOC_STATE_END_FRM 0 0 0 1 0 0 0 0 0 1 
+state.LOC_STATE_SHIFT 0 0 1 0 0 0 0 0 0 1 
+state.LOC_STATE_SHIFT_WAIT 0 1 0 0 0 0 0 0 0 1 
+state.LOC_STATE_WAIT 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - mcu_0|ad9680_jesd204|ad9680_jesd204|jesd204_rx|i_rx_ctrl|state
+Name state.STATE_DEGLITCH state.STATE_CGS state.STATE_WAIT_FOR_PHY state.STATE_RESET state.STATE_SYNCHRONIZED 
+state.STATE_RESET 0 0 0 0 0 
+state.STATE_WAIT_FOR_PHY 0 0 1 1 0 
+state.STATE_CGS 0 1 0 1 0 
+state.STATE_DEGLITCH 1 0 0 1 0 
+state.STATE_SYNCHRONIZED 0 0 0 1 1 
+
+State Machine - mcu_0|qspi_controller2_0|generic_quad_spi_controller2_0|asmi2_inst_qspi_ctrl|csr_controller|state
+Name state.ST_WAIT_RSP state.ST_SEND_DATA state.ST_SEND_HEADER state.ST_IDLE 
+state.ST_IDLE 0 0 0 0 
+state.ST_WAIT_RSP 1 0 0 1 
+state.ST_SEND_HEADER 0 0 1 1 
+state.ST_SEND_DATA 0 1 0 1 
+
+State Machine - mcu_0|qspi_controller2_0|generic_quad_spi_controller2_0|asmi2_inst_qspi_ctrl|xip_controller|current_state
+Name current_state.STATE_READ_DATA current_state.STATE_READ_CMD current_state.STATE_READ_NVCR_RSP current_state.STATE_COMPLETE current_state.STATE_POLL_RSP current_state.STATE_POLL_CMD current_state.STATE_WR_DATA current_state.STATE_WR_CMD current_state.STATE_WRENABLE_RSP current_state.STATE_WRENABLE_CMD current_state.STATE_STATUS_RSP current_state.STATE_STATUS_CMD current_state.STATE_READ_NVCR_CMD current_state.STATE_IDLE 
+current_state.STATE_IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+current_state.STATE_READ_NVCR_CMD 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+current_state.STATE_STATUS_CMD 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+current_state.STATE_STATUS_RSP 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+current_state.STATE_WRENABLE_CMD 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+current_state.STATE_WRENABLE_RSP 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+current_state.STATE_WR_CMD 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+current_state.STATE_WR_DATA 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+current_state.STATE_POLL_CMD 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+current_state.STATE_POLL_RSP 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+current_state.STATE_COMPLETE 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+current_state.STATE_READ_NVCR_RSP 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+current_state.STATE_READ_CMD 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state.STATE_READ_DATA 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - mcu_0|qspi_controller2_0|generic_quad_spi_controller2_0|asmi2_inst_qspi_ctrl|asmi2_cmd_generator_0|state
+Name state.ST_COMPLETE state.ST_SEND_DUMMY_RSP state.ST_WAIT_BUFFER state.ST_WAIT_RSP state.ST_SEND_DATA state.ST_SEND_ADDR state.ST_SEND_OPCODE state.ST_IDLE 
+state.ST_IDLE 0 0 0 0 0 0 0 0 
+state.ST_SEND_ADDR 0 0 0 0 0 1 0 1 
+state.ST_WAIT_BUFFER 0 0 1 0 0 0 0 1 
+state.ST_WAIT_RSP 0 0 0 1 0 0 0 1 
+state.ST_SEND_OPCODE 0 0 0 0 0 0 1 1 
+state.ST_SEND_DATA 0 0 0 0 1 0 0 1 
+state.ST_SEND_DUMMY_RSP 0 1 0 0 0 0 0 1 
+state.ST_COMPLETE 1 0 0 0 0 0 0 1 
+
+State Machine - mcu_0|qspi_controller2_0|generic_quad_spi_controller2_0|asmi2_inst_qspi_ctrl|asmi2_qspi_interface_0|current_state
+Name current_state.STATE_LOAD_RDATA current_state.STATE_SWITCH_OE current_state.STATE_LOAD_DATA current_state.STATE_DUMMY_CLK current_state.STATE_WDATA current_state.STATE_FIRST_DATA current_state.STATE_RDATA current_state.STATE_PRE_COMPLETE current_state.STATE_OPCODE current_state.STATE_COMPLETE current_state.STATE_IDLE 
+current_state.STATE_IDLE 0 0 0 0 0 0 0 0 0 0 0 
+current_state.STATE_COMPLETE 0 0 0 0 0 0 0 0 0 1 1 
+current_state.STATE_OPCODE 0 0 0 0 0 0 0 0 1 0 1 
+current_state.STATE_PRE_COMPLETE 0 0 0 0 0 0 0 1 0 0 1 
+current_state.STATE_RDATA 0 0 0 0 0 0 1 0 0 0 1 
+current_state.STATE_FIRST_DATA 0 0 0 0 0 1 0 0 0 0 1 
+current_state.STATE_WDATA 0 0 0 0 1 0 0 0 0 0 1 
+current_state.STATE_DUMMY_CLK 0 0 0 1 0 0 0 0 0 0 1 
+current_state.STATE_LOAD_DATA 0 0 1 0 0 0 0 0 0 0 1 
+current_state.STATE_SWITCH_OE 0 1 0 0 0 0 0 0 0 0 1 
+current_state.STATE_LOAD_RDATA 1 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - mcu_0|qspi_controller2_0|generic_quad_spi_controller2_0|addr_adaption_1|addr_adaption|state
+Name state.ST_EN_4BYTES_CHIP_3 state.ST_WE_CHIP_3 state.ST_SELECT_CHIP_3 state.ST_EN_4BYTES_CHIP_2 state.ST_WE_CHIP_2 state.ST_SELECT_CHIP_2 state.ST_EN_4BYTES_CHIP_1 state.ST_WE_CHIP_1 state.ST_SELECT_CHIP_1 state.ST_IDLE 
+state.ST_IDLE 0 0 0 0 0 0 0 0 0 0 
+state.ST_SELECT_CHIP_1 0 0 0 0 0 0 0 0 1 1 
+state.ST_WE_CHIP_1 0 0 0 0 0 0 0 1 0 1 
+state.ST_EN_4BYTES_CHIP_1 0 0 0 0 0 0 1 0 0 1 
+state.ST_SELECT_CHIP_2 0 0 0 0 0 1 0 0 0 1 
+state.ST_WE_CHIP_2 0 0 0 0 1 0 0 0 0 1 
+state.ST_EN_4BYTES_CHIP_2 0 0 0 1 0 0 0 0 0 1 
+state.ST_SELECT_CHIP_3 0 0 1 0 0 0 0 0 0 1 
+state.ST_WE_CHIP_3 0 1 0 0 0 0 0 0 0 1 
+state.ST_EN_4BYTES_CHIP_3 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - Summary

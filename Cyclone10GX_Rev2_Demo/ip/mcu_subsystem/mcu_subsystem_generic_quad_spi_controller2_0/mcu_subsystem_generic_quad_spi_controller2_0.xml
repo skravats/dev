@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2020.05.27.13:16:24"
+ outputDirectory="C:/Git/ArrowESC/Cyclone10GX_Rev2_Demo/ip/mcu_subsystem/mcu_subsystem_generic_quad_spi_controller2_0/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Cyclone 10 GX"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="10CX220YF780I5G"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="5"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_SINK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_SINK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_SINK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="clock_sink" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="reset" kind="reset" start="0">
+   <property name="associatedClock" value="clock_sink" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="reset_n" direction="input" role="reset_n" width="1" />
+  </interface>
+  <interface name="qspi_pins" kind="conduit" start="0">
+   <property name="associatedClock" value="clock_sink" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="qspi_pins_dclk" direction="output" role="dclk" width="1" />
+   <port name="qspi_pins_ncs" direction="output" role="ncs" width="1" />
+   <port name="qspi_pins_data" direction="bidir" role="data" width="4" />
+  </interface>
+  <interface name="avl_csr" kind="avalon" start="0">
+   <property name="addressAlignment" value="DYNAMIC" />
+   <property name="addressGroup" value="0" />
+   <property name="addressSpan" value="64" />
+   <property name="addressUnits" value="WORDS" />
+   <property name="alwaysBurstMaxBurst" value="false" />
+   <property name="associatedClock" value="clock_sink" />
+   <property name="associatedReset" value="reset" />
+   <property name="bitsPerSymbol" value="8" />
+   <property name="bridgedAddressOffset" value="0" />
+   <property name="bridgesToMaster" value="" />
+   <property name="burstOnBurstBoundariesOnly" value="false" />
+   <property name="burstcountUnits" value="WORDS" />
+   <property name="constantBurstBehavior" value="false" />
+   <property name="explicitAddressSpan" value="0" />
+   <property name="holdTime" value="0" />
+   <property name="interleaveBursts" value="false" />
+   <property name="isBigEndian" value="false" />
+   <property name="isFlash" value="false" />
+   <property name="isMemoryDevice" value="false" />
+   <property name="isNonVolatileStorage" value="false" />
+   <property name="linewrapBursts" value="false" />
+   <property name="maximumPendingReadTransactions" value="1" />
+   <property name="maximumPendingWriteTransactions" value="0" />
+   <property name="minimumReadLatency" value="1" />
+   <property name="minimumResponseLatency" value="1" />
+   <property name="minimumUninterruptedRunLength" value="1" />
+   <property name="prSafe" value="false" />
+   <property name="printableDevice" value="false" />
+   <property name="readLatency" value="0" />
+   <property name="readWaitStates" value="0" />
+   <property name="readWaitTime" value="0" />
+   <property name="registerIncomingSignals" value="false" />
+   <property name="registerOutgoingSignals" value="false" />
+   <property name="setupTime" value="0" />
+   <property name="timingUnits" value="Cycles" />
+   <property name="transparentBridge" value="false" />
+   <property name="waitrequestAllowance" value="0" />
+   <property name="wellBehavedWaitrequest" value="false" />
+   <property name="writeLatency" value="0" />
+   <property name="writeWaitStates" value="0" />
+   <property name="writeWaitTime" value="0" />
+   <port name="avl_csr_read" direction="input" role="read" width="1" />
+   <port
+       name="avl_csr_waitrequest"
+       direction="output"
+       role="waitrequest"
+       width="1" />
+   <port name="avl_csr_write" direction="input" role="write" width="1" />
+   <port name="avl_csr_addr" direction="input" role="address" width="4" />
+   <port name="avl_csr_wrdata" direction="input" role="writedata" width="32" />
+   <port name="avl_csr_rddata" direction="output" role="readdata" width="32" />
+   <port
+       name="avl_csr_rddata_valid"
+       direction="output"
+       role="readdatavalid"
+       width="1" />
+  </interface>
+  <interface name="avl_mem" kind="avalon" start="0">
+   <property name="addressAlignment" value="DYNAMIC" />
+   <property name="addressGroup" value="0" />
+   <property name="addressSpan" value="134217728" />
+   <property name="addressUnits" value="WORDS" />
+   <property name="alwaysBurstMaxBurst" value="false" />
+   <property name="associatedClock" value="clock_sink" />
+   <property name="associatedReset" value="reset" />
+   <property name="bitsPerSymbol" value="8" />
+   <property name="bridgedAddressOffset" value="0" />
+   <property name="bridgesToMaster" value="" />
+   <property name="burstOnBurstBoundariesOnly" value="false" />
+   <property name="burstcountUnits" value="WORDS" />
+   <property name="constantBurstBehavior" value="true" />
+   <property name="explicitAddressSpan" value="0" />
+   <property name="holdTime" value="0" />
+   <property name="interleaveBursts" value="false" />
+   <property name="isBigEndian" value="false" />
+   <property name="isFlash" value="true" />
+   <property name="isMemoryDevice" value="true" />
+   <property name="isNonVolatileStorage" value="true" />
+   <property name="linewrapBursts" value="true" />
+   <property name="maximumPendingReadTransactions" value="1" />
+   <property name="maximumPendingWriteTransactions" value="0" />
+   <property name="minimumReadLatency" value="1" />
+   <property name="minimumResponseLatency" value="1" />
+   <property name="minimumUninterruptedRunLength" value="1" />
+   <property name="prSafe" value="false" />
+   <property name="printableDevice" value="false" />
+   <property name="readLatency" value="0" />
+   <property name="readWaitStates" value="0" />
+   <property name="readWaitTime" value="0" />
+   <property name="registerIncomingSignals" value="false" />
+   <property name="registerOutgoingSignals" value="false" />
+   <property name="setupTime" value="0" />
+   <property name="timingUnits" value="Cycles" />
+   <property name="transparentBridge" value="false" />
+   <property name="waitrequestAllowance" value="0" />
+   <property name="wellBehavedWaitrequest" value="false" />
+   <property name="writeLatency" value="0" />
+   <property name="writeWaitStates" value="0" />
+   <property name="writeWaitTime" value="0" />
+   <port name="avl_mem_write" direction="input" role="write" width="1" />
+   <port
+       name="avl_mem_burstcount"
+       direction="input"
+       role="burstcount"
+       width="7" />
+   <port
+       name="avl_mem_waitrequest"
+       direction="output"
+       role="waitrequest"
+       width="1" />
+   <port name="avl_mem_read" direction="input" role="read" width="1" />
+   <port name="avl_mem_addr" direction="input" role="address" width="25" />
+   <port name="avl_mem_wrdata" direction="input" role="writedata" width="32" />
+   <port name="avl_mem_rddata" direction="output" role="readdata" width="32" />
+   <port
+       name="avl_mem_rddata_valid"
+       direction="output"
+       role="readdatavalid"
+       width="1" />
+   <port
+       name="avl_mem_byteenable"
+       direction="input"
+       role="byteenable"
+       width="4" />
+  </interface>
+  <interface name="interrupt_sender" kind="interrupt" start="0">
+   <property
+       name="associatedAddressablePoint"
+       value="mcu_subsystem_generic_quad_spi_controller2_0.avl_csr" />
+   <property name="associatedClock" value="clock_sink" />
+   <property name="associatedReset" value="reset" />
+   <property name="bridgedReceiverOffset" value="0" />
+   <property name="bridgesToReceiver" value="" />
+   <property name="irqScheme" value="NONE" />
+   <port name="irq" direction="output" role="irq" width="1" />
+  </interface>
+ </perimeter>
+ <entity
+   kind="mcu_subsystem_generic_quad_spi_controller2_0"
+   version="1.0"
+   name="mcu_subsystem_generic_quad_spi_controller2_0">
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="10CX220YF780I5G" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone 10 GX" />
+  <parameter name="AUTO_CLOCK_SINK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLOCK_SINK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_CLOCK_SINK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="5" />
+  <generatedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\synth\mcu_subsystem_generic_quad_spi_controller2_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\synth\mcu_subsystem_generic_quad_spi_controller2_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/Git/ArrowESC/Cyclone10GX_Rev2_Demo/ip/mcu_subsystem/mcu_subsystem_generic_quad_spi_controller2_0.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/pgm/generic_qspi_controller2/generic_qspi_controller2_hw.tcl" />
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/pgm/altera_asmi_parallel2/asmi_top/altera_asmi_parallel2_hw.tcl" />
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/pgm/altera_asmi_parallel2/csr_controller/altera_asmi2_csr_controller_hw.tcl" />
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/pgm/altera_asmi_parallel2/xip_controller/altera_asmi2_xip_controller_hw.tcl" />
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/sopc_builder_ip/altera_avalon_sc_fifo/altera_avalon_sc_fifo_hw.tcl" />
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer_hw.tcl" />
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer_hw.tcl" />
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/pgm/altera_asmi_parallel2/qspi_cmd_generator/altera_asmi2_cmd_generator_hw.tcl" />
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/pgm/altera_asmi_parallel2/qspi_interface/altera_asmi2_qspi_interface_hw.tcl" />
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/pgm/altera_epcq_controller2/altera_qspi_address_adaption_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: mcu_subsystem_generic_quad_spi_controller2_0"</message>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: mcu_subsystem_generic_quad_spi_controller2_0_altera_generic_quad_spi_controller2_181_5xz3lbq"</message>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: mcu_subsystem_generic_quad_spi_controller2_0_altera_asmi_parallel2_181_jbbczgq"</message>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: mcu_subsystem_generic_quad_spi_controller2_0_altera_asmi2_csr_controller_181_spl33la"</message>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: altera_asmi2_xip_controller"</message>
+   <message level="Info" culprit="avst_fifo">"Generating: avst_fifo"</message>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: avst_fifo"</message>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: mcu_subsystem_generic_quad_spi_controller2_0_altera_avalon_sc_fifo_181_oywqgnq"</message>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: mcu_subsystem_generic_quad_spi_controller2_0_altera_merlin_demultiplexer_181_hnib7fa"</message>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: mcu_subsystem_generic_quad_spi_controller2_0_altera_merlin_multiplexer_181_x7wtypi"</message>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: altera_asmi2_cmd_generator"</message>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: mcu_subsystem_generic_quad_spi_controller2_0_altera_asmi2_qspi_interface_181_zs4wdmq"</message>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: altera_reset_controller"</message>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: altera_qspi_address_adaption"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_generic_quad_spi_controller2"
+   version="18.1"
+   name="mcu_subsystem_generic_quad_spi_controller2_0_altera_generic_quad_spi_controller2_181_5xz3lbq">
+  <parameter name="clkFreq" value="40000000" />
+  <parameter name="CHIP_SELS" value="1" />
+  <parameter name="DEVICE_FAMILY" value="Cyclone 10 GX" />
+  <parameter name="IO_MODE" value="QUAD" />
+  <parameter name="DDASI" value="1" />
+  <parameter name="CS_WIDTH" value="3" />
+  <parameter
+     name="deviceFeaturesSystemInfo"
+     value="ADDRESS_STALL 0 ADVANCED_INFO 0 ALLOWS_COMPILING_OTHER_FAMILY_IP 0 ALLOW_DIFF_SUFFIX_MIGRATION 0 ASSERT_TIMING_ROUTING_DELAYS_HAS_ALL_EXPECTED_DATA 0 ASSERT_TIMING_ROUTING_DELAYS_NO_AUTOFILL 0 CELL_LEVEL_BACK_ANNOTATION_DISABLED 0 COMPILER_SUPPORT 1 DSP 0 DSP_SHIFTER_BLOCK 0 DUMP_ASM_LAB_BITS_FOR_POWER 0 EMUL 0 ENABLE_ADVANCED_IO_ANALYSIS_GUI_FEATURES 1 ENABLE_HIGH_SPEED_HSSI 0 ENABLE_PHYSICAL_DESIGN_PLANNER 0 ENABLE_PIN_PLANNER 0 ENGINEERING_SAMPLE 0 EPCS 0 ESB 0 FAKE1 0 FAKE2 0 FAKE3 0 FAMILY_LEVEL_INSTALLATION_ONLY 0 FASTEST 0 FINAL_TIMING_MODEL 0 FITTER_USE_FALLING_EDGE_DELAY 0 FPP_COMPLETELY_PLACES_AND_ROUTES_PERIPHERY 1 GENERATE_DC_ON_CURRENT_WARNING_FOR_INTERNAL_CLAMPING_DIODE 0 HARDCOPY 0 HAS_18_BIT_MULTS 0 HAS_ACE_SUPPORT 1 HAS_ADJUSTABLE_OUTPUT_IO_TIMING_MEAS_POINT 1 HAS_ADVANCED_IO_INVERTED_CORNER 0 HAS_ADVANCED_IO_POWER_SUPPORT 1 HAS_ADVANCED_IO_TIMING_SUPPORT 1 HAS_ALM_SUPPORT 1 HAS_ATOM_AND_ROUTING_POWER_MODELED_TOGETHER 0 HAS_AUTO_DERIVE_CLOCK_UNCERTAINTY_SUPPORT 1 HAS_AUTO_FIT_SUPPORT 1 HAS_BALANCED_OPT_TECHNIQUE_SUPPORT 1 HAS_BCM_PIN_BASED_AIOT_SUPPORT 0 HAS_BENEFICIAL_SKEW_SUPPORT 0 HAS_BITLEVEL_DRIVE_STRENGTH_CONTROL 0 HAS_BSDL_FILE_GENERATION 0 HAS_CDB_RE_NETWORK_PRESERVATION_SUPPORT 1 HAS_CGA_SUPPORT 1 HAS_CHECK_NETLIST_SUPPORT 0 HAS_CLOCK_REGION_CHECKER_ENABLED 0 HAS_CORE_JUNCTION_TEMP_DERATING 0 HAS_CROSSTALK_SUPPORT 0 HAS_CROSS_FEATURE_VERTICAL_MIGRATION_SUPPORT 0 HAS_CUSTOM_REGION_SUPPORT 0 HAS_DAP_JTAG_FROM_HPS 0 HAS_DATA_DRIVEN_ACVQ_HSSI_SUPPORT 1 HAS_DDB_FDI_SUPPORT 1 HAS_DESIGN_ANALYZER_SUPPORT 0 HAS_DETAILED_LEIM_STATIC_POWER_MODEL 0 HAS_DETAILED_ROUTING_MUX_STATIC_POWER_MODEL 0 HAS_DETAILED_THERMAL_CIRCUIT_PARAMETER_SUPPORT 1 HAS_DEVICE_MIGRATION_SUPPORT 1 HAS_DIAGONAL_MIGRATION_SUPPORT 0 HAS_EMIF_TOOLKIT_SUPPORT 1 HAS_ERROR_DETECTION_SUPPORT 1 HAS_FAMILY_VARIANT_MIGRATION_SUPPORT 0 HAS_FANOUT_FREE_NODE_SUPPORT 1 HAS_FAST_FIT_SUPPORT 0 HAS_FITTER_ECO_SUPPORT 0 HAS_FIT_NETLIST_OPT_RETIME_SUPPORT 1 HAS_FIT_NETLIST_OPT_SUPPORT 1 HAS_FORMAL_VERIFICATION_SUPPORT 0 HAS_FPGA_XCHANGE_SUPPORT 0 HAS_FSAC_LUTRAM_REGISTER_PACKING_SUPPORT 1 HAS_FULL_DAT_MIN_TIMING_SUPPORT 1 HAS_FULL_INCREMENTAL_DESIGN_SUPPORT 1 HAS_FUNCTIONAL_SIMULATION_SUPPORT 0 HAS_FUNCTIONAL_VERILOG_SIMULATION_SUPPORT 1 HAS_FUNCTIONAL_VHDL_SIMULATION_SUPPORT 1 HAS_GLITCH_FILTERING_SUPPORT 1 HAS_HC_READY_SUPPORT 0 HAS_HIER_PARTIAL_RECONFIG_SUPPORT 1 HAS_HIGH_SPEED_LOW_POWER_TILE_SUPPORT 1 HAS_HOLD_TIME_AVOIDANCE_ACROSS_CLOCK_SPINE_SUPPORT 0 HAS_HSPICE_WRITER_SUPPORT 0 HAS_HSSI_BLOCK 0 HAS_IBISO_WRITER_SUPPORT 0 HAS_ICD_DATA_IP 1 HAS_IDB_SUPPORT 1 HAS_INCREMENTAL_DAT_SUPPORT 1 HAS_INCREMENTAL_SYNTHESIS_SUPPORT 1 HAS_IO_ASSIGNMENT_ANALYSIS_SUPPORT 1 HAS_IO_DECODER 1 HAS_IO_PLACEMENT_OPTIMIZATION_SUPPORT 0 HAS_IO_PLACEMENT_USING_GEOMETRY_RULE 0 HAS_IO_PLACEMENT_USING_PHYSIC_RULE 0 HAS_IO_SMART_RECOMPILE_SUPPORT 0 HAS_JITTER_SUPPORT 1 HAS_JTAG_SLD_HUB_SUPPORT 1 HAS_LOGIC_LOCK_SUPPORT 1 HAS_MICROPROCESSOR 0 HAS_MIF_SMART_COMPILE_SUPPORT 1 HAS_MINMAX_TIMING_MODELING_SUPPORT 0 HAS_MIN_TIMING_ANALYSIS_SUPPORT 0 HAS_MUX_RESTRUCTURE_SUPPORT 1 HAS_NADDER_STYLE_CLOCKING 0 HAS_NADDER_STYLE_FF 0 HAS_NADDER_STYLE_LCELL_COMB 0 HAS_NEW_CDB_NAME_FOR_M20K_SCLR 0 HAS_NEW_HC_FLOW_SUPPORT 0 HAS_NEW_SERDES_MAX_RESOURCE_COUNT_REPORTING_SUPPORT 0 HAS_NONSOCKET_TECHNOLOGY_MIGRATION_SUPPORT 0 HAS_NO_HARDBLOCK_PARTITION_SUPPORT 1 HAS_NO_JTAG_USERCODE_SUPPORT 0 HAS_OPERATING_SETTINGS_AND_CONDITIONS_REPORTING_SUPPORT 1 HAS_PAD_LOCATION_ASSIGNMENT_SUPPORT 0 HAS_PARTIAL_RECONFIG_SUPPORT 1 HAS_PDN_MODEL_STATUS 1 HAS_PHYSICAL_DESIGN_PLANNER_SUPPORT 1 HAS_PHYSICAL_NETLIST_OUTPUT 0 HAS_PHYSICAL_ROUTING_SUPPORT 1 HAS_PLDM_REF_SUPPORT 0 HAS_POWER_ESTIMATION_SUPPORT 1 HAS_PRELIMINARY_CLOCK_UNCERTAINTY_NUMBERS 0 HAS_PRE_FITTER_FPP_SUPPORT 1 HAS_PRE_FITTER_LUTRAM_NETLIST_CHECKER_ENABLED 1 HAS_PVA_SUPPORT 1 HAS_QHD_INCREMENTAL_TIMING_CLOSURE_SUPPORT 1 HAS_QHD_IP_REUSE_INTEGRATION_SUPPORT 1 HAS_QHD_PARTITIONS_SUPPORT 1 HAS_QUARTUS_HIERARCHICAL_DESIGN_SUPPORT 1 HAS_RAPID_RECOMPILE_SUPPORT 1 HAS_RCF_SUPPORT 1 HAS_RCF_SUPPORT_FOR_DEBUGGING 0 HAS_RED_BLACK_SEPARATION_SUPPORT 0 HAS_REVC_IO 0 HAS_RE_LEVEL_TIMING_GRAPH_SUPPORT 1 HAS_RISEFALL_DELAY_SUPPORT 1 HAS_SIGNAL_PROBE_SUPPORT 0 HAS_SIGNAL_TAP_SUPPORT 1 HAS_SIMPLIFIED_PARTIAL_RECONFIG_SUPPORT 1 HAS_SIMULATOR_SUPPORT 0 HAS_SIP_TILE_SUPPORT 0 HAS_SPEED_GRADE_OFFSET 1 HAS_SPLIT_IO_SUPPORT 1 HAS_SPLIT_LC_SUPPORT 1 HAS_STRICT_PRESERVATION_SUPPORT 0 HAS_SYNTHESIS_ON_ATOMS 1 HAS_SYNTH_FSYN_NETLIST_OPT_SUPPORT 1 HAS_SYNTH_NETLIST_OPT_RETIME_SUPPORT 0 HAS_SYNTH_NETLIST_OPT_SUPPORT 1 HAS_TCL_FITTER_SUPPORT 1 HAS_TECHNOLOGY_MIGRATION_SUPPORT 0 HAS_TEMPLATED_REGISTER_PACKING_SUPPORT 1 HAS_TIME_BORROWING_SUPPORT 1 HAS_TIMING_DRIVEN_SYNTHESIS_SUPPORT 1 HAS_TIMING_INFO_SUPPORT 1 HAS_TIMING_OPERATING_CONDITIONS 1 HAS_TIMING_SIMULATION_SUPPORT 0 HAS_TITAN_BASED_MAC_REGISTER_PACKER_SUPPORT 0 HAS_U2B2_SUPPORT 1 HAS_USER_HIGH_SPEED_LOW_POWER_TILE_SUPPORT 1 HAS_USE_FITTER_INFO_SUPPORT 0 HAS_VCCPD_POWER_RAIL 1 HAS_VERTICAL_MIGRATION_SUPPORT 1 HAS_VIEWDRAW_SYMBOL_SUPPORT 0 HAS_VIO_SUPPORT 1 HAS_VIRTUAL_DEVICES 0 HAS_WYSIWYG_DFFEAS_SUPPORT 1 HAS_XIBISO2_WRITER_SUPPORT 1 HAS_XIBISO_WRITER_SUPPORT 0 IFP_USE_LEGACY_IO_CHECKER 0 INCREMENTAL_DESIGN_SUPPORTS_COMPATIBLE_CONSTRAINTS 1 INSTALLED 0 INTERNAL_POF_SUPPORT_ENABLED 0 INTERNAL_STATIC_PART 0 INTERNAL_USE_ONLY 0 IS_BARE_DIE 0 IS_CONFIG_ROM 0 IS_DEFAULT_FAMILY 0 IS_DQS_IN_BUFFER_REDUCTION 0 IS_FOR_INTERNAL_TESTING_ONLY 0 IS_HARDCOPY_FAMILY 0 IS_JW_NEW_BINNING_PLAN 0 IS_JZ_NEW_BINNING_PLAN 0 IS_REVE_SILICON 0 IS_SDM_LITE 0 LOAD_BLK_TYPE_DATA_FROM_ATOM_WYS_INFO 0 LUTRAM_DATA_IN_FF_MUST_BE_HIPI 0 LVDS_IO 0 M10K_MEMORY 0 M144K_MEMORY 0 M20K_MEMORY 0 M4K_MEMORY 0 M512_MEMORY 0 M9K_MEMORY 0 MLAB_MEMORY 0 MRAM_MEMORY 0 NOT_LISTED 0 NOT_MIGRATABLE 0 NO_CLOCK_REGION 0 NO_FITTER_DELAY_CACHE_GENERATED 0 NO_PCF 0 NO_PIN_OUT 0 NO_POF 0 NO_RPE_SUPPORT 0 NO_SUPPORT_FOR_LOGICLOCK_CONTENT_BACK_ANNOTATION 1 NO_SUPPORT_FOR_STA_CLOCK_UNCERTAINTY_CHECK 0 NO_TDC_SUPPORT 0 POSTFIT_BAK_DATABASE_EXPORT_ENABLED 1 POSTMAP_BAK_DATABASE_EXPORT_ENABLED 1 PRE_ND5_L_FINALITY 0 PROGRAMMER_ONLY 0 PROGRAMMER_SUPPORT 1 QFIT_IN_DEVELOPMENT 0 QMAP_IN_DEVELOPMENT 0 QPA_SUPPORTS_VID_CALC 0 RAM_LOGICAL_NAME_CHECKING_IN_CUT_ENABLED 0 REPORTS_METASTABILITY_MTBF 1 REQUIRES_INSTALLATION_PATCH 0 REQUIRES_LIST_OF_TEMPERATURE_AND_VOLTAGE_OPERATING_CONDITIONS 1 REQUIRE_QUARTUS_HIERARCHICAL_DESIGN 0 REQUIRE_SPECIAL_HANDLING_FOR_LOCAL_LABLINE 0 RESERVES_SIGNAL_PROBE_PINS 0 RESOLVE_MAX_FANOUT_EARLY 1 RESOLVE_MAX_FANOUT_LATE 0 RESPECTS_FIXED_SIZED_LOCKED_LOCATION_LOGICLOCK 0 RESTRICTED_USER_SELECTION 0 RISEFALL_SUPPORT_IS_HIDDEN 0 SHOW_HIDDEN_FAMILY_IN_PROGRAMMER 0 STRICT_TIMING_DB_CHECKS 0 SUPPORTS_ADDITIONAL_OPTIONS_FOR_UNUSED_IO 0 SUPPORTS_ADVANCED_SECURITY 0 SUPPORTS_CRC 1 SUPPORTS_DIFFERENTIAL_AIOT_BOARD_TRACE_MODEL 1 SUPPORTS_DSP_BALANCING_BACK_ANNOTATION 0 SUPPORTS_GENERATION_OF_EARLY_POWER_ESTIMATOR_FILE 1 SUPPORTS_GLOBAL_SIGNAL_BACK_ANNOTATION 0 SUPPORTS_HIPI_PW0 0 SUPPORTS_HIPI_RETIMING 0 SUPPORTS_LICENSE_FREE_PARTIAL_RECONFIG 0 SUPPORTS_MAC_CHAIN_OUT_ADDER 0 SUPPORTS_MIN_CORNER_DMF_GENERATION 0 SUPPORTS_NEW_BINNING_PLAN 0 SUPPORTS_PSEUDO_LATCHES_ONLY 0 SUPPORTS_RAM_PACKING_BACK_ANNOTATION 0 SUPPORTS_REG_PACKING_BACK_ANNOTATION 0 SUPPORTS_SIGNALPROBE_REGISTER_PIPELINING 0 SUPPORTS_SINGLE_ENDED_AIOT_BOARD_TRACE_MODEL 1 SUPPORTS_TIMING_CLOSURE_CORNERS 0 SUPPORTS_USER_MANUAL_LOGIC_DUPLICATION 1 SUPPORTS_VID 0 SUPPORT_HBM_IN_EPE 0 SUPPORT_HIGH_SPEED_HPS 0 SUPPORT_UIB 0 TMV_RUN_CUSTOMIZABLE_VIEWER 0 TMV_RUN_INTERNAL_DETAILS 1 TMV_RUN_INTERNAL_DETAILS_ON_IO 0 TMV_RUN_INTERNAL_DETAILS_ON_IOBUF 1 TMV_RUN_INTERNAL_DETAILS_ON_LCELL 0 TMV_RUN_INTERNAL_DETAILS_ON_LRAM 0 TRANSCEIVER_3G_BLOCK 0 TRANSCEIVER_6G_BLOCK 0 USES_ACV_FOR_FLED 0 USES_ADB_FOR_BACK_ANNOTATION 1 USES_ALTERA_LNSIM 0 USES_ASIC_ROUTING_POWER_CALCULATOR 0 USES_DATA_DRIVEN_PLL_COMPUTATION_UTIL 0 USES_DETAILED_REDTAX_WITH_DSPF_ROUTING_MODELS 0 USES_DEV 1 USES_DSPF_ROUTING_MODELS 0 USES_ESTIMATED_TIMING 0 USES_EXTRACTION_CORNERS_WITH_DSPF_ROUTING_MODELS 0 USES_ICP_FOR_ECO_FITTER 0 USES_LIBERTY_TIMING 0 USES_PARASITIC_LOADS_WITH_DSPF_ROUTING_MODELS 0 USES_THIRD_GENERATION_TIMING_MODELS_TIS 1 USES_TIMING_ROUTING_DELAYS 0 USES_U2B2_TIMING_MODELS 1 USES_XML_FORMAT_FOR_EMIF_PIN_MAP_FILE 1 USE_ADVANCED_IO_POWER_BY_DEFAULT 1 USE_ADVANCED_IO_TIMING_BY_DEFAULT 1 USE_BASE_FAMILY_DDB_PATH 0 USE_OCT_AUTO_CALIBRATION 1 USE_RELAX_IO_ASSIGNMENT_RULES 0 USE_RISEFALL_ONLY 1 USE_SDM_CONFIGURATION 0 USE_SEPARATE_LIST_FOR_TECH_MIGRATION 0 USE_SINGLE_COMPILER_PASS_PLL_MIF_FILE_WRITER 0 USE_TITAN_IO_BASED_IO_REGISTER_PACKER_UTIL 1 USING_28NM_OR_OLDER_TIMING_METHODOLOGY 0 WYSIWYG_BUS_WIDTH_CHECKING_IN_CUT_ENABLED 0" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="5" />
+  <parameter name="ASI_WIDTH" value="4" />
+  <parameter name="ENABLE_4BYTE_ADDR" value="1" />
+  <parameter name="ASMI_ADDR_WIDTH" value="32" />
+  <parameter name="ADDR_WIDTH" value="25" />
+  <parameter name="gui_use_gpio" value="true" />
+  <parameter name="AUTO_DEVICE" value="10CX220YF780I5G" />
+  <parameter name="FLASH_TYPE" value="MT25QU01G" />
+  <generatedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_generic_quad_spi_controller2_181\synth\mcu_subsystem_generic_quad_spi_controller2_0_altera_generic_quad_spi_controller2_181_5xz3lbq.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_generic_quad_spi_controller2_181\synth\mcu_subsystem_generic_quad_spi_controller2_0_altera_generic_quad_spi_controller2_181_5xz3lbq.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/pgm/generic_qspi_controller2/generic_qspi_controller2_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/pgm/altera_asmi_parallel2/asmi_top/altera_asmi_parallel2_hw.tcl" />
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/pgm/altera_asmi_parallel2/csr_controller/altera_asmi2_csr_controller_hw.tcl" />
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/pgm/altera_asmi_parallel2/xip_controller/altera_asmi2_xip_controller_hw.tcl" />
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/sopc_builder_ip/altera_avalon_sc_fifo/altera_avalon_sc_fifo_hw.tcl" />
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer_hw.tcl" />
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer_hw.tcl" />
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/pgm/altera_asmi_parallel2/qspi_cmd_generator/altera_asmi2_cmd_generator_hw.tcl" />
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/pgm/altera_asmi_parallel2/qspi_interface/altera_asmi2_qspi_interface_hw.tcl" />
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/pgm/altera_epcq_controller2/altera_qspi_address_adaption_hw.tcl" />
+  </childSourceFiles>
+  <instantiator
+     instantiator="mcu_subsystem_generic_quad_spi_controller2_0"
+     as="generic_quad_spi_controller2_0" />
+  <messages>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: mcu_subsystem_generic_quad_spi_controller2_0_altera_generic_quad_spi_controller2_181_5xz3lbq"</message>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: mcu_subsystem_generic_quad_spi_controller2_0_altera_asmi_parallel2_181_jbbczgq"</message>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: mcu_subsystem_generic_quad_spi_controller2_0_altera_asmi2_csr_controller_181_spl33la"</message>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: altera_asmi2_xip_controller"</message>
+   <message level="Info" culprit="avst_fifo">"Generating: avst_fifo"</message>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: avst_fifo"</message>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: mcu_subsystem_generic_quad_spi_controller2_0_altera_avalon_sc_fifo_181_oywqgnq"</message>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: mcu_subsystem_generic_quad_spi_controller2_0_altera_merlin_demultiplexer_181_hnib7fa"</message>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: mcu_subsystem_generic_quad_spi_controller2_0_altera_merlin_multiplexer_181_x7wtypi"</message>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: altera_asmi2_cmd_generator"</message>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: mcu_subsystem_generic_quad_spi_controller2_0_altera_asmi2_qspi_interface_181_zs4wdmq"</message>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: altera_reset_controller"</message>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: altera_qspi_address_adaption"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_asmi_parallel2"
+   version="18.1"
+   name="mcu_subsystem_generic_quad_spi_controller2_0_altera_asmi_parallel2_181_jbbczgq">
+  <parameter name="EXTRA_ID" value="23,24,25,26,27" />
+  <parameter name="PIPE_MUX_CMD" value="0" />
+  <parameter name="COM_ADDR_BYTES" value="0,0,0,0,4,4" />
+  <parameter name="MISC_DATA_IN_BYTES" value="2,0,0,0,0,0,0,0,1,0" />
+  <parameter name="WR_ID" value="0,1,2" />
+  <parameter name="ASMI_ADDR_WIDTH" value="32" />
+  <parameter name="DATA_WIDTH" value="QUAD" />
+  <parameter name="WR_OPCODE" value="02,D2,38" />
+  <parameter name="gui_use_gpio" value="true" />
+  <parameter name="RD_OPCODE_LIST" value="D8 C4 B7 E9 " />
+  <parameter name="EXTRA_EN" value="1" />
+  <parameter name="gui_use_asmiblock" value="true" />
+  <parameter name="MISC_OPCODE" value="B1,B5,70,50,00,C4,B7,E9,01,9F" />
+  <parameter name="WR_ID_LIST" value="0 1 2" />
+  <parameter name="PIPE_CMD_GEN_CMD" value="0" />
+  <parameter name="CHIP_SELS" value="1" />
+  <parameter name="USE_CHIP_SEL_FROM_CSR" value="0" />
+  <parameter
+     name="RD_OPERATION_LIST"
+     value="Read Fast_Read Extended_Dual_Fast_Read Extended_Quad_Fast_Read" />
+  <parameter name="ENABLE_SIM" value="true" />
+  <parameter name="RD_EXTEND" value="0,1,1,1" />
+  <parameter name="ADDR_WIDTH" value="19" />
+  <parameter
+     name="COM_OPERATION"
+     value="wr_enable,wr_disable,wr_status,rd_status,sector_erase,subsector_erase" />
+  <parameter name="AUTO_DEVICE" value="10CX220YF780I5G" />
+  <parameter name="COM_OPCODE" value="06,04,01,05,D8,20" />
+  <parameter name="DEBUG_OPTION" value="0" />
+  <parameter name="INTENDED_DEVICE_FAMILY" value="Cyclone 10 GX" />
+  <parameter name="FLASH_TYPE" value="MT25QU01G" />
+  <parameter
+     name="WR_OPERATION_LIST"
+     value="Write Extended_Dual_Write Extended_Quad_Write" />
+  <parameter name="COM_DATA_OUT_BYTES" value="0,0,0,1,0,0" />
+  <parameter name="DEVICE_FAMILY" value="Cyclone 10 GX" />
+  <parameter name="RW_ADDR_BYTES" value="4" />
+  <parameter name="ENABLE_SIM_MODEL" value="false" />
+  <parameter name="MISC_ID" value="13,14,15,16,17,18,19,20,21,22" />
+  <parameter
+     name="MISC_OPERATION"
+     value="wr_NVCR,rd_NVCR,rd_flag_status,clr_flag_status,NA,die_erase,4bytes_addr_en,4bytes_addr_ex,sector_protect,rd_device_id" />
+  <parameter name="COM_DATA_IN_BYTES" value="0,0,1,0,0,0" />
+  <parameter name="PIPE_CSR" value="0" />
+  <parameter name="NCS_NUM" value="1" />
+  <parameter name="MISC_EN" value="0" />
+  <parameter name="POLL_OPCODE" value="70" />
+  <parameter
+     name="RD_OPERATION"
+     value="Read,Fast_Read,Extended_Dual_Fast_Read,Extended_Quad_Fast_Read" />
+  <parameter name="RD_ID_LIST" value="0 1 2 3" />
+  <parameter name="COM_ID" value="0,1,2,3,4,5" />
+  <parameter name="RD_ID" value="0,1,2,3" />
+  <parameter name="COM_DUMMY_BYTES" value="0,0,0,0,0,0" />
+  <parameter name="RD_DUMMY_BYTES" value="0,8,8,A" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="5" />
+  <parameter name="MISC_ADDR_BYTES" value="0,0,0,0,0,4,0,0,0,0" />
+  <parameter name="ENABLE_4BYTE_ADDR" value="1" />
+  <parameter name="PIPE_XIP" value="0" />
+  <parameter name="WR_EXTEND" value="0,1,1" />
+  <parameter
+     name="EXTRA_OPERATION"
+     value="device_id_data_0,device_id_data_1,device_id_data_2,device_id_data_3,device_id_data_4" />
+  <parameter name="MISC_DUMMY_BYTES" value="0,0,0,0,0,0,0,0,0,0" />
+  <parameter
+     name="WR_OPERATION"
+     value="Write,Extended_Dual_Write,Extended_Quad_Write" />
+  <parameter name="RD_OPCODE" value="03,0B,BB,EB" />
+  <parameter name="MISC_DATA_OUT_BYTES" value="0,2,1,0,0,0,0,0,0,20" />
+  <parameter name="WR_OPCODE_LIST" value="9F 05 70" />
+  <generatedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_asmi_parallel2_181\synth\mcu_subsystem_generic_quad_spi_controller2_0_altera_asmi_parallel2_181_jbbczgq.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_asmi_parallel2_181\synth\mcu_subsystem_generic_quad_spi_controller2_0_altera_asmi_parallel2_181_jbbczgq.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/pgm/altera_asmi_parallel2/asmi_top/altera_asmi_parallel2_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/pgm/altera_asmi_parallel2/csr_controller/altera_asmi2_csr_controller_hw.tcl" />
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/pgm/altera_asmi_parallel2/xip_controller/altera_asmi2_xip_controller_hw.tcl" />
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/sopc_builder_ip/altera_avalon_sc_fifo/altera_avalon_sc_fifo_hw.tcl" />
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer_hw.tcl" />
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer_hw.tcl" />
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/pgm/altera_asmi_parallel2/qspi_cmd_generator/altera_asmi2_cmd_generator_hw.tcl" />
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/pgm/altera_asmi_parallel2/qspi_interface/altera_asmi2_qspi_interface_hw.tcl" />
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
+  </childSourceFiles>
+  <instantiator
+     instantiator="mcu_subsystem_generic_quad_spi_controller2_0_altera_generic_quad_spi_controller2_181_5xz3lbq"
+     as="asmi2_inst_qspi_ctrl" />
+  <messages>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: mcu_subsystem_generic_quad_spi_controller2_0_altera_asmi_parallel2_181_jbbczgq"</message>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: mcu_subsystem_generic_quad_spi_controller2_0_altera_asmi2_csr_controller_181_spl33la"</message>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: altera_asmi2_xip_controller"</message>
+   <message level="Info" culprit="avst_fifo">"Generating: avst_fifo"</message>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: avst_fifo"</message>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: mcu_subsystem_generic_quad_spi_controller2_0_altera_avalon_sc_fifo_181_oywqgnq"</message>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: mcu_subsystem_generic_quad_spi_controller2_0_altera_merlin_demultiplexer_181_hnib7fa"</message>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: mcu_subsystem_generic_quad_spi_controller2_0_altera_merlin_multiplexer_181_x7wtypi"</message>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: altera_asmi2_cmd_generator"</message>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: mcu_subsystem_generic_quad_spi_controller2_0_altera_asmi2_qspi_interface_181_zs4wdmq"</message>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: altera_reset_controller"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_qspi_address_adaption"
+   version="18.1"
+   name="altera_qspi_address_adaption">
+  <parameter name="ASMI_ADDR_WIDTH" value="32" />
+  <parameter name="ADDR_WIDTH" value="25" />
+  <parameter name="CHIP_SELS" value="1" />
+  <parameter name="DEVICE_FAMILY" value="Cyclone 10 GX" />
+  <parameter name="IO_MODE" value="QUAD" />
+  <parameter name="DDASI" value="1" />
+  <parameter name="CS_WIDTH" value="3" />
+  <parameter
+     name="deviceFeaturesSystemInfo"
+     value="ADDRESS_STALL 0 ADVANCED_INFO 0 ALLOWS_COMPILING_OTHER_FAMILY_IP 0 ALLOW_DIFF_SUFFIX_MIGRATION 0 ASSERT_TIMING_ROUTING_DELAYS_HAS_ALL_EXPECTED_DATA 0 ASSERT_TIMING_ROUTING_DELAYS_NO_AUTOFILL 0 CELL_LEVEL_BACK_ANNOTATION_DISABLED 0 COMPILER_SUPPORT 1 DSP 0 DSP_SHIFTER_BLOCK 0 DUMP_ASM_LAB_BITS_FOR_POWER 0 EMUL 0 ENABLE_ADVANCED_IO_ANALYSIS_GUI_FEATURES 1 ENABLE_HIGH_SPEED_HSSI 0 ENABLE_PHYSICAL_DESIGN_PLANNER 0 ENABLE_PIN_PLANNER 0 ENGINEERING_SAMPLE 0 EPCS 0 ESB 0 FAKE1 0 FAKE2 0 FAKE3 0 FAMILY_LEVEL_INSTALLATION_ONLY 0 FASTEST 0 FINAL_TIMING_MODEL 0 FITTER_USE_FALLING_EDGE_DELAY 0 FPP_COMPLETELY_PLACES_AND_ROUTES_PERIPHERY 1 GENERATE_DC_ON_CURRENT_WARNING_FOR_INTERNAL_CLAMPING_DIODE 0 HARDCOPY 0 HAS_18_BIT_MULTS 0 HAS_ACE_SUPPORT 1 HAS_ADJUSTABLE_OUTPUT_IO_TIMING_MEAS_POINT 1 HAS_ADVANCED_IO_INVERTED_CORNER 0 HAS_ADVANCED_IO_POWER_SUPPORT 1 HAS_ADVANCED_IO_TIMING_SUPPORT 1 HAS_ALM_SUPPORT 1 HAS_ATOM_AND_ROUTING_POWER_MODELED_TOGETHER 0 HAS_AUTO_DERIVE_CLOCK_UNCERTAINTY_SUPPORT 1 HAS_AUTO_FIT_SUPPORT 1 HAS_BALANCED_OPT_TECHNIQUE_SUPPORT 1 HAS_BCM_PIN_BASED_AIOT_SUPPORT 0 HAS_BENEFICIAL_SKEW_SUPPORT 0 HAS_BITLEVEL_DRIVE_STRENGTH_CONTROL 0 HAS_BSDL_FILE_GENERATION 0 HAS_CDB_RE_NETWORK_PRESERVATION_SUPPORT 1 HAS_CGA_SUPPORT 1 HAS_CHECK_NETLIST_SUPPORT 0 HAS_CLOCK_REGION_CHECKER_ENABLED 0 HAS_CORE_JUNCTION_TEMP_DERATING 0 HAS_CROSSTALK_SUPPORT 0 HAS_CROSS_FEATURE_VERTICAL_MIGRATION_SUPPORT 0 HAS_CUSTOM_REGION_SUPPORT 0 HAS_DAP_JTAG_FROM_HPS 0 HAS_DATA_DRIVEN_ACVQ_HSSI_SUPPORT 1 HAS_DDB_FDI_SUPPORT 1 HAS_DESIGN_ANALYZER_SUPPORT 0 HAS_DETAILED_LEIM_STATIC_POWER_MODEL 0 HAS_DETAILED_ROUTING_MUX_STATIC_POWER_MODEL 0 HAS_DETAILED_THERMAL_CIRCUIT_PARAMETER_SUPPORT 1 HAS_DEVICE_MIGRATION_SUPPORT 1 HAS_DIAGONAL_MIGRATION_SUPPORT 0 HAS_EMIF_TOOLKIT_SUPPORT 1 HAS_ERROR_DETECTION_SUPPORT 1 HAS_FAMILY_VARIANT_MIGRATION_SUPPORT 0 HAS_FANOUT_FREE_NODE_SUPPORT 1 HAS_FAST_FIT_SUPPORT 0 HAS_FITTER_ECO_SUPPORT 0 HAS_FIT_NETLIST_OPT_RETIME_SUPPORT 1 HAS_FIT_NETLIST_OPT_SUPPORT 1 HAS_FORMAL_VERIFICATION_SUPPORT 0 HAS_FPGA_XCHANGE_SUPPORT 0 HAS_FSAC_LUTRAM_REGISTER_PACKING_SUPPORT 1 HAS_FULL_DAT_MIN_TIMING_SUPPORT 1 HAS_FULL_INCREMENTAL_DESIGN_SUPPORT 1 HAS_FUNCTIONAL_SIMULATION_SUPPORT 0 HAS_FUNCTIONAL_VERILOG_SIMULATION_SUPPORT 1 HAS_FUNCTIONAL_VHDL_SIMULATION_SUPPORT 1 HAS_GLITCH_FILTERING_SUPPORT 1 HAS_HC_READY_SUPPORT 0 HAS_HIER_PARTIAL_RECONFIG_SUPPORT 1 HAS_HIGH_SPEED_LOW_POWER_TILE_SUPPORT 1 HAS_HOLD_TIME_AVOIDANCE_ACROSS_CLOCK_SPINE_SUPPORT 0 HAS_HSPICE_WRITER_SUPPORT 0 HAS_HSSI_BLOCK 0 HAS_IBISO_WRITER_SUPPORT 0 HAS_ICD_DATA_IP 1 HAS_IDB_SUPPORT 1 HAS_INCREMENTAL_DAT_SUPPORT 1 HAS_INCREMENTAL_SYNTHESIS_SUPPORT 1 HAS_IO_ASSIGNMENT_ANALYSIS_SUPPORT 1 HAS_IO_DECODER 1 HAS_IO_PLACEMENT_OPTIMIZATION_SUPPORT 0 HAS_IO_PLACEMENT_USING_GEOMETRY_RULE 0 HAS_IO_PLACEMENT_USING_PHYSIC_RULE 0 HAS_IO_SMART_RECOMPILE_SUPPORT 0 HAS_JITTER_SUPPORT 1 HAS_JTAG_SLD_HUB_SUPPORT 1 HAS_LOGIC_LOCK_SUPPORT 1 HAS_MICROPROCESSOR 0 HAS_MIF_SMART_COMPILE_SUPPORT 1 HAS_MINMAX_TIMING_MODELING_SUPPORT 0 HAS_MIN_TIMING_ANALYSIS_SUPPORT 0 HAS_MUX_RESTRUCTURE_SUPPORT 1 HAS_NADDER_STYLE_CLOCKING 0 HAS_NADDER_STYLE_FF 0 HAS_NADDER_STYLE_LCELL_COMB 0 HAS_NEW_CDB_NAME_FOR_M20K_SCLR 0 HAS_NEW_HC_FLOW_SUPPORT 0 HAS_NEW_SERDES_MAX_RESOURCE_COUNT_REPORTING_SUPPORT 0 HAS_NONSOCKET_TECHNOLOGY_MIGRATION_SUPPORT 0 HAS_NO_HARDBLOCK_PARTITION_SUPPORT 1 HAS_NO_JTAG_USERCODE_SUPPORT 0 HAS_OPERATING_SETTINGS_AND_CONDITIONS_REPORTING_SUPPORT 1 HAS_PAD_LOCATION_ASSIGNMENT_SUPPORT 0 HAS_PARTIAL_RECONFIG_SUPPORT 1 HAS_PDN_MODEL_STATUS 1 HAS_PHYSICAL_DESIGN_PLANNER_SUPPORT 1 HAS_PHYSICAL_NETLIST_OUTPUT 0 HAS_PHYSICAL_ROUTING_SUPPORT 1 HAS_PLDM_REF_SUPPORT 0 HAS_POWER_ESTIMATION_SUPPORT 1 HAS_PRELIMINARY_CLOCK_UNCERTAINTY_NUMBERS 0 HAS_PRE_FITTER_FPP_SUPPORT 1 HAS_PRE_FITTER_LUTRAM_NETLIST_CHECKER_ENABLED 1 HAS_PVA_SUPPORT 1 HAS_QHD_INCREMENTAL_TIMING_CLOSURE_SUPPORT 1 HAS_QHD_IP_REUSE_INTEGRATION_SUPPORT 1 HAS_QHD_PARTITIONS_SUPPORT 1 HAS_QUARTUS_HIERARCHICAL_DESIGN_SUPPORT 1 HAS_RAPID_RECOMPILE_SUPPORT 1 HAS_RCF_SUPPORT 1 HAS_RCF_SUPPORT_FOR_DEBUGGING 0 HAS_RED_BLACK_SEPARATION_SUPPORT 0 HAS_REVC_IO 0 HAS_RE_LEVEL_TIMING_GRAPH_SUPPORT 1 HAS_RISEFALL_DELAY_SUPPORT 1 HAS_SIGNAL_PROBE_SUPPORT 0 HAS_SIGNAL_TAP_SUPPORT 1 HAS_SIMPLIFIED_PARTIAL_RECONFIG_SUPPORT 1 HAS_SIMULATOR_SUPPORT 0 HAS_SIP_TILE_SUPPORT 0 HAS_SPEED_GRADE_OFFSET 1 HAS_SPLIT_IO_SUPPORT 1 HAS_SPLIT_LC_SUPPORT 1 HAS_STRICT_PRESERVATION_SUPPORT 0 HAS_SYNTHESIS_ON_ATOMS 1 HAS_SYNTH_FSYN_NETLIST_OPT_SUPPORT 1 HAS_SYNTH_NETLIST_OPT_RETIME_SUPPORT 0 HAS_SYNTH_NETLIST_OPT_SUPPORT 1 HAS_TCL_FITTER_SUPPORT 1 HAS_TECHNOLOGY_MIGRATION_SUPPORT 0 HAS_TEMPLATED_REGISTER_PACKING_SUPPORT 1 HAS_TIME_BORROWING_SUPPORT 1 HAS_TIMING_DRIVEN_SYNTHESIS_SUPPORT 1 HAS_TIMING_INFO_SUPPORT 1 HAS_TIMING_OPERATING_CONDITIONS 1 HAS_TIMING_SIMULATION_SUPPORT 0 HAS_TITAN_BASED_MAC_REGISTER_PACKER_SUPPORT 0 HAS_U2B2_SUPPORT 1 HAS_USER_HIGH_SPEED_LOW_POWER_TILE_SUPPORT 1 HAS_USE_FITTER_INFO_SUPPORT 0 HAS_VCCPD_POWER_RAIL 1 HAS_VERTICAL_MIGRATION_SUPPORT 1 HAS_VIEWDRAW_SYMBOL_SUPPORT 0 HAS_VIO_SUPPORT 1 HAS_VIRTUAL_DEVICES 0 HAS_WYSIWYG_DFFEAS_SUPPORT 1 HAS_XIBISO2_WRITER_SUPPORT 1 HAS_XIBISO_WRITER_SUPPORT 0 IFP_USE_LEGACY_IO_CHECKER 0 INCREMENTAL_DESIGN_SUPPORTS_COMPATIBLE_CONSTRAINTS 1 INSTALLED 0 INTERNAL_POF_SUPPORT_ENABLED 0 INTERNAL_STATIC_PART 0 INTERNAL_USE_ONLY 0 IS_BARE_DIE 0 IS_CONFIG_ROM 0 IS_DEFAULT_FAMILY 0 IS_DQS_IN_BUFFER_REDUCTION 0 IS_FOR_INTERNAL_TESTING_ONLY 0 IS_HARDCOPY_FAMILY 0 IS_JW_NEW_BINNING_PLAN 0 IS_JZ_NEW_BINNING_PLAN 0 IS_REVE_SILICON 0 IS_SDM_LITE 0 LOAD_BLK_TYPE_DATA_FROM_ATOM_WYS_INFO 0 LUTRAM_DATA_IN_FF_MUST_BE_HIPI 0 LVDS_IO 0 M10K_MEMORY 0 M144K_MEMORY 0 M20K_MEMORY 0 M4K_MEMORY 0 M512_MEMORY 0 M9K_MEMORY 0 MLAB_MEMORY 0 MRAM_MEMORY 0 NOT_LISTED 0 NOT_MIGRATABLE 0 NO_CLOCK_REGION 0 NO_FITTER_DELAY_CACHE_GENERATED 0 NO_PCF 0 NO_PIN_OUT 0 NO_POF 0 NO_RPE_SUPPORT 0 NO_SUPPORT_FOR_LOGICLOCK_CONTENT_BACK_ANNOTATION 1 NO_SUPPORT_FOR_STA_CLOCK_UNCERTAINTY_CHECK 0 NO_TDC_SUPPORT 0 POSTFIT_BAK_DATABASE_EXPORT_ENABLED 1 POSTMAP_BAK_DATABASE_EXPORT_ENABLED 1 PRE_ND5_L_FINALITY 0 PROGRAMMER_ONLY 0 PROGRAMMER_SUPPORT 1 QFIT_IN_DEVELOPMENT 0 QMAP_IN_DEVELOPMENT 0 QPA_SUPPORTS_VID_CALC 0 RAM_LOGICAL_NAME_CHECKING_IN_CUT_ENABLED 0 REPORTS_METASTABILITY_MTBF 1 REQUIRES_INSTALLATION_PATCH 0 REQUIRES_LIST_OF_TEMPERATURE_AND_VOLTAGE_OPERATING_CONDITIONS 1 REQUIRE_QUARTUS_HIERARCHICAL_DESIGN 0 REQUIRE_SPECIAL_HANDLING_FOR_LOCAL_LABLINE 0 RESERVES_SIGNAL_PROBE_PINS 0 RESOLVE_MAX_FANOUT_EARLY 1 RESOLVE_MAX_FANOUT_LATE 0 RESPECTS_FIXED_SIZED_LOCKED_LOCATION_LOGICLOCK 0 RESTRICTED_USER_SELECTION 0 RISEFALL_SUPPORT_IS_HIDDEN 0 SHOW_HIDDEN_FAMILY_IN_PROGRAMMER 0 STRICT_TIMING_DB_CHECKS 0 SUPPORTS_ADDITIONAL_OPTIONS_FOR_UNUSED_IO 0 SUPPORTS_ADVANCED_SECURITY 0 SUPPORTS_CRC 1 SUPPORTS_DIFFERENTIAL_AIOT_BOARD_TRACE_MODEL 1 SUPPORTS_DSP_BALANCING_BACK_ANNOTATION 0 SUPPORTS_GENERATION_OF_EARLY_POWER_ESTIMATOR_FILE 1 SUPPORTS_GLOBAL_SIGNAL_BACK_ANNOTATION 0 SUPPORTS_HIPI_PW0 0 SUPPORTS_HIPI_RETIMING 0 SUPPORTS_LICENSE_FREE_PARTIAL_RECONFIG 0 SUPPORTS_MAC_CHAIN_OUT_ADDER 0 SUPPORTS_MIN_CORNER_DMF_GENERATION 0 SUPPORTS_NEW_BINNING_PLAN 0 SUPPORTS_PSEUDO_LATCHES_ONLY 0 SUPPORTS_RAM_PACKING_BACK_ANNOTATION 0 SUPPORTS_REG_PACKING_BACK_ANNOTATION 0 SUPPORTS_SIGNALPROBE_REGISTER_PIPELINING 0 SUPPORTS_SINGLE_ENDED_AIOT_BOARD_TRACE_MODEL 1 SUPPORTS_TIMING_CLOSURE_CORNERS 0 SUPPORTS_USER_MANUAL_LOGIC_DUPLICATION 1 SUPPORTS_VID 0 SUPPORT_HBM_IN_EPE 0 SUPPORT_HIGH_SPEED_HPS 0 SUPPORT_UIB 0 TMV_RUN_CUSTOMIZABLE_VIEWER 0 TMV_RUN_INTERNAL_DETAILS 1 TMV_RUN_INTERNAL_DETAILS_ON_IO 0 TMV_RUN_INTERNAL_DETAILS_ON_IOBUF 1 TMV_RUN_INTERNAL_DETAILS_ON_LCELL 0 TMV_RUN_INTERNAL_DETAILS_ON_LRAM 0 TRANSCEIVER_3G_BLOCK 0 TRANSCEIVER_6G_BLOCK 0 USES_ACV_FOR_FLED 0 USES_ADB_FOR_BACK_ANNOTATION 1 USES_ALTERA_LNSIM 0 USES_ASIC_ROUTING_POWER_CALCULATOR 0 USES_DATA_DRIVEN_PLL_COMPUTATION_UTIL 0 USES_DETAILED_REDTAX_WITH_DSPF_ROUTING_MODELS 0 USES_DEV 1 USES_DSPF_ROUTING_MODELS 0 USES_ESTIMATED_TIMING 0 USES_EXTRACTION_CORNERS_WITH_DSPF_ROUTING_MODELS 0 USES_ICP_FOR_ECO_FITTER 0 USES_LIBERTY_TIMING 0 USES_PARASITIC_LOADS_WITH_DSPF_ROUTING_MODELS 0 USES_THIRD_GENERATION_TIMING_MODELS_TIS 1 USES_TIMING_ROUTING_DELAYS 0 USES_U2B2_TIMING_MODELS 1 USES_XML_FORMAT_FOR_EMIF_PIN_MAP_FILE 1 USE_ADVANCED_IO_POWER_BY_DEFAULT 1 USE_ADVANCED_IO_TIMING_BY_DEFAULT 1 USE_BASE_FAMILY_DDB_PATH 0 USE_OCT_AUTO_CALIBRATION 1 USE_RELAX_IO_ASSIGNMENT_RULES 0 USE_RISEFALL_ONLY 1 USE_SDM_CONFIGURATION 0 USE_SEPARATE_LIST_FOR_TECH_MIGRATION 0 USE_SINGLE_COMPILER_PASS_PLL_MIF_FILE_WRITER 0 USE_TITAN_IO_BASED_IO_REGISTER_PACKER_UTIL 1 USING_28NM_OR_OLDER_TIMING_METHODOLOGY 0 WYSIWYG_BUS_WIDTH_CHECKING_IN_CUT_ENABLED 0" />
+  <parameter name="ASI_WIDTH" value="4" />
+  <parameter name="ENABLE_4BYTE_ADDR" value="1" />
+  <parameter name="FLASH_TYPE" value="MT25QU01G" />
+  <generatedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_qspi_address_adaption_181\synth\altera_qspi_address_adaption.sv"
+       attributes="TOP_LEVEL_FILE" />
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_qspi_address_adaption_181\synth\altera_qspi_address_adaption_core.sv"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_qspi_address_adaption_181\synth\altera_qspi_address_adaption.sv"
+       attributes="TOP_LEVEL_FILE" />
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_qspi_address_adaption_181\synth\altera_qspi_address_adaption_core.sv"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/pgm/altera_epcq_controller2/altera_qspi_address_adaption_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="mcu_subsystem_generic_quad_spi_controller2_0_altera_generic_quad_spi_controller2_181_5xz3lbq"
+     as="addr_adaption_1" />
+  <messages>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: altera_qspi_address_adaption"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_asmi2_csr_controller"
+   version="18.1"
+   name="mcu_subsystem_generic_quad_spi_controller2_0_altera_asmi2_csr_controller_181_spl33la">
+  <parameter name="COM_DATA_OUT_BYTES" value="0,0,0,1,0,0" />
+  <parameter name="EXTRA_ID" value="23,24,25,26,27" />
+  <parameter name="COM_ADDR_BYTES" value="0,0,0,0,4,4" />
+  <parameter name="MISC_DATA_IN_BYTES" value="2,0,0,0,0,0,0,0,1,0" />
+  <parameter name="MISC_ID" value="13,14,15,16,17,18,19,20,21,22" />
+  <parameter
+     name="MISC_OPERATION"
+     value="wr_NVCR,rd_NVCR,rd_flag_status,clr_flag_status,NA,die_erase,4bytes_addr_en,4bytes_addr_ex,sector_protect,rd_device_id" />
+  <parameter name="CHIP_SELECT_EN" value="false" />
+  <parameter name="COM_DATA_IN_BYTES" value="0,0,1,0,0,0" />
+  <parameter name="WR_ID" value="1" />
+  <parameter name="WR_OPCODE" value="0" />
+  <parameter name="EXTRA_EN" value="1" />
+  <parameter name="WR_DUMMY_BYTES" value="0" />
+  <parameter name="WR_ENABLE" value="0" />
+  <parameter name="MISC_OPCODE" value="B1,B5,70,50,00,C4,B7,E9,01,9F" />
+  <parameter name="RD_OPERATION" value="01" />
+  <parameter
+     name="OP_INFO"
+     value="wr_enable:32&apos;b00000000000000000000000000000110,wr_disable:32&apos;b00000000000000000000000000000100,wr_status:32&apos;b00000000000001000000010000000001,rd_status:32&apos;b00000000000001000000100000000101,sector_erase:32&apos;b00000000000000000000001111011000,subsector_erase:32&apos;b00000000000000000000001100100000,isr:32&apos;b00000000000000000000000000000000,ier:32&apos;b00000000000000000000000000000000,chip_select:32&apos;b00000000000000000000000000000000,status:32&apos;b00000000000000000000000000000000,NA:32&apos;b00000000000000000000000000000000,NA:32&apos;b00000000000000000000000000000000,NA:32&apos;b00000000000000000000000000000000,wr_NVCR:32&apos;b00000000000010000000010010110001,rd_NVCR:32&apos;b00000000000010000000100010110101,rd_flag_status:32&apos;b00000000000001000000100001110000,clr_flag_status:32&apos;b00000000000000000000000001010000,NA:32&apos;b00000000000000000000000000000000,die_erase:32&apos;b00000000000000000000001111000100,4bytes_addr_en:32&apos;b00000000000000000000000010110111,4bytes_addr_ex:32&apos;b00000000000000000000000011101001,sector_protect:32&apos;b00000000000001000000010000000001,rd_device_id:32&apos;b00000000010100000000100010011111" />
+  <parameter name="RD_ENABLE" value="0" />
+  <parameter name="COM_ID" value="0,1,2,3,4,5" />
+  <parameter name="RD_ID" value="1" />
+  <parameter name="COM_DUMMY_BYTES" value="0,0,0,0,0,0" />
+  <parameter name="RD_DUMMY_BYTES" value="0" />
+  <parameter name="MISC_ADDR_BYTES" value="0,0,0,0,0,4,0,0,0,0" />
+  <parameter
+     name="COM_OPERATION"
+     value="wr_enable,wr_disable,wr_status,rd_status,sector_erase,subsector_erase" />
+  <parameter
+     name="EXTRA_OPERATION"
+     value="device_id_data_0,device_id_data_1,device_id_data_2,device_id_data_3,device_id_data_4" />
+  <parameter name="MISC_DUMMY_BYTES" value="0,0,0,0,0,0,0,0,0,0" />
+  <parameter name="WR_OPERATION" value="01" />
+  <parameter name="WR_ADDR_BYTES" value="0" />
+  <parameter name="RD_OPCODE" value="0" />
+  <parameter name="RD_ADDR_BYTES" value="0" />
+  <parameter name="COM_OPCODE" value="06,04,01,05,D8,20" />
+  <parameter name="MISC_DATA_OUT_BYTES" value="0,2,1,0,0,0,0,0,0,20" />
+  <generatedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_asmi2_csr_controller_181\synth\mcu_subsystem_generic_quad_spi_controller2_0_altera_asmi2_csr_controller_181_spl33la.sv"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_asmi2_csr_controller_181\synth\mcu_subsystem_generic_quad_spi_controller2_0_altera_asmi2_csr_controller_181_spl33la.sv"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/pgm/altera_asmi_parallel2/csr_controller/altera_asmi2_csr_controller_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="mcu_subsystem_generic_quad_spi_controller2_0_altera_asmi_parallel2_181_jbbczgq"
+     as="csr_controller" />
+  <messages>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: mcu_subsystem_generic_quad_spi_controller2_0_altera_asmi2_csr_controller_181_spl33la"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_asmi2_xip_controller"
+   version="18.1"
+   name="altera_asmi2_xip_controller">
+  <parameter name="RD_OPERATION" value="01" />
+  <parameter name="BYTE_ADDRESSING" value="1&apos;b1" />
+  <parameter name="RW_ADDR_BYTES" value="4" />
+  <parameter name="WR_HAS_DUMMY" value="1&apos;b1" />
+  <parameter name="RD_ID" value="1" />
+  <parameter name="RD_HAS_DUMMY" value="1&apos;b1" />
+  <parameter name="CHIP_SELECT_EN" value="true" />
+  <parameter name="RD_EXTEND" value="0,1,1,1" />
+  <parameter name="RD_DUMMY_BYTES" value="0,8,8,A" />
+  <parameter name="WR_ID" value="1" />
+  <parameter name="WR_EXTEND" value="0,1,1" />
+  <parameter name="ADDR_WIDTH" value="32" />
+  <parameter name="DATA_WIDTH" value="QUAD" />
+  <parameter name="POLL_OP" value="8&apos;h70" />
+  <parameter name="WR_OPCODE" value="02,D2,38" />
+  <parameter name="WRITE_OP" value="8&apos;h38" />
+  <parameter name="WR_OPERATION" value="01" />
+  <parameter name="READ_DUMMY_NUM" value="5&apos;hA" />
+  <parameter name="RD_OPCODE" value="03,0B,BB,EB" />
+  <parameter name="READ_OP" value="8&apos;hEB" />
+  <parameter name="POLL_OPCODE" value="70" />
+  <generatedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_asmi2_xip_controller_181\synth\altera_asmi2_xip_controller.sv"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_asmi2_xip_controller_181\synth\altera_asmi2_xip_controller.sv"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/pgm/altera_asmi_parallel2/xip_controller/altera_asmi2_xip_controller_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/sopc_builder_ip/altera_avalon_sc_fifo/altera_avalon_sc_fifo_hw.tcl" />
+  </childSourceFiles>
+  <instantiator
+     instantiator="mcu_subsystem_generic_quad_spi_controller2_0_altera_asmi_parallel2_181_jbbczgq"
+     as="xip_controller" />
+  <messages>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: altera_asmi2_xip_controller"</message>
+   <message level="Info" culprit="avst_fifo">"Generating: avst_fifo"</message>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: avst_fifo"</message>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: mcu_subsystem_generic_quad_spi_controller2_0_altera_avalon_sc_fifo_181_oywqgnq"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_merlin_demultiplexer"
+   version="18.1"
+   name="mcu_subsystem_generic_quad_spi_controller2_0_altera_merlin_demultiplexer_181_hnib7fa">
+  <parameter name="ST_CHANNEL_W" value="2" />
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="VALID_WIDTH" value="1" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone 10 GX" />
+  <parameter name="ST_DATA_W" value="32" />
+  <parameter name="NUM_OUTPUTS" value="2" />
+  <generatedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_merlin_demultiplexer_181\synth\mcu_subsystem_generic_quad_spi_controller2_0_altera_merlin_demultiplexer_181_hnib7fa.sv"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_merlin_demultiplexer_181\synth\mcu_subsystem_generic_quad_spi_controller2_0_altera_merlin_demultiplexer_181_hnib7fa.sv"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="mcu_subsystem_generic_quad_spi_controller2_0_altera_asmi_parallel2_181_jbbczgq"
+     as="merlin_demultiplexer_0" />
+  <messages>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: mcu_subsystem_generic_quad_spi_controller2_0_altera_merlin_demultiplexer_181_hnib7fa"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_merlin_multiplexer"
+   version="18.1"
+   name="mcu_subsystem_generic_quad_spi_controller2_0_altera_merlin_multiplexer_181_x7wtypi">
+  <parameter name="ST_CHANNEL_W" value="2" />
+  <parameter name="ARBITRATION_SHARES" value="1" />
+  <parameter name="NUM_INPUTS" value="2" />
+  <parameter name="PIPELINE_ARB" value="1" />
+  <parameter name="ARBITRATION_SCHEME" value="fixed-priority" />
+  <parameter name="ST_DATA_W" value="32" />
+  <parameter name="USE_EXTERNAL_ARB" value="0" />
+  <parameter name="PKT_TRANS_LOCK" value="-1" />
+  <parameter name="SYNC_RESET" value="0" />
+  <generatedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_merlin_multiplexer_181\synth\mcu_subsystem_generic_quad_spi_controller2_0_altera_merlin_multiplexer_181_x7wtypi.sv"
+       attributes="" />
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_merlin_multiplexer_181\synth\altera_merlin_arbitrator.sv"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_merlin_multiplexer_181\synth\mcu_subsystem_generic_quad_spi_controller2_0_altera_merlin_multiplexer_181_x7wtypi.sv"
+       attributes="" />
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_merlin_multiplexer_181\synth\altera_merlin_arbitrator.sv"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="mcu_subsystem_generic_quad_spi_controller2_0_altera_asmi_parallel2_181_jbbczgq"
+     as="multiplexer" />
+  <messages>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: mcu_subsystem_generic_quad_spi_controller2_0_altera_merlin_multiplexer_181_x7wtypi"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_asmi2_cmd_generator"
+   version="18.1"
+   name="altera_asmi2_cmd_generator">
+  <generatedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_asmi2_cmd_generator_181\synth\altera_asmi2_cmd_generator.sv"
+       attributes="TOP_LEVEL_FILE" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_asmi2_cmd_generator_181\synth\altera_asmi2_cmd_generator.sv"
+       attributes="TOP_LEVEL_FILE" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/pgm/altera_asmi_parallel2/qspi_cmd_generator/altera_asmi2_cmd_generator_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="mcu_subsystem_generic_quad_spi_controller2_0_altera_asmi_parallel2_181_jbbczgq"
+     as="asmi2_cmd_generator_0" />
+  <messages>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: altera_asmi2_cmd_generator"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_asmi2_qspi_interface"
+   version="18.1"
+   name="mcu_subsystem_generic_quad_spi_controller2_0_altera_asmi2_qspi_interface_181_zs4wdmq">
+  <parameter name="MODE_LENGTH" value="4" />
+  <parameter name="DATA_WIDTH" value="QUAD" />
+  <parameter name="USE_GPIO" value="true" />
+  <parameter name="DISABLE_ASMIBLOCK" value="true" />
+  <parameter name="DEV_FAMILY" value="Cyclone 10 GX" />
+  <parameter name="NCS_LENGTH" value="1" />
+  <parameter name="DATA_LENGTH" value="4" />
+  <parameter name="ENABLE_SIM_MODEL" value="false" />
+  <parameter name="NCS_NUM" value="1" />
+  <parameter name="ENABLE_SIM" value="false" />
+  <generatedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_asmi2_qspi_interface_181\synth\altera_asmi2_qspi_interface_asmiblock.sv"
+       attributes="" />
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_asmi2_qspi_interface_181\synth\altera_asmi2_qspi_interface_gpio.sv"
+       attributes="" />
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_asmi2_qspi_interface_181\synth\mcu_subsystem_generic_quad_spi_controller2_0_altera_asmi2_qspi_interface_181_zs4wdmq.sv"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_asmi2_qspi_interface_181\synth\altera_asmi2_qspi_interface_asmiblock.sv"
+       attributes="" />
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_asmi2_qspi_interface_181\synth\altera_asmi2_qspi_interface_gpio.sv"
+       attributes="" />
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_asmi2_qspi_interface_181\synth\mcu_subsystem_generic_quad_spi_controller2_0_altera_asmi2_qspi_interface_181_zs4wdmq.sv"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/pgm/altera_asmi_parallel2/qspi_interface/altera_asmi2_qspi_interface_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="mcu_subsystem_generic_quad_spi_controller2_0_altera_asmi_parallel2_181_jbbczgq"
+     as="asmi2_qspi_interface_0" />
+  <messages>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: mcu_subsystem_generic_quad_spi_controller2_0_altera_asmi2_qspi_interface_181_zs4wdmq"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_reset_controller"
+   version="18.1"
+   name="altera_reset_controller">
+  <generatedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_reset_controller_181\synth\altera_reset_controller.v"
+       attributes="" />
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_reset_controller_181\synth\altera_reset_synchronizer.v"
+       attributes="" />
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_reset_controller_181\synth\altera_reset_controller.sdc"
+       attributes="NO_AUTO_INSTANCE_DISCOVERY NO_SDC_PROMOTION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_reset_controller_181\synth\altera_reset_controller.v"
+       attributes="" />
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_reset_controller_181\synth\altera_reset_synchronizer.v"
+       attributes="" />
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_reset_controller_181\synth\altera_reset_controller.sdc"
+       attributes="NO_AUTO_INSTANCE_DISCOVERY NO_SDC_PROMOTION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="mcu_subsystem_generic_quad_spi_controller2_0_altera_asmi_parallel2_181_jbbczgq"
+     as="rst_controller" />
+  <messages>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: altera_reset_controller"</message>
+  </messages>
+ </entity>
+ <entity kind="altera_asmi2_xip_controller" version="18.1" name="avst_fifo">
+  <parameter name="EXPLICIT_MAXCHANNEL" value="0" />
+  <parameter name="SYNC_RESET" value="0" />
+  <parameter name="ENABLE_EXPLICIT_MAXCHANNEL" value="false" />
+  <generatedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_asmi2_xip_controller_181\synth\avst_fifo.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_asmi2_xip_controller_181\synth\avst_fifo.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles/>
+  <childSourceFiles>
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/sopc_builder_ip/altera_avalon_sc_fifo/altera_avalon_sc_fifo_hw.tcl" />
+  </childSourceFiles>
+  <instantiator instantiator="altera_asmi2_xip_controller" as="avst_fifo" />
+  <messages>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: avst_fifo"</message>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: mcu_subsystem_generic_quad_spi_controller2_0_altera_avalon_sc_fifo_181_oywqgnq"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_avalon_sc_fifo"
+   version="18.1"
+   name="mcu_subsystem_generic_quad_spi_controller2_0_altera_avalon_sc_fifo_181_oywqgnq">
+  <parameter name="EXPLICIT_MAXCHANNEL" value="0" />
+  <parameter name="SYNC_RESET" value="0" />
+  <parameter name="ENABLE_EXPLICIT_MAXCHANNEL" value="false" />
+  <generatedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_avalon_sc_fifo_181\synth\mcu_subsystem_generic_quad_spi_controller2_0_altera_avalon_sc_fifo_181_oywqgnq.v"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\mcu_subsystem_generic_quad_spi_controller2_0\altera_avalon_sc_fifo_181\synth\mcu_subsystem_generic_quad_spi_controller2_0_altera_avalon_sc_fifo_181_oywqgnq.v"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/sopc_builder_ip/altera_avalon_sc_fifo/altera_avalon_sc_fifo_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="avst_fifo" as="avst_fifo" />
+  <messages>
+   <message level="Info" culprit="mcu_subsystem_generic_quad_spi_controller2_0">"Generating: mcu_subsystem_generic_quad_spi_controller2_0_altera_avalon_sc_fifo_181_oywqgnq"</message>
+  </messages>
+ </entity>
+</deploy>

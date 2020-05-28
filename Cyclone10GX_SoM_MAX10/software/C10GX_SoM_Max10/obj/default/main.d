@@ -15,7 +15,7 @@ obj/default/main.o: main.c ../C10GX_SoM_Max10_bsp//HAL/inc/io.h \
  ../C10GX_SoM_Max10_bsp//HAL/inc/os/alt_sem.h \
  ../C10GX_SoM_Max10_bsp//HAL/inc/priv/alt_no_error.h \
  ../C10GX_SoM_Max10_bsp//HAL/inc/os/alt_flag.h \
- Si5345-RevD-C10GX01-Registers.h
+ Si5345-RevD-C10GX01-Registers-50MHz.h
 
 ../C10GX_SoM_Max10_bsp//HAL/inc/io.h:
 
@@ -53,4 +53,4 @@ obj/default/main.o: main.c ../C10GX_SoM_Max10_bsp//HAL/inc/io.h \
 
 ../C10GX_SoM_Max10_bsp//HAL/inc/os/alt_flag.h:
 
-Si5345-RevD-C10GX01-Registers.h:
+Si5345-RevD-C10GX01-Registers-50MHz.h:

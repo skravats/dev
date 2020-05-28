@@ -54,7 +54,7 @@ source ../../scripts/adi_ip_alt.tcl
 
 ad_ip_create jesd204_phy_glue {Native PHY to JESD204 glue logic} \
  jesd204_phy_glue_elab
-set_module_property INTERNAL true
+#set_module_property INTERNAL true
 
 # files
 

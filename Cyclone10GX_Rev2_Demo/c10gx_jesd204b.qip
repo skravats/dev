@@ -1,0 +1,11 @@
+set_instance_assignment -name XCVR_RECONFIG_GROUP XCVR_1 -to rx_serial_data[0]
+set_instance_assignment -name XCVR_RECONFIG_GROUP XCVR_1 -to tx_serial_data[0]
+
+set_instance_assignment -name XCVR_RECONFIG_GROUP XCVR_2 -to rx_serial_data[1]
+set_instance_assignment -name XCVR_RECONFIG_GROUP XCVR_2 -to tx_serial_data[1]
+
+set_instance_assignment -name XCVR_RECONFIG_GROUP XCVR_3 -to rx_serial_data[2]
+set_instance_assignment -name XCVR_RECONFIG_GROUP XCVR_3 -to tx_serial_data[2]
+
+set_instance_assignment -name XCVR_RECONFIG_GROUP XCVR_4 -to rx_serial_data[3]
+set_instance_assignment -name XCVR_RECONFIG_GROUP XCVR_4 -to tx_serial_data[3]

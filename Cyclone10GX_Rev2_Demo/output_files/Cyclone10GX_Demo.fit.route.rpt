@@ -1,0 +1,499 @@
+Fitter Route Stage Report for Cyclone10GX_Demo
+Wed May 27 13:46:14 2020
+Quartus Prime Version 18.1.2 Build 277 02/12/2019 SJ Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. PLL Delay Chain Settings
+  3. Delay Chain Summary
+  4. Routing Usage Summary
+  5. Route Messages
+  6. Estimated Delay Added for Hold Timing Summary
+  7. Estimated Delay Added for Hold Timing Details
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------------+
+; PLL Delay Chain Settings                                                               ;
++----------------------------------------------------------------------------------+-----+
+;                                                                                  ;     ;
++----------------------------------------------------------------------------------+-----+
+; pll|iopll_0|altera_iopll_i|c10gx_pll|iopll_inst                                  ;     ;
+;     -- Delay Chain Setting                                                       ; N/A ;
+;     -- PLL Output Counter 0                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;             -- LVDS Delay Chain Setting                                          ; 0   ;
+;     -- PLL Output Counter 1                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;             -- LVDS Delay Chain Setting                                          ; 0   ;
+;     -- PLL Output Counter 2                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;             -- LVDS Delay Chain Setting                                          ; 0   ;
+;     -- PLL Output Counter 3                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;             -- LVDS Delay Chain Setting                                          ; 0   ;
+;     -- PLL Output Counter 4                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;     -- PLL Output Counter 5                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;     -- PLL Output Counter 6                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;     -- PLL Output Counter 7                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;     -- PLL Output Counter 8                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;                                                                                  ;     ;
+; mcu_0|ddr3|ddr3|arch|arch_inst|pll_inst|pll_inst                                 ;     ;
+;     -- Delay Chain Setting                                                       ; N/A ;
+;     -- PLL Output Counter 0                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;             -- LVDS Delay Chain Setting                                          ; 0   ;
+;     -- PLL Output Counter 1                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;             -- LVDS Delay Chain Setting                                          ; 0   ;
+;     -- PLL Output Counter 2                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;             -- LVDS Delay Chain Setting                                          ; 0   ;
+;     -- PLL Output Counter 3                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;             -- LVDS Delay Chain Setting                                          ; 0   ;
+;     -- PLL Output Counter 4                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;     -- PLL Output Counter 5                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;     -- PLL Output Counter 6                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;     -- PLL Output Counter 7                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;     -- PLL Output Counter 8                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;                                                                                  ;     ;
+; mcu_0|ethernet|ethernet_iopll|ethernet_iopll|altera_iopll_i|c10gx_pll|iopll_inst ;     ;
+;     -- Delay Chain Setting                                                       ; N/A ;
+;     -- PLL Output Counter 0                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;             -- LVDS Delay Chain Setting                                          ; 0   ;
+;     -- PLL Output Counter 1                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;             -- LVDS Delay Chain Setting                                          ; 0   ;
+;     -- PLL Output Counter 2                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;             -- LVDS Delay Chain Setting                                          ; 0   ;
+;     -- PLL Output Counter 3                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;             -- LVDS Delay Chain Setting                                          ; 0   ;
+;     -- PLL Output Counter 4                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;     -- PLL Output Counter 5                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;     -- PLL Output Counter 6                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;     -- PLL Output Counter 7                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;     -- PLL Output Counter 8                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;                                                                                  ;     ;
+; mcu_0|iopll_0|iopll_0|altera_iopll_i|c10gx_pll|iopll_inst                        ;     ;
+;     -- Delay Chain Setting                                                       ; N/A ;
+;     -- PLL Output Counter 0                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;             -- LVDS Delay Chain Setting                                          ; 0   ;
+;     -- PLL Output Counter 1                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;             -- LVDS Delay Chain Setting                                          ; 0   ;
+;     -- PLL Output Counter 2                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;             -- LVDS Delay Chain Setting                                          ; 0   ;
+;     -- PLL Output Counter 3                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;             -- LVDS Delay Chain Setting                                          ; 0   ;
+;     -- PLL Output Counter 4                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;     -- PLL Output Counter 5                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;     -- PLL Output Counter 6                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;     -- PLL Output Counter 7                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;     -- PLL Output Counter 8                                                      ;     ;
+;             -- C Counter Delay Chain Setting                                     ; 0   ;
+;                                                                                  ;     ;
+; mcu_0|ddr3|ddr3|arch|arch_inst|pll_inst|pll_inst~_Duplicate                      ;     ;
+;     -- Delay Chain Setting                                                       ; N/A ;
+;                                                                                  ;     ;
++----------------------------------------------------------------------------------+-----+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Delay Chain Summary                                                                                                                                                       ;
++--------------------------+----------+---------------------+--------------------+----------------+-----------------------------------+-------------------------------------+
+; Name                     ; Pin Type ; Input Delay Chain 0 ; Output Delay Chain ; OE Delay Chain ; IO_12_LANE Input Data Delay Chain ; IO_12_LANE Input Strobe Delay Chain ;
++--------------------------+----------+---------------------+--------------------+----------------+-----------------------------------+-------------------------------------+
+; tx_serial_data[1]        ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; tx_serial_data[2]        ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; tx_serial_data[3]        ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; spi_clk                  ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; tx_serial_data[0]        ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; data_0                   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; gmii_gtxck               ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; mem_mem_ck[0]            ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; mem_mem_ck_n[0]          ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; mem_mem_a[0]             ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; mem_mem_a[1]             ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; mem_mem_a[2]             ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; mem_mem_a[3]             ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; mem_mem_a[4]             ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; mem_mem_a[5]             ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; mem_mem_a[6]             ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; mem_mem_a[7]             ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; mem_mem_a[8]             ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; mem_mem_a[9]             ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; mem_mem_a[10]            ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; mem_mem_a[11]            ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; mem_mem_a[12]            ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; mem_mem_a[13]            ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; mem_mem_a[14]            ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; mem_mem_a[15]            ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; mem_mem_ba[0]            ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; mem_mem_ba[1]            ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; mem_mem_ba[2]            ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; mem_mem_cke[0]           ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; mem_mem_cs_n[0]          ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; mem_mem_odt[0]           ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; mem_mem_reset_n[0]       ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; mem_mem_we_n[0]          ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; mem_mem_ras_n[0]         ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; mem_mem_cas_n[0]         ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; mem_mem_dm[0]            ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; mem_mem_dm[1]            ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; mem_mem_dm[2]            ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; mem_mem_dm[3]            ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; status_local_cal_success ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; status_local_cal_fail    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; dac_reset                ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; dac_txen                 ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; adc_pd                   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; clkd_sync                ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; spi_csn_clk              ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; spi_csn_dac              ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; spi_csn_adc              ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; spi_dir                  ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; gmii_rst                 ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; gmii_mdc                 ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; gmii_tx_d[0]             ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; gmii_tx_d[1]             ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; gmii_tx_d[2]             ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; gmii_tx_d[3]             ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; gmii_tx_d[4]             ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; gmii_tx_d[5]             ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; gmii_tx_d[6]             ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; gmii_tx_d[7]             ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; gmii_tx_en               ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; gmii_tx_err              ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; qspi_dclk                ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; qspi_ncs                 ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; rx_sync                  ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; clk1                     ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; clk_100                  ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; gmii_col                 ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; mem_mem_dqs[0]           ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; 0                                   ;
+; mem_mem_dqs[1]           ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; 0                                   ;
+; mem_mem_dqs[2]           ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; 0                                   ;
+; mem_mem_dqs[3]           ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; 0                                   ;
+; mem_mem_dqs_n[0]         ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; 0                                   ;
+; mem_mem_dqs_n[1]         ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; 0                                   ;
+; mem_mem_dqs_n[2]         ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; 0                                   ;
+; mem_mem_dqs_n[3]         ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; 0                                   ;
+; mem_mem_dq[0]            ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; mem_mem_dq[1]            ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; mem_mem_dq[2]            ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; mem_mem_dq[3]            ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; mem_mem_dq[4]            ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; mem_mem_dq[5]            ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; mem_mem_dq[6]            ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; mem_mem_dq[7]            ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; mem_mem_dq[8]            ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; mem_mem_dq[9]            ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; mem_mem_dq[10]           ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; mem_mem_dq[11]           ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; mem_mem_dq[12]           ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; mem_mem_dq[13]           ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; mem_mem_dq[14]           ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; mem_mem_dq[15]           ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; mem_mem_dq[16]           ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; mem_mem_dq[17]           ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; mem_mem_dq[18]           ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; mem_mem_dq[19]           ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; mem_mem_dq[20]           ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; mem_mem_dq[21]           ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; mem_mem_dq[22]           ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; mem_mem_dq[23]           ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; mem_mem_dq[24]           ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; mem_mem_dq[25]           ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; mem_mem_dq[26]           ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; mem_mem_dq[27]           ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; mem_mem_dq[28]           ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; mem_mem_dq[29]           ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; mem_mem_dq[30]           ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; mem_mem_dq[31]           ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; spi_sdio                 ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; gmii_mdio                ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; gmii_rx_d[0]             ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; gmii_rx_d[1]             ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; gmii_rx_d[2]             ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; gmii_rx_d[3]             ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; gmii_rx_d[4]             ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; gmii_rx_d[5]             ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; gmii_rx_d[6]             ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; gmii_rx_d[7]             ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; gmii_rx_dv               ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; qspi_data[0]             ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; qspi_data[1]             ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; qspi_data[2]             ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; qspi_data[3]             ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; gmii_clk125              ; Bidir    ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; clk0                     ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; oct_oct_rzqin            ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; gmii_crs                 ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; gmii_rx_clk              ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; gmii_rx_err              ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; gmii_tx_clk              ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; refclk_emif_clk          ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; rx_serial_data[0]        ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; rx_ref_clk               ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; rx_serial_data[1]        ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; rx_serial_data[2]        ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; rx_serial_data[3]        ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; reset_in                 ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; tx_ref_clk               ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; trig                     ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; adc_fda                  ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; adc_fdb                  ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; clkd_status[0]           ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; clkd_status[1]           ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; dac_irq                  ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; rx_sysref                ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; tx_sync                  ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; tx_sysref                ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; tx_serial_data[1](n)     ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; tx_serial_data[2](n)     ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; tx_serial_data[3](n)     ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; tx_serial_data[0](n)     ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; rx_sync(n)               ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; clk_100(n)               ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; clk0(n)                  ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; refclk_emif_clk(n)       ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; rx_serial_data[0](n)     ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; rx_ref_clk(n)            ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; rx_serial_data[1](n)     ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; rx_serial_data[2](n)     ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; rx_serial_data[3](n)     ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; tx_ref_clk(n)            ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; trig(n)                  ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; rx_sysref(n)             ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; tx_sync(n)               ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; tx_sysref(n)             ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
++--------------------------+----------+---------------------+--------------------+----------------+-----------------------------------+-------------------------------------+
+
+
++-----------------------------------------------------------+
+; Routing Usage Summary                                     ;
++------------------------------+----------------------------+
+; Routing Resource Type        ; Usage                      ;
++------------------------------+----------------------------+
+; Block interconnects          ; 147,801 / 664,374 ( 22 % ) ;
+; C27 interconnects            ; 3,236 / 12,769 ( 25 % )    ;
+; C4 interconnects             ; 141,741 / 514,392 ( 28 % ) ;
+; Direct links                 ; 19,939 / 664,374 ( 3 % )   ;
+; Global clocks                ; 12 / 32 ( 38 % )           ;
+; Periphery clocks             ; 0 / 410 ( 0 % )            ;
+; R3 interconnects             ; 64,380 / 246,936 ( 26 % )  ;
+; R32 interconnects            ; 3,701 / 28,257 ( 13 % )    ;
+; R32/C27 interconnect drivers ; 5,057 / 74,920 ( 7 % )     ;
+; R6 interconnects             ; 114,630 / 527,108 ( 22 % ) ;
+; Regional clock lefts         ; 0 / 8 ( 0 % )              ;
+; Regional clock out bottoms   ; 0 / 8 ( 0 % )              ;
+; Regional clock out tops      ; 0 / 8 ( 0 % )              ;
+; Regional clock rights        ; 0 / 8 ( 0 % )              ;
+; Regional clocks              ; 0 / 8 ( 0 % )              ;
+; Spine buffers                ; 31 / 220 ( 14 % )          ;
+; Spine clocks                 ; 44 / 330 ( 13 % )          ;
+; Spine feedthroughs           ; 0 / 224 ( 0 % )            ;
++------------------------------+----------------------------+
+
+
++----------------+
+; Route Messages ;
++----------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Fitter
+    Info: Version 18.1.2 Build 277 02/12/2019 SJ Pro Edition
+    Info: Processing started: Wed May 27 13:25:12 2020
+Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off Cyclone10GX_Demo -c Cyclone10GX_Demo
+Info: qfit2_default_script.tcl version: #1
+Info: Project  = Cyclone10GX_Demo
+Info: Revision = Cyclone10GX_Demo
+Info (170193): Fitter routing operations beginning
+Info (170089): 4e+04 ns of routing delay (approximately 17.1% of available device routing delay) has been added to meet hold timing. For more information, refer to the Estimated Delay Added for Hold Timing section in the Fitter report.
+Info (20215): Router estimated peak interconnect utilization : 242% of long high speed right directional wire in region X8_Y49 to X15_Y55
+    Info (20265): Estimated peak short right directional wire utilization : 43% in region X32_Y49 to X39_Y55
+    Info (20265): Estimated peak short left directional wire utilization : 15% in region X24_Y56 to X31_Y62
+    Info (20265): Estimated peak short up directional wire utilization : 44% in region X72_Y21 to X79_Y27
+    Info (20265): Estimated peak short down directional wire utilization : 60% in region X72_Y28 to X79_Y34
+    Info (20265): Estimated peak long high speed right directional wire utilization : 242% in region X8_Y49 to X15_Y55
+    Info (20265): Estimated peak long high speed left directional wire utilization : 200% in region X56_Y56 to X63_Y62
+    Info (20265): Estimated peak long high speed up directional wire utilization : 116% in region X0_Y7 to X7_Y13
+    Info (20265): Estimated peak long high speed down directional wire utilization : 150% in region X8_Y49 to X15_Y55
+    Info (20315): Note that the router may use short wires to implement long connections at higher delay
+Info (170239): Router is attempting to preserve 0.00 percent of routes from an earlier compilation, a user specified Routing Constraints File, or internal routing requirements.
+Warning (16684): The router is trying to resolve an exceedingly large amount of congestion. At the moment, it predicts long routing run time and/or significant setup or hold timing failures. Congestion details can be found in the Chip Planner.
+Info (188005): Design requires adding a large amount of routing delay for some signals to meet hold time requirements, and there is an excessive demand for the available routing resources. The Fitter is reducing the routing delays of some signals to help the routing algorithm converge, but doing so may cause hold time failures. For more information, refer to the "Estimated Delay Added for Hold Timing" section in the Fitter report.
+Info (11888): Total time spent on timing analysis during Routing is 84.75 seconds.
+Info (16607): Fitter routing operations ending: elapsed time is 00:07:31
+
+
++----------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Summary                  ;
++---------------------+----------------------+-------------------+
+; Source Clock(s)     ; Destination Clock(s) ; Delay Added in ns ;
++---------------------+----------------------+-------------------+
+; clk0                ; clk0                 ; 51507.9           ;
+; altera_reserved_tck ; altera_reserved_tck  ; 1837.6            ;
+; tx_ref_clk          ; tx_ref_clk           ; 1168.1            ;
++---------------------+----------------------+-------------------+
+Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
+This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                                                                                                                                                                        ;
++------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+-------------------+
+; Source Register                                                  ; Destination Register                                                                                                          ; Delay Added in ns ;
++------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+-------------------+
+; mcu_0|spi|spi|SCLK_reg                                           ; mcu_0|spi|spi|SCLK_reg                                                                                                        ; 6.599             ;
+; mcu_0|gpio|gpio|data_out[31]                                     ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|auto_signaltap_auto_signaltap_0|sld_signaltap_inst|acq_data_in_reg[3]                  ; 6.033             ;
+; rx_sysref                                                        ; mcu_0|ad9680_jesd204|ad9680_jesd204|jesd204_rx|i_lmfc|sysref_r                                                                ; 4.344             ;
+; tx_sysref                                                        ; mcu_0|ad9144_jesd204|ad9144_jesd204|jesd204_tx|i_lmfc|sysref_r                                                                ; 4.178             ;
+; mcu_0|spi|spi|slowcount[3]                                       ; mcu_0|spi|spi|shift_reg[7]                                                                                                    ; 3.421             ;
+; mcu_0|spi|spi|slowcount[0]                                       ; mcu_0|spi|spi|shift_reg[7]                                                                                                    ; 3.407             ;
+; mcu_0|spi|spi|slowcount[2]                                       ; mcu_0|spi|spi|shift_reg[7]                                                                                                    ; 3.361             ;
+; mcu_0|spi|spi|slowcount[1]                                       ; mcu_0|spi|spi|shift_reg[7]                                                                                                    ; 3.358             ;
+; mcu_0|spi|spi|slowcount[4]                                       ; mcu_0|spi|spi|shift_reg[7]                                                                                                    ; 3.200             ;
+; mcu_0|spi|spi|slowcount[5]                                       ; mcu_0|spi|spi|shift_reg[7]                                                                                                    ; 3.200             ;
+; mcu_0|spi|spi|slowcount[6]                                       ; mcu_0|spi|spi|shift_reg[7]                                                                                                    ; 3.200             ;
+; mcu_0|spi|spi|slowcount[7]                                       ; mcu_0|spi|spi|shift_reg[7]                                                                                                    ; 3.200             ;
+; mcu_0|spi|spi|slowcount[8]                                       ; mcu_0|spi|spi|shift_reg[7]                                                                                                    ; 3.200             ;
+; mcu_0|ethernet|mac|mac|i_tse_mac|U_MAC_TOP|U_GMIF|gm_tx_d_reg[1] ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|auto_signaltap_auto_signaltap_0|sld_signaltap_inst|acq_data_in_reg[17]                 ; 2.965             ;
+; mcu_0|ethernet|mac|mac|i_tse_mac|U_MAC_TOP|U_GMIF|gm_tx_d_reg[2] ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|auto_signaltap_auto_signaltap_0|sld_signaltap_inst|acq_data_in_reg[18]                 ; 2.956             ;
+; mcu_0|ethernet|mac|mac|i_tse_mac|U_MAC_TOP|U_GMIF|gm_tx_d_reg[3] ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|auto_signaltap_auto_signaltap_0|sld_signaltap_inst|acq_data_in_reg[19]                 ; 2.849             ;
+; mcu_0|ethernet|mac|mac|i_tse_mac|U_MAC_TOP|U_GMIF|gm_tx_d_reg[0] ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|auto_signaltap_auto_signaltap_0|sld_signaltap_inst|acq_data_in_reg[16]                 ; 2.835             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[68]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a68~reg0  ; 2.764             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[66]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a66~reg0  ; 2.759             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[33]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a33~reg0  ; 2.754             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[96]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a96~reg0  ; 2.754             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[67]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a67~reg0  ; 2.752             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[38]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a38~reg0  ; 2.742             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[103]           ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a103~reg0 ; 2.730             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[87]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a87~reg0  ; 2.727             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[72]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a72~reg0  ; 2.724             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[73]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a73~reg0  ; 2.723             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[1]             ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a1~reg0   ; 2.710             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[100]           ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a100~reg0 ; 2.709             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[97]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a97~reg0  ; 2.705             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[99]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a99~reg0  ; 2.693             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[0]             ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a0~reg0   ; 2.693             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[64]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a64~reg0  ; 2.693             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[61]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a61~reg0  ; 2.692             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[29]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a29~reg0  ; 2.681             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[65]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a65~reg0  ; 2.678             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[91]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a91~reg0  ; 2.663             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[101]           ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a101~reg0 ; 2.654             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[120]           ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a120~reg0 ; 2.651             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[70]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a70~reg0  ; 2.648             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[84]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a84~reg0  ; 2.645             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[116]           ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a116~reg0 ; 2.641             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[105]           ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a105~reg0 ; 2.639             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[98]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a98~reg0  ; 2.638             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[20]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a20~reg0  ; 2.637             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[57]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a57~reg0  ; 2.635             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[118]           ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a118~reg0 ; 2.635             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[124]           ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a124~reg0 ; 2.634             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[55]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a55~reg0  ; 2.632             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[5]             ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a5~reg0   ; 2.632             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[2]             ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a2~reg0   ; 2.630             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[52]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a52~reg0  ; 2.626             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[69]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a69~reg0  ; 2.626             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[27]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a27~reg0  ; 2.625             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[9]             ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a9~reg0   ; 2.624             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[3]             ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a3~reg0   ; 2.622             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[28]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a28~reg0  ; 2.620             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[22]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a22~reg0  ; 2.618             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[40]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a40~reg0  ; 2.609             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[36]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a36~reg0  ; 2.600             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[88]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a88~reg0  ; 2.598             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[89]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a89~reg0  ; 2.591             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[24]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a24~reg0  ; 2.578             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[71]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a71~reg0  ; 2.577             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[32]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a32~reg0  ; 2.577             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[4]             ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a4~reg0   ; 2.576             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[35]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a35~reg0  ; 2.575             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[104]           ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a104~reg0 ; 2.570             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[39]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a39~reg0  ; 2.568             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_valid               ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|src_dest_valid_hs                                                        ; 2.545             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[7]             ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a7~reg0   ; 2.533             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[59]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a59~reg0  ; 2.529             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[58]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a58~reg0  ; 2.526             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[6]             ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a6~reg0   ; 2.510             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[60]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a60~reg0  ; 2.502             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[54]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a54~reg0  ; 2.488             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[92]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a92~reg0  ; 2.486             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[23]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a23~reg0  ; 2.484             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[85]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a85~reg0  ; 2.482             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[8]             ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a8~reg0   ; 2.480             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[119]           ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a119~reg0 ; 2.477             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[123]           ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a123~reg0 ; 2.474             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[125]           ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a125~reg0 ; 2.467             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[63]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a63~reg0  ; 2.461             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[93]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a93~reg0  ; 2.456             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[53]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a53~reg0  ; 2.450             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[25]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a25~reg0  ; 2.447             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[56]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a56~reg0  ; 2.447             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[102]           ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a102~reg0 ; 2.445             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[26]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a26~reg0  ; 2.441             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[94]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a94~reg0  ; 2.431             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[121]           ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a121~reg0 ; 2.430             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[86]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a86~reg0  ; 2.415             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[21]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a21~reg0  ; 2.415             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[122]           ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a122~reg0 ; 2.412             ;
+; mcu_0|ethernet|mac|mac|i_tse_mac|U_MAC_TOP|U_GMIF|gm_tx_d_reg[5] ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|auto_signaltap_auto_signaltap_0|sld_signaltap_inst|acq_data_in_reg[21]                 ; 2.403             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[34]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a34~reg0  ; 2.392             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[37]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a37~reg0  ; 2.390             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[41]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a41~reg0  ; 2.372             ;
+; mcu_0|ad9680_fifo|ad9680_fifo|i_axis_inf|inf_data[90]            ; mcu_0|ad9680_dma|ad9680_dma|i_transfer|i_request_arb|i_store_and_forward|i_mem|m_ram_rtl_0|auto_generated|ram_block1a90~reg0  ; 2.369             ;
++------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+-------------------+
+Note: This table only shows the top 100 path(s) that have the largest delay added for hold.
+
+

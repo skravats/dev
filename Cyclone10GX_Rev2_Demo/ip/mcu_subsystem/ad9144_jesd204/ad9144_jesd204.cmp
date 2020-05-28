@@ -1,0 +1,92 @@
+	component ad9144_jesd204 is
+		port (
+			sys_clk_clk                   : in  std_logic                      := 'X';             -- clk
+			sys_resetn_reset_n            : in  std_logic                      := 'X';             -- reset_n
+			ref_clk_clk                   : in  std_logic                      := 'X';             -- clk
+			link_pll_reconfig_write       : in  std_logic                      := 'X';             -- write
+			link_pll_reconfig_read        : in  std_logic                      := 'X';             -- read
+			link_pll_reconfig_address     : in  std_logic_vector(9 downto 0)   := (others => 'X'); -- address
+			link_pll_reconfig_writedata   : in  std_logic_vector(31 downto 0)  := (others => 'X'); -- writedata
+			link_pll_reconfig_readdata    : out std_logic_vector(31 downto 0);                     -- readdata
+			link_pll_reconfig_waitrequest : out std_logic;                                         -- waitrequest
+			link_clk_clk                  : out std_logic;                                         -- clk
+			link_reset_reset              : out std_logic;                                         -- reset
+			link_management_awvalid       : in  std_logic                      := 'X';             -- awvalid
+			link_management_awaddr        : in  std_logic_vector(11 downto 0)  := (others => 'X'); -- awaddr
+			link_management_awprot        : in  std_logic_vector(2 downto 0)   := (others => 'X'); -- awprot
+			link_management_awready       : out std_logic;                                         -- awready
+			link_management_wvalid        : in  std_logic                      := 'X';             -- wvalid
+			link_management_wdata         : in  std_logic_vector(31 downto 0)  := (others => 'X'); -- wdata
+			link_management_wstrb         : in  std_logic_vector(3 downto 0)   := (others => 'X'); -- wstrb
+			link_management_wready        : out std_logic;                                         -- wready
+			link_management_bvalid        : out std_logic;                                         -- bvalid
+			link_management_bresp         : out std_logic_vector(1 downto 0);                      -- bresp
+			link_management_bready        : in  std_logic                      := 'X';             -- bready
+			link_management_arvalid       : in  std_logic                      := 'X';             -- arvalid
+			link_management_araddr        : in  std_logic_vector(11 downto 0)  := (others => 'X'); -- araddr
+			link_management_arprot        : in  std_logic_vector(2 downto 0)   := (others => 'X'); -- arprot
+			link_management_arready       : out std_logic;                                         -- arready
+			link_management_rvalid        : out std_logic;                                         -- rvalid
+			link_management_rresp         : out std_logic_vector(1 downto 0);                      -- rresp
+			link_management_rdata         : out std_logic_vector(31 downto 0);                     -- rdata
+			link_management_rready        : in  std_logic                      := 'X';             -- rready
+			pll_select_pll_select         : in  std_logic_vector(0 downto 0)   := (others => 'X'); -- pll_select
+			serial_data_tx_serial_data    : out std_logic_vector(3 downto 0);                      -- tx_serial_data
+			phy_reconfig_0_address        : in  std_logic_vector(9 downto 0)   := (others => 'X'); -- address
+			phy_reconfig_0_read           : in  std_logic                      := 'X';             -- read
+			phy_reconfig_0_readdata       : out std_logic_vector(31 downto 0);                     -- readdata
+			phy_reconfig_0_waitrequest    : out std_logic;                                         -- waitrequest
+			phy_reconfig_0_write          : in  std_logic                      := 'X';             -- write
+			phy_reconfig_0_writedata      : in  std_logic_vector(31 downto 0)  := (others => 'X'); -- writedata
+			phy_reconfig_1_address        : in  std_logic_vector(9 downto 0)   := (others => 'X'); -- address
+			phy_reconfig_1_read           : in  std_logic                      := 'X';             -- read
+			phy_reconfig_1_readdata       : out std_logic_vector(31 downto 0);                     -- readdata
+			phy_reconfig_1_waitrequest    : out std_logic;                                         -- waitrequest
+			phy_reconfig_1_write          : in  std_logic                      := 'X';             -- write
+			phy_reconfig_1_writedata      : in  std_logic_vector(31 downto 0)  := (others => 'X'); -- writedata
+			phy_reconfig_2_address        : in  std_logic_vector(9 downto 0)   := (others => 'X'); -- address
+			phy_reconfig_2_read           : in  std_logic                      := 'X';             -- read
+			phy_reconfig_2_readdata       : out std_logic_vector(31 downto 0);                     -- readdata
+			phy_reconfig_2_waitrequest    : out std_logic;                                         -- waitrequest
+			phy_reconfig_2_write          : in  std_logic                      := 'X';             -- write
+			phy_reconfig_2_writedata      : in  std_logic_vector(31 downto 0)  := (others => 'X'); -- writedata
+			phy_reconfig_3_address        : in  std_logic_vector(9 downto 0)   := (others => 'X'); -- address
+			phy_reconfig_3_read           : in  std_logic                      := 'X';             -- read
+			phy_reconfig_3_readdata       : out std_logic_vector(31 downto 0);                     -- readdata
+			phy_reconfig_3_waitrequest    : out std_logic;                                         -- waitrequest
+			phy_reconfig_3_write          : in  std_logic                      := 'X';             -- write
+			phy_reconfig_3_writedata      : in  std_logic_vector(31 downto 0)  := (others => 'X'); -- writedata
+			lane_pll_reconfig_write       : in  std_logic                      := 'X';             -- write
+			lane_pll_reconfig_read        : in  std_logic                      := 'X';             -- read
+			lane_pll_reconfig_address     : in  std_logic_vector(9 downto 0)   := (others => 'X'); -- address
+			lane_pll_reconfig_writedata   : in  std_logic_vector(31 downto 0)  := (others => 'X'); -- writedata
+			lane_pll_reconfig_readdata    : out std_logic_vector(31 downto 0);                     -- readdata
+			lane_pll_reconfig_waitrequest : out std_logic;                                         -- waitrequest
+			link_reconfig_awvalid         : in  std_logic                      := 'X';             -- awvalid
+			link_reconfig_awaddr          : in  std_logic_vector(13 downto 0)  := (others => 'X'); -- awaddr
+			link_reconfig_awprot          : in  std_logic_vector(2 downto 0)   := (others => 'X'); -- awprot
+			link_reconfig_awready         : out std_logic;                                         -- awready
+			link_reconfig_wvalid          : in  std_logic                      := 'X';             -- wvalid
+			link_reconfig_wdata           : in  std_logic_vector(31 downto 0)  := (others => 'X'); -- wdata
+			link_reconfig_wstrb           : in  std_logic_vector(3 downto 0)   := (others => 'X'); -- wstrb
+			link_reconfig_wready          : out std_logic;                                         -- wready
+			link_reconfig_bvalid          : out std_logic;                                         -- bvalid
+			link_reconfig_bresp           : out std_logic_vector(1 downto 0);                      -- bresp
+			link_reconfig_bready          : in  std_logic                      := 'X';             -- bready
+			link_reconfig_arvalid         : in  std_logic                      := 'X';             -- arvalid
+			link_reconfig_araddr          : in  std_logic_vector(13 downto 0)  := (others => 'X'); -- araddr
+			link_reconfig_arprot          : in  std_logic_vector(2 downto 0)   := (others => 'X'); -- arprot
+			link_reconfig_arready         : out std_logic;                                         -- arready
+			link_reconfig_rvalid          : out std_logic;                                         -- rvalid
+			link_reconfig_rresp           : out std_logic_vector(1 downto 0);                      -- rresp
+			link_reconfig_rdata           : out std_logic_vector(31 downto 0);                     -- rdata
+			link_reconfig_rready          : in  std_logic                      := 'X';             -- rready
+			interrupt_irq                 : out std_logic;                                         -- irq
+			sysref_export                 : in  std_logic                      := 'X';             -- export
+			sync_export                   : in  std_logic                      := 'X';             -- export
+			link_data_data                : in  std_logic_vector(127 downto 0) := (others => 'X'); -- data
+			link_data_ready               : out std_logic;                                         -- ready
+			link_data_valid               : in  std_logic                      := 'X'              -- valid
+		);
+	end component ad9144_jesd204;
+

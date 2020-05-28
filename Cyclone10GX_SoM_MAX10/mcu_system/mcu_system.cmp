@@ -1,0 +1,11 @@
+	component mcu_system is
+		port (
+			clk_clk       : in  std_logic := 'X'; -- clk
+			reset_reset_n : in  std_logic := 'X'; -- reset_n
+			serial_sda_in : in  std_logic := 'X'; -- sda_in
+			serial_scl_in : in  std_logic := 'X'; -- scl_in
+			serial_sda_oe : out std_logic;        -- sda_oe
+			serial_scl_oe : out std_logic         -- scl_oe
+		);
+	end component mcu_system;
+

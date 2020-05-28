@@ -1,0 +1,68 @@
+Fitter Finalize Stage Report for Cyclone10GX_Demo
+Wed May 27 13:52:43 2020
+Quartus Prime Version 18.1.2 Build 277 02/12/2019 SJ Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Fitter HSLP Summary
+  3. Finalize Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------+
+; Fitter HSLP Summary                                                           ;
++--------------------------------------------------------+---------------+------+
+; Resource                                               ; Usage         ; %    ;
++--------------------------------------------------------+---------------+------+
+;                                                        ;               ;      ;
+; Programmable power technology high-speed tiles         ; 1,532 / 3,531 ; 43 % ;
+; Programmable power technology low-power tiles          ; 1,999 / 3,531 ; 57 % ;
+;     -- low-power tiles that are used by the design     ; 1,207 / 1,999 ; 60 % ;
+;     -- unused tiles (low-power)                        ; 792 / 1,999   ; 40 % ;
+;                                                        ;               ;      ;
+; Programmable power technology high-speed LAB tiles     ; 1,095 / 2,642 ; 41 % ;
+; Programmable power technology low-power LAB tiles      ; 1,547 / 2,642 ; 59 % ;
+;     -- low-power LAB tiles that are used by the design ; 1,087 / 1,547 ; 70 % ;
+;     -- unused LAB tiles (low-power)                    ; 460 / 1,547   ; 30 % ;
+;                                                        ;               ;      ;
++--------------------------------------------------------+---------------+------+
+
+
++-------------------+
+; Finalize Messages ;
++-------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Fitter
+    Info: Version 18.1.2 Build 277 02/12/2019 SJ Pro Edition
+    Info: Processing started: Wed May 27 13:25:12 2020
+Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off Cyclone10GX_Demo -c Cyclone10GX_Demo
+Info: qfit2_default_script.tcl version: #1
+Info: Project  = Cyclone10GX_Demo
+Info: Revision = Cyclone10GX_Demo
+Info (11888): Total time spent on timing analysis during Post-Routing is 0.21 seconds.
+Info (16557): Fitter post-fit operations ending: elapsed time is 00:06:28
+
+

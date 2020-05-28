@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2020.05.27.13:15:34"
+ outputDirectory="C:/Git/ArrowESC/Cyclone10GX_Rev2_Demo/ip/mcu_subsystem/ad9144_upack/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Cyclone 10 GX"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="10CX220YF780I5G"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="5"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_IF_DAC_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_IF_DAC_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_IF_DAC_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="if_dac_clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="dac_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="if_dac_valid" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="dac_valid" direction="output" role="valid" width="1" />
+  </interface>
+  <interface name="if_dac_sync" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="dac_sync" direction="output" role="sync" width="1" />
+  </interface>
+  <interface name="if_dac_data" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="dac_data" direction="input" role="data" width="128" />
+  </interface>
+  <interface name="dac_ch_0" kind="conduit" start="0">
+   <property name="associatedClock" value="if_dac_clk" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="dac_enable_0" direction="input" role="enable" width="1" />
+   <port name="dac_valid_0" direction="input" role="valid" width="1" />
+   <port name="dac_valid_out_0" direction="output" role="data_valid" width="1" />
+   <port name="dac_data_0" direction="output" role="data" width="64" />
+  </interface>
+  <interface name="dac_ch_1" kind="conduit" start="0">
+   <property name="associatedClock" value="if_dac_clk" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="dac_enable_1" direction="input" role="enable" width="1" />
+   <port name="dac_valid_1" direction="input" role="valid" width="1" />
+   <port name="dac_valid_out_1" direction="output" role="data_valid" width="1" />
+   <port name="dac_data_1" direction="output" role="data" width="64" />
+  </interface>
+ </perimeter>
+ <entity kind="ad9144_upack" version="1.0" name="ad9144_upack">
+  <parameter name="AUTO_IF_DAC_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="10CX220YF780I5G" />
+  <parameter name="AUTO_IF_DAC_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone 10 GX" />
+  <parameter name="AUTO_IF_DAC_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="5" />
+  <generatedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\ad9144_upack\synth\ad9144_upack.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\ad9144_upack\synth\ad9144_upack.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/Git/ArrowESC/Cyclone10GX_Rev2_Demo/ip/mcu_subsystem/ad9144_upack.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="C:/Developer/fpga/AnalogDevice/library/util_upack/util_upack_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="ad9144_upack">"Generating: ad9144_upack"</message>
+   <message level="Info" culprit="ad9144_upack">"Generating: util_upack"</message>
+  </messages>
+ </entity>
+ <entity kind="util_upack" version="1.0" name="util_upack">
+  <parameter name="NUM_OF_CHANNELS" value="2" />
+  <parameter name="CHANNEL_DATA_WIDTH" value="64" />
+  <generatedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\ad9144_upack\util_upack_10\synth\util_upack_dmx.v"
+       attributes="" />
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\ad9144_upack\util_upack_10\synth\util_upack_dsf.v"
+       attributes="" />
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\ad9144_upack\util_upack_10\synth\util_upack.v"
+       attributes="TOP_LEVEL_FILE" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\ad9144_upack\util_upack_10\synth\util_upack_dmx.v"
+       attributes="" />
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\ad9144_upack\util_upack_10\synth\util_upack_dsf.v"
+       attributes="" />
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\ad9144_upack\util_upack_10\synth\util_upack.v"
+       attributes="TOP_LEVEL_FILE" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/Developer/fpga/AnalogDevice/library/util_upack/util_upack_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="ad9144_upack" as="ad9144_upack" />
+  <messages>
+   <message level="Info" culprit="ad9144_upack">"Generating: util_upack"</message>
+  </messages>
+ </entity>
+</deploy>

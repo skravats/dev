@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2020.05.27.13:15:01"
+ outputDirectory="C:/Git/ArrowESC/Cyclone10GX_Rev2_Demo/ip/mcu_subsystem/ad9680_cpack/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Cyclone 10 GX"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="10CX220YF780I5G"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="5"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_IF_ADC_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_IF_ADC_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_IF_ADC_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="if_adc_clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="adc_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="if_adc_rst" kind="reset" start="0">
+   <property name="associatedClock" value="if_adc_clk" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="adc_rst" direction="input" role="reset" width="1" />
+  </interface>
+  <interface name="if_adc_valid" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="adc_valid" direction="output" role="valid" width="1" />
+  </interface>
+  <interface name="if_adc_sync" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="adc_sync" direction="output" role="sync" width="1" />
+  </interface>
+  <interface name="if_adc_data" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="adc_data" direction="output" role="data" width="128" />
+  </interface>
+  <interface name="adc_ch_0" kind="conduit" start="0">
+   <property name="associatedClock" value="if_adc_clk" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="adc_enable_0" direction="input" role="enable" width="1" />
+   <port name="adc_valid_0" direction="input" role="valid" width="1" />
+   <port name="adc_data_0" direction="input" role="data" width="64" />
+  </interface>
+  <interface name="adc_ch_1" kind="conduit" start="0">
+   <property name="associatedClock" value="if_adc_clk" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="adc_enable_1" direction="input" role="enable" width="1" />
+   <port name="adc_valid_1" direction="input" role="valid" width="1" />
+   <port name="adc_data_1" direction="input" role="data" width="64" />
+  </interface>
+ </perimeter>
+ <entity kind="ad9680_cpack" version="1.0" name="ad9680_cpack">
+  <parameter name="AUTO_IF_ADC_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_IF_ADC_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="10CX220YF780I5G" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone 10 GX" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_IF_ADC_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="5" />
+  <generatedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\ad9680_cpack\synth\ad9680_cpack.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\ad9680_cpack\synth\ad9680_cpack.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/Git/ArrowESC/Cyclone10GX_Rev2_Demo/ip/mcu_subsystem/ad9680_cpack.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="C:/Developer/fpga/AnalogDevice/library/util_cpack/util_cpack_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="ad9680_cpack">"Generating: ad9680_cpack"</message>
+   <message level="Info" culprit="ad9680_cpack">"Generating: util_cpack"</message>
+  </messages>
+ </entity>
+ <entity kind="util_cpack" version="1.0" name="util_cpack">
+  <parameter name="NUM_OF_CHANNELS" value="2" />
+  <parameter name="CHANNEL_DATA_WIDTH" value="64" />
+  <generatedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\ad9680_cpack\util_cpack_10\synth\util_cpack_mux.v"
+       attributes="" />
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\ad9680_cpack\util_cpack_10\synth\util_cpack_dsf.v"
+       attributes="" />
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\ad9680_cpack\util_cpack_10\synth\util_cpack.v"
+       attributes="TOP_LEVEL_FILE" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\ad9680_cpack\util_cpack_10\synth\util_cpack_mux.v"
+       attributes="" />
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\ad9680_cpack\util_cpack_10\synth\util_cpack_dsf.v"
+       attributes="" />
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\ad9680_cpack\util_cpack_10\synth\util_cpack.v"
+       attributes="TOP_LEVEL_FILE" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/Developer/fpga/AnalogDevice/library/util_cpack/util_cpack_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="ad9680_cpack" as="ad9680_cpack" />
+  <messages>
+   <message level="Info" culprit="ad9680_cpack">"Generating: util_cpack"</message>
+  </messages>
+ </entity>
+</deploy>

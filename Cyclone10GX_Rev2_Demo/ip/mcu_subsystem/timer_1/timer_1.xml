@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2020.05.27.13:15:40"
+ outputDirectory="C:/Git/ArrowESC/Cyclone10GX_Rev2_Demo/ip/mcu_subsystem/timer_1/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Cyclone 10 GX"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="10CX220YF780I5G"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="5"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="reset" kind="reset" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="reset_n" direction="input" role="reset_n" width="1" />
+  </interface>
+  <interface name="s1" kind="avalon" start="0">
+   <property name="addressAlignment" value="NATIVE" />
+   <property name="addressGroup" value="0" />
+   <property name="addressSpan" value="16" />
+   <property name="addressUnits" value="WORDS" />
+   <property name="alwaysBurstMaxBurst" value="false" />
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="reset" />
+   <property name="bitsPerSymbol" value="8" />
+   <property name="bridgedAddressOffset" value="0" />
+   <property name="bridgesToMaster" value="" />
+   <property name="burstOnBurstBoundariesOnly" value="false" />
+   <property name="burstcountUnits" value="WORDS" />
+   <property name="constantBurstBehavior" value="false" />
+   <property name="explicitAddressSpan" value="0" />
+   <property name="holdTime" value="0" />
+   <property name="interleaveBursts" value="false" />
+   <property name="isBigEndian" value="false" />
+   <property name="isFlash" value="false" />
+   <property name="isMemoryDevice" value="false" />
+   <property name="isNonVolatileStorage" value="false" />
+   <property name="linewrapBursts" value="false" />
+   <property name="maximumPendingReadTransactions" value="0" />
+   <property name="maximumPendingWriteTransactions" value="0" />
+   <property name="minimumReadLatency" value="1" />
+   <property name="minimumResponseLatency" value="1" />
+   <property name="minimumUninterruptedRunLength" value="1" />
+   <property name="prSafe" value="false" />
+   <property name="printableDevice" value="false" />
+   <property name="readLatency" value="0" />
+   <property name="readWaitStates" value="1" />
+   <property name="readWaitTime" value="1" />
+   <property name="registerIncomingSignals" value="false" />
+   <property name="registerOutgoingSignals" value="false" />
+   <property name="setupTime" value="0" />
+   <property name="timingUnits" value="Cycles" />
+   <property name="transparentBridge" value="false" />
+   <property name="waitrequestAllowance" value="0" />
+   <property name="wellBehavedWaitrequest" value="false" />
+   <property name="writeLatency" value="0" />
+   <property name="writeWaitStates" value="0" />
+   <property name="writeWaitTime" value="0" />
+   <port name="address" direction="input" role="address" width="4" />
+   <port name="writedata" direction="input" role="writedata" width="16" />
+   <port name="readdata" direction="output" role="readdata" width="16" />
+   <port name="chipselect" direction="input" role="chipselect" width="1" />
+   <port name="write_n" direction="input" role="write_n" width="1" />
+  </interface>
+  <interface name="irq" kind="interrupt" start="0">
+   <property name="associatedAddressablePoint" value="timer_1.s1" />
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="reset" />
+   <property name="bridgedReceiverOffset" value="0" />
+   <property name="bridgesToReceiver" value="" />
+   <property name="irqScheme" value="NONE" />
+   <port name="irq" direction="output" role="irq" width="1" />
+  </interface>
+ </perimeter>
+ <entity kind="timer_1" version="1.0" name="timer_1">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="10CX220YF780I5G" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone 10 GX" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="5" />
+  <generatedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\timer_1\synth\timer_1.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\timer_1\synth\timer_1.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/Git/ArrowESC/Cyclone10GX_Rev2_Demo/ip/mcu_subsystem/timer_1.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/sopc_builder_ip/altera_avalon_timer/altera_avalon_timer_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="timer_1">"Generating: timer_1"</message>
+   <message level="Info" culprit="timer_1">"Generating: timer_1_altera_avalon_timer_181_4aylo6i"</message>
+   <message level="Info" culprit="timer_1">Starting RTL generation for module 'timer_1_altera_avalon_timer_181_4aylo6i'</message>
+   <message level="Info" culprit="timer_1">  Generation command is [exec C:/intelFPGA_pro/18.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_pro/18.1/quartus/bin64//perl/lib -I C:/intelFPGA_pro/18.1/quartus/sopc_builder/bin/europa -I C:/intelFPGA_pro/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelFPGA_pro/18.1/quartus/sopc_builder/bin -I C:/intelFPGA_pro/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelFPGA_pro/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/intelFPGA_pro/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=timer_1_altera_avalon_timer_181_4aylo6i --dir=C:/Users/a90282/AppData/Local/Temp/1/alt8409_7721441391411903071.dir/0037_timer_1_gen/ --quartus_dir=C:/intelFPGA_pro/18.1/quartus --verilog --config=C:/Users/a90282/AppData/Local/Temp/1/alt8409_7721441391411903071.dir/0037_timer_1_gen//timer_1_altera_avalon_timer_181_4aylo6i_component_configuration.pl  --do_build_sim=0  ]</message>
+   <message level="Info" culprit="timer_1">Done RTL generation for module 'timer_1_altera_avalon_timer_181_4aylo6i'</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_avalon_timer"
+   version="18.1"
+   name="timer_1_altera_avalon_timer_181_4aylo6i">
+  <parameter name="loadValue" value="124" />
+  <parameter name="timeoutPulseOutput" value="false" />
+  <parameter name="period" value="1" />
+  <parameter name="periodUnitsString" value="us" />
+  <parameter name="mult" value="1.0E-6" />
+  <parameter name="ticksPerSec" value="1000000.0" />
+  <parameter name="systemFrequency" value="125000000" />
+  <parameter name="alwaysRun" value="false" />
+  <parameter name="valueInSecond" value="1.0E-6" />
+  <parameter name="fixedPeriod" value="false" />
+  <parameter name="counterSize" value="64" />
+  <parameter name="periodUnits" value="USEC" />
+  <parameter name="watchdogPulse" value="2" />
+  <parameter name="slave_address_width" value="4" />
+  <parameter name="resetOutput" value="false" />
+  <parameter name="snapshot" value="true" />
+  <parameter name="timerPreset" value="FULL_FEATURED" />
+  <generatedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\timer_1\altera_avalon_timer_181\synth\timer_1_altera_avalon_timer_181_4aylo6i.v"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Git\ArrowESC\Cyclone10GX_Rev2_Demo\ip\mcu_subsystem\timer_1\altera_avalon_timer_181\synth\timer_1_altera_avalon_timer_181_4aylo6i.v"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/intelFPGA_pro/18.1/ip/altera/sopc_builder_ip/altera_avalon_timer/altera_avalon_timer_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="timer_1" as="timer_1" />
+  <messages>
+   <message level="Info" culprit="timer_1">"Generating: timer_1_altera_avalon_timer_181_4aylo6i"</message>
+   <message level="Info" culprit="timer_1">Starting RTL generation for module 'timer_1_altera_avalon_timer_181_4aylo6i'</message>
+   <message level="Info" culprit="timer_1">  Generation command is [exec C:/intelFPGA_pro/18.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_pro/18.1/quartus/bin64//perl/lib -I C:/intelFPGA_pro/18.1/quartus/sopc_builder/bin/europa -I C:/intelFPGA_pro/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelFPGA_pro/18.1/quartus/sopc_builder/bin -I C:/intelFPGA_pro/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelFPGA_pro/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/intelFPGA_pro/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=timer_1_altera_avalon_timer_181_4aylo6i --dir=C:/Users/a90282/AppData/Local/Temp/1/alt8409_7721441391411903071.dir/0037_timer_1_gen/ --quartus_dir=C:/intelFPGA_pro/18.1/quartus --verilog --config=C:/Users/a90282/AppData/Local/Temp/1/alt8409_7721441391411903071.dir/0037_timer_1_gen//timer_1_altera_avalon_timer_181_4aylo6i_component_configuration.pl  --do_build_sim=0  ]</message>
+   <message level="Info" culprit="timer_1">Done RTL generation for module 'timer_1_altera_avalon_timer_181_4aylo6i'</message>
+  </messages>
+ </entity>
+</deploy>

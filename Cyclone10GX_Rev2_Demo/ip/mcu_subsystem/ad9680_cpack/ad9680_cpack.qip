@@ -1,0 +1,43 @@
+set_global_assignment -entity "ad9680_cpack" -library "ad9680_cpack" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "ad9680_cpack" -library "ad9680_cpack" -name IP_TOOL_VERSION "18.1.2"
+set_global_assignment -entity "ad9680_cpack" -library "ad9680_cpack" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "ad9680_cpack" -library "ad9680_cpack" -name IP_TOOL_VENDOR_NAME "Altera Corporation"
+set_global_assignment -entity "ad9680_cpack" -library "ad9680_cpack" -name IP_TOP_LEVEL_COMPONENT_NAME "util_cpack"
+set_global_assignment -library "ad9680_cpack" -name SOPCINFO_FILE [file join $::quartus(qip_path) "ad9680_cpack.sopcinfo"]
+set_global_assignment -entity "ad9680_cpack" -library "ad9680_cpack" -name SLD_INFO "QSYS_NAME ad9680_cpack HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "ad9680_cpack" -name MISC_FILE [file join $::quartus(qip_path) "ad9680_cpack.cmp"]
+set_global_assignment -entity "ad9680_cpack" -library "ad9680_cpack" -name IP_TARGETED_DEVICE_FAMILY "Cyclone 10 GX"
+set_global_assignment -entity "ad9680_cpack" -library "ad9680_cpack" -name IP_GENERATED_DEVICE_FAMILY "{Cyclone 10 GX}"
+set_global_assignment -entity "ad9680_cpack" -library "ad9680_cpack" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "ad9680_cpack" -name MISC_FILE [file join $::quartus(qip_path) "../ad9680_cpack.ip"]
+
+set_global_assignment -entity "util_cpack" -library "util_cpack_10" -name IP_COMPONENT_NAME "dXRpbF9jcGFjaw=="
+set_global_assignment -entity "util_cpack" -library "util_cpack_10" -name IP_COMPONENT_DISPLAY_NAME "Q2hhbm5lbCBQYWNrIFV0aWxpdHk="
+set_global_assignment -entity "util_cpack" -library "util_cpack_10" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "util_cpack" -library "util_cpack_10" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "util_cpack" -library "util_cpack_10" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "util_cpack" -library "util_cpack_10" -name IP_COMPONENT_DESCRIPTION "Q2hhbm5lbCBQYWNrIFV0aWxpdHk="
+set_global_assignment -entity "util_cpack" -library "util_cpack_10" -name IP_COMPONENT_PARAMETER "Q0hBTk5FTF9EQVRBX1dJRFRI::NjQ=::Q0hBTk5FTF9EQVRBX1dJRFRI"
+set_global_assignment -entity "util_cpack" -library "util_cpack_10" -name IP_COMPONENT_PARAMETER "TlVNX09GX0NIQU5ORUxT::Mg==::TlVNX09GX0NIQU5ORUxT"
+set_global_assignment -entity "util_cpack" -library "util_cpack_10" -name IP_COMPONENT_GROUP "QW5hbG9nIERldmljZXM="
+set_global_assignment -entity "ad9680_cpack" -library "ad9680_cpack" -name IP_COMPONENT_NAME "YWQ5NjgwX2NwYWNr"
+set_global_assignment -entity "ad9680_cpack" -library "ad9680_cpack" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "ad9680_cpack" -library "ad9680_cpack" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "ad9680_cpack" -library "ad9680_cpack" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "ad9680_cpack" -library "ad9680_cpack" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "ad9680_cpack" -library "ad9680_cpack" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "ad9680_cpack" -library "ad9680_cpack" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MA==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "ad9680_cpack" -library "ad9680_cpack" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::Q3ljbG9uZSAxMCBHWA==::QXV0byBERVZJQ0VfRkFNSUxZ"
+set_global_assignment -entity "ad9680_cpack" -library "ad9680_cpack" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::MTBDWDIyMFlGNzgwSTVH::QXV0byBERVZJQ0U="
+set_global_assignment -entity "ad9680_cpack" -library "ad9680_cpack" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::NQ==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
+set_global_assignment -entity "ad9680_cpack" -library "ad9680_cpack" -name IP_COMPONENT_PARAMETER "QVVUT19JRl9BRENfQ0xLX0NMT0NLX1JBVEU=::LTE=::QXV0byBDTE9DS19SQVRF"
+set_global_assignment -entity "ad9680_cpack" -library "ad9680_cpack" -name IP_COMPONENT_PARAMETER "QVVUT19JRl9BRENfQ0xLX0NMT0NLX0RPTUFJTg==::LTE=::QXV0byBDTE9DS19ET01BSU4="
+set_global_assignment -entity "ad9680_cpack" -library "ad9680_cpack" -name IP_COMPONENT_PARAMETER "QVVUT19JRl9BRENfQ0xLX1JFU0VUX0RPTUFJTg==::LTE=::QXV0byBSRVNFVF9ET01BSU4="
+
+
+set_global_assignment -library "util_cpack_10" -name VERILOG_FILE [file join $::quartus(qip_path) "util_cpack_10/synth/util_cpack_mux.v"]
+set_global_assignment -library "util_cpack_10" -name VERILOG_FILE [file join $::quartus(qip_path) "util_cpack_10/synth/util_cpack_dsf.v"]
+set_global_assignment -library "util_cpack_10" -name VERILOG_FILE [file join $::quartus(qip_path) "util_cpack_10/synth/util_cpack.v"]
+set_global_assignment -library "ad9680_cpack" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/ad9680_cpack.v"]
+

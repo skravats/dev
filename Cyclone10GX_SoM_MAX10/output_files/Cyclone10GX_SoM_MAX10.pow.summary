@@ -1,0 +1,12 @@
+Power Analyzer Status : Successful - Sun Jul 28 01:20:14 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : Cyclone10GX_SoM_MAX10
+Top-level Entity Name : top
+Family : MAX 10
+Device : 10M08SAU169C8G
+Power Models : Final
+Total Thermal Power Dissipation : 136.34 mW
+Core Dynamic Thermal Power Dissipation : 1.55 mW
+Core Static Thermal Power Dissipation : 110.70 mW
+I/O Thermal Power Dissipation : 24.08 mW
+Power Estimation Confidence : Low: user provided insufficient toggle rate data

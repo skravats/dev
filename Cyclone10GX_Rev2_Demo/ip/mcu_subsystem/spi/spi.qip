@@ -1,0 +1,62 @@
+set_global_assignment -entity "spi" -library "spi" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "spi" -library "spi" -name IP_TOOL_VERSION "18.1.2"
+set_global_assignment -entity "spi" -library "spi" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "spi" -library "spi" -name IP_TOOL_VENDOR_NAME "Intel Corporation"
+set_global_assignment -entity "spi" -library "spi" -name IP_TOP_LEVEL_COMPONENT_NAME "altera_avalon_spi"
+set_global_assignment -library "spi" -name SOPCINFO_FILE [file join $::quartus(qip_path) "spi.sopcinfo"]
+set_global_assignment -entity "spi" -library "spi" -name SLD_INFO "QSYS_NAME spi HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "spi" -name MISC_FILE [file join $::quartus(qip_path) "spi.cmp"]
+set_global_assignment -library "spi" -name SLD_FILE [file join $::quartus(qip_path) "spi.regmap"]
+set_global_assignment -entity "spi" -library "spi" -name IP_TARGETED_DEVICE_FAMILY "Cyclone 10 GX"
+set_global_assignment -entity "spi" -library "spi" -name IP_GENERATED_DEVICE_FAMILY "{Cyclone 10 GX}"
+set_global_assignment -entity "spi" -library "spi" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "spi" -name MISC_FILE [file join $::quartus(qip_path) "../spi.ip"]
+
+set_global_assignment -entity "spi_altera_avalon_spi_181_aicge3i" -library "altera_avalon_spi_181" -name IP_COMPONENT_NAME "c3BpX2FsdGVyYV9hdmFsb25fc3BpXzE4MV9haWNnZTNp"
+set_global_assignment -entity "spi_altera_avalon_spi_181_aicge3i" -library "altera_avalon_spi_181" -name IP_COMPONENT_DISPLAY_NAME "U1BJICgzIFdpcmUgU2VyaWFsKSBJbnRlbCBGUEdBIElQ"
+set_global_assignment -entity "spi_altera_avalon_spi_181_aicge3i" -library "altera_avalon_spi_181" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "spi_altera_avalon_spi_181_aicge3i" -library "altera_avalon_spi_181" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "spi_altera_avalon_spi_181_aicge3i" -library "altera_avalon_spi_181" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "spi_altera_avalon_spi_181_aicge3i" -library "altera_avalon_spi_181" -name IP_COMPONENT_VERSION "MTguMQ=="
+set_global_assignment -entity "spi_altera_avalon_spi_181_aicge3i" -library "altera_avalon_spi_181" -name IP_COMPONENT_PARAMETER "Y2xvY2tQaGFzZQ==::MA==::Q2xvY2sgcGhhc2U="
+set_global_assignment -entity "spi_altera_avalon_spi_181_aicge3i" -library "altera_avalon_spi_181" -name IP_COMPONENT_PARAMETER "Y2xvY2tQb2xhcml0eQ==::MA==::Q2xvY2sgcG9sYXJpdHk="
+set_global_assignment -entity "spi_altera_avalon_spi_181_aicge3i" -library "altera_avalon_spi_181" -name IP_COMPONENT_PARAMETER "ZGF0YVdpZHRo::OA==::V2lkdGg="
+set_global_assignment -entity "spi_altera_avalon_spi_181_aicge3i" -library "altera_avalon_spi_181" -name IP_COMPONENT_PARAMETER "ZGlzYWJsZUF2YWxvbkZsb3dDb250cm9s::ZmFsc2U=::RGlzYWJsZSBmbG93IGNvbnRyb2wgb24gQXZhbG9uIHNsYXZlIGludGVyZmFjZQ=="
+set_global_assignment -entity "spi_altera_avalon_spi_181_aicge3i" -library "altera_avalon_spi_181" -name IP_COMPONENT_PARAMETER "aW5zZXJ0RGVsYXlCZXR3ZWVuU2xhdmVTZWxlY3RBbmRTQ2xr::ZmFsc2U=::U3BlY2lmeSBkZWxheQ=="
+set_global_assignment -entity "spi_altera_avalon_spi_181_aicge3i" -library "altera_avalon_spi_181" -name IP_COMPONENT_PARAMETER "aW5zZXJ0U3luYw==::ZmFsc2U=::SW5zZXJ0IFN5bmNocm9uaXplcnM="
+set_global_assignment -entity "spi_altera_avalon_spi_181_aicge3i" -library "altera_avalon_spi_181" -name IP_COMPONENT_PARAMETER "bHNiT3JkZXJlZEZpcnN0::ZmFsc2U=::U2hpZnQgZGlyZWN0aW9u"
+set_global_assignment -entity "spi_altera_avalon_spi_181_aicge3i" -library "altera_avalon_spi_181" -name IP_COMPONENT_PARAMETER "bWFzdGVyU1BJ::dHJ1ZQ==::VHlwZQ=="
+set_global_assignment -entity "spi_altera_avalon_spi_181_aicge3i" -library "altera_avalon_spi_181" -name IP_COMPONENT_PARAMETER "bnVtYmVyT2ZTbGF2ZXM=::OA==::TnVtYmVyIG9mIHNlbGVjdCAoU1Nfbikgc2lnbmFscyAob25lIGZvciBlYWNoIHNsYXZlKQ=="
+set_global_assignment -entity "spi_altera_avalon_spi_181_aicge3i" -library "altera_avalon_spi_181" -name IP_COMPONENT_PARAMETER "dGFyZ2V0Q2xvY2tSYXRl::MTI4MDAw::U1BJIGNsb2NrIChTQ0xLKSByYXRl"
+set_global_assignment -entity "spi_altera_avalon_spi_181_aicge3i" -library "altera_avalon_spi_181" -name IP_COMPONENT_PARAMETER "YXZhbG9uU3BlYw==::Mi4w::YXZhbG9uU3BlYw=="
+set_global_assignment -entity "spi_altera_avalon_spi_181_aicge3i" -library "altera_avalon_spi_181" -name IP_COMPONENT_PARAMETER "aW5wdXRDbG9ja1JhdGU=::MTI1MDAwMDAw::aW5wdXRDbG9ja1JhdGU="
+set_global_assignment -entity "spi_altera_avalon_spi_181_aicge3i" -library "altera_avalon_spi_181" -name IP_COMPONENT_PARAMETER "YWN0dWFsQ2xvY2tSYXRl::MTI3ODExLjA=::QWN0dWFsIGNsb2NrIHJhdGU="
+set_global_assignment -entity "spi_altera_avalon_spi_181_aicge3i" -library "altera_avalon_spi_181" -name IP_COMPONENT_PARAMETER "bGVnYWN5U2lnbmFsc0FsbG93::ZmFsc2U=::bGVnYWN5U2lnbmFsc0FsbG93"
+set_global_assignment -entity "spi_altera_avalon_spi_181_aicge3i" -library "altera_avalon_spi_181" -name IP_COMPONENT_PARAMETER "c2xhdmVEYXRhQnVzV2lkdGg=::MTY=::c2xhdmVEYXRhQnVzV2lkdGg="
+set_global_assignment -entity "spi_altera_avalon_spi_181_aicge3i" -library "altera_avalon_spi_181" -name IP_COMPONENT_GROUP "SW50ZXJmYWNlIFByb3RvY29scy9TZXJpYWw="
+set_global_assignment -entity "spi_altera_avalon_spi_181_aicge3i" -library "altera_avalon_spi_181" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly9kb2N1bWVudGF0aW9uLmFsdGVyYS5jb20vIy9saW5rL3NmbzE0MDA3ODc5NTI5MzIvaWdhMTQwMTMxNzU2OTkyOA=="
+set_global_assignment -entity "spi_altera_avalon_spi_181_aicge3i" -library "altera_avalon_spi_181" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly9kb2N1bWVudGF0aW9uLmFsdGVyYS5jb20vIy9saW5rL2hjbzE0MjE2OTgwNDIwODcvaGNvMTQyMTY5ODAxMzQwOA=="
+set_global_assignment -entity "spi" -library "spi" -name IP_COMPONENT_NAME "c3Bp"
+set_global_assignment -entity "spi" -library "spi" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "spi" -library "spi" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "spi" -library "spi" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "spi" -library "spi" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "spi" -library "spi" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "spi" -library "spi" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MA==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "spi" -library "spi" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::Q3ljbG9uZSAxMCBHWA==::QXV0byBERVZJQ0VfRkFNSUxZ"
+set_global_assignment -entity "spi" -library "spi" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::MTBDWDIyMFlGNzgwSTVH::QXV0byBERVZJQ0U="
+set_global_assignment -entity "spi" -library "spi" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::NQ==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
+set_global_assignment -entity "spi" -library "spi" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfQ0xPQ0tfUkFURQ==::LTE=::QXV0byBDTE9DS19SQVRF"
+set_global_assignment -entity "spi" -library "spi" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfQ0xPQ0tfRE9NQUlO::LTE=::QXV0byBDTE9DS19ET01BSU4="
+set_global_assignment -entity "spi" -library "spi" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfUkVTRVRfRE9NQUlO::LTE=::QXV0byBSRVNFVF9ET01BSU4="
+
+
+set_global_assignment -library "altera_avalon_spi_181" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_avalon_spi_181/synth/spi_altera_avalon_spi_181_aicge3i.v"]
+set_global_assignment -library "spi" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/spi.v"]
+
+
+set_global_assignment -entity "spi_altera_avalon_spi_181_aicge3i" -library "altera_avalon_spi_181" -name IP_TOOL_NAME "altera_avalon_spi"
+set_global_assignment -entity "spi_altera_avalon_spi_181_aicge3i" -library "altera_avalon_spi_181" -name IP_TOOL_VERSION "18.1"
+set_global_assignment -entity "spi_altera_avalon_spi_181_aicge3i" -library "altera_avalon_spi_181" -name IP_TOOL_ENV "QsysPrimePro"
+

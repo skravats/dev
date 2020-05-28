@@ -1,0 +1,162 @@
+Assembler report for Cyclone10GX_Demo
+Wed May 27 13:56:49 2020
+Quartus Prime Version 18.1.2 Build 277 02/12/2019 SJ Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Assembler Summary
+  3. Assembler Settings
+  4. Parallel Compilation
+  5. Assembler Messages
+  6. Assembler Encrypted IP Cores Summary
+  7. Assembler Generated Files
+  8. Assembler Device Options: C:/Git/ArrowESC/Cyclone10GX_Rev2_Demo/output_files/Cyclone10GX_Demo.sof
+  9. Assembler Device Options: C:/Git/ArrowESC/Cyclone10GX_Rev2_Demo/output_files/Cyclone10GX_Demo.pof
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++---------------------------------------------------------------+
+; Assembler Summary                                             ;
++-----------------------+---------------------------------------+
+; Assembler Status      ; Successful - Wed May 27 13:56:49 2020 ;
+; Revision Name         ; Cyclone10GX_Demo                      ;
+; Top-level Entity Name ; top                                   ;
+; Family                ; Cyclone 10 GX                         ;
+; Device                ; 10CX220YF780I5G                       ;
++-----------------------+---------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Assembler Settings                                                                                            ;
++-----------------------------------------------------------------------------+----------------+----------------+
+; Option                                                                      ; Setting        ; Default Value  ;
++-----------------------------------------------------------------------------+----------------+----------------+
+; Enable parallel Assembler and Timing Analyzer during compilation            ; On             ; On             ;
+; Enable compact report table                                                 ; Off            ; Off            ;
+; Allow RAM Retiming                                                          ; Off            ; Off            ;
+; Allow DSP Retiming                                                          ; Off            ; Off            ;
+; Use Checkered Pattern as Uninitialized RAM Content                          ; Off            ; Off            ;
+; Generate compressed bitstreams                                              ; On             ; On             ;
+; Compression mode                                                            ; Off            ; Off            ;
+; Clock source for configuration device                                       ; Internal       ; Internal       ;
+; Clock frequency of the configuration device                                 ; 10 MHz         ; 10 MHz         ;
+; Divide clock frequency by                                                   ; 1              ; 1              ;
+; Auto user code                                                              ; On             ; On             ;
+; Configuration device                                                        ; Auto           ; Auto           ;
+; Voltage output format                                                       ; Auto discovery ; Auto discovery ;
+; Translated voltage value unit                                               ; Volts          ; Volts          ;
+; Configuration device auto user code                                         ; Off            ; Off            ;
+; Generate Tabular Text File (.ttf) For Target Device                         ; Off            ; Off            ;
+; Generate Raw Binary File (.rbf) For Target Device                           ; Off            ; Off            ;
+; Generate Partial Reconfiguration Raw Binary File (.rbf)                     ; Off            ; Off            ;
+; Generate Hexadecimal (Intel-Format) Output File (.hexout) for Target Device ; Off            ; Off            ;
+; Hexadecimal Output File start address                                       ; 0              ; 0              ;
+; Hexadecimal Output File count direction                                     ; Up             ; Up             ;
+; Release clears before tri-states                                            ; Off            ; Off            ;
+; Auto-restart configuration after error                                      ; On             ; On             ;
+; Enable OCT_DONE                                                             ; Off            ; Off            ;
+; Enable autonomous PCIe HIP mode                                             ; Off            ; Off            ;
+; Generate Serial Vector Format File (.svf) for Target Device                 ; Off            ; Off            ;
+; Generate a JEDEC STAPL Format File (.jam) for Target Device                 ; Off            ; Off            ;
+; Generate a compressed Jam STAPL Byte Code 2.0 File (.jbc) for Target Device ; Off            ; Off            ;
+; Generate a compressed Jam STAPL Byte Code 2.0 File (.jbc) for Target Device ; On             ; On             ;
+; Enables the HPS early release of HPS IO                                     ; Off            ; Off            ;
++-----------------------------------------------------------------------------+----------------+----------------+
+
+
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 4      ;
+; Maximum used               ; 4      ;
++----------------------------+--------+
+
+
++--------------------+
+; Assembler Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Assembler
+    Info: Version 18.1.2 Build 277 02/12/2019 SJ Pro Edition
+    Info: Processing started: Wed May 27 13:56:15 2020
+Info: Command: quartus_asm --read_settings_files=on --write_settings_files=off Cyclone10GX_Demo -c Cyclone10GX_Demo
+Info (16677): Loading final database
+Info (16734): Loading "final" snapshot for partition "root_partition".
+Info (16734): Loading "final" snapshot for partition "auto_fab_0".
+Info (16678): Successfully loaded final database: elapsed time is 00:00:08
+Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 7418 megabytes
+    Info: Processing ended: Wed May 27 13:56:50 2020
+    Info: Elapsed time: 00:00:35
+
+
++-----------------------------------------------------------+
+; Assembler Encrypted IP Cores Summary                      ;
++--------+-----------------------------------+--------------+
+; Vendor ; IP Core Name                      ; License Type ;
++--------+-----------------------------------+--------------+
+; Altera ; Nios II Processor (6AF7 00A2)     ; Licensed     ;
+; Altera ; Triple-Speed Ethernet (6AF7 00BD) ; Licensed     ;
+; Altera ; Signal Tap (6AF7 BCE1)            ; Licensed     ;
+; Altera ; Signal Tap (6AF7 BCEC)            ; Licensed     ;
++--------+-----------------------------------+--------------+
+
+
++-------------------------------------------------------------------------+
+; Assembler Generated Files                                               ;
++-------------------------------------------------------------------------+
+; File Name                                                               ;
++-------------------------------------------------------------------------+
+; C:/Git/ArrowESC/Cyclone10GX_Rev2_Demo/output_files/Cyclone10GX_Demo.sof ;
+; C:/Git/ArrowESC/Cyclone10GX_Rev2_Demo/output_files/Cyclone10GX_Demo.pof ;
++-------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Git/ArrowESC/Cyclone10GX_Rev2_Demo/output_files/Cyclone10GX_Demo.sof ;
++----------------+----------------------------------------------------------------------------------+
+; Option         ; Setting                                                                          ;
++----------------+----------------------------------------------------------------------------------+
+; JTAG usercode  ; 0xFFFFFFFF                                                                       ;
+; Checksum       ; 0x0A09A91F                                                                       ;
+; Design hash    ; 69cf5bc7e8bdcf2ae208215b74b0246c                                                 ;
++----------------+----------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Git/ArrowESC/Cyclone10GX_Rev2_Demo/output_files/Cyclone10GX_Demo.pof ;
++--------------------+------------------------------------------------------------------------------+
+; Option             ; Setting                                                                      ;
++--------------------+------------------------------------------------------------------------------+
+; JTAG usercode      ; 0x00000000                                                                   ;
+; Checksum           ; 0xC1677666                                                                   ;
+; Compression Ratio  ; 2                                                                            ;
++--------------------+------------------------------------------------------------------------------+
+
+

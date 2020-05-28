@@ -1,0 +1,31 @@
+	component interlaken_phy is
+		port (
+			clk125_clk                           : in  std_logic                     := 'X';             -- clk
+			phy_data_ctrl_csr_s0_address         : in  std_logic_vector(7 downto 0)  := (others => 'X'); -- address
+			phy_data_ctrl_csr_s0_read            : in  std_logic                     := 'X';             -- read
+			phy_data_ctrl_csr_s0_readdata        : out std_logic_vector(31 downto 0);                    -- readdata
+			phy_data_ctrl_csr_s0_readdatavalid   : out std_logic;                                        -- readdatavalid
+			phy_data_ctrl_csr_s0_write           : in  std_logic                     := 'X';             -- write
+			phy_data_ctrl_csr_s0_writedata       : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
+			phy_data_ctrl_csr_s0_waitrequest     : out std_logic;                                        -- waitrequest
+			phy_data_ctrl_m0_address             : out std_logic_vector(31 downto 0);                    -- address
+			phy_data_ctrl_m0_read                : out std_logic;                                        -- read
+			phy_data_ctrl_m0_waitrequest         : in  std_logic                     := 'X';             -- waitrequest
+			phy_data_ctrl_m0_readdata            : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			phy_data_ctrl_m0_readdatavalid       : in  std_logic                     := 'X';             -- readdatavalid
+			phy_data_ctrl_m0_write               : out std_logic;                                        -- write
+			phy_data_ctrl_m0_writedata           : out std_logic_vector(31 downto 0);                    -- writedata
+			phy_data_irq_rx_irq                  : out std_logic;                                        -- irq
+			phy_data_irq_tx_irq                  : out std_logic;                                        -- irq
+			tx_serial_data_tx_serial_data        : out std_logic_vector(0 downto 0);                     -- tx_serial_data
+			rx_serial_data_rx_serial_data        : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- rx_serial_data
+			reset_reset                          : in  std_logic                     := 'X';             -- reset
+			serial_clock_reconfig_s0_write       : in  std_logic                     := 'X';             -- write
+			serial_clock_reconfig_s0_read        : in  std_logic                     := 'X';             -- read
+			serial_clock_reconfig_s0_address     : in  std_logic_vector(9 downto 0)  := (others => 'X'); -- address
+			serial_clock_reconfig_s0_writedata   : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
+			serial_clock_reconfig_s0_readdata    : out std_logic_vector(31 downto 0);                    -- readdata
+			serial_clock_reconfig_s0_waitrequest : out std_logic                                         -- waitrequest
+		);
+	end component interlaken_phy;
+

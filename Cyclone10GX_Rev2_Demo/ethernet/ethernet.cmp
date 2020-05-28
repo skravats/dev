@@ -1,0 +1,66 @@
+	component ethernet is
+		port (
+			clk_in_clk         : in  std_logic                      := 'X';             -- clk
+			avm_waitrequest    : in  std_logic                      := 'X';             -- waitrequest
+			avm_readdata       : in  std_logic_vector(255 downto 0) := (others => 'X'); -- readdata
+			avm_readdatavalid  : in  std_logic                      := 'X';             -- readdatavalid
+			avm_response       : in  std_logic_vector(1 downto 0)   := (others => 'X'); -- response
+			avm_burstcount     : out std_logic_vector(7 downto 0);                      -- burstcount
+			avm_writedata      : out std_logic_vector(255 downto 0);                    -- writedata
+			avm_address        : out std_logic_vector(30 downto 0);                     -- address
+			avm_write          : out std_logic;                                         -- write
+			avm_read           : out std_logic;                                         -- read
+			avm_byteenable     : out std_logic_vector(31 downto 0);                     -- byteenable
+			avm_debugaccess    : out std_logic;                                         -- debugaccess
+			dma_rx_irq_irq     : out std_logic;                                         -- irq
+			dma_tx_irq_irq     : out std_logic;                                         -- irq
+			tx_clock_clk       : in  std_logic                      := 'X';             -- clk
+			misc_xon_gen       : in  std_logic                      := 'X';             -- xon_gen
+			misc_xoff_gen      : in  std_logic                      := 'X';             -- xoff_gen
+			misc_magic_wakeup  : out std_logic;                                         -- magic_wakeup
+			misc_magic_sleep_n : in  std_logic                      := 'X';             -- magic_sleep_n
+			misc_ff_tx_crc_fwd : in  std_logic                      := 'X';             -- ff_tx_crc_fwd
+			misc_ff_tx_septy   : out std_logic;                                         -- ff_tx_septy
+			misc_tx_ff_uflow   : out std_logic;                                         -- tx_ff_uflow
+			misc_ff_tx_a_full  : out std_logic;                                         -- ff_tx_a_full
+			misc_ff_tx_a_empty : out std_logic;                                         -- ff_tx_a_empty
+			misc_rx_err_stat   : out std_logic_vector(17 downto 0);                     -- rx_err_stat
+			misc_rx_frm_type   : out std_logic_vector(3 downto 0);                      -- rx_frm_type
+			misc_ff_rx_dsav    : out std_logic;                                         -- ff_rx_dsav
+			misc_ff_rx_a_full  : out std_logic;                                         -- ff_rx_a_full
+			misc_ff_rx_a_empty : out std_logic;                                         -- ff_rx_a_empty
+			mdio_mdc           : out std_logic;                                         -- mdc
+			mdio_mdio_in       : in  std_logic                      := 'X';             -- mdio_in
+			mdio_mdio_out      : out std_logic;                                         -- mdio_out
+			mdio_mdio_oen      : out std_logic;                                         -- mdio_oen
+			gmii_gmii_rx_d     : in  std_logic_vector(7 downto 0)   := (others => 'X'); -- gmii_rx_d
+			gmii_gmii_rx_dv    : in  std_logic                      := 'X';             -- gmii_rx_dv
+			gmii_gmii_rx_err   : in  std_logic                      := 'X';             -- gmii_rx_err
+			gmii_gmii_tx_d     : out std_logic_vector(7 downto 0);                      -- gmii_tx_d
+			gmii_gmii_tx_en    : out std_logic;                                         -- gmii_tx_en
+			gmii_gmii_tx_err   : out std_logic;                                         -- gmii_tx_err
+			mii_mii_rx_d       : in  std_logic_vector(3 downto 0)   := (others => 'X'); -- mii_rx_d
+			mii_mii_rx_dv      : in  std_logic                      := 'X';             -- mii_rx_dv
+			mii_mii_rx_err     : in  std_logic                      := 'X';             -- mii_rx_err
+			mii_mii_tx_d       : out std_logic_vector(3 downto 0);                      -- mii_tx_d
+			mii_mii_tx_en      : out std_logic;                                         -- mii_tx_en
+			mii_mii_tx_err     : out std_logic;                                         -- mii_tx_err
+			status_set_10      : in  std_logic                      := 'X';             -- set_10
+			status_set_1000    : in  std_logic                      := 'X';             -- set_1000
+			status_eth_mode    : out std_logic;                                         -- eth_mode
+			status_ena_10      : out std_logic;                                         -- ena_10
+			rx_clock_clk       : in  std_logic                      := 'X';             -- clk
+			avs_waitrequest    : out std_logic;                                         -- waitrequest
+			avs_readdata       : out std_logic_vector(31 downto 0);                     -- readdata
+			avs_readdatavalid  : out std_logic;                                         -- readdatavalid
+			avs_burstcount     : in  std_logic_vector(4 downto 0)   := (others => 'X'); -- burstcount
+			avs_writedata      : in  std_logic_vector(31 downto 0)  := (others => 'X'); -- writedata
+			avs_address        : in  std_logic_vector(10 downto 0)  := (others => 'X'); -- address
+			avs_write          : in  std_logic                      := 'X';             -- write
+			avs_read           : in  std_logic                      := 'X';             -- read
+			avs_byteenable     : in  std_logic_vector(3 downto 0)   := (others => 'X'); -- byteenable
+			avs_debugaccess    : in  std_logic                      := 'X';             -- debugaccess
+			rst_in_reset_n     : in  std_logic                      := 'X'              -- reset_n
+		);
+	end component ethernet;
+

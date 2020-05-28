@@ -57,7 +57,7 @@ source $ad_hdl_dir/library/scripts/adi_ip_alt.tcl
 
 ad_ip_create jesd204_phy "ADI JESD204 PHY"
 set_module_property COMPOSITION_CALLBACK jesd204_phy_composition_callback
-set_module_property INTERNAL true
+#set_module_property INTERNAL true
 
 # parameters
 
@@ -90,8 +90,8 @@ proc jesd204_phy_composition_callback {} {
   set_interface_property link_reset EXPORT_OF link_clock.clk_in_reset
 
   add_instance native_phy altera_xcvr_native_a10
-  set_instance_property native_phy SUPPRESS_ALL_WARNINGS true
-  set_instance_property native_phy SUPPRESS_ALL_INFO_MESSAGES true
+#  set_instance_property native_phy SUPPRESS_ALL_WARNINGS true
+#  set_instance_property native_phy SUPPRESS_ALL_INFO_MESSAGES true
   if {$soft_pcs} {
     set_instance_parameter_value native_phy {protocol_mode} "basic_enh"
   } else {

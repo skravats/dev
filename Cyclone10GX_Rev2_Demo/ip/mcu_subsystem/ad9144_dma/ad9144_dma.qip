@@ -1,0 +1,112 @@
+set_global_assignment -entity "ad9144_dma" -library "ad9144_dma" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "ad9144_dma" -library "ad9144_dma" -name IP_TOOL_VERSION "18.1.2"
+set_global_assignment -entity "ad9144_dma" -library "ad9144_dma" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "ad9144_dma" -library "ad9144_dma" -name IP_TOOL_VENDOR_NAME "Altera Corporation"
+set_global_assignment -entity "ad9144_dma" -library "ad9144_dma" -name IP_TOP_LEVEL_COMPONENT_NAME "axi_dmac"
+set_global_assignment -library "ad9144_dma" -name SOPCINFO_FILE [file join $::quartus(qip_path) "ad9144_dma.sopcinfo"]
+set_global_assignment -entity "ad9144_dma" -library "ad9144_dma" -name SLD_INFO "QSYS_NAME ad9144_dma HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "ad9144_dma" -name MISC_FILE [file join $::quartus(qip_path) "ad9144_dma.cmp"]
+set_global_assignment -entity "ad9144_dma" -library "ad9144_dma" -name IP_TARGETED_DEVICE_FAMILY "Cyclone 10 GX"
+set_global_assignment -entity "ad9144_dma" -library "ad9144_dma" -name IP_GENERATED_DEVICE_FAMILY "{Cyclone 10 GX}"
+set_global_assignment -entity "ad9144_dma" -library "ad9144_dma" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "ad9144_dma" -name MISC_FILE [file join $::quartus(qip_path) "../ad9144_dma.ip"]
+
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_NAME "YXhpX2RtYWM="
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_DISPLAY_NAME "QVhJIERNQSBDb250cm9sbGVy"
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_DESCRIPTION "QVhJIERNQSBDb250cm9sbGVy"
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_PARAMETER "SUQ=::MA==::Q29yZSBJRA=="
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_PARAMETER "RE1BX0xFTkdUSF9XSURUSA==::MjQ=::RE1BIFRyYW5zZmVyIExlbmd0aCBSZWdpc3RlciBXaWR0aA=="
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_PARAMETER "RklGT19TSVpF::MTY=::U3RvcmUtYW5kLUZvcndhcmQgTWVtb3J5IFNpemUgKEluIEJ1cnN0cyk="
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_PARAMETER "TUFYX0JZVEVTX1BFUl9CVVJTVA==::MTI4::TWF4aW11bSBieXRlcyBwZXIgYnVyc3Q="
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_PARAMETER "RE1BX1RZUEVfU1JD::MA==::VHlwZQ=="
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_PARAMETER "RE1BX0FYSV9QUk9UT0NPTF9TUkM=::MA==::QVhJIFByb3RvY29s"
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_PARAMETER "RE1BX0RBVEFfV0lEVEhfU1JD::MTI4::QnVzIFdpZHRo"
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_PARAMETER "VVNFX1RMQVNUX1NSQw==::MA==::VXNlIFRMQVNU"
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_PARAMETER "QVhJX1NMSUNFX1NSQw==::MA==::SW5zZXJ0IFJlZ2lzdGVyIFNsaWNl"
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_PARAMETER "RE1BX1RZUEVfREVTVA==::MQ==::VHlwZQ=="
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_PARAMETER "RE1BX0FYSV9QUk9UT0NPTF9ERVNU::MQ==::QVhJIFByb3RvY29s"
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_PARAMETER "RE1BX0RBVEFfV0lEVEhfREVTVA==::MTI4::QnVzIFdpZHRo"
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_PARAMETER "VVNFX1RMQVNUX0RFU1Q=::MQ==::VXNlIFRMQVNU"
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_PARAMETER "QVhJX1NMSUNFX0RFU1Q=::MA==::SW5zZXJ0IFJlZ2lzdGVyIFNsaWNl"
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_PARAMETER "Q1lDTElD::MA==::Q3ljbGljIFRyYW5zZmVyIFN1cHBvcnQ="
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_PARAMETER "RE1BXzJEX1RSQU5TRkVS::MA==::MkQgVHJhbnNmZXIgU3VwcG9ydA=="
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_PARAMETER "U1lOQ19UUkFOU0ZFUl9TVEFSVA==::MA==::VHJhbnNmZXIgU3RhcnQgU3luY2hyb25pemF0aW9uIFN1cHBvcnQ="
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_PARAMETER "QVVUT19BU1lOQ19DTEs=::dHJ1ZQ==::QXV0b21hdGljYWxseSBEZXRlY3QgQ2xvY2sgRG9tYWlucw=="
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_PARAMETER "QVNZTkNfQ0xLX1JFUV9TUkNfTUFOVUFM::MQ==::UmVxdWVzdCBhbmQgU291cmNlIENsb2NrIEFzeW5jaHJvbm91cw=="
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_PARAMETER "QVNZTkNfQ0xLX1JFUV9TUkM=::MA==::UmVxdWVzdCBhbmQgU291cmNlIENsb2NrIEFzeW5jaHJvbm91cw=="
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_PARAMETER "QVNZTkNfQ0xLX1NSQ19ERVNUX01BTlVBTA==::MQ==::U291cmNlIGFuZCBEZXN0aW5hdGlvbiBDbG9jayBBc3luY2hyb25vdXM="
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_PARAMETER "QVNZTkNfQ0xLX1NSQ19ERVNU::MA==::U291cmNlIGFuZCBEZXN0aW5hdGlvbiBDbG9jayBBc3luY2hyb25vdXM="
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_PARAMETER "QVNZTkNfQ0xLX0RFU1RfUkVRX01BTlVBTA==::MQ==::RGVzdGluYXRpb24gYW5kIFJlcXVlc3QgQ2xvY2sgQXN5bmNocm9ub3Vz"
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_PARAMETER "QVNZTkNfQ0xLX0RFU1RfUkVR::MA==::RGVzdGluYXRpb24gYW5kIFJlcXVlc3QgQ2xvY2sgQXN5bmNocm9ub3Vz"
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_PARAMETER "Q0xLX0RPTUFJTl9SRVE=::NA==::Q0xLX0RPTUFJTl9SRVE="
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_PARAMETER "Q0xLX0RPTUFJTl9TUkNfQVhJ::NA==::Q0xLX0RPTUFJTl9TUkNfQVhJ"
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_PARAMETER "Q0xLX0RPTUFJTl9TUkNfU0FYSQ==::MA==::Q0xLX0RPTUFJTl9TUkNfU0FYSQ=="
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_PARAMETER "Q0xLX0RPTUFJTl9TUkNfRklGTw==::MA==::Q0xLX0RPTUFJTl9TUkNfRklGTw=="
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_PARAMETER "Q0xLX0RPTUFJTl9ERVNUX0FYSQ==::MA==::Q0xLX0RPTUFJTl9ERVNUX0FYSQ=="
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_PARAMETER "Q0xLX0RPTUFJTl9ERVNUX1NBWEk=::NA==::Q0xLX0RPTUFJTl9ERVNUX1NBWEk="
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_PARAMETER "Q0xLX0RPTUFJTl9ERVNUX0ZJRk8=::MA==::Q0xLX0RPTUFJTl9ERVNUX0ZJRk8="
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_PARAMETER "RElTQUJMRV9ERUJVR19SRUdJU1RFUlM=::MA==::RGlzYWJsZSBkZWJ1ZyByZWdpc3RlcnM="
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_PARAMETER "RU5BQkxFX0RJQUdOT1NUSUNTX0lG::MA==::RW5hYmxlIERpYWdub3N0aWNzIEludGVyZmFjZQ=="
+set_global_assignment -entity "axi_dmac" -library "axi_dmac_10" -name IP_COMPONENT_GROUP "QW5hbG9nIERldmljZXM="
+set_global_assignment -entity "ad9144_dma" -library "ad9144_dma" -name IP_COMPONENT_NAME "YWQ5MTQ0X2RtYQ=="
+set_global_assignment -entity "ad9144_dma" -library "ad9144_dma" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "ad9144_dma" -library "ad9144_dma" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "ad9144_dma" -library "ad9144_dma" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "ad9144_dma" -library "ad9144_dma" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "ad9144_dma" -library "ad9144_dma" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "ad9144_dma" -library "ad9144_dma" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MA==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "ad9144_dma" -library "ad9144_dma" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::Q3ljbG9uZSAxMCBHWA==::QXV0byBERVZJQ0VfRkFNSUxZ"
+set_global_assignment -entity "ad9144_dma" -library "ad9144_dma" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::MTBDWDIyMFlGNzgwSTVH::QXV0byBERVZJQ0U="
+set_global_assignment -entity "ad9144_dma" -library "ad9144_dma" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::NQ==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
+set_global_assignment -entity "ad9144_dma" -library "ad9144_dma" -name IP_COMPONENT_PARAMETER "QVVUT19TX0FYSV9DTE9DS19DTE9DS19SQVRF::LTE=::QXV0byBDTE9DS19SQVRF"
+set_global_assignment -entity "ad9144_dma" -library "ad9144_dma" -name IP_COMPONENT_PARAMETER "QVVUT19TX0FYSV9DTE9DS19DTE9DS19ET01BSU4=::LTE=::QXV0byBDTE9DS19ET01BSU4="
+set_global_assignment -entity "ad9144_dma" -library "ad9144_dma" -name IP_COMPONENT_PARAMETER "QVVUT19TX0FYSV9DTE9DS19SRVNFVF9ET01BSU4=::LTE=::QXV0byBSRVNFVF9ET01BSU4="
+set_global_assignment -entity "ad9144_dma" -library "ad9144_dma" -name IP_COMPONENT_PARAMETER "QVVUT19NX1NSQ19BWElfQ0xPQ0tfQ0xPQ0tfUkFURQ==::LTE=::QXV0byBDTE9DS19SQVRF"
+set_global_assignment -entity "ad9144_dma" -library "ad9144_dma" -name IP_COMPONENT_PARAMETER "QVVUT19NX1NSQ19BWElfQ0xPQ0tfQ0xPQ0tfRE9NQUlO::LTE=::QXV0byBDTE9DS19ET01BSU4="
+set_global_assignment -entity "ad9144_dma" -library "ad9144_dma" -name IP_COMPONENT_PARAMETER "QVVUT19NX1NSQ19BWElfQ0xPQ0tfUkVTRVRfRE9NQUlO::LTE=::QXV0byBSRVNFVF9ET01BSU4="
+set_global_assignment -entity "ad9144_dma" -library "ad9144_dma" -name IP_COMPONENT_PARAMETER "QVVUT19JRl9NX0FYSVNfQUNMS19DTE9DS19SQVRF::LTE=::QXV0byBDTE9DS19SQVRF"
+set_global_assignment -entity "ad9144_dma" -library "ad9144_dma" -name IP_COMPONENT_PARAMETER "QVVUT19JRl9NX0FYSVNfQUNMS19DTE9DS19ET01BSU4=::LTE=::QXV0byBDTE9DS19ET01BSU4="
+set_global_assignment -entity "ad9144_dma" -library "ad9144_dma" -name IP_COMPONENT_PARAMETER "QVVUT19JRl9NX0FYSVNfQUNMS19SRVNFVF9ET01BSU4=::LTE=::QXV0byBSRVNFVF9ET01BSU4="
+set_global_assignment -entity "ad9144_dma" -library "ad9144_dma" -name IP_COMPONENT_PARAMETER "QVVUT19NX1NSQ19BWElfQUREUkVTU19XSURUSA==::LTE=::QXV0byBBRERSRVNTX1dJRFRI"
+
+set_instance_assignment -name MESSAGE_DISABLE 276027 -entity axi_dmac_burst_memory
+
+set_global_assignment -library "axi_dmac_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_dmac_10/synth/sync_bits.v"]
+set_global_assignment -library "axi_dmac_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_dmac_10/synth/sync_event.v"]
+set_global_assignment -library "axi_dmac_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_dmac_10/synth/up_axi.v"]
+set_global_assignment -library "axi_dmac_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_dmac_10/synth/util_axis_fifo.v"]
+set_global_assignment -library "axi_dmac_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_dmac_10/synth/address_sync.v"]
+set_global_assignment -library "axi_dmac_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_dmac_10/synth/ad_mem.v"]
+set_global_assignment -library "axi_dmac_10" -name MISC_FILE [file join $::quartus(qip_path) "axi_dmac_10/synth/inc_id.vh"]
+set_global_assignment -library "axi_dmac_10" -name MISC_FILE [file join $::quartus(qip_path) "axi_dmac_10/synth/resp.vh"]
+set_global_assignment -library "axi_dmac_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_dmac_10/synth/axi_dmac_burst_memory.v"]
+set_global_assignment -library "axi_dmac_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_dmac_10/synth/axi_dmac_regmap.v"]
+set_global_assignment -library "axi_dmac_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_dmac_10/synth/axi_dmac_regmap_request.v"]
+set_global_assignment -library "axi_dmac_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_dmac_10/synth/axi_dmac_reset_manager.v"]
+set_global_assignment -library "axi_dmac_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_dmac_10/synth/axi_dmac_resize_dest.v"]
+set_global_assignment -library "axi_dmac_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_dmac_10/synth/axi_dmac_resize_src.v"]
+set_global_assignment -library "axi_dmac_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_dmac_10/synth/axi_dmac_response_manager.v"]
+set_global_assignment -library "axi_dmac_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_dmac_10/synth/axi_dmac_transfer.v"]
+set_global_assignment -library "axi_dmac_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_dmac_10/synth/address_generator.v"]
+set_global_assignment -library "axi_dmac_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_dmac_10/synth/data_mover.v"]
+set_global_assignment -library "axi_dmac_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_dmac_10/synth/request_arb.v"]
+set_global_assignment -library "axi_dmac_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_dmac_10/synth/request_generator.v"]
+set_global_assignment -library "axi_dmac_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_dmac_10/synth/response_handler.v"]
+set_global_assignment -library "axi_dmac_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_dmac_10/synth/axi_register_slice.v"]
+set_global_assignment -library "axi_dmac_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_dmac_10/synth/2d_transfer.v"]
+set_global_assignment -library "axi_dmac_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_dmac_10/synth/dest_axi_mm.v"]
+set_global_assignment -library "axi_dmac_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_dmac_10/synth/dest_axi_stream.v"]
+set_global_assignment -library "axi_dmac_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_dmac_10/synth/dest_fifo_inf.v"]
+set_global_assignment -library "axi_dmac_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_dmac_10/synth/src_axi_mm.v"]
+set_global_assignment -library "axi_dmac_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_dmac_10/synth/src_axi_stream.v"]
+set_global_assignment -library "axi_dmac_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_dmac_10/synth/src_fifo_inf.v"]
+set_global_assignment -library "axi_dmac_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_dmac_10/synth/splitter.v"]
+set_global_assignment -library "axi_dmac_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_dmac_10/synth/response_generator.v"]
+set_global_assignment -library "axi_dmac_10" -name VERILOG_FILE [file join $::quartus(qip_path) "axi_dmac_10/synth/axi_dmac.v"]
+set_global_assignment -library "axi_dmac_10" -name SDC_FILE [file join $::quartus(qip_path) "axi_dmac_10/synth/axi_dmac_constr.sdc"]
+set_global_assignment -library "ad9144_dma" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/ad9144_dma.v"]
+

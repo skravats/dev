@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Jul 28, 2019 1:21:46 AM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1564269706552</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Feb 20, 2020 12:07:21 AM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1582153641194</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Developer\fpga\Cyclone10GX_SoM_MAX10\software\C10GX_SoM_Max10_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\mcu_system.sopcinfo</SopcDesignFile>

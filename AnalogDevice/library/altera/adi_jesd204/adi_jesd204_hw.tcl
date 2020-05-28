@@ -122,17 +122,38 @@ ad_ip_parameter SOFT_PCS BOOLEAN true false { \
 }
 
 proc create_phy_reset_control {tx num_of_lanes sysclk_frequency} {
-  add_instance phy_reset_control altera_xcvr_reset_control
-  set_instance_property phy_reset_control SUPPRESS_ALL_WARNINGS true
+
+   set device_family [get_parameter_value "DEVICE_FAMILY"]
+
+   #  add_instance signal_const const_signals
+
+   if {$device_family == "Arria 10" || $device_family == "Cyclone 10 GX"} {
+      add_instance phy_reset_control altera_xcvr_reset_control
+	  set_instance_parameter_value phy_reset_control {SYNCHRONIZE_RESET} {0}
+   } else {
+      if {$device_family == "Stratix 10"} {
+	     add_instance phy_reset_control altera_xcvr_reset_control_s10
+	  } else {
+	     send_message error "Only Arria 10, Cyclone 10 GX and Stratix 10 are supported."
+	  }
+   }
+   
+#  set_instance_property phy_reset_control SUPPRESS_ALL_WARNINGS true
   set_instance_parameter_value phy_reset_control {CHANNELS} $num_of_lanes
   set_instance_parameter_value phy_reset_control {SYS_CLK_IN_MHZ} $sysclk_frequency
   set_instance_parameter_value phy_reset_control {TX_PLL_ENABLE} $tx
   set_instance_parameter_value phy_reset_control {TX_ENABLE} $tx
   set_instance_parameter_value phy_reset_control {RX_ENABLE} [expr !$tx]
-  set_instance_parameter_value phy_reset_control {SYNCHRONIZE_RESET} {0}
+ 
+# R. Gisko 
+#  set_instance_parameter_value phy_reset_control {SYNCHRONIZE_RESET} {0}
+  
   add_connection sys_clock.clk phy_reset_control.clock
   add_connection link_reset.out_reset phy_reset_control.reset
   add_connection sys_clock.clk_reset phy_reset_control.reset
+
+#  add_connection signal_const.low phy_reset_control.pll_select
+
 
   if {$tx} {
     set_instance_parameter_value phy_reset_control {T_PLL_POWERDOWN} {1000}
@@ -141,6 +162,11 @@ proc create_phy_reset_control {tx num_of_lanes sysclk_frequency} {
     set_instance_parameter_value phy_reset_control {T_TX_DIGITALRESET} {70000}
 
     add_connection phy_reset_control.tx_ready axi_xcvr.ready
+
+    add_interface pll_select conduit end
+    set_interface_property pll_select EXPORT_OF phy_reset_control.pll_select
+
+
   } else {
     set_instance_parameter_value phy_reset_control {T_RX_ANALOGRESET} {70000}
     set_instance_parameter_value phy_reset_control {T_RX_DIGITALRESET} {4000}
@@ -151,7 +177,10 @@ proc create_phy_reset_control {tx num_of_lanes sysclk_frequency} {
 
 proc create_lane_pll {id pllclk_frequency refclk_frequency} {
   add_instance lane_pll altera_xcvr_atx_pll_a10
-  set_instance_property lane_pll SUPPRESS_ALL_INFO_MESSAGES true
+#  set_instance_property lane_pll SUPPRESS_ALL_INFO_MESSAGES true
+  set_instance_parameter_value lane_pll {refclk_cnt} {1}
+  set_instance_parameter_value lane_pll {refclk_index} {0}
+  set_instance_parameter_value lane_pll {rcfg_h_file_enable} {1}
   set_instance_parameter_value lane_pll {enable_pll_reconfig} {1}
   set_instance_parameter_value lane_pll {rcfg_separate_avmm_busy} {1}
   set_instance_parameter_value lane_pll {set_capability_reg_enable} {1}
@@ -204,7 +233,7 @@ proc jesd204_validate {{quiet false}} {
   set device [get_parameter_value "DEVICE"]
   set lane_rate [get_parameter_value "LANE_RATE"]
 
-  if {$device_family != "Arria 10" && $device_family != "Cyclone 10 GX"} {
+  if {$device_family != "Arria 10" && $device_family != "Cyclone 10 GX" && $device_family != "Stratix 10"} {
     if {!$quiet} {
       send_message error "Only Arria 10 and Cyclone 10 GX are supported."
     }
@@ -267,158 +296,350 @@ proc jesd204_compose {} {
   set_interface_property ref_clk EXPORT_OF ref_clock.in_clk
 
   # FIXME: In phase alignment mode manual re-calibration fails
-  add_instance link_pll altera_xcvr_fpll_a10
-  set_instance_property link_pll SUPPRESS_ALL_WARNINGS true
-  set_instance_property link_pll SUPPRESS_ALL_INFO_MESSAGES true
-  set_instance_parameter_value link_pll {gui_fpll_mode} {0}
-  set_instance_parameter_value link_pll {gui_reference_clock_frequency} $refclk_frequency
-  set_instance_parameter_value link_pll {gui_number_of_output_clocks} 1
-#  set_instance_parameter_value link_pll {gui_enable_phase_alignment} 1
-  set_instance_parameter_value link_pll {gui_desired_outclk0_frequency} $linkclk_frequency
-#  set pfdclk_frequency [get_instance_parameter_value link_pll gui_pfd_frequency]
-#  set_instance_parameter_value link_pll {gui_desired_outclk1_frequency} $pfdclk_frequency
-  set_instance_parameter_value link_pll {enable_pll_reconfig} {1}
-  set_instance_parameter_value link_pll {set_capability_reg_enable} {1}
-  set_instance_parameter_value link_pll {set_csr_soft_logic_enable} {1}
-  set_instance_parameter_value link_pll {rcfg_separate_avmm_busy} {1}
-  add_connection ref_clock.out_clk link_pll.pll_refclk0
+  if {$device_family == "Arria 10" || $device_family == "Cyclone 10 GX"} {
 
-  add_instance link_clock altera_clock_bridge
-  set_instance_parameter_value link_clock {EXPLICIT_CLOCK_RATE} [expr $linkclk_frequency*1000000]
-  set_instance_parameter_value link_clock {NUM_CLOCK_OUTPUTS} 2
-  add_connection link_pll.outclk0 link_clock.in_clk
-  add_interface link_clk clock source
-  set_interface_property link_clk EXPORT_OF link_clock.out_clk
+     add_instance link_pll altera_xcvr_fpll_a10
 
-  add_instance link_reset altera_reset_bridge
-  set_instance_parameter_value link_reset {NUM_RESET_OUTPUTS} 2
-  add_connection sys_clock.clk link_reset.clk
-  add_interface link_reset reset source
-  set_interface_property link_reset EXPORT_OF link_reset.out_reset_1
+	 #  set_instance_property link_pll SUPPRESS_ALL_WARNINGS true
+	 #  set_instance_property link_pll SUPPRESS_ALL_INFO_MESSAGES true
+	 set_instance_parameter_value link_pll {gui_fpll_mode} {0}
+	 set_instance_parameter_value link_pll {gui_reference_clock_frequency} $refclk_frequency
 
-  add_connection sys_clock.clk_reset link_pll.reconfig_reset0
-  add_connection sys_clock.clk link_pll.reconfig_clk0
+	# R. Gisko
+	#  set_instance_parameter_value link_pll {gui_number_of_output_clocks} 2
+	set_instance_parameter_value link_pll {gui_self_reset_enabled} 1
+	#  set_instance_parameter_value link_pll {gui_number_of_output_clocks} 1
 
-  add_instance axi_xcvr axi_adxcvr
-  set_instance_parameter_value axi_xcvr {ID} $id
-  set_instance_parameter_value axi_xcvr {TX_OR_RX_N} $tx_or_rx_n
-  set_instance_parameter_value axi_xcvr {NUM_OF_LANES} $num_of_lanes
+	#  set_instance_parameter_value link_pll {gui_enable_phase_alignment} 1
+	set_instance_parameter_value link_pll {gui_desired_outclk0_frequency} $linkclk_frequency
 
-  add_connection sys_clock.clk axi_xcvr.s_axi_clock
-  add_connection sys_clock.clk_reset axi_xcvr.s_axi_reset
-  add_connection axi_xcvr.if_up_rst link_reset.in_reset
-  add_connection link_pll.pll_locked axi_xcvr.core_pll_locked
+	# R. Gisko
+	set pfdclk_frequency [get_instance_parameter_value link_pll gui_pfd_frequency]
+	set_instance_parameter_value link_pll {gui_desired_outclk1_frequency} $pfdclk_frequency
 
-  add_interface link_management axi4lite slave
-  set_interface_property link_management EXPORT_OF axi_xcvr.s_axi
+	set_instance_parameter_value link_pll {enable_pll_reconfig} {1}
+	set_instance_parameter_value link_pll {set_capability_reg_enable} {1}
+	set_instance_parameter_value link_pll {set_csr_soft_logic_enable} {1}
+	set_instance_parameter_value link_pll {rcfg_separate_avmm_busy} {1}
+	add_connection ref_clock.out_clk link_pll.pll_refclk0
 
-  add_interface link_pll_reconfig avalon slave
-  set_interface_property link_pll_reconfig EXPORT_OF link_pll.reconfig_avmm0
+	add_instance link_clock altera_clock_bridge
+	set_instance_parameter_value link_clock {EXPLICIT_CLOCK_RATE} [expr $linkclk_frequency*1000000]
+	set_instance_parameter_value link_clock {NUM_CLOCK_OUTPUTS} 2
+	add_connection link_pll.outclk0 link_clock.in_clk
+	add_interface link_clk clock source
+	set_interface_property link_clk EXPORT_OF link_clock.out_clk
 
-  add_instance link_pll_reset_control altera_xcvr_reset_control
-  set_instance_parameter_value link_pll_reset_control {SYS_CLK_IN_MHZ} $sysclk_frequency
-  set_instance_parameter_value link_pll_reset_control {TX_PLL_ENABLE} {1}
-  set_instance_parameter_value link_pll_reset_control {T_PLL_POWERDOWN} {1000}
-  set_instance_parameter_value link_pll_reset_control {TX_ENABLE} {0}
-  set_instance_parameter_value link_pll_reset_control {RX_ENABLE} {0}
-  set_instance_parameter_value link_pll_reset_control {SYNCHRONIZE_RESET} {0}
-  add_connection sys_clock.clk link_pll_reset_control.clock
-  add_connection link_reset.out_reset link_pll_reset_control.reset
-  add_connection sys_clock.clk_reset link_pll_reset_control.reset
-  add_connection link_pll_reset_control.pll_powerdown link_pll.pll_powerdown
+	add_instance link_reset altera_reset_bridge
+	set_instance_parameter_value link_reset {NUM_RESET_OUTPUTS} 2
+	add_connection sys_clock.clk link_reset.clk
+	add_interface link_reset reset source
+	set_interface_property link_reset EXPORT_OF link_reset.out_reset_1
 
-  create_phy_reset_control $tx_or_rx_n $num_of_lanes $sysclk_frequency
+	add_connection sys_clock.clk_reset link_pll.reconfig_reset0
+	add_connection sys_clock.clk link_pll.reconfig_clk0
 
-  add_instance phy jesd204_phy
-  set_instance_parameter_value phy ID $id
-  set_instance_parameter_value phy SOFT_PCS $soft_pcs
-  set_instance_parameter_value phy TX_OR_RX_N $tx_or_rx_n
-  set_instance_parameter_value phy LANE_RATE $lane_rate
-  set_instance_parameter_value phy REFCLK_FREQUENCY $refclk_frequency
-  set_instance_parameter_value phy NUM_OF_LANES $num_of_lanes
-  set_instance_parameter_value phy REGISTER_INPUTS $register_inputs
-  set_instance_parameter_value phy LANE_INVERT $lane_invert
+	add_instance axi_xcvr axi_adxcvr
+	set_instance_parameter_value axi_xcvr {ID} $id
+	set_instance_parameter_value axi_xcvr {TX_OR_RX_N} $tx_or_rx_n
+	set_instance_parameter_value axi_xcvr {NUM_OF_LANES} $num_of_lanes
 
-  add_connection link_clock.out_clk_1 phy.link_clk
-  add_connection link_reset.out_reset phy.link_reset
-  add_connection sys_clock.clk phy.reconfig_clk
-  add_connection sys_clock.clk_reset phy.reconfig_reset
+	add_connection sys_clock.clk axi_xcvr.s_axi_clock
+	add_connection sys_clock.clk_reset axi_xcvr.s_axi_reset
+	add_connection axi_xcvr.if_up_rst link_reset.in_reset
+	add_connection link_pll.pll_locked axi_xcvr.core_pll_locked
 
-  if {$tx_or_rx_n} {
-    set tx_rx "tx"
-    set data_direction sink
-    set jesd204_intfs {config control ilas_config event status}
-    set phy_reset_intfs {analogreset digitalreset cal_busy}
+	add_interface link_management axi4lite slave
+	set_interface_property link_management EXPORT_OF axi_xcvr.s_axi
 
-    create_lane_pll $id $pllclk_frequency $refclk_frequency
-    add_connection lane_pll.tx_serial_clk phy.serial_clk
+	add_interface link_pll_reconfig avalon slave
+	set_interface_property link_pll_reconfig EXPORT_OF link_pll.reconfig_avmm0
+
+	add_instance link_pll_reset_control altera_xcvr_reset_control
+	set_instance_parameter_value link_pll_reset_control {SYS_CLK_IN_MHZ} $sysclk_frequency
+	set_instance_parameter_value link_pll_reset_control {TX_PLL_ENABLE} {1}
+	set_instance_parameter_value link_pll_reset_control {T_PLL_POWERDOWN} {1000}
+	set_instance_parameter_value link_pll_reset_control {TX_ENABLE} {0}
+	set_instance_parameter_value link_pll_reset_control {RX_ENABLE} {0}
+	set_instance_parameter_value link_pll_reset_control {SYNCHRONIZE_RESET} {0}
+	add_connection sys_clock.clk link_pll_reset_control.clock
+	add_connection link_reset.out_reset link_pll_reset_control.reset
+	add_connection sys_clock.clk_reset link_pll_reset_control.reset
+	add_connection link_pll_reset_control.pll_powerdown link_pll.pll_powerdown
+
+	create_phy_reset_control $tx_or_rx_n $num_of_lanes $sysclk_frequency
+
+	add_instance phy jesd204_phy
+	set_instance_parameter_value phy ID $id
+	set_instance_parameter_value phy SOFT_PCS $soft_pcs
+	set_instance_parameter_value phy TX_OR_RX_N $tx_or_rx_n
+	set_instance_parameter_value phy LANE_RATE $lane_rate
+	set_instance_parameter_value phy REFCLK_FREQUENCY $refclk_frequency
+	set_instance_parameter_value phy NUM_OF_LANES $num_of_lanes
+	set_instance_parameter_value phy REGISTER_INPUTS $register_inputs
+	set_instance_parameter_value phy LANE_INVERT $lane_invert
+
+	add_connection link_clock.out_clk_1 phy.link_clk
+	add_connection link_reset.out_reset phy.link_reset
+	add_connection sys_clock.clk phy.reconfig_clk
+	add_connection sys_clock.clk_reset phy.reconfig_reset
+
+	if {$tx_or_rx_n} {
+		set tx_rx "tx"
+		set data_direction sink
+		set jesd204_intfs {config control ilas_config event status}
+		set phy_reset_intfs {analogreset digitalreset cal_busy}
+
+		create_lane_pll $id $pllclk_frequency $refclk_frequency
+		add_connection lane_pll.tx_serial_clk phy.serial_clk
+	} else {
+		set tx_rx "rx"
+		set data_direction source
+		set jesd204_intfs {config ilas_config event status}
+		set phy_reset_intfs {analogreset digitalreset cal_busy is_lockedtodata}
+
+		add_connection ref_clock.out_clk phy.ref_clk
+	}
+
+	add_instance axi_jesd204_${tx_rx} axi_jesd204_${tx_rx}
+	set_instance_parameter_value axi_jesd204_${tx_rx} {NUM_LANES} $num_of_lanes
+
+	add_connection sys_clock.clk axi_jesd204_${tx_rx}.s_axi_clock
+	add_connection sys_clock.clk_reset axi_jesd204_${tx_rx}.s_axi_reset
+
+	add_connection link_clock.out_clk_1 axi_jesd204_${tx_rx}.core_clock
+	add_connection link_reset.out_reset axi_jesd204_${tx_rx}.core_reset_ext
+
+	add_instance jesd204_${tx_rx} jesd204_${tx_rx}
+	set_instance_parameter_value jesd204_${tx_rx} {NUM_LANES} $num_of_lanes
+
+	add_connection link_clock.out_clk_1 jesd204_${tx_rx}.clock
+	add_connection axi_jesd204_${tx_rx}.core_reset jesd204_${tx_rx}.reset
+
+	foreach intf $jesd204_intfs {
+		add_connection axi_jesd204_${tx_rx}.${intf} jesd204_${tx_rx}.${intf}
+	}
+
+	foreach intf $phy_reset_intfs {
+		add_connection phy_reset_control.${tx_rx}_${intf} phy.${intf}
+	}
+
+	set lane_map [regexp -all -inline {\S+} $lane_map]
+	for {set i 0} {$i < $num_of_lanes} {incr i} {
+		if {$lane_map != {}} {
+		  set j [lindex $lane_map $i]
+		} else {
+		  set j $i
+		}
+
+		add_connection jesd204_${tx_rx}.${tx_rx}_phy${j} phy.phy_${i}
+	}
+
+	for {set i 0} {$i < $num_of_lanes} {incr i} {
+		add_interface phy_reconfig_${i} avalon slave
+		set_interface_property phy_reconfig_${i} EXPORT_OF phy.reconfig_avmm_${i}
+	}
+
+	add_interface interrupt interrupt end
+	set_interface_property interrupt EXPORT_OF axi_jesd204_${tx_rx}.interrupt
+	add_interface link_reconfig axi4lite slave
+	set_interface_property link_reconfig EXPORT_OF axi_jesd204_${tx_rx}.s_axi
+
+	add_interface link_data avalon_streaming $data_direction
+	set_interface_property link_data EXPORT_OF jesd204_${tx_rx}.${tx_rx}_data
+
+	if {!$tx_or_rx_n} {
+		add_interface link_sof conduit end
+		set_interface_property link_sof EXPORT_OF jesd204_rx.rx_sof
+	}
+
+	add_interface sysref conduit end
+	set_interface_property sysref EXPORT_OF jesd204_${tx_rx}.sysref
+
+	add_interface sync conduit end
+	set_interface_property sync EXPORT_OF jesd204_${tx_rx}.sync
+
+	add_interface serial_data conduit end
+	set_interface_property serial_data EXPORT_OF phy.serial_data
+
+
   } else {
-    set tx_rx "rx"
-    set data_direction source
-    set jesd204_intfs {config ilas_config event status}
-    set phy_reset_intfs {analogreset digitalreset cal_busy is_lockedtodata}
+     if {$device_family == "Stratix 10"} {
 
-    add_connection ref_clock.out_clk phy.ref_clk
+	    add_instance link_pll altera_xcvr_fpll_s10_htile
+
+		#  set_instance_property link_pll SUPPRESS_ALL_WARNINGS true
+		#  set_instance_property link_pll SUPPRESS_ALL_INFO_MESSAGES true
+		#send_message warning "Freq: $refclk_frequency"
+
+#		set_instance_parameter_value link_pll {set_auto_reference_clock_frequency} $refclk_frequency
+#		set_instance_parameter_value link_pll {set_primary_use} {0}
+
+		# R. Gisko
+		#  set_instance_parameter_value link_pll {gui_number_of_output_clocks} 2
+#		set_instance_parameter_value link_pll {gui_self_reset_enabled} 1
+		#  set_instance_parameter_value link_pll {gui_number_of_output_clocks} 1
+
+		#  set_instance_parameter_value link_pll {gui_enable_phase_alignment} 1
+#		set_instance_parameter_value link_pll {gui_desired_outclk0_frequency} $linkclk_frequency
+
+		# R. Gisko
+#		set pfdclk_frequency [get_instance_parameter_value link_pll gui_pfd_frequency]
+#		set_instance_parameter_value link_pll {gui_desired_outclk1_frequency} $pfdclk_frequency
+#		set_instance_parameter_value link_pll {set_output_clock_frequency} $pfdclk_frequency
+
+		set_instance_parameter_value link_pll {rcfg_enable} {1}
+		set_instance_parameter_value link_pll {set_capability_reg_enable} {1}
+		set_instance_parameter_value link_pll {set_csr_soft_logic_enable} {1}
+		set_instance_parameter_value link_pll {rcfg_separate_avmm_busy} {1}
+		add_connection ref_clock.out_clk link_pll.pll_refclk0
+#
+  	    add_instance link_clock altera_clock_bridge
+	    set_instance_parameter_value link_clock {EXPLICIT_CLOCK_RATE} [expr $linkclk_frequency*1000000]
+	    set_instance_parameter_value link_clock {NUM_CLOCK_OUTPUTS} 2
+#	    add_connection link_pll.outclk0 link_clock.in_clk
+#		add_connection link_pll.tx_serial_clk link_clock.in_clk
+
+	    add_interface link_clk clock source
+	    set_interface_property link_clk EXPORT_OF link_clock.out_clk
+
+	    add_instance link_reset altera_reset_bridge
+	    set_instance_parameter_value link_reset {NUM_RESET_OUTPUTS} 2
+	    add_connection sys_clock.clk link_reset.clk
+	    add_interface link_reset reset source
+	    set_interface_property link_reset EXPORT_OF link_reset.out_reset_1
+ 
+	    add_connection sys_clock.clk_reset link_pll.reconfig_reset0
+	    add_connection sys_clock.clk link_pll.reconfig_clk0
+
+	    add_instance axi_xcvr axi_adxcvr
+	    set_instance_parameter_value axi_xcvr {ID} $id
+	    set_instance_parameter_value axi_xcvr {TX_OR_RX_N} $tx_or_rx_n
+	    set_instance_parameter_value axi_xcvr {NUM_OF_LANES} $num_of_lanes
+
+	    add_connection sys_clock.clk axi_xcvr.s_axi_clock
+	    add_connection sys_clock.clk_reset axi_xcvr.s_axi_reset
+	    add_connection axi_xcvr.if_up_rst link_reset.in_reset
+	    add_connection link_pll.pll_locked axi_xcvr.core_pll_locked
+
+	    add_interface link_management axi4lite slave
+	    set_interface_property link_management EXPORT_OF axi_xcvr.s_axi
+
+	    add_interface link_pll_reconfig avalon slave
+	    set_interface_property link_pll_reconfig EXPORT_OF link_pll.reconfig_avmm0
+
+	    add_instance link_pll_reset_control altera_xcvr_reset_control_s10
+	    set_instance_parameter_value link_pll_reset_control {SYS_CLK_IN_MHZ} $sysclk_frequency
+	    set_instance_parameter_value link_pll_reset_control {TX_PLL_ENABLE} {1}
+#	    set_instance_parameter_value link_pll_reset_control {T_PLL_POWERDOWN} {1000}
+	    set_instance_parameter_value link_pll_reset_control {TX_ENABLE} {0}
+	    set_instance_parameter_value link_pll_reset_control {RX_ENABLE} {0}
+#	    set_instance_parameter_value link_pll_reset_control {SYNCHRONIZE_RESET} {0}
+	    add_connection sys_clock.clk link_pll_reset_control.clock
+	    add_connection link_reset.out_reset link_pll_reset_control.reset
+	    add_connection sys_clock.clk_reset link_pll_reset_control.reset
+#	    add_connection link_pll_reset_control.pll_powerdown link_pll.pll_powerdown
+#
+	    create_phy_reset_control $tx_or_rx_n $num_of_lanes $sysclk_frequency
+#
+#	    add_instance phy jesd204_phy
+#	    set_instance_parameter_value phy ID $id
+#	    set_instance_parameter_value phy SOFT_PCS $soft_pcs
+#	    set_instance_parameter_value phy TX_OR_RX_N $tx_or_rx_n
+#	    set_instance_parameter_value phy LANE_RATE $lane_rate
+#	    set_instance_parameter_value phy REFCLK_FREQUENCY $refclk_frequency
+#	    set_instance_parameter_value phy NUM_OF_LANES $num_of_lanes
+#	    set_instance_parameter_value phy REGISTER_INPUTS $register_inputs
+#	    set_instance_parameter_value phy LANE_INVERT $lane_invert
+#
+#	    add_connection link_clock.out_clk_1 phy.link_clk
+#	    add_connection link_reset.out_reset phy.link_reset
+#	    add_connection sys_clock.clk phy.reconfig_clk
+#	    add_connection sys_clock.clk_reset phy.reconfig_reset
+#
+	    if {$tx_or_rx_n} {
+		  set tx_rx "tx"
+#		  set data_direction sink
+#		  set jesd204_intfs {config control ilas_config event status}
+#		  set phy_reset_intfs {analogreset digitalreset cal_busy}
+#
+#		  create_lane_pll $id $pllclk_frequency $refclk_frequency
+#		  add_connection lane_pll.tx_serial_clk phy.serial_clk
+	  } else {
+		  set tx_rx "rx"
+#		  set data_direction source
+#		  set jesd204_intfs {config ilas_config event status}
+#		  set phy_reset_intfs {analogreset digitalreset cal_busy is_lockedtodata}
+#
+#		  add_connection ref_clock.out_clk phy.ref_clk
+	  }
+#
+#	    add_instance axi_jesd204_${tx_rx} axi_jesd204_${tx_rx}
+#	    set_instance_parameter_value axi_jesd204_${tx_rx} {NUM_LANES} $num_of_lanes
+#
+#	    add_connection sys_clock.clk axi_jesd204_${tx_rx}.s_axi_clock
+#	    add_connection sys_clock.clk_reset axi_jesd204_${tx_rx}.s_axi_reset
+#
+#	    add_connection link_clock.out_clk_1 axi_jesd204_${tx_rx}.core_clock
+#	    add_connection link_reset.out_reset axi_jesd204_${tx_rx}.core_reset_ext
+#	    add_instance jesd204_${tx_rx} jesd204_${tx_rx}
+#	    set_instance_parameter_value jesd204_${tx_rx} {NUM_LANES} $num_of_lanes
+#
+#	    add_connection link_clock.out_clk_1 jesd204_${tx_rx}.clock
+#	    add_connection axi_jesd204_${tx_rx}.core_reset jesd204_${tx_rx}.reset
+#
+#	    foreach intf $jesd204_intfs {
+#		  add_connection axi_jesd204_${tx_rx}.${intf} jesd204_${tx_rx}.${intf}
+#	    }
+#
+#	    foreach intf $phy_reset_intfs {
+#		  add_connection phy_reset_control.${tx_rx}_${intf} phy.${intf}
+#	    }
+#
+#	    set lane_map [regexp -all -inline {\S+} $lane_map]
+#	    for {set i 0} {$i < $num_of_lanes} {incr i} {
+#		  if {$lane_map != {}} {
+#		    set j [lindex $lane_map $i]
+#		  } else {
+#		    set j $i
+#		  }
+#
+#		  add_connection jesd204_${tx_rx}.${tx_rx}_phy${j} phy.phy_${i}
+#	    }
+#
+#	    for {set i 0} {$i < $num_of_lanes} {incr i} {
+#		  add_interface phy_reconfig_${i} avalon slave
+#		  set_interface_property phy_reconfig_${i} EXPORT_OF phy.reconfig_avmm_${i}
+#	    }
+#
+#	    add_interface interrupt interrupt end
+#	    set_interface_property interrupt EXPORT_OF axi_jesd204_${tx_rx}.interrupt
+#	    add_interface link_reconfig axi4lite slave
+#	    set_interface_property link_reconfig EXPORT_OF axi_jesd204_${tx_rx}.s_axi
+#
+#	    add_interface link_data avalon_streaming $data_direction
+#	    set_interface_property link_data EXPORT_OF jesd204_${tx_rx}.${tx_rx}_data
+#
+#	    if {!$tx_or_rx_n} {
+#		  add_interface link_sof conduit end
+#		  set_interface_property link_sof EXPORT_OF jesd204_rx.rx_sof
+#	    }
+#
+#	    add_interface sysref conduit end
+#	    set_interface_property sysref EXPORT_OF jesd204_${tx_rx}.sysref
+#
+#	    add_interface sync conduit end
+#	    set_interface_property sync EXPORT_OF jesd204_${tx_rx}.sync
+#
+#	    add_interface serial_data conduit end
+#	    set_interface_property serial_data EXPORT_OF phy.serial_data
+
+
+	 } else {
+	    send_message error "Only Arria 10, Cyclone 10 GX and Stratix 10 are supported."
+	 }
   }
 
-  add_instance axi_jesd204_${tx_rx} axi_jesd204_${tx_rx}
-  set_instance_parameter_value axi_jesd204_${tx_rx} {NUM_LANES} $num_of_lanes
 
-  add_connection sys_clock.clk axi_jesd204_${tx_rx}.s_axi_clock
-  add_connection sys_clock.clk_reset axi_jesd204_${tx_rx}.s_axi_reset
-
-  add_connection link_clock.out_clk_1 axi_jesd204_${tx_rx}.core_clock
-  add_connection link_reset.out_reset axi_jesd204_${tx_rx}.core_reset_ext
-
-  add_instance jesd204_${tx_rx} jesd204_${tx_rx}
-  set_instance_parameter_value jesd204_${tx_rx} {NUM_LANES} $num_of_lanes
-
-  add_connection link_clock.out_clk_1 jesd204_${tx_rx}.clock
-  add_connection axi_jesd204_${tx_rx}.core_reset jesd204_${tx_rx}.reset
-
-  foreach intf $jesd204_intfs {
-    add_connection axi_jesd204_${tx_rx}.${intf} jesd204_${tx_rx}.${intf}
-  }
-
-  foreach intf $phy_reset_intfs {
-    add_connection phy_reset_control.${tx_rx}_${intf} phy.${intf}
-  }
-
-  set lane_map [regexp -all -inline {\S+} $lane_map]
-  for {set i 0} {$i < $num_of_lanes} {incr i} {
-    if {$lane_map != {}} {
-      set j [lindex $lane_map $i]
-    } else {
-      set j $i
-    }
-
-    add_connection jesd204_${tx_rx}.${tx_rx}_phy${j} phy.phy_${i}
-  }
-
-  for {set i 0} {$i < $num_of_lanes} {incr i} {
-    add_interface phy_reconfig_${i} avalon slave
-    set_interface_property phy_reconfig_${i} EXPORT_OF phy.reconfig_avmm_${i}
-  }
-
-  add_interface interrupt interrupt end
-  set_interface_property interrupt EXPORT_OF axi_jesd204_${tx_rx}.interrupt
-  add_interface link_reconfig axi4lite slave
-  set_interface_property link_reconfig EXPORT_OF axi_jesd204_${tx_rx}.s_axi
-
-  add_interface link_data avalon_streaming $data_direction
-  set_interface_property link_data EXPORT_OF jesd204_${tx_rx}.${tx_rx}_data
-
-  if {!$tx_or_rx_n} {
-    add_interface link_sof conduit end
-    set_interface_property link_sof EXPORT_OF jesd204_rx.rx_sof
-  }
-
-  add_interface sysref conduit end
-  set_interface_property sysref EXPORT_OF jesd204_${tx_rx}.sysref
-
-  add_interface sync conduit end
-  set_interface_property sync EXPORT_OF jesd204_${tx_rx}.sync
-
-  add_interface serial_data conduit end
-  set_interface_property serial_data EXPORT_OF phy.serial_data
+    
 }

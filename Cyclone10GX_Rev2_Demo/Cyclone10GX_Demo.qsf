@@ -1,0 +1,369 @@
+set_global_assignment -name FAMILY "Cyclone 10 GX"
+set_global_assignment -name TOP_LEVEL_ENTITY top
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:58:12  APRIL 03, 2019"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.2 Pro Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name DEVICE 10CX220YF780I5G
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 4
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL LVPECL" -to clk0 -entity top
+set_global_assignment -name ENABLE_SIGNALTAP ON
+set_global_assignment -name USE_SIGNALTAP_FILE output_files/signals.stp
+set_global_assignment -name POWER_AUTO_COMPUTE_TJ ON
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_location_assignment PIN_AE10 -to data_0
+set_instance_assignment -name IO_STANDARD "1.8 V" -to data_0 -entity top
+set_global_assignment -name ENABLE_CONFIGURATION_PINS OFF
+set_global_assignment -name ENABLE_BOOT_SEL_PIN OFF
+set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "ACTIVE SERIAL X1"
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name GENERATE_PR_RBF_FILE OFF
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN ON
+set_global_assignment -name RESERVE_DATA0_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name ACTIVE_SERIAL_CLOCK FREQ_100MHZ
+set_location_assignment PIN_T1 -to mem_mem_a[0]
+set_location_assignment PIN_R1 -to mem_mem_a[1]
+set_location_assignment PIN_L1 -to mem_mem_a[2]
+set_location_assignment PIN_K1 -to mem_mem_a[3]
+set_location_assignment PIN_T2 -to mem_mem_a[4]
+set_location_assignment PIN_T3 -to mem_mem_a[5]
+set_location_assignment PIN_R2 -to mem_mem_a[6]
+set_location_assignment PIN_P2 -to mem_mem_a[7]
+set_location_assignment PIN_H1 -to mem_mem_a[8]
+set_location_assignment PIN_G1 -to mem_mem_a[9]
+set_location_assignment PIN_N1 -to mem_mem_a[10]
+set_location_assignment PIN_M1 -to mem_mem_a[11]
+set_location_assignment PIN_J2 -to mem_mem_a[12]
+set_location_assignment PIN_H2 -to mem_mem_a[13]
+set_location_assignment PIN_J3 -to mem_mem_a[14]
+set_location_assignment PIN_N2 -to mem_mem_a[15]
+set_location_assignment PIN_T9 -to mem_mem_dq[31]
+set_location_assignment PIN_V8 -to mem_mem_dq[30]
+set_location_assignment PIN_P3 -to mem_mem_dq[29]
+set_location_assignment PIN_U5 -to mem_mem_dq[28]
+set_location_assignment PIN_P4 -to mem_mem_dq[27]
+set_location_assignment PIN_T6 -to mem_mem_dq[26]
+set_location_assignment PIN_T7 -to mem_mem_dq[25]
+set_location_assignment PIN_T4 -to mem_mem_dq[24]
+set_location_assignment PIN_W7 -to mem_mem_dq[23]
+set_location_assignment PIN_Y7 -to mem_mem_dq[22]
+set_location_assignment PIN_AA9 -to mem_mem_dq[21]
+set_location_assignment PIN_Y4 -to mem_mem_dq[20]
+set_location_assignment PIN_Y2 -to mem_mem_dq[19]
+set_location_assignment PIN_Y1 -to mem_mem_dq[18]
+set_location_assignment PIN_W4 -to mem_mem_dq[17]
+set_location_assignment PIN_Y6 -to mem_mem_dq[16]
+set_location_assignment PIN_AE1 -to mem_mem_dq[15]
+set_location_assignment PIN_AD3 -to mem_mem_dq[14]
+set_location_assignment PIN_AF2 -to mem_mem_dq[13]
+set_location_assignment PIN_AF1 -to mem_mem_dq[12]
+set_location_assignment PIN_AC1 -to mem_mem_dq[11]
+set_location_assignment PIN_AF3 -to mem_mem_dq[10]
+set_location_assignment PIN_AG3 -to mem_mem_dq[9]
+set_location_assignment PIN_AC2 -to mem_mem_dq[8]
+set_location_assignment PIN_AB1 -to mem_mem_dq[7]
+set_location_assignment PIN_AA1 -to mem_mem_dq[6]
+set_location_assignment PIN_AA3 -to mem_mem_dq[5]
+set_location_assignment PIN_AB5 -to mem_mem_dq[4]
+set_location_assignment PIN_AA4 -to mem_mem_dq[3]
+set_location_assignment PIN_AB4 -to mem_mem_dq[2]
+set_location_assignment PIN_AC5 -to mem_mem_dq[1]
+set_location_assignment PIN_AA7 -to mem_mem_dq[0]
+set_location_assignment PIN_R4 -to mem_mem_dqs[3]
+set_location_assignment PIN_R5 -to mem_mem_dqs_n[3]
+set_location_assignment PIN_AE2 -to mem_mem_dqs[1]
+set_location_assignment PIN_AD2 -to mem_mem_dqs_n[1]
+set_location_assignment PIN_AA2 -to mem_mem_dqs[0]
+set_location_assignment PIN_AB3 -to mem_mem_dqs_n[0]
+set_location_assignment PIN_W5 -to mem_mem_dqs[2]
+set_location_assignment PIN_Y5 -to mem_mem_dqs_n[2]
+set_location_assignment PIN_L4 -to mem_mem_ba[0]
+set_location_assignment PIN_M3 -to mem_mem_ba[1]
+set_location_assignment PIN_M4 -to mem_mem_ba[2]
+set_location_assignment PIN_K4 -to mem_mem_cas_n[0]
+set_location_assignment PIN_U6 -to mem_mem_cke[0]
+set_location_assignment PIN_V5 -to mem_mem_odt[0]
+set_location_assignment PIN_N3 -to mem_mem_ras_n[0]
+set_location_assignment PIN_V3 -to mem_mem_reset_n[0]
+set_location_assignment PIN_W3 -to mem_mem_we_n[0]
+set_location_assignment PIN_V1 -to mem_mem_ck[0]
+set_location_assignment PIN_U1 -to mem_mem_ck_n[0]
+set_location_assignment PIN_W2 -to mem_mem_cs_n[0]
+set_location_assignment PIN_AA6 -to mem_mem_dm[0]
+set_location_assignment PIN_AC3 -to mem_mem_dm[1]
+set_location_assignment PIN_AA8 -to mem_mem_dm[2]
+set_location_assignment PIN_U8 -to mem_mem_dm[3]
+set_instance_assignment -name IO_STANDARD LVDS -to refclk_emif_clk -entity top
+set_location_assignment PIN_L2 -to refclk_emif_clk
+set_location_assignment PIN_L3 -to "refclk_emif_clk(n)"
+set_location_assignment PIN_AD17 -to qspi_data[0]
+set_location_assignment PIN_AC16 -to qspi_data[1]
+set_location_assignment PIN_AC18 -to qspi_data[2]
+set_location_assignment PIN_AD18 -to qspi_data[3]
+set_location_assignment PIN_AD20 -to qspi_dclk
+set_location_assignment PIN_AD19 -to qspi_ncs
+set_instance_assignment -name IO_STANDARD "3.0-V LVTTL" -to reset_in -entity top
+set_instance_assignment -name IO_STANDARD LVDS -to clk_100 -entity top
+set_location_assignment PIN_AB16 -to clk_100
+set_location_assignment PIN_AA16 -to "clk_100(n)"
+set_global_assignment -name FLOW_ENABLE_POWER_ANALYZER OFF
+set_instance_assignment -name IO_STANDARD LVDS -to tx_sync -entity top
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to tx_serial_data -entity top
+set_location_assignment PIN_T26 -to rx_serial_data[0]
+set_location_assignment PIN_T25 -to "rx_serial_data[0](n)"
+set_location_assignment PIN_AB26 -to rx_serial_data[1]
+set_location_assignment PIN_AB25 -to "rx_serial_data[1](n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to rx_serial_data -entity top
+set_location_assignment PIN_AG19 -to dac_irq
+set_instance_assignment -name IO_STANDARD "1.8 V" -to dac_irq -entity top
+set_location_assignment PIN_AH20 -to dac_reset
+set_instance_assignment -name IO_STANDARD "1.8 V" -to dac_reset -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to dac_reset -entity top
+set_location_assignment PIN_AG20 -to dac_txen
+set_instance_assignment -name IO_STANDARD "1.8 V" -to dac_txen -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to dac_txen -entity top
+set_instance_assignment -name IO_STANDARD LVDS -to trig -entity top
+set_location_assignment PIN_AH22 -to trig
+set_location_assignment PIN_AG21 -to "trig(n)"
+set_location_assignment PIN_AC21 -to adc_fda
+set_instance_assignment -name IO_STANDARD "1.8 V" -to adc_fda -entity top
+set_location_assignment PIN_AB21 -to adc_fdb
+set_instance_assignment -name IO_STANDARD "1.8 V" -to adc_fdb -entity top
+set_location_assignment PIN_AC23 -to adc_pd
+set_instance_assignment -name IO_STANDARD "1.8 V" -to adc_pd -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to adc_pd -entity top
+set_instance_assignment -name IO_STANDARD LVDS -to rx_sync -entity top
+set_location_assignment PIN_AA18 -to rx_sync
+set_location_assignment PIN_AA19 -to "rx_sync(n)"
+set_instance_assignment -name IO_STANDARD LVDS -to rx_sysref -entity top
+set_location_assignment PIN_AD22 -to rx_sysref
+set_location_assignment PIN_AC22 -to "rx_sysref(n)"
+set_instance_assignment -name IO_STANDARD LVDS -to tx_sysref -entity top
+set_location_assignment PIN_AE23 -to tx_sysref
+set_location_assignment PIN_AD23 -to "tx_sysref(n)"
+set_location_assignment PIN_AF22 -to tx_sync
+set_location_assignment PIN_AE22 -to "tx_sync(n)"
+set_instance_assignment -name IO_STANDARD LVDS -to tx_ref_clk -entity top
+set_location_assignment PIN_B10 -to clkd_status[0]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to clkd_status[0] -entity top
+set_location_assignment PIN_B26 -to clkd_status[1]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to clkd_status[1] -entity top
+set_instance_assignment -name IO_STANDARD "1.8 V" -to clkd_status -entity top
+set_location_assignment PIN_AG23 -to clkd_sync
+set_instance_assignment -name IO_STANDARD "1.8 V" -to clkd_sync -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to clkd_sync -entity top
+set_location_assignment PIN_AA22 -to spi_clk
+set_instance_assignment -name IO_STANDARD "1.8 V" -to spi_clk -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to spi_clk -entity top
+set_location_assignment PIN_AF21 -to spi_sdio
+set_instance_assignment -name IO_STANDARD "1.8 V" -to spi_sdio -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to spi_sdio -entity top
+set_location_assignment PIN_AA23 -to spi_csn_clk
+set_instance_assignment -name IO_STANDARD "1.8 V" -to spi_csn_clk -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to spi_csn_clk -entity top
+set_location_assignment PIN_AE21 -to spi_csn_adc
+set_instance_assignment -name IO_STANDARD "1.8 V" -to spi_csn_adc -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to spi_csn_adc -entity top
+set_location_assignment PIN_AH21 -to spi_csn_dac
+set_instance_assignment -name IO_STANDARD "1.8 V" -to spi_csn_dac -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to spi_csn_dac -entity top
+set_location_assignment PIN_AF23 -to spi_dir
+set_instance_assignment -name IO_STANDARD "1.8 V" -to spi_dir -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to spi_dir -entity top
+set_location_assignment PIN_W24 -to tx_ref_clk
+set_location_assignment PIN_W23 -to "tx_ref_clk(n)"
+set_instance_assignment -name IO_STANDARD LVDS -to rx_ref_clk -entity top
+set_instance_assignment -name IO_STANDARD LVDS -to "rx_ref_clk(n)" -entity top
+set_location_assignment PIN_U24 -to rx_ref_clk
+set_location_assignment PIN_U23 -to "rx_ref_clk(n)"
+set_instance_assignment -name IO_STANDARD "SSTL-135 CLASS I" -to mem_mem_a[15] -entity top
+set_instance_assignment -name IO_STANDARD "SSTL-135 CLASS I" -to mem_mem_a -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to mem_mem_reset_n[0] -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to mem_mem_odt[0] -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to mem_mem_ras_n[0] -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to mem_mem_we_n[0] -entity top
+set_global_assignment -name IOBANK_VCCIO 1.35V -section_id 3B
+set_instance_assignment -name PARTITION_COLOUR 4288479162 -to top -entity top
+set_instance_assignment -name PARTITION_COLOUR 4294965122 -to auto_fab_0 -entity top
+set_global_assignment -name VHDL_INPUT_VERSION VHDL_2008
+set_global_assignment -name VHDL_SHOW_LMF_MAPPING_MESSAGES OFF
+set_global_assignment -name VERILOG_INPUT_VERSION SYSTEMVERILOG_2009
+set_global_assignment -name VERILOG_SHOW_LMF_MAPPING_MESSAGES OFF
+set_instance_assignment -name INPUT_TERMINATION DIFFERENTIAL -to tx_sync -entity top
+set_instance_assignment -name INPUT_TERMINATION DIFFERENTIAL -to tx_sysref -entity top
+set_instance_assignment -name INPUT_TERMINATION DIFFERENTIAL -to rx_sysref -entity top
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to tx_serial_data[0] -entity top
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to tx_serial_data[1] -entity top
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to tx_serial_data[2] -entity top
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to tx_serial_data[3] -entity top
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to rx_serial_data[0] -entity top
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to rx_serial_data[1] -entity top
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to rx_serial_data[2] -entity top
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to rx_serial_data[3] -entity top
+set_global_assignment -name HDL_MESSAGE_LEVEL LEVEL3
+set_global_assignment -name SYNTH_MESSAGE_LEVEL HIGH
+
+
+
+
+
+set_location_assignment PIN_R24 -to clk0
+set_location_assignment PIN_R23 -to "clk0(n)"
+set_location_assignment PIN_U28 -to tx_serial_data[0]
+set_location_assignment PIN_U27 -to "tx_serial_data[0](n)"
+set_location_assignment PIN_AC28 -to tx_serial_data[1]
+set_location_assignment PIN_AC27 -to "tx_serial_data[1](n)"
+set_location_assignment PIN_V26 -to rx_serial_data[2]
+set_location_assignment PIN_V25 -to "rx_serial_data[2](n)"
+set_location_assignment PIN_Y26 -to rx_serial_data[3]
+set_location_assignment PIN_Y25 -to "rx_serial_data[3](n)"
+set_location_assignment PIN_W28 -to tx_serial_data[2]
+set_location_assignment PIN_W27 -to "tx_serial_data[2](n)"
+set_location_assignment PIN_AA28 -to tx_serial_data[3]
+set_location_assignment PIN_AA27 -to "tx_serial_data[3](n)"
+
+set_location_assignment PIN_AF11 -to gmii_mdc
+set_location_assignment PIN_AE12 -to gmii_mdio
+set_location_assignment PIN_AE20 -to gmii_rx_d[7]
+set_location_assignment PIN_AE19 -to gmii_rx_d[6]
+set_location_assignment PIN_AF13 -to gmii_rx_d[0]
+set_location_assignment PIN_AF14 -to gmii_rx_d[1]
+set_location_assignment PIN_AF17 -to gmii_rx_d[2]
+set_location_assignment PIN_AF18 -to gmii_rx_d[3]
+set_location_assignment PIN_AG16 -to gmii_rx_d[4]
+set_location_assignment PIN_AF16 -to gmii_rx_d[5]
+set_location_assignment PIN_AG18 -to gmii_tx_d[0]
+set_location_assignment PIN_AF19 -to gmii_tx_d[1]
+set_location_assignment PIN_AD13 -to gmii_tx_d[2]
+set_location_assignment PIN_AD14 -to gmii_tx_d[3]
+set_location_assignment PIN_AC15 -to gmii_tx_d[4]
+set_location_assignment PIN_AB15 -to gmii_tx_d[5]
+set_location_assignment PIN_AB14 -to gmii_tx_d[6]
+set_location_assignment PIN_AA14 -to gmii_tx_d[7]
+set_location_assignment PIN_AG15 -to gmii_rx_err
+set_location_assignment PIN_AE14 -to gmii_rx_dv
+set_location_assignment PIN_AE16 -to gmii_tx_en
+set_location_assignment PIN_AC17 -to gmii_tx_err
+set_location_assignment PIN_AG14 -to gmii_tx_clk
+set_location_assignment PIN_AE11 -to gmii_crs
+set_location_assignment PIN_Y16 -to gmii_col
+set_location_assignment PIN_AE15 -to gmii_rx_clk
+set_location_assignment PIN_AD12 -to gmii_gtxck
+set_instance_assignment -name IO_STANDARD "1.8 V" -to gmii_crs -entity top
+set_instance_assignment -name IO_STANDARD "1.8 V" -to gmii_gtxck -entity top
+set_instance_assignment -name IO_STANDARD "1.8 V" -to gmii_mdc -entity top
+set_instance_assignment -name IO_STANDARD "1.8 V" -to gmii_rx_d[5] -entity top
+set_instance_assignment -name IO_STANDARD "1.8 V" -to gmii_rx_d[6] -entity top
+set_instance_assignment -name IO_STANDARD "1.8 V" -to gmii_rx_clk -entity top
+set_instance_assignment -name IO_STANDARD "1.8 V" -to gmii_rx_d[7] -entity top
+set_instance_assignment -name IO_STANDARD "1.8 V" -to gmii_mdio -entity top
+set_instance_assignment -name IO_STANDARD "1.8 V" -to gmii_tx_err -entity top
+set_instance_assignment -name IO_STANDARD "1.8 V" -to gmii_tx_en -entity top
+set_instance_assignment -name IO_STANDARD "1.8 V" -to gmii_tx_d[0] -entity top
+set_instance_assignment -name IO_STANDARD "1.8 V" -to gmii_tx_d[1] -entity top
+set_instance_assignment -name IO_STANDARD "1.8 V" -to gmii_tx_d[2] -entity top
+set_instance_assignment -name IO_STANDARD "1.8 V" -to gmii_tx_d[3] -entity top
+set_instance_assignment -name IO_STANDARD "1.8 V" -to gmii_tx_d[4] -entity top
+set_instance_assignment -name IO_STANDARD "1.8 V" -to gmii_tx_d[5] -entity top
+set_instance_assignment -name IO_STANDARD "1.8 V" -to gmii_tx_d[6] -entity top
+set_instance_assignment -name IO_STANDARD "1.8 V" -to gmii_tx_d[7] -entity top
+set_instance_assignment -name IO_STANDARD "1.8 V" -to gmii_tx_clk -entity top
+set_instance_assignment -name IO_STANDARD "1.8 V" -to gmii_rx_err -entity top
+set_instance_assignment -name IO_STANDARD "1.8 V" -to gmii_rx_dv -entity top
+set_instance_assignment -name IO_STANDARD "1.8 V" -to gmii_rx_d[0] -entity top
+set_instance_assignment -name IO_STANDARD "1.8 V" -to gmii_rx_d[1] -entity top
+set_instance_assignment -name IO_STANDARD "1.8 V" -to gmii_rx_d[2] -entity top
+set_instance_assignment -name IO_STANDARD "1.8 V" -to gmii_rx_d[3] -entity top
+set_instance_assignment -name IO_STANDARD "1.8 V" -to gmii_rx_d[4] -entity top
+set_location_assignment PIN_AF12 -to gmii_rst
+set_instance_assignment -name IO_STANDARD "1.8 V" -to gmii_rst -entity top
+set_location_assignment PIN_AD15 -to gmii_clk125
+set_instance_assignment -name IO_STANDARD "1.8 V" -to gmii_clk125 -entity top
+set_instance_assignment -name IO_STANDARD "1.8 V" -to gmii_col -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to gmii_tx_d[7] -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to gmii_tx_d[6] -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to gmii_tx_d[5] -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to gmii_tx_d[4] -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to gmii_tx_d[3] -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to gmii_tx_d[2] -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to gmii_tx_d[1] -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to gmii_tx_d[0] -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to gmii_tx_d -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to gmii_tx_en -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to gmii_tx_err -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to gmii_rst -entity top
+set_instance_assignment -name IO_STANDARD "1.8 V" -to gmii_tx_d -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to gmii_clk125 -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to gmii_gtxck -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to gmii_mdc -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to gmii_mdio -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to gmii_rx_d[7] -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to gmii_rx_d[6] -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to gmii_rx_d[5] -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to gmii_rx_d[4] -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to gmii_rx_dv -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to gmii_rx_d[0] -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to gmii_rx_d[1] -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to gmii_rx_d[2] -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to gmii_rx_d[3] -entity top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 12MA -to gmii_rx_d -entity top
+
+set_global_assignment -name SIGNALTAP_FILE output_files/signals.stp
+set_global_assignment -name QSYS_FILE ethernet.qsys
+set_global_assignment -name IP_FILE ip/ethernet/reset.ip
+set_global_assignment -name IP_FILE ip/ethernet/mem_bridge.ip
+set_global_assignment -name IP_FILE ip/ethernet/mac.ip
+set_global_assignment -name IP_FILE ip/ethernet/ethernet_iopll.ip
+set_global_assignment -name IP_FILE ip/ethernet/dma_tx.ip
+set_global_assignment -name IP_FILE ip/ethernet/dma_rx.ip
+set_global_assignment -name IP_FILE ip/ethernet/dma_bridge.ip
+set_global_assignment -name IP_FILE ip/ethernet/clock.ip
+set_global_assignment -name QIP_FILE c10gx_jesd204b.qip
+set_global_assignment -name SDC_FILE Cyclone10GX_Demo.sdc
+set_global_assignment -name VERILOG_FILE daq2_spi.v
+set_global_assignment -name QSYS_FILE mcu_subsystem.qsys
+set_global_assignment -name SYSTEMVERILOG_FILE top.sv
+set_global_assignment -name IP_FILE ip/mcu_subsystem/mcu_subsystem_cpu_0.ip
+set_global_assignment -name IP_FILE ip/mcu_subsystem/mcu_subsystem_jtag_uart_0.ip
+set_global_assignment -name IP_FILE ip/mcu_subsystem/mcu_subsystem_clock_in.ip
+set_global_assignment -name IP_FILE ip/mcu_subsystem/mcu_subsystem_reset_in.ip
+set_global_assignment -name IP_FILE ip/mcu_subsystem/mcu_subsystem_ram_0.ip
+set_global_assignment -name IP_FILE ip/mcu_subsystem/mcu_subsystem_mm_clock_crossing_bridge_0.ip
+set_global_assignment -name IP_FILE ip/mcu_subsystem/mcu_subsystem_mm_clock_crossing_bridge_1.ip
+set_global_assignment -name IP_FILE ip/mcu_subsystem/mcu_subsystem_clock_bridge_1.ip
+set_global_assignment -name IP_FILE ip/mcu_subsystem/mcu_subsystem_mm_clock_crossing_bridge_2.ip
+set_global_assignment -name IP_FILE ip/mcu_subsystem/mcu_subsystem_mm_clock_crossing_bridge_3.ip
+set_global_assignment -name IP_FILE ip/mcu_subsystem/iopll_0.ip
+set_global_assignment -name IP_FILE ip/mcu_subsystem/mcu_subsystem_generic_quad_spi_controller2_0.ip
+set_global_assignment -name IP_FILE ip/interlaken_phy/interlaken_phy_xcvr_atx_pll_a10_0.ip
+set_global_assignment -name IP_FILE ip/interlaken_phy/interlaken_phy_xcvr_reset_control_0.ip
+set_global_assignment -name IP_FILE ip/interlaken_phy/interlaken_phy_xcvr_native_a10_0.ip
+set_global_assignment -name IP_FILE ip/interlaken_phy/interlaken_phy_xcvr_data_flow_controller_0.ip
+set_global_assignment -name IP_FILE ip/interlaken_phy/interlaken_phy_clock_bridge_0.ip
+set_global_assignment -name IP_FILE ip/interlaken_phy/interlaken_phy_reset_bridge_0.ip
+set_global_assignment -name QSYS_FILE interlaken_phy.qsys
+set_global_assignment -name IP_FILE ip/mcu_subsystem/ddr3.ip
+set_global_assignment -name IP_FILE ip/mcu_subsystem/mcu_subsystem_nios_custom_instr_floating_point_2_0.ip
+set_global_assignment -name IP_FILE ip/mcu_subsystem/timer_0.ip
+set_global_assignment -name IP_FILE ip/mcu_subsystem/timer_1.ip
+set_global_assignment -name IP_FILE ip/mcu_subsystem/i2c.ip
+set_global_assignment -name IP_FILE ip/mcu_subsystem/spi.ip
+set_global_assignment -name IP_FILE ip/mcu_subsystem/gpio.ip
+set_global_assignment -name IP_FILE ip/mcu_subsystem/ad9144_fifo.ip
+set_global_assignment -name IP_FILE ip/mcu_subsystem/ad9144_jesd204.ip
+set_global_assignment -name IP_FILE ip/mcu_subsystem/ad9144_core.ip
+set_global_assignment -name IP_FILE ip/mcu_subsystem/ad9144_upack.ip
+set_global_assignment -name IP_FILE ip/mcu_subsystem/ad9144_dma.ip
+set_global_assignment -name IP_FILE ip/mcu_subsystem/ad9680_jesd204.ip
+set_global_assignment -name IP_FILE ip/mcu_subsystem/ad9680_core.ip
+set_global_assignment -name IP_FILE ip/mcu_subsystem/ad9680_cpack.ip
+set_global_assignment -name IP_FILE ip/mcu_subsystem/ad9680_fifo.ip
+set_global_assignment -name IP_FILE ip/mcu_subsystem/ad9680_dma.ip
+set_global_assignment -name IP_FILE ip/mcu_subsystem/avl_adxcfg_0.ip
+set_global_assignment -name IP_FILE ip/mcu_subsystem/avl_adxcfg_1.ip
+set_global_assignment -name IP_FILE ip/mcu_subsystem/avl_adxcfg_2.ip
+set_global_assignment -name IP_FILE ip/mcu_subsystem/avl_adxcfg_3.ip
+set_global_assignment -name IP_FILE ip/iopll.ip

@@ -1,0 +1,147 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 240 408)
+	(text "ad9680_cpack" (rect 78 -1 135 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 392 20 404)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "adc_clk" (rect 0 0 30 12)(font "Arial" (font_size 8)))
+		(text "adc_clk" (rect 4 61 46 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 96 72)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "adc_rst" (rect 0 0 30 12)(font "Arial" (font_size 8)))
+		(text "adc_rst" (rect 4 101 46 112)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 96 112)(line_width 1))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "adc_enable_0" (rect 0 0 55 12)(font "Arial" (font_size 8)))
+		(text "adc_enable_0" (rect 4 261 76 272)(font "Arial" (font_size 8)))
+		(line (pt 0 272)(pt 96 272)(line_width 1))
+	)
+	(port
+		(pt 0 288)
+		(input)
+		(text "adc_valid_0" (rect 0 0 48 12)(font "Arial" (font_size 8)))
+		(text "adc_valid_0" (rect 4 277 70 288)(font "Arial" (font_size 8)))
+		(line (pt 0 288)(pt 96 288)(line_width 1))
+	)
+	(port
+		(pt 0 304)
+		(input)
+		(text "adc_data_0[63..0]" (rect 0 0 71 12)(font "Arial" (font_size 8)))
+		(text "adc_data_0[63..0]" (rect 4 293 106 304)(font "Arial" (font_size 8)))
+		(line (pt 0 304)(pt 96 304)(line_width 3))
+	)
+	(port
+		(pt 0 344)
+		(input)
+		(text "adc_enable_1" (rect 0 0 54 12)(font "Arial" (font_size 8)))
+		(text "adc_enable_1" (rect 4 333 76 344)(font "Arial" (font_size 8)))
+		(line (pt 0 344)(pt 96 344)(line_width 1))
+	)
+	(port
+		(pt 0 360)
+		(input)
+		(text "adc_valid_1" (rect 0 0 47 12)(font "Arial" (font_size 8)))
+		(text "adc_valid_1" (rect 4 349 70 360)(font "Arial" (font_size 8)))
+		(line (pt 0 360)(pt 96 360)(line_width 1))
+	)
+	(port
+		(pt 0 376)
+		(input)
+		(text "adc_data_1[63..0]" (rect 0 0 70 12)(font "Arial" (font_size 8)))
+		(text "adc_data_1[63..0]" (rect 4 365 106 376)(font "Arial" (font_size 8)))
+		(line (pt 0 376)(pt 96 376)(line_width 3))
+	)
+	(port
+		(pt 0 152)
+		(output)
+		(text "adc_valid" (rect 0 0 37 12)(font "Arial" (font_size 8)))
+		(text "adc_valid" (rect 4 141 58 152)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 96 152)(line_width 1))
+	)
+	(port
+		(pt 0 192)
+		(output)
+		(text "adc_sync" (rect 0 0 40 12)(font "Arial" (font_size 8)))
+		(text "adc_sync" (rect 4 181 52 192)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 96 192)(line_width 1))
+	)
+	(port
+		(pt 0 232)
+		(output)
+		(text "adc_data[127..0]" (rect 0 0 64 12)(font "Arial" (font_size 8)))
+		(text "adc_data[127..0]" (rect 4 221 100 232)(font "Arial" (font_size 8)))
+		(line (pt 0 232)(pt 96 232)(line_width 3))
+	)
+	(drawing
+		(text "if_adc_clk" (rect 37 43 134 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 101 67 220 144)(font "Arial" (color 0 0 0)))
+		(text "if_adc_rst" (rect 37 83 134 179)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset" (rect 101 107 232 224)(font "Arial" (color 0 0 0)))
+		(text "if_adc_valid" (rect 27 123 126 259)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "valid" (rect 101 147 232 304)(font "Arial" (color 0 0 0)))
+		(text "if_adc_sync" (rect 27 163 120 339)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "sync" (rect 101 187 226 384)(font "Arial" (color 0 0 0)))
+		(text "if_adc_data" (rect 28 203 122 419)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "data" (rect 101 227 226 464)(font "Arial" (color 0 0 0)))
+		(text "adc_ch_0" (rect 41 243 130 499)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "enable" (rect 101 267 238 544)(font "Arial" (color 0 0 0)))
+		(text "valid" (rect 101 283 232 576)(font "Arial" (color 0 0 0)))
+		(text "data" (rect 101 299 226 608)(font "Arial" (color 0 0 0)))
+		(text "adc_ch_1" (rect 43 315 134 643)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "enable" (rect 101 339 238 688)(font "Arial" (color 0 0 0)))
+		(text "valid" (rect 101 355 232 720)(font "Arial" (color 0 0 0)))
+		(text "data" (rect 101 371 226 752)(font "Arial" (color 0 0 0)))
+		(text " ad9680_cpack " (rect 176 392 436 794)(font "Arial" ))
+		(line (pt 96 32)(pt 144 32)(line_width 1))
+		(line (pt 144 32)(pt 144 392)(line_width 1))
+		(line (pt 96 392)(pt 144 392)(line_width 1))
+		(line (pt 96 32)(pt 96 392)(line_width 1))
+		(line (pt 97 52)(pt 97 76)(line_width 1))
+		(line (pt 98 52)(pt 98 76)(line_width 1))
+		(line (pt 97 92)(pt 97 116)(line_width 1))
+		(line (pt 98 92)(pt 98 116)(line_width 1))
+		(line (pt 97 132)(pt 97 156)(line_width 1))
+		(line (pt 98 132)(pt 98 156)(line_width 1))
+		(line (pt 97 172)(pt 97 196)(line_width 1))
+		(line (pt 98 172)(pt 98 196)(line_width 1))
+		(line (pt 97 212)(pt 97 236)(line_width 1))
+		(line (pt 98 212)(pt 98 236)(line_width 1))
+		(line (pt 97 252)(pt 97 308)(line_width 1))
+		(line (pt 98 252)(pt 98 308)(line_width 1))
+		(line (pt 97 324)(pt 97 380)(line_width 1))
+		(line (pt 98 324)(pt 98 380)(line_width 1))
+		(line (pt 0 0)(pt 240 0)(line_width 1))
+		(line (pt 240 0)(pt 240 408)(line_width 1))
+		(line (pt 0 408)(pt 240 408)(line_width 1))
+		(line (pt 0 0)(pt 0 408)(line_width 1))
+	)
+)

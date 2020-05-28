@@ -1,0 +1,56 @@
+	component interlaken_phy_xcvr_data_flow_controller_0 is
+		port (
+			csr_s0_address           : in  std_logic_vector(7 downto 0)  := (others => 'X'); -- address
+			csr_s0_read              : in  std_logic                     := 'X';             -- read
+			csr_s0_readdata          : out std_logic_vector(31 downto 0);                    -- readdata
+			csr_s0_readdatavalid     : out std_logic;                                        -- readdatavalid
+			csr_s0_write             : in  std_logic                     := 'X';             -- write
+			csr_s0_writedata         : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
+			csr_s0_waitrequest       : out std_logic;                                        -- waitrequest
+			rx_parallel_data         : in  std_logic_vector(63 downto 0) := (others => 'X'); -- rx_parallel_data
+			tx_parallel_data         : out std_logic_vector(63 downto 0);                    -- tx_parallel_data
+			rx_enh_fifo_full         : in  std_logic                     := 'X';             -- rx_enh_fifo_full
+			rx_enh_fifo_pfull        : in  std_logic                     := 'X';             -- rx_enh_fifo_pfull
+			rx_enh_fifo_empty        : in  std_logic                     := 'X';             -- rx_enh_fifo_empty
+			rx_enh_fifo_pempty       : in  std_logic                     := 'X';             -- rx_enh_fifo_pempty
+			tx_enh_fifo_pempty       : in  std_logic                     := 'X';             -- tx_enh_fifo_pempty
+			tx_enh_fifo_empty        : in  std_logic                     := 'X';             -- tx_enh_fifo_empty
+			tx_enh_fifo_pfull        : in  std_logic                     := 'X';             -- tx_enh_fifo_pfull
+			tx_enh_fifo_full         : in  std_logic                     := 'X';             -- tx_enh_fifo_full
+			avm_m0_address           : out std_logic_vector(31 downto 0);                    -- address
+			avm_m0_read              : out std_logic;                                        -- read
+			avm_m0_waitrequest       : in  std_logic                     := 'X';             -- waitrequest
+			avm_m0_readdata          : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			avm_m0_readdatavalid     : in  std_logic                     := 'X';             -- readdatavalid
+			avm_m0_write             : out std_logic;                                        -- write
+			avm_m0_writedata         : out std_logic_vector(31 downto 0);                    -- writedata
+			tx_control               : out std_logic_vector(2 downto 0);                     -- tx_control
+			rx_control               : in  std_logic_vector(9 downto 0)  := (others => 'X'); -- rx_control
+			reset                    : in  std_logic                     := 'X';             -- reset
+			clock                    : in  std_logic                     := 'X';             -- clk
+			tx_ready                 : in  std_logic                     := 'X';             -- tx_ready
+			rx_ready                 : in  std_logic                     := 'X';             -- rx_ready
+			rx_irq                   : out std_logic;                                        -- irq
+			tx_enh_data_valid        : out std_logic;                                        -- tx_enh_data_valid
+			tx_irq                   : out std_logic;                                        -- irq
+			tx_coreclkin             : in  std_logic                     := 'X';             -- clk
+			rx_coreclkin             : in  std_logic                     := 'X';             -- clk
+			rx_enh_fifo_rd_en        : out std_logic;                                        -- rx_enh_fifo_rd_en
+			tx_err_ins               : out std_logic;                                        -- tx_err_ins
+			reset_phy                : out std_logic;                                        -- reset
+			pll_locked_out           : out std_logic;                                        -- pll_locked
+			pll_powerdown_input      : in  std_logic                     := 'X';             -- pll_powerdown
+			atx_pll_powerdown        : out std_logic;                                        -- pll_powerdown
+			atx_pll_locked           : in  std_logic                     := 'X';             -- pll_locked
+			rx_set_locktodata        : out std_logic;                                        -- rx_set_locktodata
+			rx_set_locktoref         : out std_logic;                                        -- rx_set_locktoref
+			tx_enh_frame_burst_en    : out std_logic;                                        -- tx_enh_frame_burst_en
+			tx_enh_frame_diag_status : out std_logic_vector(1 downto 0);                     -- tx_enh_frame_diag_status
+			unused_tx_control        : out std_logic_vector(13 downto 0);                    -- unused_tx_control
+			unused_tx_parallel_data  : out std_logic_vector(63 downto 0);                    -- unused_tx_parallel_data
+			rx_seriallpbken          : out std_logic;                                        -- rx_seriallpbken
+			pll_select               : out std_logic;                                        -- pll_select
+			rx_enh_frame_diag_status : in  std_logic_vector(1 downto 0)  := (others => 'X')  -- rx_enh_frame_diag_status
+		);
+	end component interlaken_phy_xcvr_data_flow_controller_0;
+

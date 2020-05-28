@@ -1,0 +1,157 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "BASE_LED1",
+					"strict" : false
+				},
+				{
+					"name" : "BASE_LED2",
+					"strict" : false
+				},
+				{
+					"name" : "EN_0V95",
+					"strict" : false
+				},
+				{
+					"name" : "EN_1V8",
+					"strict" : false
+				},
+				{
+					"name" : "EN_1V8MB",
+					"strict" : false
+				},
+				{
+					"name" : "EN_1V8VIO",
+					"strict" : false
+				},
+				{
+					"name" : "EN_1V35",
+					"strict" : false
+				},
+				{
+					"name" : "EN_3V3MB",
+					"strict" : false
+				},
+				{
+					"name" : "EN_VTT",
+					"strict" : false
+				},
+				{
+					"name" : "LED3",
+					"strict" : false
+				},
+				{
+					"name" : "LED4",
+					"strict" : false
+				},
+				{
+					"name" : "nCONFIG",
+					"strict" : false
+				},
+				{
+					"name" : "RXD_OUT",
+					"strict" : false
+				},
+				{
+					"name" : "TCK_OUT",
+					"strict" : false
+				},
+				{
+					"name" : "TDI_OUT",
+					"strict" : false
+				},
+				{
+					"name" : "TDO_OUT",
+					"strict" : false
+				},
+				{
+					"name" : "TMS_OUT",
+					"strict" : false
+				},
+				{
+					"name" : "TXD_OUT",
+					"strict" : false
+				},
+				{
+					"name" : "I2C_SCL",
+					"strict" : false
+				},
+				{
+					"name" : "I2C_SDA",
+					"strict" : false
+				},
+				{
+					"name" : "BASE_BTN1",
+					"strict" : false
+				},
+				{
+					"name" : "BASE_BTN2",
+					"strict" : false
+				},
+				{
+					"name" : "PG_0V9",
+					"strict" : false
+				},
+				{
+					"name" : "PG_0V95",
+					"strict" : false
+				},
+				{
+					"name" : "PG_1V8",
+					"strict" : false
+				},
+				{
+					"name" : "DATA0",
+					"strict" : false
+				},
+				{
+					"name" : "RXD_IN",
+					"strict" : false
+				},
+				{
+					"name" : "TCK_IN",
+					"strict" : false
+				},
+				{
+					"name" : "TDI_IN",
+					"strict" : false
+				},
+				{
+					"name" : "TDO_IN",
+					"strict" : false
+				},
+				{
+					"name" : "TMS_IN",
+					"strict" : false
+				},
+				{
+					"name" : "TXD_IN",
+					"strict" : false
+				},
+				{
+					"name" : "M10_CLK",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tms",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tck",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdi",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdo",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

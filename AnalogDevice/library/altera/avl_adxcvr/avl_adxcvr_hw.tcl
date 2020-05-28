@@ -126,6 +126,7 @@ proc p_avl_adxcvr {} {
 
     add_instance alt_lane_pll altera_xcvr_atx_pll_a10
     set_instance_parameter_value alt_lane_pll {enable_pll_reconfig} {1}
+#	set_instance_parameter_value lane_pll {dbg_embedded_debug_enable} {1}
     set_instance_parameter_value alt_lane_pll {rcfg_separate_avmm_busy} {1}
     set_instance_parameter_value alt_lane_pll {set_capability_reg_enable} {1}
     set_instance_parameter_value alt_lane_pll {set_user_identifier} $m_id

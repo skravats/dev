@@ -86,7 +86,10 @@
 #include "sys/alt_irq.h"
 #include "altera_avalon_i2c.h"
 #include "system.h"
-#include "Si5345-RevD-C10GX01-Registers.h"
+//#include "Si5345-RevD-C10GX01-Registers.h"
+//#include "Si5345-RevD-C10GX01-new-Registers.h" // out9 = 100MHz
+#include "Si5345-RevD-C10GX01-Registers-50MHz.h"
+
 
 #pragma GCC push_options
 #pragma GCC optimize ("O0")

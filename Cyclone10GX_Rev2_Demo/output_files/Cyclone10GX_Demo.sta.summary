@@ -1,0 +1,1888 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 900mV 100C Model Setup 'clk0'
+Slack : -47.798
+TNS   : -2006.007
+
+Type  : Slow 900mV 100C Model Setup 'altera_reserved_tck'
+Slack : -11.127
+TNS   : -1188.907
+
+Type  : Slow 900mV 100C Model Setup 'rx_ref_clk'
+Slack : -9.906
+TNS   : -3844.230
+
+Type  : Slow 900mV 100C Model Setup 'tx_ref_clk'
+Slack : -3.715
+TNS   : -15787.029
+
+Type  : Slow 900mV 100C Model Setup 'mcu_0|ddr3|ddr3_core_usr_clk'
+Slack : 0.543
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Setup 'mcu_0|ddr3|ddr3_phy_clk_l_0'
+Slack : 0.939
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Setup 'mcu_0|ddr3|ddr3_core_cal_slave_clk'
+Slack : 1.250
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Setup 'mcu_0|ddr3|ddr3_phy_clk_l_1'
+Slack : 1.734
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Setup 'mcu_0|ddr3|ddr3_ref_clock'
+Slack : 3.080
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Setup 'mcu_0|spi|spi|SCLK_reg'
+Slack : 3.474
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Setup '~ALTERA_CLKUSR~'
+Slack : 6.205
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Hold 'clk0'
+Slack : -6.076
+TNS   : -1353.392
+
+Type  : Slow 900mV 100C Model Hold 'rx_ref_clk'
+Slack : -1.457
+TNS   : -42.127
+
+Type  : Slow 900mV 100C Model Hold 'mcu_0|ddr3|ddr3_phy_clk_l_1'
+Slack : -0.223
+TNS   : -0.397
+
+Type  : Slow 900mV 100C Model Hold 'altera_reserved_tck'
+Slack : -0.015
+TNS   : -0.015
+
+Type  : Slow 900mV 100C Model Hold 'mcu_0|ddr3|ddr3_core_usr_clk'
+Slack : 0.009
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Hold 'tx_ref_clk'
+Slack : 0.011
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Hold 'mcu_0|ddr3|ddr3_phy_clk_l_0'
+Slack : 0.049
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Hold '~ALTERA_CLKUSR~'
+Slack : 0.055
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Hold 'mcu_0|ddr3|ddr3_core_cal_slave_clk'
+Slack : 0.063
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Hold 'mcu_0|ddr3|ddr3_ref_clock'
+Slack : 0.078
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Hold 'mcu_0|spi|spi|SCLK_reg'
+Slack : 0.490
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'tx_ref_clk'
+Slack : -1.317
+TNS   : -245.833
+
+Type  : Slow 900mV 100C Model Recovery 'rx_ref_clk'
+Slack : -0.279
+TNS   : -7.737
+
+Type  : Slow 900mV 100C Model Recovery 'mcu_0|ddr3|ddr3_core_usr_clk'
+Slack : 0.804
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'clk0'
+Slack : 1.721
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'mcu_0|spi|spi|SCLK_reg'
+Slack : 2.538
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'mcu_0|ddr3|ddr3_ref_clock'
+Slack : 4.045
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'mcu_0|ddr3|ddr3_core_cal_slave_clk'
+Slack : 4.498
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery '~ALTERA_CLKUSR~'
+Slack : 7.114
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'mcu_0|ddr3|ddr3_phy_clk_1'
+Slack : 7.313
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'mcu_0|ddr3|ddr3_phy_clk_0'
+Slack : 7.975
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'mcu_0|ddr3|ddr3_phy_clk_l_1'
+Slack : 21.082
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'mcu_0|ddr3|ddr3_phy_clk_l_0'
+Slack : 21.449
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'altera_reserved_tck'
+Slack : 27.373
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'clk0'
+Slack : -5.508
+TNS   : -293.857
+
+Type  : Slow 900mV 100C Model Removal 'rx_ref_clk'
+Slack : 0.320
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'tx_ref_clk'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal '~ALTERA_CLKUSR~'
+Slack : 0.459
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'mcu_0|ddr3|ddr3_core_usr_clk'
+Slack : 0.492
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'mcu_0|ddr3|ddr3_ref_clock'
+Slack : 0.503
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'mcu_0|ddr3|ddr3_core_cal_slave_clk'
+Slack : 0.554
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'altera_reserved_tck'
+Slack : 0.623
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'mcu_0|spi|spi|SCLK_reg'
+Slack : 3.483
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'mcu_0|ddr3|ddr3_phy_clk_0'
+Slack : 3.605
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'mcu_0|ddr3|ddr3_phy_clk_l_0'
+Slack : 3.820
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'mcu_0|ddr3|ddr3_phy_clk_1'
+Slack : 4.154
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'mcu_0|ddr3|ddr3_phy_clk_l_1'
+Slack : 4.518
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'tx_ref_clk'
+Slack : -1.180
+TNS   : -190.182
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'rx_ref_clk'
+Slack : -1.128
+TNS   : -384.083
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'mem_mem_dqs[0]_IN'
+Slack : 0.350
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'mem_mem_dqs[1]_IN'
+Slack : 0.350
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'mem_mem_dqs[2]_IN'
+Slack : 0.350
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'mem_mem_dqs[3]_IN'
+Slack : 0.350
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_wf_clk_0'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_wf_clk_1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_wf_clk_2'
+Slack : 0.501
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_vco_clk'
+Slack : 0.593
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_wf_clk_3'
+Slack : 0.611
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_wf_clk_4'
+Slack : 0.611
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_wf_clk_5'
+Slack : 0.611
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_wf_clk_6'
+Slack : 0.611
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_vco_clk_1'
+Slack : 0.620
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_phy_clk_0'
+Slack : 1.108
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_phy_clk_1'
+Slack : 1.108
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_core_usr_clk'
+Slack : 2.111
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_phy_clk_l_0'
+Slack : 2.360
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_phy_clk_l_1'
+Slack : 2.360
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_ref_clock'
+Slack : 2.422
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_core_cal_slave_clk'
+Slack : 2.744
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'clk0'
+Slack : 3.475
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width '~ALTERA_CLKUSR~'
+Slack : 3.771
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'mcu_0|spi|spi|SCLK_reg'
+Slack : 7.901
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 14.694
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 0.245
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 3.441
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 3.487
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 3.498
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 3.516
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 3.602
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 3.607
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 5.347
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 5.512
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 5.527
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 5.568
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 5.593
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 5.600
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 5.601
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 5.618
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 5.625
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 5.639
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 5.965
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.182
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.465
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.480
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 1.638
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 2.434
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 2.457
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 2.885
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 2.961
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 3.064
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 3.080
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 3.313
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 3.516
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 3.529
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 3.633
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 3.659
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 3.672
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 4.406
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 4.825
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.016
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.036
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.076
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.108
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.150
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.199
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.202
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.241
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.341
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.365
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.413
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.456
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.462
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.465
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.491
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.585
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.622
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.651
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.694
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.694
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.735
+
+Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.803
+
+Type  : Slow 900mV -40C Model Setup 'clk0'
+Slack : -48.148
+TNS   : -1955.005
+
+Type  : Slow 900mV -40C Model Setup 'altera_reserved_tck'
+Slack : -11.112
+TNS   : -1199.258
+
+Type  : Slow 900mV -40C Model Setup 'rx_ref_clk'
+Slack : -10.511
+TNS   : -3582.907
+
+Type  : Slow 900mV -40C Model Setup 'tx_ref_clk'
+Slack : -3.413
+TNS   : -16542.194
+
+Type  : Slow 900mV -40C Model Setup 'mcu_0|ddr3|ddr3_core_usr_clk'
+Slack : 0.782
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Setup 'mcu_0|ddr3|ddr3_phy_clk_l_0'
+Slack : 1.083
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Setup 'mcu_0|ddr3|ddr3_core_cal_slave_clk'
+Slack : 1.116
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Setup 'mcu_0|ddr3|ddr3_phy_clk_l_1'
+Slack : 1.788
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Setup 'mcu_0|ddr3|ddr3_ref_clock'
+Slack : 2.922
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Setup 'mcu_0|spi|spi|SCLK_reg'
+Slack : 3.400
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Setup '~ALTERA_CLKUSR~'
+Slack : 6.195
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Hold 'clk0'
+Slack : -6.350
+TNS   : -1428.480
+
+Type  : Slow 900mV -40C Model Hold 'rx_ref_clk'
+Slack : -1.612
+TNS   : -64.759
+
+Type  : Slow 900mV -40C Model Hold 'mcu_0|ddr3|ddr3_phy_clk_l_1'
+Slack : -0.264
+TNS   : -0.549
+
+Type  : Slow 900mV -40C Model Hold 'altera_reserved_tck'
+Slack : -0.142
+TNS   : -0.142
+
+Type  : Slow 900mV -40C Model Hold 'mcu_0|ddr3|ddr3_core_usr_clk'
+Slack : -0.046
+TNS   : -0.082
+
+Type  : Slow 900mV -40C Model Hold 'tx_ref_clk'
+Slack : -0.038
+TNS   : -0.055
+
+Type  : Slow 900mV -40C Model Hold 'mcu_0|ddr3|ddr3_phy_clk_l_0'
+Slack : 0.028
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Hold '~ALTERA_CLKUSR~'
+Slack : 0.043
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Hold 'mcu_0|ddr3|ddr3_core_cal_slave_clk'
+Slack : 0.058
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Hold 'mcu_0|ddr3|ddr3_ref_clock'
+Slack : 0.060
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Hold 'mcu_0|spi|spi|SCLK_reg'
+Slack : 0.414
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'tx_ref_clk'
+Slack : -1.243
+TNS   : -222.698
+
+Type  : Slow 900mV -40C Model Recovery 'rx_ref_clk'
+Slack : -0.296
+TNS   : -8.670
+
+Type  : Slow 900mV -40C Model Recovery 'mcu_0|ddr3|ddr3_core_usr_clk'
+Slack : 0.982
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'clk0'
+Slack : 1.920
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'mcu_0|spi|spi|SCLK_reg'
+Slack : 2.485
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'mcu_0|ddr3|ddr3_ref_clock'
+Slack : 4.046
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'mcu_0|ddr3|ddr3_core_cal_slave_clk'
+Slack : 4.470
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery '~ALTERA_CLKUSR~'
+Slack : 7.097
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'mcu_0|ddr3|ddr3_phy_clk_1'
+Slack : 7.605
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'mcu_0|ddr3|ddr3_phy_clk_0'
+Slack : 8.249
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'mcu_0|ddr3|ddr3_phy_clk_l_1'
+Slack : 21.260
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'mcu_0|ddr3|ddr3_phy_clk_l_0'
+Slack : 21.569
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'altera_reserved_tck'
+Slack : 27.533
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'clk0'
+Slack : -5.743
+TNS   : -307.683
+
+Type  : Slow 900mV -40C Model Removal 'mcu_0|ddr3|ddr3_core_cal_slave_clk'
+Slack : 0.254
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'rx_ref_clk'
+Slack : 0.320
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'tx_ref_clk'
+Slack : 0.390
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal '~ALTERA_CLKUSR~'
+Slack : 0.459
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'mcu_0|ddr3|ddr3_ref_clock'
+Slack : 0.475
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'mcu_0|ddr3|ddr3_core_usr_clk'
+Slack : 0.476
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'altera_reserved_tck'
+Slack : 0.540
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'mcu_0|ddr3|ddr3_phy_clk_0'
+Slack : 3.249
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'mcu_0|ddr3|ddr3_phy_clk_l_0'
+Slack : 3.470
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'mcu_0|spi|spi|SCLK_reg'
+Slack : 3.552
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'mcu_0|ddr3|ddr3_phy_clk_1'
+Slack : 3.787
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'mcu_0|ddr3|ddr3_phy_clk_l_1'
+Slack : 4.119
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'tx_ref_clk'
+Slack : -1.270
+TNS   : -191.622
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'rx_ref_clk'
+Slack : -1.128
+TNS   : -388.110
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'mem_mem_dqs[0]_IN'
+Slack : 0.306
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'mem_mem_dqs[2]_IN'
+Slack : 0.306
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'mem_mem_dqs[3]_IN'
+Slack : 0.306
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'mem_mem_dqs[1]_IN'
+Slack : 0.307
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_wf_clk_0'
+Slack : 0.509
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_wf_clk_1'
+Slack : 0.509
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_wf_clk_2'
+Slack : 0.509
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_vco_clk'
+Slack : 0.595
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_wf_clk_3'
+Slack : 0.610
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_wf_clk_4'
+Slack : 0.610
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_wf_clk_5'
+Slack : 0.610
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_wf_clk_6'
+Slack : 0.610
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_vco_clk_1'
+Slack : 0.621
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_phy_clk_0'
+Slack : 1.074
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_phy_clk_1'
+Slack : 1.074
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_core_usr_clk'
+Slack : 2.082
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_phy_clk_l_0'
+Slack : 2.326
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_phy_clk_l_1'
+Slack : 2.326
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_ref_clock'
+Slack : 2.428
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_core_cal_slave_clk'
+Slack : 2.709
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'clk0'
+Slack : 3.439
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width '~ALTERA_CLKUSR~'
+Slack : 3.733
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'mcu_0|spi|spi|SCLK_reg'
+Slack : 7.866
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 14.746
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 0.203
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 3.411
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 3.447
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 3.477
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 3.483
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 3.562
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 3.567
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 5.305
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 5.499
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 5.501
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 5.542
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 5.550
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 5.553
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 5.553
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 5.568
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 5.590
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 5.610
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 5.967
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.168
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.429
+
+Type  : Slow 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.444
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 1.782
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 2.567
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 2.579
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 3.016
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 3.043
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 3.150
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 3.315
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 3.559
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 3.584
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 3.720
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 3.734
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 3.815
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 3.838
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 4.595
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 4.948
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.131
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.172
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.189
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.200
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.258
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.293
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.298
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.322
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.419
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.442
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.498
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.524
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.524
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.527
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.569
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.650
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.687
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.710
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.735
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.752
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.759
+
+Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.826
+
+Type  : Fast 900mV 100C Model Setup 'clk0'
+Slack : -44.917
+TNS   : -902.601
+
+Type  : Fast 900mV 100C Model Setup 'altera_reserved_tck'
+Slack : -10.957
+TNS   : -1092.989
+
+Type  : Fast 900mV 100C Model Setup 'rx_ref_clk'
+Slack : -6.583
+TNS   : -1806.124
+
+Type  : Fast 900mV 100C Model Setup 'tx_ref_clk'
+Slack : -2.870
+TNS   : -3135.379
+
+Type  : Fast 900mV 100C Model Setup 'mcu_0|ddr3|ddr3_core_usr_clk'
+Slack : 1.992
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Setup 'mcu_0|ddr3|ddr3_phy_clk_l_0'
+Slack : 2.287
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Setup 'mcu_0|ddr3|ddr3_phy_clk_l_1'
+Slack : 2.597
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Setup 'mcu_0|ddr3|ddr3_core_cal_slave_clk'
+Slack : 2.850
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Setup 'mcu_0|ddr3|ddr3_ref_clock'
+Slack : 4.068
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Setup 'mcu_0|spi|spi|SCLK_reg'
+Slack : 4.662
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Setup '~ALTERA_CLKUSR~'
+Slack : 6.814
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Hold 'clk0'
+Slack : -4.399
+TNS   : -980.531
+
+Type  : Fast 900mV 100C Model Hold 'rx_ref_clk'
+Slack : -0.818
+TNS   : -14.635
+
+Type  : Fast 900mV 100C Model Hold 'mcu_0|ddr3|ddr3_phy_clk_l_1'
+Slack : -0.172
+TNS   : -0.314
+
+Type  : Fast 900mV 100C Model Hold 'mcu_0|ddr3|ddr3_core_usr_clk'
+Slack : -0.058
+TNS   : -0.108
+
+Type  : Fast 900mV 100C Model Hold 'mcu_0|ddr3|ddr3_phy_clk_l_0'
+Slack : -0.034
+TNS   : -0.034
+
+Type  : Fast 900mV 100C Model Hold 'altera_reserved_tck'
+Slack : 0.014
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Hold 'tx_ref_clk'
+Slack : 0.019
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Hold '~ALTERA_CLKUSR~'
+Slack : 0.019
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Hold 'mcu_0|ddr3|ddr3_core_cal_slave_clk'
+Slack : 0.020
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Hold 'mcu_0|ddr3|ddr3_ref_clock'
+Slack : 0.028
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Hold 'mcu_0|spi|spi|SCLK_reg'
+Slack : 0.393
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'tx_ref_clk'
+Slack : -0.744
+TNS   : -111.061
+
+Type  : Fast 900mV 100C Model Recovery 'rx_ref_clk'
+Slack : 0.063
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'clk0'
+Slack : 1.158
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'mcu_0|ddr3|ddr3_core_usr_clk'
+Slack : 2.070
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'mcu_0|spi|spi|SCLK_reg'
+Slack : 4.113
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'mcu_0|ddr3|ddr3_ref_clock'
+Slack : 4.472
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'mcu_0|ddr3|ddr3_core_cal_slave_clk'
+Slack : 5.110
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery '~ALTERA_CLKUSR~'
+Slack : 7.471
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'mcu_0|ddr3|ddr3_phy_clk_1'
+Slack : 8.825
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'mcu_0|ddr3|ddr3_phy_clk_0'
+Slack : 9.337
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'mcu_0|ddr3|ddr3_phy_clk_l_1'
+Slack : 23.113
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'mcu_0|ddr3|ddr3_phy_clk_l_0'
+Slack : 23.427
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'altera_reserved_tck'
+Slack : 28.087
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'clk0'
+Slack : -4.017
+TNS   : -213.618
+
+Type  : Fast 900mV 100C Model Removal 'rx_ref_clk'
+Slack : 0.190
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'tx_ref_clk'
+Slack : 0.252
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal '~ALTERA_CLKUSR~'
+Slack : 0.260
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'mcu_0|ddr3|ddr3_core_usr_clk'
+Slack : 0.261
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'mcu_0|ddr3|ddr3_ref_clock'
+Slack : 0.264
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'mcu_0|ddr3|ddr3_core_cal_slave_clk'
+Slack : 0.315
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'altera_reserved_tck'
+Slack : 0.407
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'mcu_0|spi|spi|SCLK_reg'
+Slack : 2.259
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'mcu_0|ddr3|ddr3_phy_clk_0'
+Slack : 3.134
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'mcu_0|ddr3|ddr3_phy_clk_l_0'
+Slack : 3.457
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'mcu_0|ddr3|ddr3_phy_clk_1'
+Slack : 3.561
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'mcu_0|ddr3|ddr3_phy_clk_l_1'
+Slack : 3.998
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'rx_ref_clk'
+Slack : -0.818
+TNS   : -234.246
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'tx_ref_clk'
+Slack : -0.550
+TNS   : -103.750
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'mem_mem_dqs[1]_IN'
+Slack : 0.357
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'mem_mem_dqs[0]_IN'
+Slack : 0.358
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'mem_mem_dqs[2]_IN'
+Slack : 0.358
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'mem_mem_dqs[3]_IN'
+Slack : 0.358
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_wf_clk_0'
+Slack : 0.539
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_wf_clk_1'
+Slack : 0.539
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_wf_clk_2'
+Slack : 0.539
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_wf_clk_3'
+Slack : 0.608
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_wf_clk_4'
+Slack : 0.608
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_wf_clk_5'
+Slack : 0.608
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_wf_clk_6'
+Slack : 0.608
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_vco_clk'
+Slack : 0.617
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_vco_clk_1'
+Slack : 0.622
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_phy_clk_0'
+Slack : 1.197
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_phy_clk_1'
+Slack : 1.197
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_core_usr_clk'
+Slack : 2.183
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_phy_clk_l_0'
+Slack : 2.448
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_phy_clk_l_1'
+Slack : 2.448
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_ref_clock'
+Slack : 2.451
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_core_cal_slave_clk'
+Slack : 2.780
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'clk0'
+Slack : 3.516
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width '~ALTERA_CLKUSR~'
+Slack : 3.909
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'mcu_0|spi|spi|SCLK_reg'
+Slack : 7.907
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 14.623
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 0.423
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 3.663
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 3.694
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 3.710
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 3.718
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 3.768
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 3.783
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 5.602
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 5.717
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 5.750
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 5.767
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 5.772
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 5.786
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 5.809
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 5.815
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 5.816
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 5.832
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.353
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.490
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.723
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.763
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 2.161
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 2.815
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 2.816
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 3.114
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 3.299
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 3.366
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 3.663
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 3.688
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 3.779
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 3.971
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 4.206
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 4.277
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 4.288
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 4.829
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.193
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.290
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.330
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.401
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.419
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.450
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.482
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.536
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.537
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.540
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.558
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.621
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.627
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.691
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.721
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.762
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.763
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.786
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.796
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.824
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.843
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.886
+
+Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
+Slack : 5.910
+
+Type  : Fast 900mV -40C Model Setup 'clk0'
+Slack : -44.473
+TNS   : -836.161
+
+Type  : Fast 900mV -40C Model Setup 'altera_reserved_tck'
+Slack : -10.829
+TNS   : -1057.401
+
+Type  : Fast 900mV -40C Model Setup 'rx_ref_clk'
+Slack : -6.147
+TNS   : -1108.819
+
+Type  : Fast 900mV -40C Model Setup 'tx_ref_clk'
+Slack : -2.295
+TNS   : -1164.720
+
+Type  : Fast 900mV -40C Model Setup 'mcu_0|ddr3|ddr3_core_usr_clk'
+Slack : 2.596
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Setup 'mcu_0|ddr3|ddr3_phy_clk_l_0'
+Slack : 2.811
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Setup 'mcu_0|ddr3|ddr3_phy_clk_l_1'
+Slack : 2.981
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Setup 'mcu_0|ddr3|ddr3_core_cal_slave_clk'
+Slack : 3.369
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Setup 'mcu_0|ddr3|ddr3_ref_clock'
+Slack : 4.162
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Setup 'mcu_0|spi|spi|SCLK_reg'
+Slack : 5.068
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Setup '~ALTERA_CLKUSR~'
+Slack : 7.008
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Hold 'clk0'
+Slack : -3.900
+TNS   : -881.503
+
+Type  : Fast 900mV -40C Model Hold 'rx_ref_clk'
+Slack : -0.832
+TNS   : -24.379
+
+Type  : Fast 900mV -40C Model Hold 'mcu_0|ddr3|ddr3_phy_clk_l_1'
+Slack : -0.225
+TNS   : -0.520
+
+Type  : Fast 900mV -40C Model Hold 'mcu_0|ddr3|ddr3_core_usr_clk'
+Slack : -0.149
+TNS   : -0.982
+
+Type  : Fast 900mV -40C Model Hold 'mcu_0|ddr3|ddr3_phy_clk_l_0'
+Slack : -0.075
+TNS   : -0.075
+
+Type  : Fast 900mV -40C Model Hold 'altera_reserved_tck'
+Slack : -0.028
+TNS   : -0.028
+
+Type  : Fast 900mV -40C Model Hold 'tx_ref_clk'
+Slack : 0.010
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Hold '~ALTERA_CLKUSR~'
+Slack : 0.017
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Hold 'mcu_0|ddr3|ddr3_core_cal_slave_clk'
+Slack : 0.022
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Hold 'mcu_0|ddr3|ddr3_ref_clock'
+Slack : 0.026
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Hold 'mcu_0|spi|spi|SCLK_reg'
+Slack : 0.286
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'tx_ref_clk'
+Slack : -0.444
+TNS   : -47.834
+
+Type  : Fast 900mV -40C Model Recovery 'rx_ref_clk'
+Slack : 0.162
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'clk0'
+Slack : 1.034
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'mcu_0|ddr3|ddr3_core_usr_clk'
+Slack : 2.692
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'mcu_0|ddr3|ddr3_ref_clock'
+Slack : 4.554
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'mcu_0|spi|spi|SCLK_reg'
+Slack : 4.625
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'mcu_0|ddr3|ddr3_core_cal_slave_clk'
+Slack : 5.340
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery '~ALTERA_CLKUSR~'
+Slack : 7.543
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'mcu_0|ddr3|ddr3_phy_clk_1'
+Slack : 9.894
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'mcu_0|ddr3|ddr3_phy_clk_0'
+Slack : 10.318
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'mcu_0|ddr3|ddr3_phy_clk_l_1'
+Slack : 24.272
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'mcu_0|ddr3|ddr3_phy_clk_l_0'
+Slack : 24.523
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'altera_reserved_tck'
+Slack : 28.524
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'clk0'
+Slack : -3.561
+TNS   : -190.701
+
+Type  : Fast 900mV -40C Model Removal 'rx_ref_clk'
+Slack : 0.161
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'tx_ref_clk'
+Slack : 0.201
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'mcu_0|ddr3|ddr3_core_usr_clk'
+Slack : 0.204
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'mcu_0|ddr3|ddr3_ref_clock'
+Slack : 0.205
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal '~ALTERA_CLKUSR~'
+Slack : 0.214
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'mcu_0|ddr3|ddr3_core_cal_slave_clk'
+Slack : 0.231
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'altera_reserved_tck'
+Slack : 0.284
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'mcu_0|spi|spi|SCLK_reg'
+Slack : 1.944
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'mcu_0|ddr3|ddr3_phy_clk_0'
+Slack : 2.397
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'mcu_0|ddr3|ddr3_phy_clk_l_0'
+Slack : 2.753
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'mcu_0|ddr3|ddr3_phy_clk_1'
+Slack : 2.754
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'mcu_0|ddr3|ddr3_phy_clk_l_1'
+Slack : 3.197
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'rx_ref_clk'
+Slack : -0.923
+TNS   : -276.342
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'tx_ref_clk'
+Slack : -0.570
+TNS   : -124.614
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'mem_mem_dqs[1]_IN'
+Slack : 0.360
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'mem_mem_dqs[2]_IN'
+Slack : 0.360
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'mem_mem_dqs[3]_IN'
+Slack : 0.360
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'mem_mem_dqs[0]_IN'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_wf_clk_0'
+Slack : 0.558
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_wf_clk_1'
+Slack : 0.558
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_wf_clk_2'
+Slack : 0.558
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_vco_clk'
+Slack : 0.614
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_wf_clk_3'
+Slack : 0.616
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_wf_clk_4'
+Slack : 0.616
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_wf_clk_5'
+Slack : 0.616
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_wf_clk_6'
+Slack : 0.616
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_vco_clk_1'
+Slack : 0.622
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_phy_clk_0'
+Slack : 1.203
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_phy_clk_1'
+Slack : 1.203
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_core_usr_clk'
+Slack : 2.173
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_phy_clk_l_0'
+Slack : 2.454
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_phy_clk_l_1'
+Slack : 2.454
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_ref_clock'
+Slack : 2.463
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'mcu_0|ddr3|ddr3_core_cal_slave_clk'
+Slack : 2.802
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'clk0'
+Slack : 3.661
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width '~ALTERA_CLKUSR~'
+Slack : 3.905
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'mcu_0|spi|spi|SCLK_reg'
+Slack : 7.922
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 14.636
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 0.457
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 3.725
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 3.748
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 3.754
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 3.761
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 3.801
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 3.811
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 5.700
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 5.785
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 5.799
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 5.803
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 5.823
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 5.828
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 5.849
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 5.850
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 5.852
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 5.867
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.478
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.601
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.794
+
+Type  : Fast 900mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.814
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 2.524
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 3.053
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 3.063
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 3.322
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 3.452
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 3.513
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 3.768
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 3.860
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 4.286
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 4.491
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 4.627
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 4.673
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 4.707
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.175
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.455
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.486
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.535
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.567
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.599
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.626
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.673
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.673
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.680
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.718
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.726
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.739
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.793
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.816
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.839
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.854
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.858
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.886
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.887
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.902
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.926
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.935
+
+Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.999
+
+------------------------------------------------------------
+Info: see the "DDR report" for DDR timing results
+------------------------------------------------------------
+------------------------------------------------------------
